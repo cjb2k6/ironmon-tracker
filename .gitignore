@@ -48,3 +48,13 @@ Thumbs.db
 *.mov
 *.wmv
 
+.stfolder
+ExternalTools
+include
+venv
+
+mail
+json/mail.json
+poke.json
+settings.json
+

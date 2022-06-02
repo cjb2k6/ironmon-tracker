@@ -1,0 +1,1026 @@
+{
+    "0": {
+        "name": "---",
+        "pocket": "Items pocket"
+    },
+    "1": {
+        "name": "Master Ball",
+        "pocket": "Poke Balls pocket"
+    },
+    "2": {
+        "name": "Ultra Ball",
+        "pocket": "Poke Balls pocket"
+    },
+    "3": {
+        "name": "BrightPowder",
+        "pocket": "Items pocket"
+    },
+    "4": {
+        "name": "Great Ball",
+        "pocket": "Poke Balls pocket"
+    },
+    "5": {
+        "name": "Poke Ball",
+        "pocket": "Poke Balls pocket"
+    },
+    "6": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "7": {
+        "name": "Bicycle",
+        "pocket": "Key items pocket"
+    },
+    "8": {
+        "name": "Moon Stone",
+        "pocket": "Items pocket"
+    },
+    "9": {
+        "name": "Antidote",
+        "pocket": "Items pocket"
+    },
+    "10": {
+        "name": "Burn Heal",
+        "pocket": "Items pocket"
+    },
+    "11": {
+        "name": "Ice Heal",
+        "pocket": "Items pocket"
+    },
+    "12": {
+        "name": "Awakening",
+        "pocket": "Items pocket"
+    },
+    "13": {
+        "name": "Parlyz Heal",
+        "pocket": "Items pocket"
+    },
+    "14": {
+        "name": "Full Restore",
+        "pocket": "Items pocket"
+    },
+    "15": {
+        "name": "Max Potion",
+        "pocket": "Items pocket"
+    },
+    "16": {
+        "name": "Hyper Potion",
+        "pocket": "Items pocket"
+    },
+    "17": {
+        "name": "Super Potion",
+        "pocket": "Items pocket"
+    },
+    "18": {
+        "name": "Potion",
+        "pocket": "Items pocket"
+    },
+    "19": {
+        "name": "Escape Rope",
+        "pocket": "Items pocket"
+    },
+    "20": {
+        "name": "Repel",
+        "pocket": "Items pocket"
+    },
+    "21": {
+        "name": "Max Elixer",
+        "pocket": "Items pocket"
+    },
+    "22": {
+        "name": "Fire Stone",
+        "pocket": "Items pocket"
+    },
+    "23": {
+        "name": "Thunderstone",
+        "pocket": "Items pocket"
+    },
+    "24": {
+        "name": "Water Stone",
+        "pocket": "Items pocket"
+    },
+    "25": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "26": {
+        "name": "HP Up",
+        "pocket": "Items pocket"
+    },
+    "27": {
+        "name": "Protein",
+        "pocket": "Items pocket"
+    },
+    "28": {
+        "name": "Iron",
+        "pocket": "Items pocket"
+    },
+    "29": {
+        "name": "Carbos",
+        "pocket": "Items pocket"
+    },
+    "30": {
+        "name": "Lucky Punch",
+        "pocket": "Items pocket"
+    },
+    "31": {
+        "name": "Calcium",
+        "pocket": "Items pocket"
+    },
+    "32": {
+        "name": "Rare Candy",
+        "pocket": "Items pocket"
+    },
+    "33": {
+        "name": "X Accuracy",
+        "pocket": "Items pocket"
+    },
+    "34": {
+        "name": "Leaf Stone",
+        "pocket": "Items pocket"
+    },
+    "35": {
+        "name": "Metal Powder",
+        "pocket": "Items pocket"
+    },
+    "36": {
+        "name": "Nugget",
+        "pocket": "Items pocket"
+    },
+    "37": {
+        "name": "Poke Doll",
+        "pocket": "Items pocket"
+    },
+    "38": {
+        "name": "Full Heal",
+        "pocket": "Items pocket"
+    },
+    "39": {
+        "name": "Revive",
+        "pocket": "Items pocket"
+    },
+    "40": {
+        "name": "Max Revive",
+        "pocket": "Items pocket"
+    },
+    "41": {
+        "name": "Guard Spec.",
+        "pocket": "Items pocket"
+    },
+    "42": {
+        "name": "Super Repel",
+        "pocket": "Items pocket"
+    },
+    "43": {
+        "name": "Max Repel",
+        "pocket": "Items pocket"
+    },
+    "44": {
+        "name": "Dire Hit",
+        "pocket": "Items pocket"
+    },
+    "45": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "46": {
+        "name": "Fresh Water",
+        "pocket": "Items pocket"
+    },
+    "47": {
+        "name": "Soda Pop",
+        "pocket": "Items pocket"
+    },
+    "48": {
+        "name": "Lemonade",
+        "pocket": "Items pocket"
+    },
+    "49": {
+        "name": "X Attack",
+        "pocket": "Items pocket"
+    },
+    "50": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "51": {
+        "name": "X Defend",
+        "pocket": "Items pocket"
+    },
+    "52": {
+        "name": "X Speed",
+        "pocket": "Items pocket"
+    },
+    "53": {
+        "name": "X Special",
+        "pocket": "Items pocket"
+    },
+    "54": {
+        "name": "Coin Case",
+        "pocket": "Key items pocket"
+    },
+    "55": {
+        "name": "Itemfinder",
+        "pocket": "Key items pocket"
+    },
+    "56": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "57": {
+        "name": "Exp.Share",
+        "pocket": "Items pocket"
+    },
+    "58": {
+        "name": "Old Rod",
+        "pocket": "Key items pocket"
+    },
+    "59": {
+        "name": "Good Rod",
+        "pocket": "Key items pocket"
+    },
+    "60": {
+        "name": "Silver Leaf",
+        "pocket": "Items pocket"
+    },
+    "61": {
+        "name": "Super Rod",
+        "pocket": "Key items pocket"
+    },
+    "62": {
+        "name": "PP Up",
+        "pocket": "Items pocket"
+    },
+    "63": {
+        "name": "Ether",
+        "pocket": "Items pocket"
+    },
+    "64": {
+        "name": "Max Ether",
+        "pocket": "Items pocket"
+    },
+    "65": {
+        "name": "Elixer",
+        "pocket": "Items pocket"
+    },
+    "66": {
+        "name": "Red Scale",
+        "pocket": "Key items pocket"
+    },
+    "67": {
+        "name": "SecretPotion",
+        "pocket": "Key items pocket"
+    },
+    "68": {
+        "name": "S.S. Ticket",
+        "pocket": "Key items pocket"
+    },
+    "69": {
+        "name": "Mystery Egg",
+        "pocket": "Key items pocket"
+    },
+    "70": {
+        "name": "Clear Bell*",
+        "pocket": "Key items pocket"
+    },
+    "71": {
+        "name": "Silver Wing",
+        "pocket": "Key items pocket"
+    },
+    "72": {
+        "name": "Moomoo Milk",
+        "pocket": "Items pocket"
+    },
+    "73": {
+        "name": "Quick Claw",
+        "pocket": "Items pocket"
+    },
+    "74": {
+        "name": "PSNCureBerry",
+        "pocket": "Items pocket"
+    },
+    "75": {
+        "name": "Gold Leaf",
+        "pocket": "Items pocket"
+    },
+    "76": {
+        "name": "Soft Sand",
+        "pocket": "Items pocket"
+    },
+    "77": {
+        "name": "Sharp Beak",
+        "pocket": "Items pocket"
+    },
+    "78": {
+        "name": "PRZCureBerry",
+        "pocket": "Items pocket"
+    },
+    "79": {
+        "name": "Burnt Berry",
+        "pocket": "Items pocket"
+    },
+    "80": {
+        "name": "Ice Berry",
+        "pocket": "Items pocket"
+    },
+    "81": {
+        "name": "Poison Barb",
+        "pocket": "Items pocket"
+    },
+    "82": {
+        "name": "King's Rock",
+        "pocket": "Items pocket"
+    },
+    "83": {
+        "name": "Bitter Berry",
+        "pocket": "Items pocket"
+    },
+    "84": {
+        "name": "Mint Berry",
+        "pocket": "Items pocket"
+    },
+    "85": {
+        "name": "Red Apricorn",
+        "pocket": "Items pocket"
+    },
+    "86": {
+        "name": "TinyMushroom",
+        "pocket": "Items pocket"
+    },
+    "87": {
+        "name": "Big Mushroom",
+        "pocket": "Items pocket"
+    },
+    "88": {
+        "name": "SilverPowder",
+        "pocket": "Items pocket"
+    },
+    "89": {
+        "name": "Blu Apricorn",
+        "pocket": "Items pocket"
+    },
+    "90": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "91": {
+        "name": "Amulet Coin",
+        "pocket": "Items pocket"
+    },
+    "92": {
+        "name": "Ylw Apricorn",
+        "pocket": "Items pocket"
+    },
+    "93": {
+        "name": "Grn Apricorn",
+        "pocket": "Items pocket"
+    },
+    "94": {
+        "name": "Cleanse Tag",
+        "pocket": "Items pocket"
+    },
+    "95": {
+        "name": "Mystic Water",
+        "pocket": "Items pocket"
+    },
+    "96": {
+        "name": "TwistedSpoon",
+        "pocket": "Items pocket"
+    },
+    "97": {
+        "name": "Wht Apricorn",
+        "pocket": "Items pocket"
+    },
+    "98": {
+        "name": "Blackbelt",
+        "pocket": "Items pocket"
+    },
+    "99": {
+        "name": "Blk Apricorn",
+        "pocket": "Items pocket"
+    },
+    "100": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "101": {
+        "name": "Pnk Apricorn",
+        "pocket": "Items pocket"
+    },
+    "102": {
+        "name": "BlackGlasses",
+        "pocket": "Items pocket"
+    },
+    "103": {
+        "name": "SlowpokeTail",
+        "pocket": "Items pocket"
+    },
+    "104": {
+        "name": "Pink Bow",
+        "pocket": "Items pocket"
+    },
+    "105": {
+        "name": "Stick",
+        "pocket": "Items pocket"
+    },
+    "106": {
+        "name": "Smoke Ball",
+        "pocket": "Items pocket"
+    },
+    "107": {
+        "name": "NeverMeltIce",
+        "pocket": "Items pocket"
+    },
+    "108": {
+        "name": "Magnet",
+        "pocket": "Items pocket"
+    },
+    "109": {
+        "name": "MiracleBerry",
+        "pocket": "Items pocket"
+    },
+    "110": {
+        "name": "Pearl",
+        "pocket": "Items pocket"
+    },
+    "111": {
+        "name": "Big Pearl",
+        "pocket": "Items pocket"
+    },
+    "112": {
+        "name": "Everstone",
+        "pocket": "Items pocket"
+    },
+    "113": {
+        "name": "Spell Tag",
+        "pocket": "Items pocket"
+    },
+    "114": {
+        "name": "RageCandyBar",
+        "pocket": "Items pocket"
+    },
+    "115": {
+        "name": "GS Ball*",
+        "pocket": "Key items pocket"
+    },
+    "116": {
+        "name": "Blue Card*",
+        "pocket": "Key items pocket"
+    },
+    "117": {
+        "name": "Miracle Seed",
+        "pocket": "Items pocket"
+    },
+    "118": {
+        "name": "Thick Club",
+        "pocket": "Items pocket"
+    },
+    "119": {
+        "name": "Focus Band",
+        "pocket": "Items pocket"
+    },
+    "120": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "121": {
+        "name": "EnergyPowder",
+        "pocket": "Items pocket"
+    },
+    "122": {
+        "name": "Energy Root",
+        "pocket": "Items pocket"
+    },
+    "123": {
+        "name": "Heal Powder",
+        "pocket": "Items pocket"
+    },
+    "124": {
+        "name": "Revival Herb",
+        "pocket": "Items pocket"
+    },
+    "125": {
+        "name": "Hard Stone",
+        "pocket": "Items pocket"
+    },
+    "126": {
+        "name": "Lucky Egg",
+        "pocket": "Items pocket"
+    },
+    "127": {
+        "name": "Card Key",
+        "pocket": "Key items pocket"
+    },
+    "128": {
+        "name": "Machine Part",
+        "pocket": "Key items pocket"
+    },
+    "129": {
+        "name": "Egg Ticket*",
+        "pocket": "Key items pocket"
+    },
+    "130": {
+        "name": "Lost Item",
+        "pocket": "Key items pocket"
+    },
+    "131": {
+        "name": "Stardust",
+        "pocket": "Items pocket"
+    },
+    "132": {
+        "name": "Star Piece",
+        "pocket": "Items pocket"
+    },
+    "133": {
+        "name": "Basement Key",
+        "pocket": "Key items pocket"
+    },
+    "134": {
+        "name": "Pass",
+        "pocket": "Key items pocket"
+    },
+    "135": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "136": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "137": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "138": {
+        "name": "Charcoal",
+        "pocket": "Items pocket"
+    },
+    "139": {
+        "name": "Berry Juice",
+        "pocket": "Items pocket"
+    },
+    "140": {
+        "name": "Scope Lens",
+        "pocket": "Items pocket"
+    },
+    "141": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "142": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "143": {
+        "name": "Metal Coat",
+        "pocket": "Items pocket"
+    },
+    "144": {
+        "name": "Dragon Fang",
+        "pocket": "Items pocket"
+    },
+    "145": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "146": {
+        "name": "Leftovers",
+        "pocket": "Items pocket"
+    },
+    "147": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "148": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "149": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "150": {
+        "name": "MysteryBerry",
+        "pocket": "Items pocket"
+    },
+    "151": {
+        "name": "Dragon Scale",
+        "pocket": "Items pocket"
+    },
+    "152": {
+        "name": "Berserk Gene",
+        "pocket": "Items pocket"
+    },
+    "153": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "154": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "155": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "156": {
+        "name": "Sacred Ash",
+        "pocket": "Items pocket"
+    },
+    "157": {
+        "name": "Heavy Ball",
+        "pocket": "Poke Balls pocket"
+    },
+    "158": {
+        "name": "Flower Mail",
+        "pocket": "Items pocket"
+    },
+    "159": {
+        "name": "Level Ball",
+        "pocket": "Poke Balls pocket"
+    },
+    "160": {
+        "name": "Lure Ball",
+        "pocket": "Poke Balls pocket"
+    },
+    "161": {
+        "name": "Fast Ball",
+        "pocket": "Poke Balls pocket"
+    },
+    "162": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "163": {
+        "name": "Light Ball",
+        "pocket": "Items pocket"
+    },
+    "164": {
+        "name": "Friend Ball",
+        "pocket": "Poke Balls pocket"
+    },
+    "165": {
+        "name": "Moon Ball",
+        "pocket": "Poke Balls pocket"
+    },
+    "166": {
+        "name": "Love Ball",
+        "pocket": "Poke Balls pocket"
+    },
+    "167": {
+        "name": "Normal Box",
+        "pocket": "Items pocket"
+    },
+    "168": {
+        "name": "Gorgeous Box",
+        "pocket": "Items pocket"
+    },
+    "169": {
+        "name": "Sun Stone",
+        "pocket": "Items pocket"
+    },
+    "170": {
+        "name": "Polkadot Bow",
+        "pocket": "Items pocket"
+    },
+    "171": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "172": {
+        "name": "Up-Grade",
+        "pocket": "Items pocket"
+    },
+    "173": {
+        "name": "Berry",
+        "pocket": "Items pocket"
+    },
+    "174": {
+        "name": "Gold Berry",
+        "pocket": "Items pocket"
+    },
+    "175": {
+        "name": "SquirtBottle",
+        "pocket": "Key items pocket"
+    },
+    "176": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "177": {
+        "name": "Park Ball",
+        "pocket": "Poke Balls pocket"
+    },
+    "178": {
+        "name": "Rainbow Wing",
+        "pocket": "Key items pocket"
+    },
+    "179": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "180": {
+        "name": "Brick Piece",
+        "pocket": "Items pocket"
+    },
+    "181": {
+        "name": "Surf Mail",
+        "pocket": "Items pocket"
+    },
+    "182": {
+        "name": "Litebluemail",
+        "pocket": "Items pocket"
+    },
+    "183": {
+        "name": "Portraitmail",
+        "pocket": "Items pocket"
+    },
+    "184": {
+        "name": "Lovely Mail",
+        "pocket": "Items pocket"
+    },
+    "185": {
+        "name": "Eon Mail",
+        "pocket": "Items pocket"
+    },
+    "186": {
+        "name": "Morph Mail",
+        "pocket": "Items pocket"
+    },
+    "187": {
+        "name": "Bluesky Mail",
+        "pocket": "Items pocket"
+    },
+    "188": {
+        "name": "Music Mail",
+        "pocket": "Items pocket"
+    },
+    "189": {
+        "name": "Mirage Mail",
+        "pocket": "Items pocket"
+    },
+    "190": {
+        "name": "Teru-sama",
+        "pocket": "Items pocket"
+    },
+    "191": {
+        "name": "TM01",
+        "pocket": "TMs and HMs pocket"
+    },
+    "192": {
+        "name": "TM02",
+        "pocket": "TMs and HMs pocket"
+    },
+    "193": {
+        "name": "TM03",
+        "pocket": "TMs and HMs pocket"
+    },
+    "194": {
+        "name": "TM04",
+        "pocket": "TMs and HMs pocket"
+    },
+    "195": {
+        "name": "TM04",
+        "pocket": "Items pocket"
+    },
+    "196": {
+        "name": "TM05",
+        "pocket": "TMs and HMs pocket"
+    },
+    "197": {
+        "name": "TM06",
+        "pocket": "TMs and HMs pocket"
+    },
+    "198": {
+        "name": "TM07",
+        "pocket": "TMs and HMs pocket"
+    },
+    "199": {
+        "name": "TM08",
+        "pocket": "TMs and HMs pocket"
+    },
+    "200": {
+        "name": "TM09",
+        "pocket": "TMs and HMs pocket"
+    },
+    "201": {
+        "name": "TM10",
+        "pocket": "TMs and HMs pocket"
+    },
+    "202": {
+        "name": "TM11",
+        "pocket": "TMs and HMs pocket"
+    },
+    "203": {
+        "name": "TM12",
+        "pocket": "TMs and HMs pocket"
+    },
+    "204": {
+        "name": "TM13",
+        "pocket": "TMs and HMs pocket"
+    },
+    "205": {
+        "name": "TM14",
+        "pocket": "TMs and HMs pocket"
+    },
+    "206": {
+        "name": "TM15",
+        "pocket": "TMs and HMs pocket"
+    },
+    "207": {
+        "name": "TM16",
+        "pocket": "TMs and HMs pocket"
+    },
+    "208": {
+        "name": "TM17",
+        "pocket": "TMs and HMs pocket"
+    },
+    "209": {
+        "name": "TM18",
+        "pocket": "TMs and HMs pocket"
+    },
+    "210": {
+        "name": "TM19",
+        "pocket": "TMs and HMs pocket"
+    },
+    "211": {
+        "name": "TM20",
+        "pocket": "TMs and HMs pocket"
+    },
+    "212": {
+        "name": "TM21",
+        "pocket": "TMs and HMs pocket"
+    },
+    "213": {
+        "name": "TM22",
+        "pocket": "TMs and HMs pocket"
+    },
+    "214": {
+        "name": "TM23",
+        "pocket": "TMs and HMs pocket"
+    },
+    "215": {
+        "name": "TM24",
+        "pocket": "TMs and HMs pocket"
+    },
+    "216": {
+        "name": "TM25",
+        "pocket": "TMs and HMs pocket"
+    },
+    "217": {
+        "name": "TM26",
+        "pocket": "TMs and HMs pocket"
+    },
+    "218": {
+        "name": "TM27",
+        "pocket": "TMs and HMs pocket"
+    },
+    "219": {
+        "name": "TM28",
+        "pocket": "TMs and HMs pocket"
+    },
+    "220": {
+        "name": "TM28",
+        "pocket": "Items pocket"
+    },
+    "221": {
+        "name": "TM29",
+        "pocket": "TMs and HMs pocket"
+    },
+    "222": {
+        "name": "TM30",
+        "pocket": "TMs and HMs pocket"
+    },
+    "223": {
+        "name": "TM31",
+        "pocket": "TMs and HMs pocket"
+    },
+    "224": {
+        "name": "TM32",
+        "pocket": "TMs and HMs pocket"
+    },
+    "225": {
+        "name": "TM33",
+        "pocket": "TMs and HMs pocket"
+    },
+    "226": {
+        "name": "TM34",
+        "pocket": "TMs and HMs pocket"
+    },
+    "227": {
+        "name": "TM35",
+        "pocket": "TMs and HMs pocket"
+    },
+    "228": {
+        "name": "TM36",
+        "pocket": "TMs and HMs pocket"
+    },
+    "229": {
+        "name": "TM37",
+        "pocket": "TMs and HMs pocket"
+    },
+    "230": {
+        "name": "TM38",
+        "pocket": "TMs and HMs pocket"
+    },
+    "231": {
+        "name": "TM39",
+        "pocket": "TMs and HMs pocket"
+    },
+    "232": {
+        "name": "TM40",
+        "pocket": "TMs and HMs pocket"
+    },
+    "233": {
+        "name": "TM41",
+        "pocket": "TMs and HMs pocket"
+    },
+    "234": {
+        "name": "TM42",
+        "pocket": "TMs and HMs pocket"
+    },
+    "235": {
+        "name": "TM43",
+        "pocket": "TMs and HMs pocket"
+    },
+    "236": {
+        "name": "TM44",
+        "pocket": "TMs and HMs pocket"
+    },
+    "237": {
+        "name": "TM45",
+        "pocket": "TMs and HMs pocket"
+    },
+    "238": {
+        "name": "TM46",
+        "pocket": "TMs and HMs pocket"
+    },
+    "239": {
+        "name": "TM47",
+        "pocket": "TMs and HMs pocket"
+    },
+    "240": {
+        "name": "TM48",
+        "pocket": "TMs and HMs pocket"
+    },
+    "241": {
+        "name": "TM49",
+        "pocket": "TMs and HMs pocket"
+    },
+    "242": {
+        "name": "TM50",
+        "pocket": "TMs and HMs pocket"
+    },
+    "243": {
+        "name": "HM01",
+        "pocket": "TMs and HMs pocket"
+    },
+    "244": {
+        "name": "HM02",
+        "pocket": "TMs and HMs pocket"
+    },
+    "245": {
+        "name": "HM03",
+        "pocket": "TMs and HMs pocket"
+    },
+    "246": {
+        "name": "HM04",
+        "pocket": "TMs and HMs pocket"
+    },
+    "247": {
+        "name": "HM05",
+        "pocket": "TMs and HMs pocket"
+    },
+    "248": {
+        "name": "HM06",
+        "pocket": "TMs and HMs pocket"
+    },
+    "249": {
+        "name": "HM07",
+        "pocket": "TMs and HMs pocket"
+    },
+    "250": {
+        "name": "HM08",
+        "pocket": "Items pocket"
+    },
+    "251": {
+        "name": "HM09",
+        "pocket": "Items pocket"
+    },
+    "252": {
+        "name": "HM10",
+        "pocket": "Items pocket"
+    },
+    "253": {
+        "name": "HM11",
+        "pocket": "Items pocket"
+    },
+    "254": {
+        "name": "HM12",
+        "pocket": "Items pocket"
+    },
+    "255": {
+        "name": "Cancel",
+        "pocket": "Unknown pocket"
+    }
+}
