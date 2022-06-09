@@ -1,2270 +1,2270 @@
 {
-    "0": {
-        "name": "-",
-        "type": "-",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 0,
-        "effect": ""
-    },
-    "177": {
-        "name": "Aeroblast",
-        "type": "Flying",
-        "cat": "",
-        "power": "100",
-        "acc": "95",
-        "pp": 5,
-        "effect": "High critical hit ratio."
-    },
-    "246": {
-        "name": "Ancientpower",
-        "type": "Rock",
-        "cat": "",
-        "power": "60",
-        "acc": "100",
-        "pp": 5,
-        "effect": "May raise all user's stats at once."
-    },
-    "213": {
-        "name": "Attract",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": 15,
-        "effect": "If opponent is the opposite gender, it's less likely to attack."
-    },
-    "226": {
-        "name": "Baton Pass",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 40,
-        "effect": "User switches out and gives stat changes to the incoming Pokemon."
-    },
-    "251": {
-        "name": "Beat Up",
-        "type": "Dark",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": 10,
-        "effect": "Each Pokemon in user's party attacks."
-    },
-    "187": {
-        "name": "Belly Drum",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 10,
-        "effect": "User loses 50% of its max HP, but Attack raises to maximum."
-    },
-    "198": {
-        "name": "Bone Rush",
-        "type": "Ground",
-        "cat": "",
-        "power": "25",
-        "acc": "90",
-        "pp": 10,
-        "effect": "Hits 2-5 times in one turn."
-    },
-    "204": {
-        "name": "Charm",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": 20,
-        "effect": "Sharply lowers opponent's Attack."
-    },
-    "176": {
-        "name": "Conversion 2",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 30,
-        "effect": "User changes type to become resistant to opponent's last move."
-    },
-    "178": {
-        "name": "Cotton Spore",
-        "type": "Grass",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": 40,
-        "effect": "Sharply lowers opponent's Speed."
-    },
-    "238": {
-        "name": "Cross Chop",
-        "type": "Fighting",
-        "cat": "",
-        "power": "100",
-        "acc": "80",
-        "pp": 5,
-        "effect": "High critical hit ratio."
-    },
-    "242": {
-        "name": "Crunch",
-        "type": "Dark",
-        "cat": "",
-        "power": "80",
-        "acc": "100",
-        "pp": 15,
-        "effect": "May lower opponent's Defense."
-    },
-    "174": {
-        "name": "Curse",
-        "type": "Ghost",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 10,
-        "effect": "Ghosts lose 50% of max HP and curse the opponent; Non-Ghosts raise Attack, Defense and lower Speed."
-    },
-    "194": {
-        "name": "Destiny Bond",
-        "type": "Ghost",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 5,
-        "effect": "If the user faints, the opponent also faints."
-    },
-    "197": {
-        "name": "Detect",
-        "type": "Fighting",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 5,
-        "effect": "Protects the user, but may fail if used consecutively."
-    },
-    "225": {
-        "name": "DragonBreath",
-        "type": "Dragon",
-        "cat": "",
-        "power": "60",
-        "acc": "100",
-        "pp": 20,
-        "effect": "May paralyze opponent."
-    },
-    "223": {
-        "name": "DynamicPunch",
-        "type": "Fighting",
-        "cat": "",
-        "power": "100",
-        "acc": "50",
-        "pp": 5,
-        "effect": "Confuses opponent."
-    },
-    "227": {
-        "name": "Encore",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": 5,
-        "effect": "Forces opponent to keep using its last move for 3 turns."
-    },
-    "203": {
-        "name": "Endure",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 10,
-        "effect": "Always left with at least 1 HP, but may fail if used consecutively."
-    },
-    "245": {
-        "name": "ExtremeSpeed",
-        "type": "Normal",
-        "cat": "",
-        "power": "80",
-        "acc": "100",
-        "pp": 5,
-        "effect": "User attacks first."
-    },
-    "206": {
-        "name": "False Swipe",
-        "type": "Normal",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": 40,
-        "effect": "Always leaves opponent with at least 1 HP."
-    },
-    "185": {
-        "name": "Faint Attack",
-        "type": "Dark",
-        "cat": "",
-        "power": "60",
-        "acc": "-",
-        "pp": 20,
-        "effect": "Ignores Accuracy and Evasiveness."
-    },
-    "175": {
-        "name": "Flail",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": 15,
-        "effect": "The lower the user's HP, the higher the power."
-    },
-    "172": {
-        "name": "Flame Wheel",
-        "type": "Fire",
-        "cat": "",
-        "power": "60",
-        "acc": "100",
-        "pp": 25,
-        "effect": "May burn opponent."
-    },
-    "193": {
-        "name": "Foresight",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 40,
-        "effect": "Resets opponent's Evasiveness, Normal-type and Fighting-type attacks can now hit Ghosts, and Ghost-type attacks hit Normal."
-    },
-    "218": {
-        "name": "Frustration",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": 20,
-        "effect": "Power decreases with higher Friendship."
-    },
-    "210": {
-        "name": "Fury Cutter",
-        "type": "Bug",
-        "cat": "",
-        "power": "40",
-        "acc": "95",
-        "pp": 20,
-        "effect": "Power increases each turn."
-    },
-    "248": {
-        "name": "Future Sight",
-        "type": "Psychic",
-        "cat": "",
-        "power": "120",
-        "acc": "100",
-        "pp": 10,
-        "effect": "Damage occurs 2 turns later."
-    },
-    "202": {
-        "name": "Giga Drain",
-        "type": "Grass",
-        "cat": "",
-        "power": "75",
-        "acc": "100",
-        "pp": 10,
-        "effect": "User recovers half the HP inflicted on opponent."
-    },
-    "215": {
-        "name": "Heal Bell",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 5,
-        "effect": "Heals the user's party's status conditions."
-    },
-    "237": {
-        "name": "Hidden Power",
-        "type": "Normal",
-        "cat": "",
-        "power": "60",
-        "acc": "100",
-        "pp": 15,
-        "effect": "Type and power depends on user's IVs."
-    },
-    "196": {
-        "name": "Icy Wind",
-        "type": "Ice",
-        "cat": "",
-        "power": "55",
-        "acc": "95",
-        "pp": 15,
-        "effect": "Lowers opponent's Speed."
-    },
-    "231": {
-        "name": "Iron Tail",
-        "type": "Steel",
-        "cat": "",
-        "power": "100",
-        "acc": "75",
-        "pp": 15,
-        "effect": "May lower opponent's Defense."
-    },
-    "199": {
-        "name": "Lock On",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 5,
-        "effect": "User's next attack is guaranteed to hit."
-    },
-    "183": {
-        "name": "Mach Punch",
-        "type": "Fighting",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": 30,
-        "effect": "User attacks first."
-    },
-    "222": {
-        "name": "Magnitude",
-        "type": "Ground",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": 30,
-        "effect": "Hits with random power."
-    },
-    "212": {
-        "name": "Mean Look",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 5,
-        "effect": "Opponent cannot flee or switch."
-    },
-    "224": {
-        "name": "Mega Horn",
-        "type": "Bug",
-        "cat": "",
-        "power": "120",
-        "acc": "85",
-        "pp": 10,
-        "effect": ""
-    },
-    "232": {
-        "name": "Metal Claw",
-        "type": "Steel",
-        "cat": "",
-        "power": "50",
-        "acc": "95",
-        "pp": 35,
-        "effect": "May raise user's Attack."
-    },
-    "208": {
-        "name": "Milk Drink",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 10,
-        "effect": "User recovers half its max HP."
-    },
-    "170": {
-        "name": "Mind Reader",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 5,
-        "effect": "User's next attack is guaranteed to hit."
-    },
-    "243": {
-        "name": "Mirror Coat",
-        "type": "Psychic",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": 20,
-        "effect": "When hit by a Special Attack, user strikes back with 2x power."
-    },
-    "236": {
-        "name": "Moonlight",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 5,
-        "effect": "User recovers HP. Amount varies with the weather."
-    },
-    "234": {
-        "name": "Morning Sun",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 5,
-        "effect": "User recovers HP. Amount varies with the weather."
-    },
-    "189": {
-        "name": "Mud-Slap",
-        "type": "Ground",
-        "cat": "",
-        "power": "20",
-        "acc": "100",
-        "pp": 10,
-        "effect": "Lowers opponent's Accuracy."
-    },
-    "171": {
-        "name": "Nightmare",
-        "type": "Ghost",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": 15,
-        "effect": "The sleeping opponent loses 25% of its max HP each turn."
-    },
-    "190": {
-        "name": "Octazooka",
-        "type": "Water",
-        "cat": "",
-        "power": "65",
-        "acc": "85",
-        "pp": 10,
-        "effect": "May lower opponent's Accuracy."
-    },
-    "200": {
-        "name": "Outrage",
-        "type": "Dragon",
-        "cat": "",
-        "power": "120",
-        "acc": "100",
-        "pp": 10,
-        "effect": "User attacks for 2-3 turns but then becomes confused."
-    },
-    "220": {
-        "name": "Pain Split",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 20,
-        "effect": "The user's and opponent's HP becomes the average of both."
-    },
-    "195": {
-        "name": "Perish Song",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 5,
-        "effect": "Any Pokemon in play when this attack is used faints in 3 turns."
-    },
-    "181": {
-        "name": "Powder Snow",
-        "type": "Ice",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": 25,
-        "effect": "May freeze opponent."
-    },
-    "217": {
-        "name": "Present",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "90",
-        "pp": 15,
-        "effect": "Either deals damage or heals."
-    },
-    "182": {
-        "name": "Protect",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 10,
-        "effect": "Protects the user, but may fail if used consecutively."
-    },
-    "244": {
-        "name": "Psych Up",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 10,
-        "effect": "Copies the opponent's stat changes."
-    },
-    "228": {
-        "name": "Pursuit",
-        "type": "Dark",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": 20,
-        "effect": "Double power if the opponent is switching out."
-    },
-    "240": {
-        "name": "Rain Dance",
-        "type": "Water",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 5,
-        "effect": "Makes it rain for 5 turns."
-    },
-    "229": {
-        "name": "Rapid Spin",
-        "type": "Normal",
-        "cat": "",
-        "power": "50",
-        "acc": "100",
-        "pp": 40,
-        "effect": "Raises user's Speed and removes entry hazards and trap move effects."
-    },
-    "216": {
-        "name": "Return",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": 20,
-        "effect": "Power increases with higher Friendship."
-    },
-    "179": {
-        "name": "Reversal",
-        "type": "Fighting",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": 15,
-        "effect": "The lower the user's HP, the higher the power."
-    },
-    "249": {
-        "name": "Rock Smash",
-        "type": "Fighting",
-        "cat": "",
-        "power": "20",
-        "acc": "100",
-        "pp": 15,
-        "effect": "May lower opponent's Defense."
-    },
-    "205": {
-        "name": "Rollout",
-        "type": "Rock",
-        "cat": "",
-        "power": "30",
-        "acc": "90",
-        "pp": 20,
-        "effect": "Doubles in power each turn for 5 turns."
-    },
-    "221": {
-        "name": "Sacred Fire",
-        "type": "Fire",
-        "cat": "",
-        "power": "100",
-        "acc": "95",
-        "pp": 5,
-        "effect": "May burn opponent."
-    },
-    "219": {
-        "name": "Safeguard",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 25,
-        "effect": "The user's party is protected from status conditions."
-    },
-    "201": {
-        "name": "Sandstorm",
-        "type": "Rock",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 10,
-        "effect": "Creates a sandstorm for 5 turns."
-    },
-    "184": {
-        "name": "Scary Face",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": 10,
-        "effect": "Sharply lowers opponent's Speed."
-    },
-    "247": {
-        "name": "Shadow Ball",
-        "type": "Ghost",
-        "cat": "",
-        "power": "80",
-        "acc": "100",
-        "pp": 15,
-        "effect": "May lower opponent's Special Defense."
-    },
-    "166": {
-        "name": "Sketch",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 1,
-        "effect": "Permanently copies the opponent's last move."
-    },
-    "214": {
-        "name": "Sleep Talk",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 10,
-        "effect": "User performs one of its own moves while sleeping."
-    },
-    "188": {
-        "name": "Sludge Bomb",
-        "type": "Poison",
-        "cat": "",
-        "power": "90",
-        "acc": "100",
-        "pp": 10,
-        "effect": "May poison opponent."
-    },
-    "173": {
-        "name": "Snore",
-        "type": "Normal",
-        "cat": "",
-        "power": "50",
-        "acc": "100",
-        "pp": 15,
-        "effect": "Can only be used if asleep. May cause flinching."
-    },
-    "209": {
-        "name": "Spark",
-        "type": "Electric",
-        "cat": "",
-        "power": "65",
-        "acc": "100",
-        "pp": 20,
-        "effect": "May paralyze opponent."
-    },
-    "169": {
-        "name": "Spider Web",
-        "type": "Bug",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 10,
-        "effect": "Opponent cannot escape/switch."
-    },
-    "191": {
-        "name": "Spikes",
-        "type": "Ground",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 20,
-        "effect": "Hurts opponents when they switch into battle."
-    },
-    "180": {
-        "name": "Spite",
-        "type": "Ghost",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": 10,
-        "effect": "The opponent's last move loses 2-5 PP."
-    },
-    "211": {
-        "name": "Steel Wing",
-        "type": "Steel",
-        "cat": "",
-        "power": "70",
-        "acc": "90",
-        "pp": 25,
-        "effect": "May raise user's Defense."
-    },
-    "241": {
-        "name": "Sunny Day",
-        "type": "Fire",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 5,
-        "effect": "Makes it sunny for 5 turns."
-    },
-    "207": {
-        "name": "Swagger",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "85",
-        "pp": 15,
-        "effect": "Confuses opponent, but sharply raises its Attack."
-    },
-    "186": {
-        "name": "Sweet Kiss",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "75",
-        "pp": 10,
-        "effect": "Confuses opponent."
-    },
-    "230": {
-        "name": "Sweet Scent",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": 20,
-        "effect": "Lowers opponent's Evasiveness."
-    },
-    "235": {
-        "name": "Synthesis",
-        "type": "Grass",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": 5,
-        "effect": "User recovers HP. Amount varies with the weather."
-    },
-    "168": {
-        "name": "Thief",
-        "type": "Dark",
-        "cat": "",
-        "power": "60",
-        "acc": "100",
-        "pp": 25,
-        "effect": "Also steals opponent's held item."
-    },
-    "167": {
-        "name": "Triple Kick",
-        "type": "Fighting",
-        "cat": "",
-        "power": "10",
-        "acc": "90",
-        "pp": 10,
-        "effect": "Hits thrice in one turn at increasing power."
-    },
-    "239": {
-        "name": "Twister",
-        "type": "Dragon",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": 20,
-        "effect": "May cause flinching. Hits Pokemon using Fly/Bounce with double power."
-    },
-    "233": {
-        "name": "Vital Throw",
-        "type": "Fighting",
-        "cat": "",
-        "power": "70",
-        "acc": "-",
-        "pp": 10,
-        "effect": "User attacks last, but ignores Accuracy and Evasiveness."
-    },
-    "250": {
-        "name": "Whirlpool",
-        "type": "Water",
-        "cat": "",
-        "power": "35",
-        "acc": "85",
-        "pp": 15,
-        "effect": "Traps opponent, damaging them for 4-5 turns."
-    },
-    "192": {
-        "name": "Zap Cannon",
-        "type": "Electric",
-        "cat": "",
-        "power": "120",
-        "acc": "50",
-        "pp": 5,
-        "effect": "Paralyzes opponent."
-    },
-    "71": {
-        "name": "Absorb",
-        "type": "Grass",
-        "cat": "",
-        "power": "20",
-        "acc": "100",
-        "pp": "25",
-        "effect": "User recovers half the HP inflicted on opponent."
-    },
-    "51": {
-        "name": "Acid",
-        "type": "Poison",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": "30",
-        "effect": "May lower opponent's Special Defense."
-    },
-    "151": {
-        "name": "Acid Armor",
-        "type": "Poison",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "20",
-        "effect": "Sharply raises user's Defense."
-    },
-    "97": {
-        "name": "Agility",
-        "type": "Psychic",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "30",
-        "effect": "Sharply raises user's Speed."
-    },
-    "133": {
-        "name": "Amnesia",
-        "type": "Psychic",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "20",
-        "effect": "Sharply raises user's Special Defense."
-    },
-    "62": {
-        "name": "Aurora Beam",
-        "type": "Ice",
-        "cat": "",
-        "power": "65",
-        "acc": "100",
-        "pp": "20",
-        "effect": "May lower opponent's Attack."
-    },
-    "140": {
-        "name": "Barrage",
-        "type": "Normal",
-        "cat": "",
-        "power": "15",
-        "acc": "85",
-        "pp": "20",
-        "effect": "Hits 2-5 times in one turn."
-    },
-    "112": {
-        "name": "Barrier",
-        "type": "Psychic",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "20",
-        "effect": "Sharply raises user's Defense."
-    },
-    "117": {
-        "name": "Bide",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "10",
-        "effect": "User takes damage for two turns then strikes back double."
-    },
-    "20": {
-        "name": "Bind",
-        "type": "Normal",
-        "cat": "",
-        "power": "15",
-        "acc": "85",
-        "pp": "20",
-        "effect": "Traps opponent, damaging them for 4-5 turns."
-    },
-    "44": {
-        "name": "Bite",
-        "type": "Dark",
-        "cat": "",
-        "power": "60",
-        "acc": "100",
-        "pp": "25",
-        "effect": "May cause flinching."
-    },
-    "59": {
-        "name": "Blizzard",
-        "type": "Ice",
-        "cat": "",
-        "power": "110",
-        "acc": "70",
-        "pp": "5",
-        "effect": "May freeze opponent."
-    },
-    "34": {
-        "name": "Body Slam",
-        "type": "Normal",
-        "cat": "",
-        "power": "85",
-        "acc": "100",
-        "pp": "15",
-        "effect": "May paralyze opponent."
-    },
-    "125": {
-        "name": "Bone Club",
-        "type": "Ground",
-        "cat": "",
-        "power": "65",
-        "acc": "85",
-        "pp": "20",
-        "effect": "May cause flinching."
-    },
-    "155": {
-        "name": "Bonemerang",
-        "type": "Ground",
-        "cat": "",
-        "power": "50",
-        "acc": "90",
-        "pp": "10",
-        "effect": "Hits twice in one turn."
-    },
-    "145": {
-        "name": "Bubble",
-        "type": "Water",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": "30",
-        "effect": "May lower opponent's Speed."
-    },
-    "61": {
-        "name": "Bubblebeam",
-        "type": "Water",
-        "cat": "",
-        "power": "65",
-        "acc": "100",
-        "pp": "20",
-        "effect": "May lower opponent's Speed."
-    },
-    "128": {
-        "name": "Clamp",
-        "type": "Water",
-        "cat": "",
-        "power": "35",
-        "acc": "85",
-        "pp": "15",
-        "effect": "Traps opponent, damaging them for 4-5 turns."
-    },
-    "4": {
-        "name": "Comet Punch",
-        "type": "Normal",
-        "cat": "",
-        "power": "18",
-        "acc": "85",
-        "pp": "15",
-        "effect": "Hits 2-5 times in one turn."
-    },
-    "109": {
-        "name": "Confuse Ray",
-        "type": "Ghost",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": "10",
-        "effect": "Confuses opponent."
-    },
-    "93": {
-        "name": "Confusion",
-        "type": "Psychic",
-        "cat": "",
-        "power": "50",
-        "acc": "100",
-        "pp": "25",
-        "effect": "May confuse opponent."
-    },
-    "132": {
-        "name": "Constrict",
-        "type": "Normal",
-        "cat": "",
-        "power": "10",
-        "acc": "100",
-        "pp": "35",
-        "effect": "May lower opponent's Speed by one stage."
-    },
-    "160": {
-        "name": "Conversion",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "30",
-        "effect": "Changes user's type to that of its first move."
-    },
-    "68": {
-        "name": "Counter",
-        "type": "Fighting",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": "20",
-        "effect": "When hit by a Physical Attack, user strikes back with 2x power."
-    },
-    "152": {
-        "name": "Crabhammer",
-        "type": "Water",
-        "cat": "",
-        "power": "100",
-        "acc": "90",
-        "pp": "10",
-        "effect": "High critical hit ratio."
-    },
-    "15": {
-        "name": "Cut",
-        "type": "Normal",
-        "cat": "",
-        "power": "50",
-        "acc": "95",
-        "pp": "30",
-        "effect": ""
-    },
-    "111": {
-        "name": "Defense Curl",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "40",
-        "effect": "Raises user's Defense."
-    },
-    "91": {
-        "name": "Dig",
-        "type": "Ground",
-        "cat": "",
-        "power": "80",
-        "acc": "100",
-        "pp": "10",
-        "effect": "Digs underground on first turn, attacks on second. Can also escape from caves."
-    },
-    "50": {
-        "name": "Disable",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": "20",
-        "effect": "Opponent can't use its last attack for a few turns."
-    },
-    "146": {
-        "name": "Dizzy Punch",
-        "type": "Normal",
-        "cat": "",
-        "power": "70",
-        "acc": "100",
-        "pp": "10",
-        "effect": "May confuse opponent."
-    },
-    "24": {
-        "name": "Double Kick",
-        "type": "Fighting",
-        "cat": "",
-        "power": "30",
-        "acc": "100",
-        "pp": "30",
-        "effect": "Hits twice in one turn."
-    },
-    "3": {
-        "name": "Double Slap",
-        "type": "Normal",
-        "cat": "",
-        "power": "15",
-        "acc": "85",
-        "pp": "10",
-        "effect": "Hits 2-5 times in one turn."
-    },
-    "104": {
-        "name": "Double Team",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "15",
-        "effect": "Raises user's Evasiveness."
-    },
-    "38": {
-        "name": "Double Edge",
-        "type": "Normal",
-        "cat": "",
-        "power": "120",
-        "acc": "100",
-        "pp": "15",
-        "effect": "User receives recoil damage."
-    },
-    "82": {
-        "name": "Dragon Rage",
-        "type": "Dragon",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": "10",
-        "effect": "Always inflicts 40 HP."
-    },
-    "138": {
-        "name": "Dream Eater",
-        "type": "Psychic",
-        "cat": "",
-        "power": "100",
-        "acc": "100",
-        "pp": "15",
-        "effect": "User recovers half the HP inflicted on a sleeping opponent."
-    },
-    "65": {
-        "name": "Drill Peck",
-        "type": "Flying",
-        "cat": "",
-        "power": "80",
-        "acc": "100",
-        "pp": "20",
-        "effect": ""
-    },
-    "89": {
-        "name": "Earthquake",
-        "type": "Ground",
-        "cat": "",
-        "power": "100",
-        "acc": "100",
-        "pp": "10",
-        "effect": "Power is doubled if opponent is underground from using Dig."
-    },
-    "121": {
-        "name": "Egg Bomb",
-        "type": "Normal",
-        "cat": "",
-        "power": "100",
-        "acc": "75",
-        "pp": "10",
-        "effect": ""
-    },
-    "52": {
-        "name": "Ember",
-        "type": "Fire",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": "25",
-        "effect": "May burn opponent."
-    },
-    "153": {
-        "name": "Explosion",
-        "type": "Normal",
-        "cat": "",
-        "power": "250",
-        "acc": "100",
-        "pp": "5",
-        "effect": "User faints."
-    },
-    "126": {
-        "name": "Fire Blast",
-        "type": "Fire",
-        "cat": "",
-        "power": "110",
-        "acc": "85",
-        "pp": "5",
-        "effect": "May burn opponent."
-    },
-    "7": {
-        "name": "Fire Punch",
-        "type": "Fire",
-        "cat": "",
-        "power": "75",
-        "acc": "100",
-        "pp": "15",
-        "effect": "May burn opponent."
-    },
-    "83": {
-        "name": "Fire Spin",
-        "type": "Fire",
-        "cat": "",
-        "power": "35",
-        "acc": "85",
-        "pp": "15",
-        "effect": "Traps opponent, damaging them for 4-5 turns."
-    },
-    "90": {
-        "name": "Fissure",
-        "type": "Ground",
-        "cat": "",
-        "power": "-",
-        "acc": "30",
-        "pp": "5",
-        "effect": "One-Hit-KO, if it hits."
-    },
-    "53": {
-        "name": "Flamethrower",
-        "type": "Fire",
-        "cat": "",
-        "power": "90",
-        "acc": "100",
-        "pp": "15",
-        "effect": "May burn opponent."
-    },
-    "148": {
-        "name": "Flash",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": "20",
-        "effect": "Lowers opponent's Accuracy."
-    },
-    "19": {
-        "name": "Fly",
-        "type": "Flying",
-        "cat": "",
-        "power": "90",
-        "acc": "95",
-        "pp": "15",
-        "effect": "Flies up on first turn, attacks on second turn."
-    },
-    "116": {
-        "name": "Focus Energy",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "30",
-        "effect": "Increases critical hit ratio."
-    },
-    "31": {
-        "name": "Fury Attack",
-        "type": "Normal",
-        "cat": "",
-        "power": "15",
-        "acc": "85",
-        "pp": "20",
-        "effect": "Hits 2-5 times in one turn."
-    },
-    "154": {
-        "name": "Fury Swipes",
-        "type": "Normal",
-        "cat": "",
-        "power": "18",
-        "acc": "80",
-        "pp": "15",
-        "effect": "Hits 2-5 times in one turn."
-    },
-    "137": {
-        "name": "Glare",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": "30",
-        "effect": "Paralyzes opponent."
-    },
-    "45": {
-        "name": "Growl",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": "40",
-        "effect": "Lowers opponent's Attack."
-    },
-    "74": {
-        "name": "Growth",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "20",
-        "effect": "Raises user's Attack and Special Attack."
-    },
-    "12": {
-        "name": "Guillotine",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "30",
-        "pp": "5",
-        "effect": "One-Hit-KO, if it hits."
-    },
-    "16": {
-        "name": "Gust",
-        "type": "Flying",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": "35",
-        "effect": "Hits Pokemon using Fly/Bounce with double power."
-    },
-    "106": {
-        "name": "Harden",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "30",
-        "effect": "Raises user's Defense."
-    },
-    "114": {
-        "name": "Haze",
-        "type": "Ice",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "30",
-        "effect": "Resets all stat changes."
-    },
-    "29": {
-        "name": "Headbutt",
-        "type": "Normal",
-        "cat": "",
-        "power": "70",
-        "acc": "100",
-        "pp": "15",
-        "effect": "May cause flinching."
-    },
-    "136": {
-        "name": "Hi Jump Kick",
-        "type": "Fighting",
-        "cat": "",
-        "power": "130",
-        "acc": "90",
-        "pp": "10",
-        "effect": "If it misses, the user loses half their HP."
-    },
-    "30": {
-        "name": "Horn Attack",
-        "type": "Normal",
-        "cat": "",
-        "power": "65",
-        "acc": "100",
-        "pp": "25",
-        "effect": ""
-    },
-    "32": {
-        "name": "Horn Drill",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "30",
-        "pp": "5",
-        "effect": "One-Hit-KO, if it hits."
-    },
-    "56": {
-        "name": "Hydro Pump",
-        "type": "Water",
-        "cat": "",
-        "power": "110",
-        "acc": "80",
-        "pp": "5",
-        "effect": ""
-    },
-    "63": {
-        "name": "Hyper Beam",
-        "type": "Normal",
-        "cat": "",
-        "power": "150",
-        "acc": "90",
-        "pp": "5",
-        "effect": "User must recharge next turn."
-    },
-    "158": {
-        "name": "Hyper Fang",
-        "type": "Normal",
-        "cat": "",
-        "power": "80",
-        "acc": "90",
-        "pp": "15",
-        "effect": "May cause flinching."
-    },
-    "95": {
-        "name": "Hypnosis",
-        "type": "Psychic",
-        "cat": "",
-        "power": "-",
-        "acc": "60",
-        "pp": "20",
-        "effect": "Puts opponent to sleep."
-    },
-    "58": {
-        "name": "Ice Beam",
-        "type": "Ice",
-        "cat": "",
-        "power": "90",
-        "acc": "100",
-        "pp": "10",
-        "effect": "May freeze opponent."
-    },
-    "8": {
-        "name": "Ice Punch",
-        "type": "Ice",
-        "cat": "",
-        "power": "75",
-        "acc": "100",
-        "pp": "15",
-        "effect": "May freeze opponent."
-    },
-    "26": {
-        "name": "Jump Kick",
-        "type": "Fighting",
-        "cat": "",
-        "power": "100",
-        "acc": "95",
-        "pp": "10",
-        "effect": "If it misses, the user loses half their HP."
-    },
-    "2": {
-        "name": "Karate Chop",
-        "type": "Fighting",
-        "cat": "",
-        "power": "50",
-        "acc": "100",
-        "pp": "25",
-        "effect": "High critical hit ratio."
-    },
-    "134": {
-        "name": "Kinesis",
-        "type": "Psychic",
-        "cat": "",
-        "power": "-",
-        "acc": "80",
-        "pp": "15",
-        "effect": "Lowers opponent's Accuracy."
-    },
-    "141": {
-        "name": "Leech Life",
-        "type": "Bug",
-        "cat": "",
-        "power": "80",
-        "acc": "100",
-        "pp": "10",
-        "effect": "User recovers half the HP inflicted on opponent."
-    },
-    "73": {
-        "name": "Leech Seed",
-        "type": "Grass",
-        "cat": "",
-        "power": "-",
-        "acc": "90",
-        "pp": "10",
-        "effect": "Drains HP from opponent each turn."
-    },
-    "43": {
-        "name": "Leer",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": "30",
-        "effect": "Lowers opponent's Defense."
-    },
-    "122": {
-        "name": "Lick",
-        "type": "Ghost",
-        "cat": "",
-        "power": "30",
-        "acc": "100",
-        "pp": "30",
-        "effect": "May paralyze opponent."
-    },
-    "113": {
-        "name": "Light Screen",
-        "type": "Psychic",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "30",
-        "effect": "Halves damage from Special attacks for 5 turns."
-    },
-    "142": {
-        "name": "Lovely Kiss",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "75",
-        "pp": "10",
-        "effect": "Puts opponent to sleep."
-    },
-    "67": {
-        "name": "Low Kick",
-        "type": "Fighting",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": "20",
-        "effect": "The heavier the opponent, the stronger the attack."
-    },
-    "96": {
-        "name": "Meditate",
-        "type": "Psychic",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "40",
-        "effect": "Raises user's Attack."
-    },
-    "72": {
-        "name": "Mega Drain",
-        "type": "Grass",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": "15",
-        "effect": "User recovers half the HP inflicted on opponent."
-    },
-    "25": {
-        "name": "Mega Kick",
-        "type": "Normal",
-        "cat": "",
-        "power": "120",
-        "acc": "75",
-        "pp": "5",
-        "effect": ""
-    },
-    "5": {
-        "name": "Mega Punch",
-        "type": "Normal",
-        "cat": "",
-        "power": "80",
-        "acc": "85",
-        "pp": "20",
-        "effect": ""
-    },
-    "118": {
-        "name": "Metronome",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "10",
-        "effect": "User performs almost any move in the game at random."
-    },
-    "102": {
-        "name": "Mimic",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "10",
-        "effect": "Copies the opponent's last move."
-    },
-    "107": {
-        "name": "Minimize",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "10",
-        "effect": "Sharply raises user's Evasiveness."
-    },
-    "119": {
-        "name": "Mirror Move",
-        "type": "Flying",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "20",
-        "effect": "User performs the opponent's last move."
-    },
-    "54": {
-        "name": "Mist",
-        "type": "Ice",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "30",
-        "effect": "User's stats cannot be changed for a period of time."
-    },
-    "101": {
-        "name": "Night Shade",
-        "type": "Ghost",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": "15",
-        "effect": "Inflicts damage equal to user's level."
-    },
-    "6": {
-        "name": "Payday",
-        "type": "Normal",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": "20",
-        "effect": "A small amount of money is gained after the battle resolves."
-    },
-    "64": {
-        "name": "Peck",
-        "type": "Flying",
-        "cat": "",
-        "power": "35",
-        "acc": "100",
-        "pp": "35",
-        "effect": ""
-    },
-    "80": {
-        "name": "Petal Dance",
-        "type": "Grass",
-        "cat": "",
-        "power": "120",
-        "acc": "100",
-        "pp": "10",
-        "effect": "User attacks for 2-3 turns but then becomes confused."
-    },
-    "42": {
-        "name": "Pin Missile",
-        "type": "Bug",
-        "cat": "",
-        "power": "25",
-        "acc": "95",
-        "pp": "20",
-        "effect": "Hits 2-5 times in one turn."
-    },
-    "139": {
-        "name": "Poison Gas",
-        "type": "Poison",
-        "cat": "",
-        "power": "-",
-        "acc": "90",
-        "pp": "40",
-        "effect": "Poisons opponent."
-    },
-    "77": {
-        "name": "Poison Powder",
-        "type": "Poison",
-        "cat": "",
-        "power": "-",
-        "acc": "75",
-        "pp": "35",
-        "effect": "Poisons opponent."
-    },
-    "40": {
-        "name": "Poison Sting",
-        "type": "Poison",
-        "cat": "",
-        "power": "15",
-        "acc": "100",
-        "pp": "35",
-        "effect": "May poison the opponent."
-    },
-    "1": {
-        "name": "Pound",
-        "type": "Normal",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": "35",
-        "effect": ""
-    },
-    "60": {
-        "name": "Psybeam",
-        "type": "Psychic",
-        "cat": "",
-        "power": "65",
-        "acc": "100",
-        "pp": "20",
-        "effect": "May confuse opponent."
-    },
-    "94": {
-        "name": "Psychic",
-        "type": "Psychic",
-        "cat": "",
-        "power": "90",
-        "acc": "100",
-        "pp": "10",
-        "effect": "May lower opponent's Special Defense."
-    },
-    "149": {
-        "name": "Psywave",
-        "type": "Psychic",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": "15",
-        "effect": "Inflicts damage 50-150% of user's level."
-    },
-    "98": {
-        "name": "Quick Attack",
-        "type": "Normal",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": "30",
-        "effect": "User attacks first."
-    },
-    "99": {
-        "name": "Rage",
-        "type": "Normal",
-        "cat": "",
-        "power": "20",
-        "acc": "100",
-        "pp": "20",
-        "effect": "Raises user's Attack when hit."
-    },
-    "75": {
-        "name": "Razor Leaf",
-        "type": "Grass",
-        "cat": "",
-        "power": "55",
-        "acc": "95",
-        "pp": "25",
-        "effect": "High critical hit ratio."
-    },
-    "13": {
-        "name": "Razor Wind",
-        "type": "Normal",
-        "cat": "",
-        "power": "80",
-        "acc": "100",
-        "pp": "10",
-        "effect": "Charges on first turn, attacks on second. High critical hit ratio."
-    },
-    "105": {
-        "name": "Recover",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "10",
-        "effect": "User recovers half its max HP."
-    },
-    "115": {
-        "name": "Reflect",
-        "type": "Psychic",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "20",
-        "effect": "Halves damage from Physical attacks for 5 turns."
-    },
-    "156": {
-        "name": "Rest",
-        "type": "Psychic",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "10",
-        "effect": "User sleeps for 2 turns, but user is fully healed."
-    },
-    "46": {
-        "name": "Roar",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "20",
-        "effect": "In battles, the opponent switches. In the wild, the Pokemon runs."
-    },
-    "157": {
-        "name": "Rock Slide",
-        "type": "Rock",
-        "cat": "",
-        "power": "75",
-        "acc": "90",
-        "pp": "10",
-        "effect": "May cause flinching."
-    },
-    "88": {
-        "name": "Rock Throw",
-        "type": "Rock",
-        "cat": "",
-        "power": "50",
-        "acc": "90",
-        "pp": "15",
-        "effect": ""
-    },
-    "27": {
-        "name": "Rolling Kick",
-        "type": "Fighting",
-        "cat": "",
-        "power": "60",
-        "acc": "85",
-        "pp": "15",
-        "effect": "May cause flinching."
-    },
-    "28": {
-        "name": "Sand Attack",
-        "type": "Ground",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": "15",
-        "effect": "Lowers opponent's Accuracy."
-    },
-    "10": {
-        "name": "Scratch",
-        "type": "Normal",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": "35",
-        "effect": ""
-    },
-    "103": {
-        "name": "Screech",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "85",
-        "pp": "40",
-        "effect": "Sharply lowers opponent's Defense."
-    },
-    "69": {
-        "name": "Seismic Toss",
-        "type": "Fighting",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": "20",
-        "effect": "Inflicts damage equal to user's level."
-    },
-    "120": {
-        "name": "Selfdestruct",
-        "type": "Normal",
-        "cat": "",
-        "power": "200",
-        "acc": "100",
-        "pp": "5",
-        "effect": "User faints."
-    },
-    "159": {
-        "name": "Sharpen",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "30",
-        "effect": "Raises user's Attack."
-    },
-    "47": {
-        "name": "Sing",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "55",
-        "pp": "15",
-        "effect": "Puts opponent to sleep."
-    },
-    "130": {
-        "name": "Skull Bash",
-        "type": "Normal",
-        "cat": "",
-        "power": "130",
-        "acc": "100",
-        "pp": "10",
-        "effect": "Raises Defense on first turn, attacks on second."
-    },
-    "143": {
-        "name": "Sky Attack",
-        "type": "Flying",
-        "cat": "",
-        "power": "140",
-        "acc": "90",
-        "pp": "5",
-        "effect": "Charges on first turn, attacks on second. May cause flinching. High critical hit ratio."
-    },
-    "21": {
-        "name": "Slam",
-        "type": "Normal",
-        "cat": "",
-        "power": "80",
-        "acc": "75",
-        "pp": "20",
-        "effect": ""
-    },
-    "163": {
-        "name": "Slash",
-        "type": "Normal",
-        "cat": "",
-        "power": "70",
-        "acc": "100",
-        "pp": "20",
-        "effect": "High critical hit ratio."
-    },
-    "79": {
-        "name": "Sleep Powder",
-        "type": "Grass",
-        "cat": "",
-        "power": "-",
-        "acc": "75",
-        "pp": "15",
-        "effect": "Puts opponent to sleep."
-    },
-    "124": {
-        "name": "Sludge",
-        "type": "Poison",
-        "cat": "",
-        "power": "65",
-        "acc": "100",
-        "pp": "20",
-        "effect": "May poison opponent."
-    },
-    "123": {
-        "name": "Smog",
-        "type": "Poison",
-        "cat": "",
-        "power": "30",
-        "acc": "70",
-        "pp": "20",
-        "effect": "May poison opponent."
-    },
-    "108": {
-        "name": "Smokescreen",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": "20",
-        "effect": "Lowers opponent's Accuracy."
-    },
-    "135": {
-        "name": "Softboiled",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "10",
-        "effect": "User recovers half its max HP."
-    },
-    "76": {
-        "name": "Solar Beam",
-        "type": "Grass",
-        "cat": "",
-        "power": "120",
-        "acc": "100",
-        "pp": "10",
-        "effect": "Charges on first turn, attacks on second."
-    },
-    "49": {
-        "name": "Sonicboom",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "90",
-        "pp": "20",
-        "effect": "Always inflicts 20 HP."
-    },
-    "131": {
-        "name": "Spike Cannon",
-        "type": "Normal",
-        "cat": "",
-        "power": "20",
-        "acc": "100",
-        "pp": "15",
-        "effect": "Hits 2-5 times in one turn."
-    },
-    "150": {
-        "name": "Splash",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "40",
-        "effect": "Doesn't do ANYTHING."
-    },
-    "147": {
-        "name": "Spore",
-        "type": "Grass",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": "15",
-        "effect": "Puts opponent to sleep."
-    },
-    "23": {
-        "name": "Stomp",
-        "type": "Normal",
-        "cat": "",
-        "power": "65",
-        "acc": "100",
-        "pp": "20",
-        "effect": "May cause flinching."
-    },
-    "70": {
-        "name": "Strength",
-        "type": "Normal",
-        "cat": "",
-        "power": "80",
-        "acc": "100",
-        "pp": "15",
-        "effect": ""
-    },
-    "81": {
-        "name": "String Shot",
-        "type": "Bug",
-        "cat": "",
-        "power": "-",
-        "acc": "95",
-        "pp": "40",
-        "effect": "Sharply lowers opponent's Speed."
-    },
-    "165": {
-        "name": "Struggle",
-        "type": "Normal",
-        "cat": "",
-        "power": "50",
-        "acc": "-",
-        "pp": "-",
-        "effect": "Only usable when all PP are gone. Hurts the user."
-    },
-    "78": {
-        "name": "Stun Spore",
-        "type": "Grass",
-        "cat": "",
-        "power": "-",
-        "acc": "75",
-        "pp": "30",
-        "effect": "Paralyzes opponent."
-    },
-    "66": {
-        "name": "Submission",
-        "type": "Fighting",
-        "cat": "",
-        "power": "80",
-        "acc": "80",
-        "pp": "20",
-        "effect": "User receives recoil damage."
-    },
-    "164": {
-        "name": "Substitute",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "10",
-        "effect": "Uses HP to creates a decoy that takes hits."
-    },
-    "162": {
-        "name": "Super Fang",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "90",
-        "pp": "10",
-        "effect": "Always takes off half of the opponent's HP."
-    },
-    "48": {
-        "name": "Supersonic",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "55",
-        "pp": "20",
-        "effect": "Confuses opponent."
-    },
-    "57": {
-        "name": "Surf",
-        "type": "Water",
-        "cat": "",
-        "power": "90",
-        "acc": "100",
-        "pp": "15",
-        "effect": "Hits all adjacent Pokemon."
-    },
-    "129": {
-        "name": "Swift",
-        "type": "Normal",
-        "cat": "",
-        "power": "60",
-        "acc": "-",
-        "pp": "20",
-        "effect": "Ignores Accuracy and Evasiveness."
-    },
-    "14": {
-        "name": "Swords Dance",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "20",
-        "effect": "Sharply raises user's Attack."
-    },
-    "33": {
-        "name": "Tackle",
-        "type": "Normal",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": "35",
-        "effect": ""
-    },
-    "39": {
-        "name": "Tail Whip",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "100",
-        "pp": "30",
-        "effect": "Lowers opponent's Defense."
-    },
-    "36": {
-        "name": "Take Down",
-        "type": "Normal",
-        "cat": "",
-        "power": "90",
-        "acc": "85",
-        "pp": "20",
-        "effect": "User receives recoil damage."
-    },
-    "100": {
-        "name": "Teleport",
-        "type": "Psychic",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "20",
-        "effect": "Allows user to flee wild battles; also warps player to last PokeCenter."
-    },
-    "37": {
-        "name": "Thrash",
-        "type": "Normal",
-        "cat": "",
-        "power": "120",
-        "acc": "100",
-        "pp": "10",
-        "effect": "User attacks for 2-3 turns but then becomes confused."
-    },
-    "87": {
-        "name": "Thunder",
-        "type": "Electric",
-        "cat": "",
-        "power": "110",
-        "acc": "70",
-        "pp": "10",
-        "effect": "May paralyze opponent."
-    },
-    "9": {
-        "name": "Thunder Punch",
-        "type": "Electric",
-        "cat": "",
-        "power": "75",
-        "acc": "100",
-        "pp": "15",
-        "effect": "May paralyze opponent."
-    },
-    "84": {
-        "name": "Thundershock",
-        "type": "Electric",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": "30",
-        "effect": "May paralyze opponent."
-    },
-    "86": {
-        "name": "Thunderwave",
-        "type": "Electric",
-        "cat": "",
-        "power": "-",
-        "acc": "90",
-        "pp": "20",
-        "effect": "Paralyzes opponent."
-    },
-    "85": {
-        "name": "Thunderbolt",
-        "type": "Electric",
-        "cat": "",
-        "power": "90",
-        "acc": "100",
-        "pp": "15",
-        "effect": "May paralyze opponent."
-    },
-    "92": {
-        "name": "Toxic",
-        "type": "Poison",
-        "cat": "",
-        "power": "-",
-        "acc": "90",
-        "pp": "10",
-        "effect": "Badly poisons opponent."
-    },
-    "144": {
-        "name": "Transform",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "10",
-        "effect": "User takes on the form and attacks of the opponent."
-    },
-    "161": {
-        "name": "Tri Attack",
-        "type": "Normal",
-        "cat": "",
-        "power": "80",
-        "acc": "100",
-        "pp": "10",
-        "effect": "May paralyze, burn or freeze opponent."
-    },
-    "41": {
-        "name": "Twineedle",
-        "type": "Bug",
-        "cat": "",
-        "power": "25",
-        "acc": "100",
-        "pp": "20",
-        "effect": "Hits twice in one turn. May poison opponent."
-    },
-    "22": {
-        "name": "Vine Whip",
-        "type": "Grass",
-        "cat": "",
-        "power": "45",
-        "acc": "100",
-        "pp": "25",
-        "effect": ""
-    },
-    "11": {
-        "name": "Vice Grip",
-        "type": "Normal",
-        "cat": "",
-        "power": "55",
-        "acc": "100",
-        "pp": "30",
-        "effect": ""
-    },
-    "55": {
-        "name": "Water Gun",
-        "type": "Water",
-        "cat": "",
-        "power": "40",
-        "acc": "100",
-        "pp": "25",
-        "effect": ""
-    },
-    "127": {
-        "name": "Waterfall",
-        "type": "Water",
-        "cat": "",
-        "power": "80",
-        "acc": "100",
-        "pp": "15",
-        "effect": "May cause flinching."
-    },
-    "18": {
-        "name": "Whirlwind",
-        "type": "Normal",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "20",
-        "effect": "In battles, the opponent switches. In the wild, the Pokemon runs."
-    },
-    "17": {
-        "name": "Wing Attack",
-        "type": "Flying",
-        "cat": "",
-        "power": "60",
-        "acc": "100",
-        "pp": "35",
-        "effect": ""
-    },
-    "110": {
-        "name": "Withdraw",
-        "type": "Water",
-        "cat": "",
-        "power": "-",
-        "acc": "-",
-        "pp": "40",
-        "effect": "Raises user's Defense."
-    },
-    "35": {
-        "name": "Wrap",
-        "type": "Normal",
-        "cat": "",
-        "power": "15",
-        "acc": "90",
-        "pp": "20",
-        "effect": "Traps opponent, damaging them for 4-5 turns."
-    }
+  "0": {
+    "name": "-",
+    "type": "-",
+    "cat": "None",
+    "power": "-",
+    "acc": "-",
+    "pp": 0,
+    "effect": ""
+  },
+  "177": {
+    "name": "Aeroblast",
+    "type": "Flying",
+    "cat": "Physical",
+    "power": "100",
+    "acc": "95",
+    "pp": 5,
+    "effect": "High critical hit ratio."
+  },
+  "246": {
+    "name": "Ancientpower",
+    "type": "Rock",
+    "cat": "Physical",
+    "power": "60",
+    "acc": "100",
+    "pp": 5,
+    "effect": "May raise all user's stats at once."
+  },
+  "213": {
+    "name": "Attract",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": 15,
+    "effect": "If opponent is the opposite gender, it's less likely to attack."
+  },
+  "226": {
+    "name": "Baton Pass",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 40,
+    "effect": "User switches out and gives stat changes to the incoming Pokemon."
+  },
+  "251": {
+    "name": "Beat Up",
+    "type": "Dark",
+    "cat": "Special",
+    "power": "-",
+    "acc": "100",
+    "pp": 10,
+    "effect": "Each Pokemon in user's party attacks."
+  },
+  "187": {
+    "name": "Belly Drum",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 10,
+    "effect": "User loses 50% of its max HP, but Attack raises to maximum."
+  },
+  "198": {
+    "name": "Bone Rush",
+    "type": "Ground",
+    "cat": "Physical",
+    "power": "25",
+    "acc": "90",
+    "pp": 10,
+    "effect": "Hits 2-5 times in one turn."
+  },
+  "204": {
+    "name": "Charm",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": 20,
+    "effect": "Sharply lowers opponent's Attack."
+  },
+  "176": {
+    "name": "Conversion 2",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 30,
+    "effect": "User changes type to become resistant to opponent's last move."
+  },
+  "178": {
+    "name": "Cotton Spore",
+    "type": "Grass",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": 40,
+    "effect": "Sharply lowers opponent's Speed."
+  },
+  "238": {
+    "name": "Cross Chop",
+    "type": "Fighting",
+    "cat": "Physical",
+    "power": "100",
+    "acc": "80",
+    "pp": 5,
+    "effect": "High critical hit ratio."
+  },
+  "242": {
+    "name": "Crunch",
+    "type": "Dark",
+    "cat": "Special",
+    "power": "80",
+    "acc": "100",
+    "pp": 15,
+    "effect": "May lower opponent's Defense."
+  },
+  "174": {
+    "name": "Curse",
+    "type": "Ghost",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 10,
+    "effect": "Ghosts lose 50% of max HP and curse the opponent; Non-Ghosts raise Attack, Defense and lower Speed."
+  },
+  "194": {
+    "name": "Destiny Bond",
+    "type": "Ghost",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 5,
+    "effect": "If the user faints, the opponent also faints."
+  },
+  "197": {
+    "name": "Detect",
+    "type": "Fighting",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 5,
+    "effect": "Protects the user, but may fail if used consecutively."
+  },
+  "225": {
+    "name": "DragonBreath",
+    "type": "Dragon",
+    "cat": "Special",
+    "power": "60",
+    "acc": "100",
+    "pp": 20,
+    "effect": "May paralyze opponent."
+  },
+  "223": {
+    "name": "DynamicPunch",
+    "type": "Fighting",
+    "cat": "Physical",
+    "power": "100",
+    "acc": "50",
+    "pp": 5,
+    "effect": "Confuses opponent."
+  },
+  "227": {
+    "name": "Encore",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": 5,
+    "effect": "Forces opponent to keep using its last move for 3 turns."
+  },
+  "203": {
+    "name": "Endure",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 10,
+    "effect": "Always left with at least 1 HP, but may fail if used consecutively."
+  },
+  "245": {
+    "name": "ExtremeSpeed",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "80",
+    "acc": "100",
+    "pp": 5,
+    "effect": "User attacks first."
+  },
+  "206": {
+    "name": "False Swipe",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "40",
+    "acc": "100",
+    "pp": 40,
+    "effect": "Always leaves opponent with at least 1 HP."
+  },
+  "185": {
+    "name": "Faint Attack",
+    "type": "Dark",
+    "cat": "Special",
+    "power": "60",
+    "acc": "-",
+    "pp": 20,
+    "effect": "Ignores Accuracy and Evasiveness."
+  },
+  "175": {
+    "name": "Flail",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "-",
+    "acc": "100",
+    "pp": 15,
+    "effect": "The lower the user's HP, the higher the power."
+  },
+  "172": {
+    "name": "Flame Wheel",
+    "type": "Fire",
+    "cat": "Special",
+    "power": "60",
+    "acc": "100",
+    "pp": 25,
+    "effect": "May burn opponent."
+  },
+  "193": {
+    "name": "Foresight",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 40,
+    "effect": "Resets opponent's Evasiveness, Normal-type and Fighting-type attacks can now hit Ghosts, and Ghost-type attacks hit Normal."
+  },
+  "218": {
+    "name": "Frustration",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "<FR",
+    "acc": "100",
+    "pp": 20,
+    "effect": "Power decreases with higher Friendship."
+  },
+  "210": {
+    "name": "Fury Cutter",
+    "type": "Bug",
+    "cat": "Physical",
+    "power": "40",
+    "acc": "95",
+    "pp": 20,
+    "effect": "Power increases each turn."
+  },
+  "248": {
+    "name": "Future Sight",
+    "type": "Psychic",
+    "cat": "Special",
+    "power": "120",
+    "acc": "100",
+    "pp": 10,
+    "effect": "Damage occurs 2 turns later."
+  },
+  "202": {
+    "name": "Giga Drain",
+    "type": "Grass",
+    "cat": "Special",
+    "power": "75",
+    "acc": "100",
+    "pp": 10,
+    "effect": "User recovers half the HP inflicted on opponent."
+  },
+  "215": {
+    "name": "Heal Bell",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 5,
+    "effect": "Heals the user's party's status conditions."
+  },
+  "237": {
+    "name": "Hidden Power",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "60",
+    "acc": "100",
+    "pp": 15,
+    "effect": "Type and power depends on user's IVs."
+  },
+  "196": {
+    "name": "Icy Wind",
+    "type": "Ice",
+    "cat": "Special",
+    "power": "55",
+    "acc": "95",
+    "pp": 15,
+    "effect": "Lowers opponent's Speed."
+  },
+  "231": {
+    "name": "Iron Tail",
+    "type": "Steel",
+    "cat": "Physical",
+    "power": "100",
+    "acc": "75",
+    "pp": 15,
+    "effect": "May lower opponent's Defense."
+  },
+  "199": {
+    "name": "Lock On",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 5,
+    "effect": "User's next attack is guaranteed to hit."
+  },
+  "183": {
+    "name": "Mach Punch",
+    "type": "Fighting",
+    "cat": "Physical",
+    "power": "40",
+    "acc": "100",
+    "pp": 30,
+    "effect": "User attacks first."
+  },
+  "222": {
+    "name": "Magnitude",
+    "type": "Ground",
+    "cat": "Physical",
+    "power": "-",
+    "acc": "100",
+    "pp": 30,
+    "effect": "Hits with random power."
+  },
+  "212": {
+    "name": "Mean Look",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 5,
+    "effect": "Opponent cannot flee or switch."
+  },
+  "224": {
+    "name": "Mega Horn",
+    "type": "Bug",
+    "cat": "Physical",
+    "power": "120",
+    "acc": "85",
+    "pp": 10,
+    "effect": ""
+  },
+  "232": {
+    "name": "Metal Claw",
+    "type": "Steel",
+    "cat": "Physical",
+    "power": "50",
+    "acc": "95",
+    "pp": 35,
+    "effect": "May raise user's Attack."
+  },
+  "208": {
+    "name": "Milk Drink",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 10,
+    "effect": "User recovers half its max HP."
+  },
+  "170": {
+    "name": "Mind Reader",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 5,
+    "effect": "User's next attack is guaranteed to hit."
+  },
+  "243": {
+    "name": "Mirror Coat",
+    "type": "Psychic",
+    "cat": "Special",
+    "power": "-",
+    "acc": "100",
+    "pp": 20,
+    "effect": "When hit by a Special Attack, user strikes back with 2x power."
+  },
+  "236": {
+    "name": "Moonlight",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 5,
+    "effect": "User recovers HP. Amount varies with the weather."
+  },
+  "234": {
+    "name": "Morning Sun",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 5,
+    "effect": "User recovers HP. Amount varies with the weather."
+  },
+  "189": {
+    "name": "Mud-Slap",
+    "type": "Ground",
+    "cat": "Physical",
+    "power": "20",
+    "acc": "100",
+    "pp": 10,
+    "effect": "Lowers opponent's Accuracy."
+  },
+  "171": {
+    "name": "Nightmare",
+    "type": "Ghost",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": 15,
+    "effect": "The sleeping opponent loses 25% of its max HP each turn."
+  },
+  "190": {
+    "name": "Octazooka",
+    "type": "Water",
+    "cat": "Special",
+    "power": "65",
+    "acc": "85",
+    "pp": 10,
+    "effect": "May lower opponent's Accuracy."
+  },
+  "200": {
+    "name": "Outrage",
+    "type": "Dragon",
+    "cat": "Special",
+    "power": "120",
+    "acc": "100",
+    "pp": 10,
+    "effect": "User attacks for 2-3 turns but then becomes confused."
+  },
+  "220": {
+    "name": "Pain Split",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 20,
+    "effect": "The user's and opponent's HP becomes the average of both."
+  },
+  "195": {
+    "name": "Perish Song",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 5,
+    "effect": "Any Pokemon in play when this attack is used faints in 3 turns."
+  },
+  "181": {
+    "name": "Powder Snow",
+    "type": "Ice",
+    "cat": "Special",
+    "power": "40",
+    "acc": "100",
+    "pp": 25,
+    "effect": "May freeze opponent."
+  },
+  "217": {
+    "name": "Present",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "-",
+    "acc": "90",
+    "pp": 15,
+    "effect": "Either deals damage or heals."
+  },
+  "182": {
+    "name": "Protect",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 10,
+    "effect": "Protects the user, but may fail if used consecutively."
+  },
+  "244": {
+    "name": "Psych Up",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 10,
+    "effect": "Copies the opponent's stat changes."
+  },
+  "228": {
+    "name": "Pursuit",
+    "type": "Dark",
+    "cat": "Special",
+    "power": "40",
+    "acc": "100",
+    "pp": 20,
+    "effect": "Double power if the opponent is switching out."
+  },
+  "240": {
+    "name": "Rain Dance",
+    "type": "Water",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 5,
+    "effect": "Makes it rain for 5 turns."
+  },
+  "229": {
+    "name": "Rapid Spin",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "50",
+    "acc": "100",
+    "pp": 40,
+    "effect": "Raises user's Speed and removes entry hazards and trap move effects."
+  },
+  "216": {
+    "name": "Return",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": ">FR",
+    "acc": "100",
+    "pp": 20,
+    "effect": "Power increases with higher Friendship."
+  },
+  "179": {
+    "name": "Reversal",
+    "type": "Fighting",
+    "cat": "Physical",
+    "power": "-",
+    "acc": "100",
+    "pp": 15,
+    "effect": "The lower the user's HP, the higher the power."
+  },
+  "249": {
+    "name": "Rock Smash",
+    "type": "Fighting",
+    "cat": "Physical",
+    "power": "20",
+    "acc": "100",
+    "pp": 15,
+    "effect": "May lower opponent's Defense."
+  },
+  "205": {
+    "name": "Rollout",
+    "type": "Rock",
+    "cat": "Physical",
+    "power": "30",
+    "acc": "90",
+    "pp": 20,
+    "effect": "Doubles in power each turn for 5 turns."
+  },
+  "221": {
+    "name": "Sacred Fire",
+    "type": "Fire",
+    "cat": "Special",
+    "power": "100",
+    "acc": "95",
+    "pp": 5,
+    "effect": "May burn opponent."
+  },
+  "219": {
+    "name": "Safeguard",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 25,
+    "effect": "The user's party is protected from status conditions."
+  },
+  "201": {
+    "name": "Sandstorm",
+    "type": "Rock",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 10,
+    "effect": "Creates a sandstorm for 5 turns."
+  },
+  "184": {
+    "name": "Scary Face",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": 10,
+    "effect": "Sharply lowers opponent's Speed."
+  },
+  "247": {
+    "name": "Shadow Ball",
+    "type": "Ghost",
+    "cat": "Physical",
+    "power": "80",
+    "acc": "100",
+    "pp": 15,
+    "effect": "May lower opponent's Special Defense."
+  },
+  "166": {
+    "name": "Sketch",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 1,
+    "effect": "Permanently copies the opponent's last move."
+  },
+  "214": {
+    "name": "Sleep Talk",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 10,
+    "effect": "User performs one of its own moves while sleeping."
+  },
+  "188": {
+    "name": "Sludge Bomb",
+    "type": "Poison",
+    "cat": "Physical",
+    "power": "90",
+    "acc": "100",
+    "pp": 10,
+    "effect": "May poison opponent."
+  },
+  "173": {
+    "name": "Snore",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "50",
+    "acc": "100",
+    "pp": 15,
+    "effect": "Can only be used if asleep. May cause flinching."
+  },
+  "209": {
+    "name": "Spark",
+    "type": "Electric",
+    "cat": "Special",
+    "power": "65",
+    "acc": "100",
+    "pp": 20,
+    "effect": "May paralyze opponent."
+  },
+  "169": {
+    "name": "Spider Web",
+    "type": "Bug",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 10,
+    "effect": "Opponent cannot escape/switch."
+  },
+  "191": {
+    "name": "Spikes",
+    "type": "Ground",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 20,
+    "effect": "Hurts opponents when they switch into battle."
+  },
+  "180": {
+    "name": "Spite",
+    "type": "Ghost",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": 10,
+    "effect": "The opponent's last move loses 2-5 PP."
+  },
+  "211": {
+    "name": "Steel Wing",
+    "type": "Steel",
+    "cat": "Physical",
+    "power": "70",
+    "acc": "90",
+    "pp": 25,
+    "effect": "May raise user's Defense."
+  },
+  "241": {
+    "name": "Sunny Day",
+    "type": "Fire",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 5,
+    "effect": "Makes it sunny for 5 turns."
+  },
+  "207": {
+    "name": "Swagger",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "85",
+    "pp": 15,
+    "effect": "Confuses opponent, but sharply raises its Attack."
+  },
+  "186": {
+    "name": "Sweet Kiss",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "75",
+    "pp": 10,
+    "effect": "Confuses opponent."
+  },
+  "230": {
+    "name": "Sweet Scent",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": 20,
+    "effect": "Lowers opponent's Evasiveness."
+  },
+  "235": {
+    "name": "Synthesis",
+    "type": "Grass",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": 5,
+    "effect": "User recovers HP. Amount varies with the weather."
+  },
+  "168": {
+    "name": "Thief",
+    "type": "Dark",
+    "cat": "Special",
+    "power": "60",
+    "acc": "100",
+    "pp": 25,
+    "effect": "Also steals opponent's held item."
+  },
+  "167": {
+    "name": "Triple Kick",
+    "type": "Fighting",
+    "cat": "Physical",
+    "power": "10",
+    "acc": "90",
+    "pp": 10,
+    "effect": "Hits thrice in one turn at increasing power."
+  },
+  "239": {
+    "name": "Twister",
+    "type": "Dragon",
+    "cat": "Special",
+    "power": "40",
+    "acc": "100",
+    "pp": 20,
+    "effect": "May cause flinching. Hits Pokemon using Fly/Bounce with double power."
+  },
+  "233": {
+    "name": "Vital Throw",
+    "type": "Fighting",
+    "cat": "Physical",
+    "power": "70",
+    "acc": "-",
+    "pp": 10,
+    "effect": "User attacks last, but ignores Accuracy and Evasiveness."
+  },
+  "250": {
+    "name": "Whirlpool",
+    "type": "Water",
+    "cat": "Special",
+    "power": "35",
+    "acc": "85",
+    "pp": 15,
+    "effect": "Traps opponent, damaging them for 4-5 turns."
+  },
+  "192": {
+    "name": "Zap Cannon",
+    "type": "Electric",
+    "cat": "Special",
+    "power": "120",
+    "acc": "50",
+    "pp": 5,
+    "effect": "Paralyzes opponent."
+  },
+  "71": {
+    "name": "Absorb",
+    "type": "Grass",
+    "cat": "Special",
+    "power": "20",
+    "acc": "100",
+    "pp": "25",
+    "effect": "User recovers half the HP inflicted on opponent."
+  },
+  "51": {
+    "name": "Acid",
+    "type": "Poison",
+    "cat": "Physical",
+    "power": "40",
+    "acc": "100",
+    "pp": "30",
+    "effect": "May lower opponent's Special Defense."
+  },
+  "151": {
+    "name": "Acid Armor",
+    "type": "Poison",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "20",
+    "effect": "Sharply raises user's Defense."
+  },
+  "97": {
+    "name": "Agility",
+    "type": "Psychic",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "30",
+    "effect": "Sharply raises user's Speed."
+  },
+  "133": {
+    "name": "Amnesia",
+    "type": "Psychic",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "20",
+    "effect": "Sharply raises user's Special Defense."
+  },
+  "62": {
+    "name": "Aurora Beam",
+    "type": "Ice",
+    "cat": "Special",
+    "power": "65",
+    "acc": "100",
+    "pp": "20",
+    "effect": "May lower opponent's Attack."
+  },
+  "140": {
+    "name": "Barrage",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "15",
+    "acc": "85",
+    "pp": "20",
+    "effect": "Hits 2-5 times in one turn."
+  },
+  "112": {
+    "name": "Barrier",
+    "type": "Psychic",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "20",
+    "effect": "Sharply raises user's Defense."
+  },
+  "117": {
+    "name": "Bide",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "-",
+    "acc": "-",
+    "pp": "10",
+    "effect": "User takes damage for two turns then strikes back double."
+  },
+  "20": {
+    "name": "Bind",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "15",
+    "acc": "85",
+    "pp": "20",
+    "effect": "Traps opponent, damaging them for 4-5 turns."
+  },
+  "44": {
+    "name": "Bite",
+    "type": "Dark",
+    "cat": "Special",
+    "power": "60",
+    "acc": "100",
+    "pp": "25",
+    "effect": "May cause flinching."
+  },
+  "59": {
+    "name": "Blizzard",
+    "type": "Ice",
+    "cat": "Special",
+    "power": "110",
+    "acc": "70",
+    "pp": "5",
+    "effect": "May freeze opponent."
+  },
+  "34": {
+    "name": "Body Slam",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "85",
+    "acc": "100",
+    "pp": "15",
+    "effect": "May paralyze opponent."
+  },
+  "125": {
+    "name": "Bone Club",
+    "type": "Ground",
+    "cat": "Physical",
+    "power": "65",
+    "acc": "85",
+    "pp": "20",
+    "effect": "May cause flinching."
+  },
+  "155": {
+    "name": "Bonemerang",
+    "type": "Ground",
+    "cat": "Physical",
+    "power": "50",
+    "acc": "90",
+    "pp": "10",
+    "effect": "Hits twice in one turn."
+  },
+  "145": {
+    "name": "Bubble",
+    "type": "Water",
+    "cat": "Special",
+    "power": "40",
+    "acc": "100",
+    "pp": "30",
+    "effect": "May lower opponent's Speed."
+  },
+  "61": {
+    "name": "Bubblebeam",
+    "type": "Water",
+    "cat": "Special",
+    "power": "65",
+    "acc": "100",
+    "pp": "20",
+    "effect": "May lower opponent's Speed."
+  },
+  "128": {
+    "name": "Clamp",
+    "type": "Water",
+    "cat": "Special",
+    "power": "35",
+    "acc": "85",
+    "pp": "15",
+    "effect": "Traps opponent, damaging them for 4-5 turns."
+  },
+  "4": {
+    "name": "Comet Punch",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "18",
+    "acc": "85",
+    "pp": "15",
+    "effect": "Hits 2-5 times in one turn."
+  },
+  "109": {
+    "name": "Confuse Ray",
+    "type": "Ghost",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": "10",
+    "effect": "Confuses opponent."
+  },
+  "93": {
+    "name": "Confusion",
+    "type": "Psychic",
+    "cat": "Special",
+    "power": "50",
+    "acc": "100",
+    "pp": "25",
+    "effect": "May confuse opponent."
+  },
+  "132": {
+    "name": "Constrict",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "10",
+    "acc": "100",
+    "pp": "35",
+    "effect": "May lower opponent's Speed by one stage."
+  },
+  "160": {
+    "name": "Conversion",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "30",
+    "effect": "Changes user's type to that of its first move."
+  },
+  "68": {
+    "name": "Counter",
+    "type": "Fighting",
+    "cat": "Physical",
+    "power": "-",
+    "acc": "100",
+    "pp": "20",
+    "effect": "When hit by a Physical Attack, user strikes back with 2x power."
+  },
+  "152": {
+    "name": "Crabhammer",
+    "type": "Water",
+    "cat": "Special",
+    "power": "100",
+    "acc": "90",
+    "pp": "10",
+    "effect": "High critical hit ratio."
+  },
+  "15": {
+    "name": "Cut",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "50",
+    "acc": "95",
+    "pp": "30",
+    "effect": ""
+  },
+  "111": {
+    "name": "Defense Curl",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "40",
+    "effect": "Raises user's Defense."
+  },
+  "91": {
+    "name": "Dig",
+    "type": "Ground",
+    "cat": "Physical",
+    "power": "80",
+    "acc": "100",
+    "pp": "10",
+    "effect": "Digs underground on first turn, attacks on second. Can also escape from caves."
+  },
+  "50": {
+    "name": "Disable",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": "20",
+    "effect": "Opponent can't use its last attack for a few turns."
+  },
+  "146": {
+    "name": "Dizzy Punch",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "70",
+    "acc": "100",
+    "pp": "10",
+    "effect": "May confuse opponent."
+  },
+  "24": {
+    "name": "Double Kick",
+    "type": "Fighting",
+    "cat": "Physical",
+    "power": "30",
+    "acc": "100",
+    "pp": "30",
+    "effect": "Hits twice in one turn."
+  },
+  "3": {
+    "name": "Double Slap",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "15",
+    "acc": "85",
+    "pp": "10",
+    "effect": "Hits 2-5 times in one turn."
+  },
+  "104": {
+    "name": "Double Team",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "15",
+    "effect": "Raises user's Evasiveness."
+  },
+  "38": {
+    "name": "Double Edge",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "120",
+    "acc": "100",
+    "pp": "15",
+    "effect": "User receives recoil damage."
+  },
+  "82": {
+    "name": "Dragon Rage",
+    "type": "Dragon",
+    "cat": "Special",
+    "power": "-",
+    "acc": "100",
+    "pp": "10",
+    "effect": "Always inflicts 40 HP."
+  },
+  "138": {
+    "name": "Dream Eater",
+    "type": "Psychic",
+    "cat": "Special",
+    "power": "100",
+    "acc": "100",
+    "pp": "15",
+    "effect": "User recovers half the HP inflicted on a sleeping opponent."
+  },
+  "65": {
+    "name": "Drill Peck",
+    "type": "Flying",
+    "cat": "Physical",
+    "power": "80",
+    "acc": "100",
+    "pp": "20",
+    "effect": ""
+  },
+  "89": {
+    "name": "Earthquake",
+    "type": "Ground",
+    "cat": "Physical",
+    "power": "100",
+    "acc": "100",
+    "pp": "10",
+    "effect": "Power is doubled if opponent is underground from using Dig."
+  },
+  "121": {
+    "name": "Egg Bomb",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "100",
+    "acc": "75",
+    "pp": "10",
+    "effect": ""
+  },
+  "52": {
+    "name": "Ember",
+    "type": "Fire",
+    "cat": "Special",
+    "power": "40",
+    "acc": "100",
+    "pp": "25",
+    "effect": "May burn opponent."
+  },
+  "153": {
+    "name": "Explosion",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "250",
+    "acc": "100",
+    "pp": "5",
+    "effect": "User faints."
+  },
+  "126": {
+    "name": "Fire Blast",
+    "type": "Fire",
+    "cat": "Special",
+    "power": "110",
+    "acc": "85",
+    "pp": "5",
+    "effect": "May burn opponent."
+  },
+  "7": {
+    "name": "Fire Punch",
+    "type": "Fire",
+    "cat": "Special",
+    "power": "75",
+    "acc": "100",
+    "pp": "15",
+    "effect": "May burn opponent."
+  },
+  "83": {
+    "name": "Fire Spin",
+    "type": "Fire",
+    "cat": "Special",
+    "power": "35",
+    "acc": "85",
+    "pp": "15",
+    "effect": "Traps opponent, damaging them for 4-5 turns."
+  },
+  "90": {
+    "name": "Fissure",
+    "type": "Ground",
+    "cat": "Physical",
+    "power": "-",
+    "acc": "30",
+    "pp": "5",
+    "effect": "One-Hit-KO, if it hits."
+  },
+  "53": {
+    "name": "Flamethrower",
+    "type": "Fire",
+    "cat": "Special",
+    "power": "90",
+    "acc": "100",
+    "pp": "15",
+    "effect": "May burn opponent."
+  },
+  "148": {
+    "name": "Flash",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": "20",
+    "effect": "Lowers opponent's Accuracy."
+  },
+  "19": {
+    "name": "Fly",
+    "type": "Flying",
+    "cat": "Physical",
+    "power": "90",
+    "acc": "95",
+    "pp": "15",
+    "effect": "Flies up on first turn, attacks on second turn."
+  },
+  "116": {
+    "name": "Focus Energy",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "30",
+    "effect": "Increases critical hit ratio."
+  },
+  "31": {
+    "name": "Fury Attack",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "15",
+    "acc": "85",
+    "pp": "20",
+    "effect": "Hits 2-5 times in one turn."
+  },
+  "154": {
+    "name": "Fury Swipes",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "18",
+    "acc": "80",
+    "pp": "15",
+    "effect": "Hits 2-5 times in one turn."
+  },
+  "137": {
+    "name": "Glare",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": "30",
+    "effect": "Paralyzes opponent."
+  },
+  "45": {
+    "name": "Growl",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": "40",
+    "effect": "Lowers opponent's Attack."
+  },
+  "74": {
+    "name": "Growth",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "20",
+    "effect": "Raises user's Attack and Special Attack."
+  },
+  "12": {
+    "name": "Guillotine",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "-",
+    "acc": "30",
+    "pp": "5",
+    "effect": "One-Hit-KO, if it hits."
+  },
+  "16": {
+    "name": "Gust",
+    "type": "Flying",
+    "cat": "Physical",
+    "power": "40",
+    "acc": "100",
+    "pp": "35",
+    "effect": "Hits Pokemon using Fly/Bounce with double power."
+  },
+  "106": {
+    "name": "Harden",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "30",
+    "effect": "Raises user's Defense."
+  },
+  "114": {
+    "name": "Haze",
+    "type": "Ice",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "30",
+    "effect": "Resets all stat changes."
+  },
+  "29": {
+    "name": "Headbutt",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "70",
+    "acc": "100",
+    "pp": "15",
+    "effect": "May cause flinching."
+  },
+  "136": {
+    "name": "Hi Jump Kick",
+    "type": "Fighting",
+    "cat": "Physical",
+    "power": "130",
+    "acc": "90",
+    "pp": "10",
+    "effect": "If it misses, the user loses half their HP."
+  },
+  "30": {
+    "name": "Horn Attack",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "65",
+    "acc": "100",
+    "pp": "25",
+    "effect": ""
+  },
+  "32": {
+    "name": "Horn Drill",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "-",
+    "acc": "30",
+    "pp": "5",
+    "effect": "One-Hit-KO, if it hits."
+  },
+  "56": {
+    "name": "Hydro Pump",
+    "type": "Water",
+    "cat": "Special",
+    "power": "110",
+    "acc": "80",
+    "pp": "5",
+    "effect": ""
+  },
+  "63": {
+    "name": "Hyper Beam",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "150",
+    "acc": "90",
+    "pp": "5",
+    "effect": "User must recharge next turn."
+  },
+  "158": {
+    "name": "Hyper Fang",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "80",
+    "acc": "90",
+    "pp": "15",
+    "effect": "May cause flinching."
+  },
+  "95": {
+    "name": "Hypnosis",
+    "type": "Psychic",
+    "cat": "Status",
+    "power": "-",
+    "acc": "60",
+    "pp": "20",
+    "effect": "Puts opponent to sleep."
+  },
+  "58": {
+    "name": "Ice Beam",
+    "type": "Ice",
+    "cat": "Special",
+    "power": "90",
+    "acc": "100",
+    "pp": "10",
+    "effect": "May freeze opponent."
+  },
+  "8": {
+    "name": "Ice Punch",
+    "type": "Ice",
+    "cat": "Special",
+    "power": "75",
+    "acc": "100",
+    "pp": "15",
+    "effect": "May freeze opponent."
+  },
+  "26": {
+    "name": "Jump Kick",
+    "type": "Fighting",
+    "cat": "Physical",
+    "power": "100",
+    "acc": "95",
+    "pp": "10",
+    "effect": "If it misses, the user loses half their HP."
+  },
+  "2": {
+    "name": "Karate Chop",
+    "type": "Fighting",
+    "cat": "Physical",
+    "power": "50",
+    "acc": "100",
+    "pp": "25",
+    "effect": "High critical hit ratio."
+  },
+  "134": {
+    "name": "Kinesis",
+    "type": "Psychic",
+    "cat": "Status",
+    "power": "-",
+    "acc": "80",
+    "pp": "15",
+    "effect": "Lowers opponent's Accuracy."
+  },
+  "141": {
+    "name": "Leech Life",
+    "type": "Bug",
+    "cat": "Physical",
+    "power": "80",
+    "acc": "100",
+    "pp": "10",
+    "effect": "User recovers half the HP inflicted on opponent."
+  },
+  "73": {
+    "name": "Leech Seed",
+    "type": "Grass",
+    "cat": "Status",
+    "power": "-",
+    "acc": "90",
+    "pp": "10",
+    "effect": "Drains HP from opponent each turn."
+  },
+  "43": {
+    "name": "Leer",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": "30",
+    "effect": "Lowers opponent's Defense."
+  },
+  "122": {
+    "name": "Lick",
+    "type": "Ghost",
+    "cat": "Physical",
+    "power": "30",
+    "acc": "100",
+    "pp": "30",
+    "effect": "May paralyze opponent."
+  },
+  "113": {
+    "name": "Light Screen",
+    "type": "Psychic",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "30",
+    "effect": "Halves damage from Special attacks for 5 turns."
+  },
+  "142": {
+    "name": "Lovely Kiss",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "75",
+    "pp": "10",
+    "effect": "Puts opponent to sleep."
+  },
+  "67": {
+    "name": "Low Kick",
+    "type": "Fighting",
+    "cat": "Physical",
+    "power": ">Wt",
+    "acc": "100",
+    "pp": "20",
+    "effect": "The heavier the opponent, the stronger the attack."
+  },
+  "96": {
+    "name": "Meditate",
+    "type": "Psychic",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "40",
+    "effect": "Raises user's Attack."
+  },
+  "72": {
+    "name": "Mega Drain",
+    "type": "Grass",
+    "cat": "Special",
+    "power": "40",
+    "acc": "100",
+    "pp": "15",
+    "effect": "User recovers half the HP inflicted on opponent."
+  },
+  "25": {
+    "name": "Mega Kick",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "120",
+    "acc": "75",
+    "pp": "5",
+    "effect": ""
+  },
+  "5": {
+    "name": "Mega Punch",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "80",
+    "acc": "85",
+    "pp": "20",
+    "effect": ""
+  },
+  "118": {
+    "name": "Metronome",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "10",
+    "effect": "User performs almost any move in the game at random."
+  },
+  "102": {
+    "name": "Mimic",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "10",
+    "effect": "Copies the opponent's last move."
+  },
+  "107": {
+    "name": "Minimize",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "10",
+    "effect": "Sharply raises user's Evasiveness."
+  },
+  "119": {
+    "name": "Mirror Move",
+    "type": "Flying",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "20",
+    "effect": "User performs the opponent's last move."
+  },
+  "54": {
+    "name": "Mist",
+    "type": "Ice",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "30",
+    "effect": "User's stats cannot be changed for a period of time."
+  },
+  "101": {
+    "name": "Night Shade",
+    "type": "Ghost",
+    "cat": "Physical",
+    "power": "-",
+    "acc": "100",
+    "pp": "15",
+    "effect": "Inflicts damage equal to user's level."
+  },
+  "6": {
+    "name": "Payday",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "40",
+    "acc": "100",
+    "pp": "20",
+    "effect": "A small amount of money is gained after the battle resolves."
+  },
+  "64": {
+    "name": "Peck",
+    "type": "Flying",
+    "cat": "Physical",
+    "power": "35",
+    "acc": "100",
+    "pp": "35",
+    "effect": ""
+  },
+  "80": {
+    "name": "Petal Dance",
+    "type": "Grass",
+    "cat": "Special",
+    "power": "120",
+    "acc": "100",
+    "pp": "10",
+    "effect": "User attacks for 2-3 turns but then becomes confused."
+  },
+  "42": {
+    "name": "Pin Missile",
+    "type": "Bug",
+    "cat": "Physical",
+    "power": "25",
+    "acc": "95",
+    "pp": "20",
+    "effect": "Hits 2-5 times in one turn."
+  },
+  "139": {
+    "name": "Poison Gas",
+    "type": "Poison",
+    "cat": "Status",
+    "power": "-",
+    "acc": "90",
+    "pp": "40",
+    "effect": "Poisons opponent."
+  },
+  "77": {
+    "name": "Poison Powder",
+    "type": "Poison",
+    "cat": "Status",
+    "power": "-",
+    "acc": "75",
+    "pp": "35",
+    "effect": "Poisons opponent."
+  },
+  "40": {
+    "name": "Poison Sting",
+    "type": "Poison",
+    "cat": "Physical",
+    "power": "15",
+    "acc": "100",
+    "pp": "35",
+    "effect": "May poison the opponent."
+  },
+  "1": {
+    "name": "Pound",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "40",
+    "acc": "100",
+    "pp": "35",
+    "effect": ""
+  },
+  "60": {
+    "name": "Psybeam",
+    "type": "Psychic",
+    "cat": "Special",
+    "power": "65",
+    "acc": "100",
+    "pp": "20",
+    "effect": "May confuse opponent."
+  },
+  "94": {
+    "name": "Psychic",
+    "type": "Psychic",
+    "cat": "Special",
+    "power": "90",
+    "acc": "100",
+    "pp": "10",
+    "effect": "May lower opponent's Special Defense."
+  },
+  "149": {
+    "name": "Psywave",
+    "type": "Psychic",
+    "cat": "Special",
+    "power": "-",
+    "acc": "100",
+    "pp": "15",
+    "effect": "Inflicts damage 50-150% of user's level."
+  },
+  "98": {
+    "name": "Quick Attack",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "40",
+    "acc": "100",
+    "pp": "30",
+    "effect": "User attacks first."
+  },
+  "99": {
+    "name": "Rage",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "20",
+    "acc": "100",
+    "pp": "20",
+    "effect": "Raises user's Attack when hit."
+  },
+  "75": {
+    "name": "Razor Leaf",
+    "type": "Grass",
+    "cat": "Special",
+    "power": "55",
+    "acc": "95",
+    "pp": "25",
+    "effect": "High critical hit ratio."
+  },
+  "13": {
+    "name": "Razor Wind",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "80",
+    "acc": "100",
+    "pp": "10",
+    "effect": "Charges on first turn, attacks on second. High critical hit ratio."
+  },
+  "105": {
+    "name": "Recover",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "10",
+    "effect": "User recovers half its max HP."
+  },
+  "115": {
+    "name": "Reflect",
+    "type": "Psychic",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "20",
+    "effect": "Halves damage from Physical attacks for 5 turns."
+  },
+  "156": {
+    "name": "Rest",
+    "type": "Psychic",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "10",
+    "effect": "User sleeps for 2 turns, but user is fully healed."
+  },
+  "46": {
+    "name": "Roar",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "20",
+    "effect": "In battles, the opponent switches. In the wild, the Pokemon runs."
+  },
+  "157": {
+    "name": "Rock Slide",
+    "type": "Rock",
+    "cat": "Physical",
+    "power": "75",
+    "acc": "90",
+    "pp": "10",
+    "effect": "May cause flinching."
+  },
+  "88": {
+    "name": "Rock Throw",
+    "type": "Rock",
+    "cat": "Physical",
+    "power": "50",
+    "acc": "90",
+    "pp": "15",
+    "effect": ""
+  },
+  "27": {
+    "name": "Rolling Kick",
+    "type": "Fighting",
+    "cat": "Physical",
+    "power": "60",
+    "acc": "85",
+    "pp": "15",
+    "effect": "May cause flinching."
+  },
+  "28": {
+    "name": "Sand Attack",
+    "type": "Ground",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": "15",
+    "effect": "Lowers opponent's Accuracy."
+  },
+  "10": {
+    "name": "Scratch",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "40",
+    "acc": "100",
+    "pp": "35",
+    "effect": ""
+  },
+  "103": {
+    "name": "Screech",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "85",
+    "pp": "40",
+    "effect": "Sharply lowers opponent's Defense."
+  },
+  "69": {
+    "name": "Seismic Toss",
+    "type": "Fighting",
+    "cat": "Physical",
+    "power": "-",
+    "acc": "100",
+    "pp": "20",
+    "effect": "Inflicts damage equal to user's level."
+  },
+  "120": {
+    "name": "Selfdestruct",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "200",
+    "acc": "100",
+    "pp": "5",
+    "effect": "User faints."
+  },
+  "159": {
+    "name": "Sharpen",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "30",
+    "effect": "Raises user's Attack."
+  },
+  "47": {
+    "name": "Sing",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "55",
+    "pp": "15",
+    "effect": "Puts opponent to sleep."
+  },
+  "130": {
+    "name": "Skull Bash",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "130",
+    "acc": "100",
+    "pp": "10",
+    "effect": "Raises Defense on first turn, attacks on second."
+  },
+  "143": {
+    "name": "Sky Attack",
+    "type": "Flying",
+    "cat": "Physical",
+    "power": "140",
+    "acc": "90",
+    "pp": "5",
+    "effect": "Charges on first turn, attacks on second. May cause flinching. High critical hit ratio."
+  },
+  "21": {
+    "name": "Slam",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "80",
+    "acc": "75",
+    "pp": "20",
+    "effect": ""
+  },
+  "163": {
+    "name": "Slash",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "70",
+    "acc": "100",
+    "pp": "20",
+    "effect": "High critical hit ratio."
+  },
+  "79": {
+    "name": "Sleep Powder",
+    "type": "Grass",
+    "cat": "Status",
+    "power": "-",
+    "acc": "75",
+    "pp": "15",
+    "effect": "Puts opponent to sleep."
+  },
+  "124": {
+    "name": "Sludge",
+    "type": "Poison",
+    "cat": "Physical",
+    "power": "65",
+    "acc": "100",
+    "pp": "20",
+    "effect": "May poison opponent."
+  },
+  "123": {
+    "name": "Smog",
+    "type": "Poison",
+    "cat": "Physical",
+    "power": "30",
+    "acc": "70",
+    "pp": "20",
+    "effect": "May poison opponent."
+  },
+  "108": {
+    "name": "Smokescreen",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": "20",
+    "effect": "Lowers opponent's Accuracy."
+  },
+  "135": {
+    "name": "Softboiled",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "10",
+    "effect": "User recovers half its max HP."
+  },
+  "76": {
+    "name": "Solar Beam",
+    "type": "Grass",
+    "cat": "Special",
+    "power": "120",
+    "acc": "100",
+    "pp": "10",
+    "effect": "Charges on first turn, attacks on second."
+  },
+  "49": {
+    "name": "Sonicboom",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "-",
+    "acc": "90",
+    "pp": "20",
+    "effect": "Always inflicts 20 HP."
+  },
+  "131": {
+    "name": "Spike Cannon",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "20",
+    "acc": "100",
+    "pp": "15",
+    "effect": "Hits 2-5 times in one turn."
+  },
+  "150": {
+    "name": "Splash",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "40",
+    "effect": "Doesn't do ANYTHING."
+  },
+  "147": {
+    "name": "Spore",
+    "type": "Grass",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": "15",
+    "effect": "Puts opponent to sleep."
+  },
+  "23": {
+    "name": "Stomp",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "65",
+    "acc": "100",
+    "pp": "20",
+    "effect": "May cause flinching."
+  },
+  "70": {
+    "name": "Strength",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "80",
+    "acc": "100",
+    "pp": "15",
+    "effect": ""
+  },
+  "81": {
+    "name": "String Shot",
+    "type": "Bug",
+    "cat": "Status",
+    "power": "-",
+    "acc": "95",
+    "pp": "40",
+    "effect": "Sharply lowers opponent's Speed."
+  },
+  "165": {
+    "name": "Struggle",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "50",
+    "acc": "-",
+    "pp": "-",
+    "effect": "Only usable when all PP are gone. Hurts the user."
+  },
+  "78": {
+    "name": "Stun Spore",
+    "type": "Grass",
+    "cat": "Status",
+    "power": "-",
+    "acc": "75",
+    "pp": "30",
+    "effect": "Paralyzes opponent."
+  },
+  "66": {
+    "name": "Submission",
+    "type": "Fighting",
+    "cat": "Physical",
+    "power": "80",
+    "acc": "80",
+    "pp": "20",
+    "effect": "User receives recoil damage."
+  },
+  "164": {
+    "name": "Substitute",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "10",
+    "effect": "Uses HP to creates a decoy that takes hits."
+  },
+  "162": {
+    "name": "Super Fang",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "-",
+    "acc": "90",
+    "pp": "10",
+    "effect": "Always takes off half of the opponent's HP."
+  },
+  "48": {
+    "name": "Supersonic",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "55",
+    "pp": "20",
+    "effect": "Confuses opponent."
+  },
+  "57": {
+    "name": "Surf",
+    "type": "Water",
+    "cat": "Special",
+    "power": "90",
+    "acc": "100",
+    "pp": "15",
+    "effect": "Hits all adjacent Pokemon."
+  },
+  "129": {
+    "name": "Swift",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "60",
+    "acc": "-",
+    "pp": "20",
+    "effect": "Ignores Accuracy and Evasiveness."
+  },
+  "14": {
+    "name": "Swords Dance",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "20",
+    "effect": "Sharply raises user's Attack."
+  },
+  "33": {
+    "name": "Tackle",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "40",
+    "acc": "100",
+    "pp": "35",
+    "effect": ""
+  },
+  "39": {
+    "name": "Tail Whip",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "100",
+    "pp": "30",
+    "effect": "Lowers opponent's Defense."
+  },
+  "36": {
+    "name": "Take Down",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "90",
+    "acc": "85",
+    "pp": "20",
+    "effect": "User receives recoil damage."
+  },
+  "100": {
+    "name": "Teleport",
+    "type": "Psychic",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "20",
+    "effect": "Allows user to flee wild battles; also warps player to last PokeCenter."
+  },
+  "37": {
+    "name": "Thrash",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "120",
+    "acc": "100",
+    "pp": "10",
+    "effect": "User attacks for 2-3 turns but then becomes confused."
+  },
+  "87": {
+    "name": "Thunder",
+    "type": "Electric",
+    "cat": "Special",
+    "power": "110",
+    "acc": "70",
+    "pp": "10",
+    "effect": "May paralyze opponent."
+  },
+  "9": {
+    "name": "Thunder Punch",
+    "type": "Electric",
+    "cat": "Special",
+    "power": "75",
+    "acc": "100",
+    "pp": "15",
+    "effect": "May paralyze opponent."
+  },
+  "84": {
+    "name": "Thundershock",
+    "type": "Electric",
+    "cat": "Special",
+    "power": "40",
+    "acc": "100",
+    "pp": "30",
+    "effect": "May paralyze opponent."
+  },
+  "86": {
+    "name": "Thunderwave",
+    "type": "Electric",
+    "cat": "Status",
+    "power": "-",
+    "acc": "90",
+    "pp": "20",
+    "effect": "Paralyzes opponent."
+  },
+  "85": {
+    "name": "Thunderbolt",
+    "type": "Electric",
+    "cat": "Special",
+    "power": "90",
+    "acc": "100",
+    "pp": "15",
+    "effect": "May paralyze opponent."
+  },
+  "92": {
+    "name": "Toxic",
+    "type": "Poison",
+    "cat": "Status",
+    "power": "-",
+    "acc": "90",
+    "pp": "10",
+    "effect": "Badly poisons opponent."
+  },
+  "144": {
+    "name": "Transform",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "10",
+    "effect": "User takes on the form and attacks of the opponent."
+  },
+  "161": {
+    "name": "Tri Attack",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "80",
+    "acc": "100",
+    "pp": "10",
+    "effect": "May paralyze, burn or freeze opponent."
+  },
+  "41": {
+    "name": "Twineedle",
+    "type": "Bug",
+    "cat": "Physical",
+    "power": "25",
+    "acc": "100",
+    "pp": "20",
+    "effect": "Hits twice in one turn. May poison opponent."
+  },
+  "22": {
+    "name": "Vine Whip",
+    "type": "Grass",
+    "cat": "Special",
+    "power": "45",
+    "acc": "100",
+    "pp": "25",
+    "effect": ""
+  },
+  "11": {
+    "name": "Vice Grip",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "55",
+    "acc": "100",
+    "pp": "30",
+    "effect": ""
+  },
+  "55": {
+    "name": "Water Gun",
+    "type": "Water",
+    "cat": "Special",
+    "power": "40",
+    "acc": "100",
+    "pp": "25",
+    "effect": ""
+  },
+  "127": {
+    "name": "Waterfall",
+    "type": "Water",
+    "cat": "Special",
+    "power": "80",
+    "acc": "100",
+    "pp": "15",
+    "effect": "May cause flinching."
+  },
+  "18": {
+    "name": "Whirlwind",
+    "type": "Normal",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "20",
+    "effect": "In battles, the opponent switches. In the wild, the Pokemon runs."
+  },
+  "17": {
+    "name": "Wing Attack",
+    "type": "Flying",
+    "cat": "Physical",
+    "power": "60",
+    "acc": "100",
+    "pp": "35",
+    "effect": ""
+  },
+  "110": {
+    "name": "Withdraw",
+    "type": "Water",
+    "cat": "Status",
+    "power": "-",
+    "acc": "-",
+    "pp": "40",
+    "effect": "Raises user's Defense."
+  },
+  "35": {
+    "name": "Wrap",
+    "type": "Normal",
+    "cat": "Physical",
+    "power": "15",
+    "acc": "90",
+    "pp": "20",
+    "effect": "Traps opponent, damaging them for 4-5 turns."
+  }
 }

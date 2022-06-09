@@ -1,4386 +1,5000 @@
 {
-    "0": {
-         "evolves_at": "",
-        "learns_at": [
-        ],
-        "dex": 0,
-        "name": "",
-        "tile_x": 0,
-        "tile_y": 0,
-        "bst": 0,
-        "type": ""
-    },
-    "1": {
-        "evolves_at": "16",
-        "learns_at": [
-            7,
-            10,
-            15,
-            15,
-            20,
-            25,
-            32,
-            39,
-            46
-        ],
-        "dex": 1,
-        "name": "Bulbasaur",
-        "tile_x": 0,
-        "tile_y": 0,
-        "bst": 318,
-        "type": "Grass Poison"
-    },
-    "2": {
-        "evolves_at": "32",
-        "learns_at": [
-            4,
-            7,
-            10,
-            15,
-            15,
-            22,
-            29,
-            38,
-            47,
-            56
-        ],
-        "dex": 2,
-        "name": "Ivysaur",
-        "tile_x": 1,
-        "tile_y": 0,
-        "bst": 405,
-        "type": "Grass Poison"
-    },
-    "3": {
-        "evolves_at": "None",
-        "learns_at": [
-            4,
-            7,
-            10,
-            15,
-            15,
-            22,
-            29,
-            38,
-            53,
-            65
-        ],
-        "dex": 3,
-        "name": "Venusaur",
-        "tile_x": 2,
-        "tile_y": 0,
-        "bst": 525,
-        "type": "Grass Poison"
-    },
-    "4": {
-        "evolves_at": "16",
-        "learns_at": [
-            7,
-            13,
-            19,
-            25,
-            31,
-            37,
-            43,
-            49
-        ],
-        "dex": 4,
-        "name": "Charmander",
-        "tile_x": 3,
-        "tile_y": 0,
-        "bst": 309,
-        "type": "Fire"
-    },
-    "5": {
-        "evolves_at": "36",
-        "learns_at": [
-            7,
-            13,
-            20,
-            27,
-            34,
-            41,
-            48,
-            55
-        ],
-        "dex": 5,
-        "name": "Charmeleon",
-        "tile_x": 4,
-        "tile_y": 0,
-        "bst": 405,
-        "type": "Fire"
-    },
-    "6": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            13,
-            20,
-            27,
-            34,
-            36,
-            44,
-            54,
-            64
-        ],
-        "dex": 6,
-        "name": "Charizard",
-        "tile_x": 5,
-        "tile_y": 0,
-        "bst": 534,
-        "type": "Fire Flying"
-    },
-    "7": {
-        "evolves_at": "16",
-        "learns_at": [
-            4,
-            7,
-            10,
-            13,
-            18,
-            23,
-            28,
-            33,
-            40,
-            47
-        ],
-        "dex": 7,
-        "name": "Squirtle",
-        "tile_x": 6,
-        "tile_y": 0,
-        "bst": 314,
-        "type": "Water"
-    },
-    "8": {
-        "evolves_at": "36",
-        "learns_at": [
-            4,
-            7,
-            10,
-            13,
-            19,
-            25,
-            31,
-            37,
-            45,
-            53
-        ],
-        "dex": 8,
-        "name": "Wartortle",
-        "tile_x": 7,
-        "tile_y": 0,
-        "bst": 405,
-        "type": "Water"
-    },
-    "9": {
-        "evolves_at": "None",
-        "learns_at": [
-            4,
-            7,
-            10,
-            13,
-            19,
-            25,
-            31,
-            42,
-            55,
-            68
-        ],
-        "dex": 9,
-        "name": "Blastoise",
-        "tile_x": 8,
-        "tile_y": 0,
-        "bst": 530,
-        "type": "Water"
-    },
-    "10": {
-        "evolves_at": "7",
-        "learns_at": [],
-        "dex": 10,
-        "name": "Caterpie",
-        "tile_x": 9,
-        "tile_y": 0,
-        "bst": 195,
-        "type": "Bug"
-    },
-    "11": {
-        "evolves_at": "10",
-        "learns_at": [
-            7
-        ],
-        "dex": 11,
-        "name": "Metapod",
-        "tile_x": 10,
-        "tile_y": 0,
-        "bst": 205,
-        "type": "Bug"
-    },
-    "12": {
-        "evolves_at": "None",
-        "learns_at": [
-            10,
-            13,
-            14,
-            15,
-            18,
-            23,
-            28,
-            34,
-            40
-        ],
-        "dex": 12,
-        "name": "Butterfree",
-        "tile_x": 11,
-        "tile_y": 0,
-        "bst": 395,
-        "type": "Bug Flying"
-    },
-    "13": {
-        "evolves_at": "7",
-        "learns_at": [],
-        "dex": 13,
-        "name": "Weedle",
-        "tile_x": 12,
-        "tile_y": 0,
-        "bst": 195,
-        "type": "Bug Poison"
-    },
-    "14": {
-        "evolves_at": "10",
-        "learns_at": [
-            7
-        ],
-        "dex": 14,
-        "name": "Kakuna",
-        "tile_x": 13,
-        "tile_y": 0,
-        "bst": 205,
-        "type": "Bug Poison"
-    },
-    "15": {
-        "evolves_at": "None",
-        "learns_at": [
-            10,
-            15,
-            20,
-            25,
-            30,
-            35,
-            40
-        ],
-        "dex": 15,
-        "name": "Beedrill",
-        "tile_x": 14,
-        "tile_y": 0,
-        "bst": 395,
-        "type": "Bug Poison"
-    },
-    "16": {
-        "evolves_at": "18",
-        "learns_at": [
-            5,
-            9,
-            15,
-            21,
-            29,
-            37,
-            47
-        ],
-        "dex": 16,
-        "name": "Pidgey",
-        "tile_x": 15,
-        "tile_y": 0,
-        "bst": 251,
-        "type": "Normal Flying"
-    },
-    "17": {
-        "evolves_at": "36",
-        "learns_at": [
-            5,
-            9,
-            15,
-            23,
-            33,
-            43,
-            55
-        ],
-        "dex": 17,
-        "name": "Pidgeotto",
-        "tile_x": 16,
-        "tile_y": 0,
-        "bst": 349,
-        "type": "Normal Flying"
-    },
-    "18": {
-        "evolves_at": "None",
-        "learns_at": [
-            5,
-            9,
-            15,
-            23,
-            33,
-            46,
-            61
-        ],
-        "dex": 18,
-        "name": "Pidgeot",
-        "tile_x": 17,
-        "tile_y": 0,
-        "bst": 479,
-        "type": "Normal Flying"
-    },
-    "19": {
-        "evolves_at": "20",
-        "learns_at": [
-            7,
-            13,
-            20,
-            27,
-            34
-        ],
-        "dex": 19,
-        "name": "Rattata",
-        "tile_x": 18,
-        "tile_y": 0,
-        "bst": 253,
-        "type": "Normal"
-    },
-    "20": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            13,
-            20,
-            30,
-            40
-        ],
-        "dex": 20,
-        "name": "Raticate",
-        "tile_x": 19,
-        "tile_y": 0,
-        "bst": 413,
-        "type": "Normal"
-    },
-    "21": {
-        "evolves_at": "20",
-        "learns_at": [
-            7,
-            13,
-            25,
-            31,
-            37,
-            43
-        ],
-        "dex": 21,
-        "name": "Spearow",
-        "tile_x": 0,
-        "tile_y": 1,
-        "bst": 262,
-        "type": "Normal Flying"
-    },
-    "22": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            13,
-            26,
-            32,
-            40,
-            47
-        ],
-        "dex": 22,
-        "name": "Fearow",
-        "tile_x": 1,
-        "tile_y": 1,
-        "bst": 442,
-        "type": "Normal Flying"
-    },
-    "23": {
-        "evolves_at": "22",
-        "learns_at": [
-            9,
-            15,
-            23,
-            29,
-            37,
-            43
-        ],
-        "dex": 23,
-        "name": "Ekans",
-        "tile_x": 2,
-        "tile_y": 1,
-        "bst": 288,
-        "type": "Poison"
-    },
-    "24": {
-        "evolves_at": "None",
-        "learns_at": [
-            9,
-            15,
-            25,
-            33,
-            43,
-            51
-        ],
-        "dex": 24,
-        "name": "Arbok",
-        "tile_x": 3,
-        "tile_y": 1,
-        "bst": 448,
-        "type": "Poison"
-    },
-    "25": {
-        "evolves_at": "Stone",
-        "learns_at": [
-            6,
-            8,
-            11,
-            15,
-            20,
-            26,
-            33,
-            41,
-            50
-        ],
-        "dex": 25,
-        "name": "Pikachu",
-        "tile_x": 4,
-        "tile_y": 1,
-        "bst": 320,
-        "type": "Electric"
-    },
-    "26": {
-        "evolves_at": "None",
-        "learns_at": [],
-        "dex": 26,
-        "name": "Raichu",
-        "tile_x": 5,
-        "tile_y": 1,
-        "bst": 485,
-        "type": "Electric"
-    },
-    "27": {
-        "evolves_at": "22",
-        "learns_at": [
-            6,
-            11,
-            17,
-            23,
-            30,
-            37,
-            45
-        ],
-        "dex": 27,
-        "name": "Sandshrew",
-        "tile_x": 6,
-        "tile_y": 1,
-        "bst": 300,
-        "type": "Ground"
-    },
-    "28": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            11,
-            17,
-            24,
-            33,
-            42,
-            52
-        ],
-        "dex": 28,
-        "name": "Sandslash",
-        "tile_x": 7,
-        "tile_y": 1,
-        "bst": 450,
-        "type": "Ground"
-    },
-    "29": {
-        "evolves_at": "16",
-        "learns_at": [
-            8,
-            12,
-            17,
-            23,
-            30,
-            38
-        ],
-        "dex": 29,
-        "name": "Nidoran#",
-        "tile_x": 8,
-        "tile_y": 1,
-        "bst": 275,
-        "type": "Poison"
-    },
-    "30": {
-        "evolves_at": "Stone",
-        "learns_at": [
-            8,
-            12,
-            19,
-            27,
-            36,
-            46
-        ],
-        "dex": 30,
-        "name": "Nidorina",
-        "tile_x": 9,
-        "tile_y": 1,
-        "bst": 365,
-        "type": "Poison"
-    },
-    "31": {
-        "evolves_at": "None",
-        "learns_at": [
-            23
-        ],
-        "dex": 31,
-        "name": "Nidoqueen",
-        "tile_x": 10,
-        "tile_y": 1,
-        "bst": 505,
-        "type": "Poison Ground"
-    },
-    "32": {
-        "evolves_at": "16",
-        "learns_at": [
-            8,
-            12,
-            17,
-            23,
-            30,
-            38
-        ],
-        "dex": 32,
-        "name": "Nidoran@",
-        "tile_x": 11,
-        "tile_y": 1,
-        "bst": 273,
-        "type": "Poison"
-    },
-    "33": {
-        "evolves_at": "Stone",
-        "learns_at": [
-            8,
-            12,
-            19,
-            27,
-            36,
-            46
-        ],
-        "dex": 33,
-        "name": "Nidorino",
-        "tile_x": 12,
-        "tile_y": 1,
-        "bst": 365,
-        "type": "Poison"
-    },
-    "34": {
-        "evolves_at": "None",
-        "learns_at": [
-            23
-        ],
-        "dex": 34,
-        "name": "Nidoking",
-        "tile_x": 13,
-        "tile_y": 1,
-        "bst": 505,
-        "type": "Poison Ground"
-    },
-    "35": {
-        "evolves_at": "Stone",
-        "learns_at": [
-            8,
-            13,
-            19,
-            26,
-            34,
-            43,
-            53
-        ],
-        "dex": 35,
-        "name": "Clefairy",
-        "tile_x": 14,
-        "tile_y": 1,
-        "bst": 323,
-        "type": "Normal"
-    },
-    "36": {
-        "evolves_at": "None",
-        "learns_at": [],
-        "dex": 36,
-        "name": "Clefable",
-        "tile_x": 15,
-        "tile_y": 1,
-        "bst": 483,
-        "type": "Normal"
-    },
-    "37": {
-        "evolves_at": "Stone",
-        "learns_at": [
-            7,
-            13,
-            19,
-            25,
-            31,
-            37
-        ],
-        "dex": 37,
-        "name": "Vulpix",
-        "tile_x": 16,
-        "tile_y": 1,
-        "bst": 299,
-        "type": "Fire"
-    },
-    "38": {
-        "evolves_at": "None",
-        "learns_at": [
-            43
-        ],
-        "dex": 38,
-        "name": "Ninetales",
-        "tile_x": 17,
-        "tile_y": 1,
-        "bst": 505,
-        "type": "Fire"
-    },
-    "39": {
-        "evolves_at": "Stone",
-        "learns_at": [
-            4,
-            9,
-            14,
-            19,
-            24,
-            29,
-            34,
-            39
-        ],
-        "dex": 39,
-        "name": "Jigglypuff",
-        "tile_x": 18,
-        "tile_y": 1,
-        "bst": 270,
-        "type": "Normal"
-    },
-    "40": {
-        "evolves_at": "None",
-        "learns_at": [],
-        "dex": 40,
-        "name": "Wigglytuff",
-        "tile_x": 19,
-        "tile_y": 1,
-        "bst": 435,
-        "type": "Normal"
-    },
-    "41": {
-        "evolves_at": "22",
-        "learns_at": [
-            6,
-            12,
-            19,
-            27,
-            36,
-            46
-        ],
-        "dex": 41,
-        "name": "Zubat",
-        "tile_x": 0,
-        "tile_y": 2,
-        "bst": 245,
-        "type": "Poison Flying"
-    },
-    "42": {
-        "evolves_at": "Frnd",
-        "learns_at": [
-            6,
-            12,
-            19,
-            30,
-            42,
-            55
-        ],
-        "dex": 42,
-        "name": "Golbat",
-        "tile_x": 1,
-        "tile_y": 2,
-        "bst": 455,
-        "type": "Poison Flying"
-    },
-    "43": {
-        "evolves_at": "21",
-        "learns_at": [
-            7,
-            14,
-            16,
-            18,
-            23,
-            32,
-            39
-        ],
-        "dex": 43,
-        "name": "Oddish",
-        "tile_x": 2,
-        "tile_y": 2,
-        "bst": 320,
-        "type": "Grass Poison"
-    },
-    "44": {
-        "evolves_at": "Stones",
-        "learns_at": [
-            7,
-            14,
-            16,
-            18,
-            24,
-            35,
-            44
-        ],
-        "dex": 44,
-        "name": "Gloom",
-        "tile_x": 3,
-        "tile_y": 2,
-        "bst": 395,
-        "type": "Grass Poison"
-    },
-    "45": {
-        "evolves_at": "None",
-        "learns_at": [],
-        "dex": 45,
-        "name": "Vileplume",
-        "tile_x": 4,
-        "tile_y": 2,
-        "bst": 490,
-        "type": "Grass Poison"
-    },
-    "46": {
-        "evolves_at": "24",
-        "learns_at": [
-            7,
-            13,
-            19,
-            25,
-            31,
-            37,
-            43
-        ],
-        "dex": 46,
-        "name": "Paras",
-        "tile_x": 5,
-        "tile_y": 2,
-        "bst": 285,
-        "type": "Bug Grass"
-    },
-    "47": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            13,
-            19,
-            28,
-            37,
-            46,
-            55
-        ],
-        "dex": 47,
-        "name": "Parasect",
-        "tile_x": 6,
-        "tile_y": 2,
-        "bst": 405,
-        "type": "Bug Grass"
-    },
-    "48": {
-        "evolves_at": "31",
-        "learns_at": [
-            9,
-            17,
-            20,
-            25,
-            28,
-            33,
-            36,
-            41
-        ],
-        "dex": 48,
-        "name": "Venonat",
-        "tile_x": 7,
-        "tile_y": 2,
-        "bst": 305,
-        "type": "Bug Poison"
-    },
-    "49": {
-        "evolves_at": "None",
-        "learns_at": [
-            9,
-            17,
-            20,
-            25,
-            28,
-            31,
-            36,
-            42,
-            52
-        ],
-        "dex": 49,
-        "name": "Venomoth",
-        "tile_x": 8,
-        "tile_y": 2,
-        "bst": 450,
-        "type": "Bug Poison"
-    },
-    "50": {
-        "evolves_at": "26",
-        "learns_at": [
-            5,
-            9,
-            17,
-            25,
-            33,
-            41,
-            49
-        ],
-        "dex": 50,
-        "name": "Diglett",
-        "tile_x": 9,
-        "tile_y": 2,
-        "bst": 265,
-        "type": "Ground"
-    },
-    "51": {
-        "evolves_at": "None",
-        "learns_at": [
-            5,
-            9,
-            17,
-            25,
-            37,
-            49,
-            61
-        ],
-        "dex": 51,
-        "name": "Dugtrio",
-        "tile_x": 10,
-        "tile_y": 2,
-        "bst": 425,
-        "type": "Ground"
-    },
-    "52": {
-        "evolves_at": "28",
-        "learns_at": [
-            11,
-            20,
-            28,
-            35,
-            41,
-            46
-        ],
-        "dex": 52,
-        "name": "Meowth",
-        "tile_x": 11,
-        "tile_y": 2,
-        "bst": 290,
-        "type": "Normal"
-    },
-    "53": {
-        "evolves_at": "None",
-        "learns_at": [
-            11,
-            20,
-            38,
-            46,
-            53
-        ],
-        "dex": 53,
-        "name": "Persian",
-        "tile_x": 12,
-        "tile_y": 2,
-        "bst": 440,
-        "type": "Normal"
-    },
-    "54": {
-        "evolves_at": "33",
-        "learns_at": [
-            5,
-            10,
-            16,
-            23,
-            31,
-            40,
-            50
-        ],
-        "dex": 54,
-        "name": "Psyduck",
-        "tile_x": 13,
-        "tile_y": 2,
-        "bst": 320,
-        "type": "Water"
-    },
-    "55": {
-        "evolves_at": "None",
-        "learns_at": [
-            5,
-            10,
-            16,
-            23,
-            31,
-            44,
-            58
-        ],
-        "dex": 55,
-        "name": "Golduck",
-        "tile_x": 14,
-        "tile_y": 2,
-        "bst": 500,
-        "type": "Water"
-    },
-    "56": {
-        "evolves_at": "28",
-        "learns_at": [
-            9,
-            15,
-            21,
-            27,
-            33,
-            39,
-            45,
-            51
-        ],
-        "dex": 56,
-        "name": "Mankey",
-        "tile_x": 15,
-        "tile_y": 2,
-        "bst": 305,
-        "type": "Fighting"
-    },
-    "57": {
-        "evolves_at": "None",
-        "learns_at": [
-            9,
-            15,
-            21,
-            27,
-            28,
-            36,
-            45,
-            54,
-            63
-        ],
-        "dex": 57,
-        "name": "Primeape",
-        "tile_x": 16,
-        "tile_y": 2,
-        "bst": 455,
-        "type": "Fighting"
-    },
-    "58": {
-        "evolves_at": "Stone",
-        "learns_at": [
-            9,
-            18,
-            26,
-            34,
-            42,
-            50
-        ],
-        "dex": 58,
-        "name": "Growlithe",
-        "tile_x": 17,
-        "tile_y": 2,
-        "bst": 350,
-        "type": "Fire"
-    },
-    "59": {
-        "evolves_at": "None",
-        "learns_at": [
-            50
-        ],
-        "dex": 59,
-        "name": "Arcanine",
-        "tile_x": 18,
-        "tile_y": 2,
-        "bst": 555,
-        "type": "Fire"
-    },
-    "60": {
-        "evolves_at": "25",
-        "learns_at": [
-            7,
-            13,
-            19,
-            25,
-            31,
-            37,
-            43
-        ],
-        "dex": 60,
-        "name": "Poliwag",
-        "tile_x": 19,
-        "tile_y": 2,
-        "bst": 300,
-        "type": "Water"
-    },
-    "61": {
-        "evolves_at": "37/Stone",
-        "learns_at": [
-            7,
-            13,
-            19,
-            27,
-            35,
-            43,
-            51
-        ],
-        "dex": 61,
-        "name": "Poliwhirl",
-        "tile_x": 0,
-        "tile_y": 3,
-        "bst": 385,
-        "type": "Water"
-    },
-    "62": {
-        "evolves_at": "None",
-        "learns_at": [
-            35,
-            51
-        ],
-        "dex": 62,
-        "name": "Poliwrath",
-        "tile_x": 1,
-        "tile_y": 3,
-        "bst": 510,
-        "type": "Water Fighting"
-    },
-    "63": {
-        "evolves_at": "16",
-        "learns_at": [],
-        "dex": 63,
-        "name": "Abra",
-        "tile_x": 2,
-        "tile_y": 3,
-        "bst": 310,
-        "type": "Psychic"
-    },
-    "64": {
-        "evolves_at": "37",
-        "learns_at": [
-            16,
-            18,
-            21,
-            26,
-            31,
-            38,
-            45
-        ],
-        "dex": 64,
-        "name": "Kadabra",
-        "tile_x": 3,
-        "tile_y": 3,
-        "bst": 400,
-        "type": "Psychic"
-    },
-    "65": {
-        "evolves_at": "None",
-        "learns_at": [
-            16,
-            18,
-            21,
-            26,
-            31,
-            38,
-            45
-        ],
-        "dex": 65,
-        "name": "Alakazam",
-        "tile_x": 4,
-        "tile_y": 3,
-        "bst": 500,
-        "type": "Psychic"
-    },
-    "66": {
-        "evolves_at": "28",
-        "learns_at": [
-            7,
-            13,
-            19,
-            25,
-            31,
-            37,
-            43,
-            49
-        ],
-        "dex": 66,
-        "name": "Machop",
-        "tile_x": 5,
-        "tile_y": 3,
-        "bst": 305,
-        "type": "Fighting"
-    },
-    "67": {
-        "evolves_at": "37",
-        "learns_at": [
-            8,
-            15,
-            19,
-            25,
-            34,
-            43,
-            52,
-            61
-        ],
-        "dex": 67,
-        "name": "Machoke",
-        "tile_x": 6,
-        "tile_y": 3,
-        "bst": 405,
-        "type": "Fighting"
-    },
-    "68": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            15,
-            19,
-            25,
-            34,
-            43,
-            52,
-            61
-        ],
-        "dex": 68,
-        "name": "Machamp",
-        "tile_x": 7,
-        "tile_y": 3,
-        "bst": 505,
-        "type": "Fighting"
-    },
-    "69": {
-        "evolves_at": "21",
-        "learns_at": [
-            6,
-            11,
-            15,
-            17,
-            19,
-            23,
-            30,
-            37,
-            45
-        ],
-        "dex": 69,
-        "name": "Bellsprout",
-        "tile_x": 8,
-        "tile_y": 3,
-        "bst": 300,
-        "type": "Grass Poison"
-    },
-    "70": {
-        "evolves_at": "Stone",
-        "learns_at": [
-            6,
-            11,
-            15,
-            17,
-            19,
-            24,
-            33,
-            42,
-            54
-        ],
-        "dex": 70,
-        "name": "Weepinbell",
-        "tile_x": 9,
-        "tile_y": 3,
-        "bst": 390,
-        "type": "Grass Poison"
-    },
-    "71": {
-        "evolves_at": "None",
-        "learns_at": [],
-        "dex": 71,
-        "name": "Victreebel",
-        "tile_x": 10,
-        "tile_y": 3,
-        "bst": 490,
-        "type": "Grass Poison"
-    },
-    "72": {
-        "evolves_at": "30",
-        "learns_at": [
-            6,
-            12,
-            19,
-            25,
-            30,
-            36,
-            43,
-            49
-        ],
-        "dex": 72,
-        "name": "Tentacool",
-        "tile_x": 11,
-        "tile_y": 3,
-        "bst": 335,
-        "type": "Water Poison"
-    },
-    "73": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            12,
-            19,
-            25,
-            30,
-            38,
-            47,
-            55
-        ],
-        "dex": 73,
-        "name": "Tentacruel",
-        "tile_x": 12,
-        "tile_y": 3,
-        "bst": 515,
-        "type": "Water Poison"
-    },
-    "74": {
-        "evolves_at": "25",
-        "learns_at": [
-            6,
-            11,
-            16,
-            21,
-            26,
-            31,
-            36,
-            41
-        ],
-        "dex": 74,
-        "name": "Geodude",
-        "tile_x": 13,
-        "tile_y": 3,
-        "bst": 300,
-        "type": "Rock Ground"
-    },
-    "75": {
-        "evolves_at": "37",
-        "learns_at": [
-            6,
-            11,
-            16,
-            21,
-            27,
-            34,
-            41,
-            48
-        ],
-        "dex": 75,
-        "name": "Graveler",
-        "tile_x": 14,
-        "tile_y": 3,
-        "bst": 390,
-        "type": "Rock Ground"
-    },
-    "76": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            11,
-            16,
-            21,
-            27,
-            34,
-            41,
-            48
-        ],
-        "dex": 76,
-        "name": "Golem",
-        "tile_x": 15,
-        "tile_y": 3,
-        "bst": 495,
-        "type": "Rock Ground"
-    },
-    "77": {
-        "evolves_at": "40",
-        "learns_at": [
-            4,
-            8,
-            13,
-            19,
-            26,
-            34,
-            43,
-            53
-        ],
-        "dex": 77,
-        "name": "Ponyta",
-        "tile_x": 16,
-        "tile_y": 3,
-        "bst": 410,
-        "type": "Fire"
-    },
-    "78": {
-        "evolves_at": "None",
-        "learns_at": [
-            4,
-            8,
-            13,
-            19,
-            26,
-            34,
-            40,
-            47,
-            61
-        ],
-        "dex": 78,
-        "name": "Rapidash",
-        "tile_x": 17,
-        "tile_y": 3,
-        "bst": 500,
-        "type": "Fire"
-    },
-    "79": {
-        "evolves_at": "37",
-        "learns_at": [
-            6,
-            15,
-            20,
-            29,
-            34,
-            43,
-            48
-        ],
-        "dex": 79,
-        "name": "Slowpoke",
-        "tile_x": 18,
-        "tile_y": 3,
-        "bst": 315,
-        "type": "Water Psychic"
-    },
-    "80": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            15,
-            20,
-            29,
-            34,
-            37,
-            46,
-            54
-        ],
-        "dex": 80,
-        "name": "Slowbro",
-        "tile_x": 19,
-        "tile_y": 3,
-        "bst": 490,
-        "type": "Water Psychic"
-    },
-    "81": {
-        "evolves_at": "30",
-        "learns_at": [
-            6,
-            11,
-            16,
-            21,
-            27,
-            33,
-            39,
-            45
-        ],
-        "dex": 81,
-        "name": "Magnemite",
-        "tile_x": 0,
-        "tile_y": 4,
-        "bst": 325,
-        "type": "Electric Steel"
-    },
-    "82": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            11,
-            16,
-            21,
-            27,
-            35,
-            43,
-            53
-        ],
-        "dex": 82,
-        "name": "Magneton",
-        "tile_x": 1,
-        "tile_y": 4,
-        "bst": 465,
-        "type": "Electric Steel"
-    },
-    "83": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            13,
-            19,
-            25,
-            31,
-            37,
-            44
-        ],
-        "dex": 83,
-        "name": "Farfetch'd",
-        "tile_x": 2,
-        "tile_y": 4,
-        "bst": 377,
-        "type": "Normal Flying"
-    },
-    "84": {
-        "evolves_at": "31",
-        "learns_at": [
-            9,
-            13,
-            21,
-            25,
-            33,
-            37
-        ],
-        "dex": 84,
-        "name": "Doduo",
-        "tile_x": 3,
-        "tile_y": 4,
-        "bst": 310,
-        "type": "Normal Flying"
-    },
-    "85": {
-        "evolves_at": "None",
-        "learns_at": [
-            9,
-            13,
-            21,
-            25,
-            38,
-            47
-        ],
-        "dex": 85,
-        "name": "Dodrio",
-        "tile_x": 4,
-        "tile_y": 4,
-        "bst": 470,
-        "type": "Normal Flying"
-    },
-    "86": {
-        "evolves_at": "34",
-        "learns_at": [
-            5,
-            16,
-            21,
-            32,
-            37,
-            48
-        ],
-        "dex": 86,
-        "name": "Seel",
-        "tile_x": 5,
-        "tile_y": 4,
-        "bst": 325,
-        "type": "Water"
-    },
-    "87": {
-        "evolves_at": "None",
-        "learns_at": [
-            5,
-            16,
-            21,
-            32,
-            43,
-            60
-        ],
-        "dex": 87,
-        "name": "Dewgong",
-        "tile_x": 6,
-        "tile_y": 4,
-        "bst": 475,
-        "type": "Water Ice"
-    },
-    "88": {
-        "evolves_at": "38",
-        "learns_at": [
-            5,
-            10,
-            16,
-            23,
-            31,
-            40,
-            50
-        ],
-        "dex": 88,
-        "name": "Grimer",
-        "tile_x": 7,
-        "tile_y": 4,
-        "bst": 325,
-        "type": "Poison"
-    },
-    "89": {
-        "evolves_at": "None",
-        "learns_at": [
-            23,
-            31,
-            33,
-            37,
-            45,
-            45,
-            60
-        ],
-        "dex": 89,
-        "name": "Muk",
-        "tile_x": 8,
-        "tile_y": 4,
-        "bst": 500,
-        "type": "Poison"
-    },
-    "90": {
-        "evolves_at": "Stone",
-        "learns_at": [
-            9,
-            17,
-            25,
-            33,
-            41,
-            49
-        ],
-        "dex": 90,
-        "name": "Shellder",
-        "tile_x": 9,
-        "tile_y": 4,
-        "bst": 305,
-        "type": "Water"
-    },
-    "91": {
-        "evolves_at": "None",
-        "learns_at": [
-            41
-        ],
-        "dex": 91,
-        "name": "Cloyster",
-        "tile_x": 10,
-        "tile_y": 4,
-        "bst": 525,
-        "type": "Water Ice"
-    },
-    "92": {
-        "evolves_at": "25",
-        "learns_at": [
-            8,
-            13,
-            16,
-            21,
-            28,
-            33,
-            36
-        ],
-        "dex": 92,
-        "name": "Gastly",
-        "tile_x": 11,
-        "tile_y": 4,
-        "bst": 310,
-        "type": "Ghost Poison"
-    },
-    "93": {
-        "evolves_at": "37",
-        "learns_at": [
-            8,
-            13,
-            16,
-            21,
-            31,
-            39,
-            48
-        ],
-        "dex": 93,
-        "name": "Haunter",
-        "tile_x": 12,
-        "tile_y": 4,
-        "bst": 405,
-        "type": "Ghost Poison"
-    },
-    "94": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            13,
-            16,
-            21,
-            31,
-            39,
-            48
-        ],
-        "dex": 94,
-        "name": "Gengar",
-        "tile_x": 13,
-        "tile_y": 4,
-        "bst": 500,
-        "type": "Ghost Poison"
-    },
-    "95": {
-        "evolves_at": "37",
-        "learns_at": [
-            10,
-            14,
-            23,
-            27,
-            36,
-            40
-        ],
-        "dex": 95,
-        "name": "Onix",
-        "tile_x": 14,
-        "tile_y": 4,
-        "bst": 385,
-        "type": "Rock Ground"
-    },
-    "96": {
-        "evolves_at": "26",
-        "learns_at": [
-            10,
-            18,
-            25,
-            31,
-            36,
-            40,
-            43,
-            45
-        ],
-        "dex": 96,
-        "name": "Drowzee",
-        "tile_x": 15,
-        "tile_y": 4,
-        "bst": 328,
-        "type": "Psychic"
-    },
-    "97": {
-        "evolves_at": "None",
-        "learns_at": [
-            10,
-            18,
-            25,
-            33,
-            40,
-            49,
-            55,
-            60
-        ],
-        "dex": 97,
-        "name": "Hypno",
-        "tile_x": 16,
-        "tile_y": 4,
-        "bst": 483,
-        "type": "Psychic"
-    },
-    "98": {
-        "evolves_at": "28",
-        "learns_at": [
-            5,
-            12,
-            16,
-            23,
-            27,
-            34,
-            41
-        ],
-        "dex": 98,
-        "name": "Krabby",
-        "tile_x": 17,
-        "tile_y": 4,
-        "bst": 325,
-        "type": "Water"
-    },
-    "99": {
-        "evolves_at": "None",
-        "learns_at": [
-            5,
-            12,
-            16,
-            23,
-            27,
-            38,
-            49
-        ],
-        "dex": 99,
-        "name": "Kingler",
-        "tile_x": 18,
-        "tile_y": 4,
-        "bst": 475,
-        "type": "Water"
-    },
-    "100": {
-        "evolves_at": "30",
-        "learns_at": [
-            9,
-            17,
-            23,
-            29,
-            33,
-            37,
-            39,
-            41
-        ],
-        "dex": 100,
-        "name": "Voltorb",
-        "tile_x": 19,
-        "tile_y": 4,
-        "bst": 330,
-        "type": "Electric"
-    },
-    "101": {
-        "evolves_at": "None",
-        "learns_at": [
-            9,
-            17,
-            23,
-            29,
-            34,
-            40,
-            44,
-            48
-        ],
-        "dex": 101,
-        "name": "Electrode",
-        "tile_x": 0,
-        "tile_y": 5,
-        "bst": 490,
-        "type": "Electric"
-    },
-    "102": {
-        "evolves_at": "Stone",
-        "learns_at": [
-            7,
-            13,
-            19,
-            25,
-            31,
-            37,
-            43
-        ],
-        "dex": 102,
-        "name": "Exeggcute",
-        "tile_x": 1,
-        "tile_y": 5,
-        "bst": 325,
-        "type": "Grass Psychic"
-    },
-    "103": {
-        "evolves_at": "None",
-        "learns_at": [
-            19,
-            31
-        ],
-        "dex": 103,
-        "name": "Exeggutor",
-        "tile_x": 2,
-        "tile_y": 5,
-        "bst": 530,
-        "type": "Grass Psychic"
-    },
-    "104": {
-        "evolves_at": "28",
-        "learns_at": [
-            5,
-            9,
-            13,
-            17,
-            21,
-            25,
-            29,
-            33,
-            37,
-            41
-        ],
-        "dex": 104,
-        "name": "Cubone",
-        "tile_x": 3,
-        "tile_y": 5,
-        "bst": 320,
-        "type": "Ground"
-    },
-    "105": {
-        "evolves_at": "None",
-        "learns_at": [
-            5,
-            9,
-            13,
-            17,
-            32,
-            39,
-            46,
-            53
-        ],
-        "dex": 105,
-        "name": "Marowak",
-        "tile_x": 4,
-        "tile_y": 5,
-        "bst": 425,
-        "type": "Ground"
-    },
-    "106": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            11,
-            16,
-            21,
-            26,
-            31,
-            36,
-            41,
-            46,
-            51
-        ],
-        "dex": 106,
-        "name": "Hitmonlee",
-        "tile_x": 5,
-        "tile_y": 5,
-        "bst": 455,
-        "type": "Fighting"
-    },
-    "107": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            13,
-            26,
-            26,
-            26,
-            32,
-            38,
-            44,
-            50
-        ],
-        "dex": 107,
-        "name": "Hitmonchan",
-        "tile_x": 6,
-        "tile_y": 5,
-        "bst": 455,
-        "type": "Fighting"
-    },
-    "108": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            13,
-            19,
-            25,
-            31,
-            37,
-            43
-        ],
-        "dex": 108,
-        "name": "Lickitung",
-        "tile_x": 7,
-        "tile_y": 5,
-        "bst": 385,
-        "type": "Normal"
-    },
-    "109": {
-        "evolves_at": "35",
-        "learns_at": [
-            9,
-            17,
-            21,
-            25,
-            33,
-            41,
-            45
-        ],
-        "dex": 109,
-        "name": "Koffing",
-        "tile_x": 8,
-        "tile_y": 5,
-        "bst": 340,
-        "type": "Poison"
-    },
-    "110": {
-        "evolves_at": "None",
-        "learns_at": [
-            9,
-            17,
-            21,
-            25,
-            33,
-            44,
-            51
-        ],
-        "dex": 110,
-        "name": "Weezing",
-        "tile_x": 9,
-        "tile_y": 5,
-        "bst": 490,
-        "type": "Poison"
-    },
-    "111": {
-        "evolves_at": "42",
-        "learns_at": [
-            13,
-            19,
-            31,
-            37,
-            49,
-            55
-        ],
-        "dex": 111,
-        "name": "Rhyhorn",
-        "tile_x": 10,
-        "tile_y": 5,
-        "bst": 345,
-        "type": "Ground Rock"
-    },
-    "112": {
-        "evolves_at": "None",
-        "learns_at": [
-            13,
-            19,
-            31,
-            37,
-            54,
-            65
-        ],
-        "dex": 112,
-        "name": "Rhydon",
-        "tile_x": 11,
-        "tile_y": 5,
-        "bst": 485,
-        "type": "Ground Rock"
-    },
-    "113": {
-        "evolves_at": "Frnd",
-        "learns_at": [
-            5,
-            9,
-            13,
-            17,
-            23,
-            29,
-            35,
-            41,
-            49,
-            57
-        ],
-        "dex": 113,
-        "name": "Chansey",
-        "tile_x": 12,
-        "tile_y": 5,
-        "bst": 450,
-        "type": "Normal"
-    },
-    "114": {
-        "evolves_at": "None",
-        "learns_at": [
-            4,
-            10,
-            13,
-            19,
-            25,
-            31,
-            34,
-            40,
-            46
-        ],
-        "dex": 114,
-        "name": "Tangela",
-        "tile_x": 13,
-        "tile_y": 5,
-        "bst": 435,
-        "type": "Grass"
-    },
-    "115": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            13,
-            19,
-            25,
-            31,
-            37,
-            43,
-            49
-        ],
-        "dex": 115,
-        "name": "Kangaskhan",
-        "tile_x": 14,
-        "tile_y": 5,
-        "bst": 490,
-        "type": "Normal"
-    },
-    "116": {
-        "evolves_at": "32",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            36,
-            43
-        ],
-        "dex": 116,
-        "name": "Horsea",
-        "tile_x": 15,
-        "tile_y": 5,
-        "bst": 295,
-        "type": "Water"
-    },
-    "117": {
-        "evolves_at": "40",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            40,
-            51
-        ],
-        "dex": 117,
-        "name": "Seadra",
-        "tile_x": 16,
-        "tile_y": 5,
-        "bst": 440,
-        "type": "Water"
-    },
-    "118": {
-        "evolves_at": "33",
-        "learns_at": [
-            10,
-            15,
-            24,
-            29,
-            38,
-            43,
-            52
-        ],
-        "dex": 118,
-        "name": "Goldeen",
-        "tile_x": 17,
-        "tile_y": 5,
-        "bst": 320,
-        "type": "Water"
-    },
-    "119": {
-        "evolves_at": "None",
-        "learns_at": [
-            10,
-            15,
-            24,
-            29,
-            41,
-            49,
-            61
-        ],
-        "dex": 119,
-        "name": "Seaking",
-        "tile_x": 18,
-        "tile_y": 5,
-        "bst": 450,
-        "type": "Water"
-    },
-    "120": {
-        "evolves_at": "Stone",
-        "learns_at": [
-            7,
-            13,
-            19,
-            25,
-            31,
-            37,
-            43,
-            50
-        ],
-        "dex": 120,
-        "name": "Staryu",
-        "tile_x": 19,
-        "tile_y": 5,
-        "bst": 340,
-        "type": "Water"
-    },
-    "121": {
-        "evolves_at": "None",
-        "learns_at": [
-            37
-        ],
-        "dex": 121,
-        "name": "Starmie",
-        "tile_x": 0,
-        "tile_y": 6,
-        "bst": 520,
-        "type": "Water Psychic"
-    },
-    "122": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            11,
-            16,
-            21,
-            26,
-            26,
-            31,
-            36,
-            41,
-            46
-        ],
-        "dex": 122,
-        "name": "Mr. Mime",
-        "tile_x": 1,
-        "tile_y": 6,
-        "bst": 460,
-        "type": "Psychic"
-    },
-    "123": {
-        "evolves_at": "37",
-        "learns_at": [
-            6,
-            12,
-            18,
-            24,
-            30,
-            36,
-            42,
-            48
-        ],
-        "dex": 123,
-        "name": "Scyther",
-        "tile_x": 2,
-        "tile_y": 6,
-        "bst": 500,
-        "type": "Bug Flying"
-    },
-    "124": {
-        "evolves_at": "None",
-        "learns_at": [
-            9,
-            13,
-            21,
-            25,
-            35,
-            41,
-            51,
-            57
-        ],
-        "dex": 124,
-        "name": "Jynx",
-        "tile_x": 3,
-        "tile_y": 6,
-        "bst": 455,
-        "type": "Ice Psychic"
-    },
-    "125": {
-        "evolves_at": "None",
-        "learns_at": [
-            9,
-            17,
-            25,
-            36,
-            47,
-            58
-        ],
-        "dex": 125,
-        "name": "Electabuzz",
-        "tile_x": 4,
-        "tile_y": 6,
-        "bst": 490,
-        "type": "Electric"
-    },
-    "126": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            13,
-            19,
-            25,
-            33,
-            41,
-            49,
-            57
-        ],
-        "dex": 126,
-        "name": "Magmar",
-        "tile_x": 5,
-        "tile_y": 6,
-        "bst": 495,
-        "type": "Fire"
-    },
-    "127": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            13,
-            19,
-            25,
-            31,
-            37,
-            43
-        ],
-        "dex": 127,
-        "name": "Pinsir",
-        "tile_x": 6,
-        "tile_y": 6,
-        "bst": 500,
-        "type": "Bug"
-    },
-    "128": {
-        "evolves_at": "None",
-        "learns_at": [
-            4,
-            8,
-            13,
-            19,
-            26,
-            34,
-            43,
-            53
-        ],
-        "dex": 128,
-        "name": "Tauros",
-        "tile_x": 7,
-        "tile_y": 6,
-        "bst": 490,
-        "type": "Normal"
-    },
-    "129": {
-        "evolves_at": "20",
-        "learns_at": [
-            15,
-            30
-        ],
-        "dex": 129,
-        "name": "Magikarp",
-        "tile_x": 8,
-        "tile_y": 6,
-        "bst": 200,
-        "type": "Water"
-    },
-    "130": {
-        "evolves_at": "None",
-        "learns_at": [
-            20,
-            25,
-            30,
-            35,
-            40,
-            45,
-            50
-        ],
-        "dex": 130,
-        "name": "Gyarados",
-        "tile_x": 9,
-        "tile_y": 6,
-        "bst": 540,
-        "type": "Water Flying"
-    },
-    "131": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            36,
-            43,
-            50,
-            57
-        ],
-        "dex": 131,
-        "name": "Lapras",
-        "tile_x": 10,
-        "tile_y": 6,
-        "bst": 535,
-        "type": "Water Ice"
-    },
-    "132": {
-        "evolves_at": "None",
-        "learns_at": [],
-        "dex": 132,
-        "name": "Ditto",
-        "tile_x": 11,
-        "tile_y": 6,
-        "bst": 288,
-        "type": "Normal"
-    },
-    "133": {
-        "evolves_at": "Stn/Frnd",
-        "learns_at": [
-            8,
-            16,
-            23,
-            30,
-            36,
-            42
-        ],
-        "dex": 133,
-        "name": "Eevee",
-        "tile_x": 12,
-        "tile_y": 6,
-        "bst": 325,
-        "type": "Normal"
-    },
-    "134": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            16,
-            23,
-            30,
-            36,
-            42,
-            47,
-            52
-        ],
-        "dex": 134,
-        "name": "Vaporeon",
-        "tile_x": 13,
-        "tile_y": 6,
-        "bst": 525,
-        "type": "Water"
-    },
-    "135": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            16,
-            23,
-            30,
-            36,
-            42,
-            47,
-            52
-        ],
-        "dex": 135,
-        "name": "Jolteon",
-        "tile_x": 14,
-        "tile_y": 6,
-        "bst": 525,
-        "type": "Electric"
-    },
-    "136": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            16,
-            23,
-            30,
-            36,
-            42,
-            47,
-            52
-        ],
-        "dex": 136,
-        "name": "Flareon",
-        "tile_x": 15,
-        "tile_y": 6,
-        "bst": 525,
-        "type": "Fire"
-    },
-    "137": {
-        "evolves_at": "37",
-        "learns_at": [
-            9,
-            12,
-            20,
-            24,
-            32,
-            36,
-            44
-        ],
-        "dex": 137,
-        "name": "Porygon",
-        "tile_x": 16,
-        "tile_y": 6,
-        "bst": 395,
-        "type": "Normal"
-    },
-    "138": {
-        "evolves_at": "40",
-        "learns_at": [
-            13,
-            19,
-            31,
-            37,
-            49,
-            55
-        ],
-        "dex": 138,
-        "name": "Omanyte",
-        "tile_x": 17,
-        "tile_y": 6,
-        "bst": 355,
-        "type": "Rock Water"
-    },
-    "139": {
-        "evolves_at": "None",
-        "learns_at": [
-            13,
-            19,
-            31,
-            37,
-            40,
-            54,
-            65
-        ],
-        "dex": 139,
-        "name": "Omastar",
-        "tile_x": 18,
-        "tile_y": 6,
-        "bst": 495,
-        "type": "Rock Water"
-    },
-    "140": {
-        "evolves_at": "40",
-        "learns_at": [
-            10,
-            19,
-            28,
-            37,
-            46,
-            55
-        ],
-        "dex": 140,
-        "name": "Kabuto",
-        "tile_x": 19,
-        "tile_y": 6,
-        "bst": 355,
-        "type": "Rock Water"
-    },
-    "141": {
-        "evolves_at": "None",
-        "learns_at": [
-            10,
-            19,
-            28,
-            37,
-            40,
-            51,
-            65
-        ],
-        "dex": 141,
-        "name": "Kabutops",
-        "tile_x": 0,
-        "tile_y": 7,
-        "bst": 495,
-        "type": "Rock Water"
-    },
-    "142": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            36,
-            43,
-            50
-        ],
-        "dex": 142,
-        "name": "Aerodactyl",
-        "tile_x": 1,
-        "tile_y": 7,
-        "bst": 515,
-        "type": "Rock Flying"
-    },
-    "143": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            36,
-            36,
-            43,
-            50,
-            57
-        ],
-        "dex": 143,
-        "name": "Snorlax",
-        "tile_x": 2,
-        "tile_y": 7,
-        "bst": 540,
-        "type": "Normal"
-    },
-    "144": {
-        "evolves_at": "None",
-        "learns_at": [
-            13,
-            25,
-            37,
-            49,
-            61,
-            73
-        ],
-        "dex": 144,
-        "name": "Articuno",
-        "tile_x": 3,
-        "tile_y": 7,
-        "bst": 580,
-        "type": "Ice Flying"
-    },
-    "145": {
-        "evolves_at": "None",
-        "learns_at": [
-            13,
-            25,
-            37,
-            49,
-            61,
-            73
-        ],
-        "dex": 145,
-        "name": "Zapdos",
-        "tile_x": 4,
-        "tile_y": 7,
-        "bst": 580,
-        "type": "Electric Flying"
-    },
-    "146": {
-        "evolves_at": "None",
-        "learns_at": [
-            13,
-            25,
-            37,
-            49,
-            61,
-            73
-        ],
-        "dex": 146,
-        "name": "Moltres",
-        "tile_x": 5,
-        "tile_y": 7,
-        "bst": 580,
-        "type": "Fire Flying"
-    },
-    "147": {
-        "evolves_at": "30",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            36,
-            43,
-            50,
-            57
-        ],
-        "dex": 147,
-        "name": "Dratini",
-        "tile_x": 6,
-        "tile_y": 7,
-        "bst": 300,
-        "type": "Dragon"
-    },
-    "148": {
-        "evolves_at": "55",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            38,
-            47,
-            56,
-            65
-        ],
-        "dex": 148,
-        "name": "Dragonair",
-        "tile_x": 7,
-        "tile_y": 7,
-        "bst": 420,
-        "type": "Dragon"
-    },
-    "149": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            38,
-            47,
-            56,
-            55,
-            61,
-            75
-        ],
-        "dex": 149,
-        "name": "Dragonite",
-        "tile_x": 8,
-        "tile_y": 7,
-        "bst": 600,
-        "type": "Dragon Flying"
-    },
-    "150": {
-        "evolves_at": "None",
-        "learns_at": [
-            11,
-            22,
-            33,
-            44,
-            55,
-            66,
-            77,
-            88,
-            99
-        ],
-        "dex": 150,
-        "name": "Mewtwo",
-        "tile_x": 9,
-        "tile_y": 7,
-        "bst": 680,
-        "type": "Psychic"
-    },
-    "151": {
-        "evolves_at": "None",
-        "learns_at": [
-            10,
-            20,
-            30,
-            40,
-            50
-        ],
-        "dex": 151,
-        "name": "Mew",
-        "tile_x": 10,
-        "tile_y": 7,
-        "bst": 600,
-        "type": "Psychic"
-    },
-    "152": {
-        "evolves_at": "16",
-        "learns_at": [
-            8,
-            12,
-            15,
-            22,
-            29,
-            36,
-            43,
-            50
-        ],
-        "dex": 152,
-        "name": "Chikorita",
-        "tile_x": 11,
-        "tile_y": 7,
-        "bst": 318,
-        "type": "Grass"
-    },
-    "153": {
-        "evolves_at": "32",
-        "learns_at": [
-            8,
-            12,
-            15,
-            23,
-            31,
-            39,
-            47,
-            55
-        ],
-        "dex": 153,
-        "name": "Bayleef",
-        "tile_x": 12,
-        "tile_y": 7,
-        "bst": 405,
-        "type": "Grass"
-    },
-    "154": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            12,
-            15,
-            23,
-            31,
-            41,
-            51,
-            61
-        ],
-        "dex": 154,
-        "name": "Meganium",
-        "tile_x": 13,
-        "tile_y": 7,
-        "bst": 525,
-        "type": "Grass"
-    },
-    "155": {
-        "evolves_at": "14",
-        "learns_at": [
-            6,
-            12,
-            19,
-            27,
-            36,
-            46
-        ],
-        "dex": 155,
-        "name": "Cyndaquil",
-        "tile_x": 14,
-        "tile_y": 7,
-        "bst": 309,
-        "type": "Fire"
-    },
-    "156": {
-        "evolves_at": "36",
-        "learns_at": [
-            6,
-            12,
-            21,
-            31,
-            42,
-            54
-        ],
-        "dex": 156,
-        "name": "Quilava",
-        "tile_x": 15,
-        "tile_y": 7,
-        "bst": 405,
-        "type": "Fire"
-    },
-    "157": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            12,
-            21,
-            31,
-            45,
-            60
-        ],
-        "dex": 157,
-        "name": "Typhlosion",
-        "tile_x": 16,
-        "tile_y": 7,
-        "bst": 534,
-        "type": "Fire"
-    },
-    "158": {
-        "evolves_at": "18",
-        "learns_at": [
-            7,
-            13,
-            20,
-            27,
-            35,
-            43,
-            52
-        ],
-        "dex": 158,
-        "name": "Totodile",
-        "tile_x": 17,
-        "tile_y": 7,
-        "bst": 314,
-        "type": "Water"
-    },
-    "159": {
-        "evolves_at": "30",
-        "learns_at": [
-            7,
-            13,
-            21,
-            28,
-            37,
-            45,
-            55
-        ],
-        "dex": 159,
-        "name": "Croconaw",
-        "tile_x": 18,
-        "tile_y": 7,
-        "bst": 405,
-        "type": "Water"
-    },
-    "160": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            13,
-            21,
-            28,
-            38,
-            47,
-            58
-        ],
-        "dex": 160,
-        "name": "Feraligatr",
-        "tile_x": 19,
-        "tile_y": 7,
-        "bst": 530,
-        "type": "Water"
-    },
-    "161": {
-        "evolves_at": "15",
-        "learns_at": [
-            5,
-            11,
-            17,
-            25,
-            33,
-            41
-        ],
-        "dex": 161,
-        "name": "Sentret",
-        "tile_x": 0,
-        "tile_y": 8,
-        "bst": 215,
-        "type": "Normal"
-    },
-    "162": {
-        "evolves_at": "None",
-        "learns_at": [
-            5,
-            11,
-            18,
-            28,
-            38,
-            48
-        ],
-        "dex": 162,
-        "name": "Furret",
-        "tile_x": 1,
-        "tile_y": 8,
-        "bst": 415,
-        "type": "Normal"
-    },
-    "163": {
-        "evolves_at": "20",
-        "learns_at": [
-            6,
-            11,
-            16,
-            22,
-            28,
-            34,
-            48
-        ],
-        "dex": 163,
-        "name": "Hoothoot",
-        "tile_x": 2,
-        "tile_y": 8,
-        "bst": 262,
-        "type": "Normal Flying"
-    },
-    "164": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            11,
-            16,
-            25,
-            33,
-            41,
-            57
-        ],
-        "dex": 164,
-        "name": "Noctowl",
-        "tile_x": 3,
-        "tile_y": 8,
-        "bst": 452,
-        "type": "Normal Flying"
-    },
-    "165": {
-        "evolves_at": "18",
-        "learns_at": [
-            8,
-            15,
-            22,
-            22,
-            22,
-            29,
-            36,
-            43,
-            50
-        ],
-        "dex": 165,
-        "name": "Ledyba",
-        "tile_x": 4,
-        "tile_y": 8,
-        "bst": 265,
-        "type": "Bug Flying"
-    },
-    "166": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            15,
-            24,
-            24,
-            24,
-            33,
-            42,
-            51,
-            60
-        ],
-        "dex": 166,
-        "name": "Ledian",
-        "tile_x": 5,
-        "tile_y": 8,
-        "bst": 390,
-        "type": "Bug Flying"
-    },
-    "167": {
-        "evolves_at": "22",
-        "learns_at": [
-            6,
-            11,
-            17,
-            23,
-            30,
-            37,
-            45,
-            53
-        ],
-        "dex": 167,
-        "name": "Spinarak",
-        "tile_x": 6,
-        "tile_y": 8,
-        "bst": 250,
-        "type": "Bug Poison"
-    },
-    "168": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            11,
-            17,
-            25,
-            34,
-            43,
-            53,
-            63
-        ],
-        "dex": 168,
-        "name": "Ariados",
-        "tile_x": 7,
-        "tile_y": 8,
-        "bst": 400,
-        "type": "Bug Poison"
-    },
-    "169": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            12,
-            19,
-            30,
-            42,
-            55
-        ],
-        "dex": 169,
-        "name": "Crobat",
-        "tile_x": 8,
-        "tile_y": 8,
-        "bst": 535,
-        "type": "Poison Flying"
-    },
-    "170": {
-        "evolves_at": "27",
-        "learns_at": [
-            5,
-            13,
-            17,
-            25,
-            29,
-            37,
-            41
-        ],
-        "dex": 170,
-        "name": "Chinchou",
-        "tile_x": 9,
-        "tile_y": 8,
-        "bst": 330,
-        "type": "Water Electric"
-    },
-    "171": {
-        "evolves_at": "None",
-        "learns_at": [
-            5,
-            13,
-            17,
-            25,
-            33,
-            45,
-            53
-        ],
-        "dex": 171,
-        "name": "Lanturn",
-        "tile_x": 10,
-        "tile_y": 8,
-        "bst": 460,
-        "type": "Water Electric"
-    },
-    "172": {
-        "evolves_at": "Frnd",
-        "learns_at": [
-            6,
-            8,
-            11
-        ],
-        "dex": 172,
-        "name": "Pichu",
-        "tile_x": 11,
-        "tile_y": 8,
-        "bst": 205,
-        "type": "Electric"
-    },
-    "173": {
-        "evolves_at": "Frnd",
-        "learns_at": [
-            4,
-            8,
-            13
-        ],
-        "dex": 173,
-        "name": "Cleffa",
-        "tile_x": 12,
-        "tile_y": 8,
-        "bst": 218,
-        "type": "Normal"
-    },
-    "174": {
-        "evolves_at": "Frnd",
-        "learns_at": [
-            4,
-            9,
-            14
-        ],
-        "dex": 174,
-        "name": "Igglybuff",
-        "tile_x": 13,
-        "tile_y": 8,
-        "bst": 210,
-        "type": "Normal"
-    },
-    "175": {
-        "evolves_at": "Frnd",
-        "learns_at": [
-            7,
-            18,
-            25,
-            31,
-            38
-        ],
-        "dex": 175,
-        "name": "Togepi",
-        "tile_x": 14,
-        "tile_y": 8,
-        "bst": 245,
-        "type": "Normal"
-    },
-    "176": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            18,
-            25,
-            31,
-            38
-        ],
-        "dex": 176,
-        "name": "Togetic",
-        "tile_x": 15,
-        "tile_y": 8,
-        "bst": 405,
-        "type": "Normal Flying"
-    },
-    "177": {
-        "evolves_at": "25",
-        "learns_at": [
-            10,
-            20,
-            30,
-            40,
-            50
-        ],
-        "dex": 177,
-        "name": "Natu",
-        "tile_x": 16,
-        "tile_y": 8,
-        "bst": 320,
-        "type": "Psychic Flying"
-    },
-    "178": {
-        "evolves_at": "None",
-        "learns_at": [
-            10,
-            20,
-            35,
-            50,
-            65
-        ],
-        "dex": 178,
-        "name": "Xatu",
-        "tile_x": 17,
-        "tile_y": 8,
-        "bst": 470,
-        "type": "Psychic Flying"
-    },
-    "179": {
-        "evolves_at": "15",
-        "learns_at": [
-            9,
-            16,
-            23,
-            30,
-            37
-        ],
-        "dex": 179,
-        "name": "Mareep",
-        "tile_x": 18,
-        "tile_y": 8,
-        "bst": 280,
-        "type": "Electric"
-    },
-    "180": {
-        "evolves_at": "30",
-        "learns_at": [
-            9,
-            18,
-            27,
-            36,
-            45
-        ],
-        "dex": 180,
-        "name": "Flaaffy",
-        "tile_x": 19,
-        "tile_y": 8,
-        "bst": 365,
-        "type": "Electric"
-    },
-    "181": {
-        "evolves_at": "None",
-        "learns_at": [
-            9,
-            18,
-            27,
-            30,
-            42,
-            57
-        ],
-        "dex": 181,
-        "name": "Ampharos",
-        "tile_x": 0,
-        "tile_y": 9,
-        "bst": 510,
-        "type": "Electric"
-    },
-    "182": {
-        "evolves_at": "None",
-        "learns_at": [
-            55
-        ],
-        "dex": 182,
-        "name": "Bellossom",
-        "tile_x": 1,
-        "tile_y": 9,
-        "bst": 490,
-        "type": "Grass"
-    },
-    "183": {
-        "evolves_at": "18",
-        "learns_at": [
-            3,
-            6,
-            10,
-            15,
-            21,
-            28,
-            36
-        ],
-        "dex": 183,
-        "name": "Marill",
-        "tile_x": 2,
-        "tile_y": 9,
-        "bst": 250,
-        "type": "Water"
-    },
-    "184": {
-        "evolves_at": "None",
-        "learns_at": [
-            3,
-            6,
-            10,
-            15,
-            25,
-            36,
-            48
-        ],
-        "dex": 184,
-        "name": "Azumarill",
-        "tile_x": 3,
-        "tile_y": 9,
-        "bst": 420,
-        "type": "Water"
-    },
-    "185": {
-        "evolves_at": "None",
-        "learns_at": [
-            10,
-            19,
-            28,
-            37,
-            46
-        ],
-        "dex": 185,
-        "name": "Sudowoodo",
-        "tile_x": 4,
-        "tile_y": 9,
-        "bst": 410,
-        "type": "Rock"
-    },
-    "186": {
-        "evolves_at": "None",
-        "learns_at": [
-            35,
-            51
-        ],
-        "dex": 186,
-        "name": "Politoed",
-        "tile_x": 5,
-        "tile_y": 9,
-        "bst": 500,
-        "type": "Water"
-    },
-    "187": {
-        "evolves_at": "18",
-        "learns_at": [
-            5,
-            10,
-            13,
-            15,
-            17,
-            20,
-            25,
-            30
-        ],
-        "dex": 187,
-        "name": "Hoppip",
-        "tile_x": 6,
-        "tile_y": 9,
-        "bst": 250,
-        "type": "Grass Flying"
-    },
-    "188": {
-        "evolves_at": "27",
-        "learns_at": [
-            5,
-            10,
-            13,
-            15,
-            17,
-            22,
-            29,
-            36
-        ],
-        "dex": 188,
-        "name": "Skiploom",
-        "tile_x": 7,
-        "tile_y": 9,
-        "bst": 340,
-        "type": "Grass Flying"
-    },
-    "189": {
-        "evolves_at": "None",
-        "learns_at": [
-            5,
-            10,
-            13,
-            15,
-            17,
-            22,
-            33,
-            44
-        ],
-        "dex": 189,
-        "name": "Jumpluff",
-        "tile_x": 8,
-        "tile_y": 9,
-        "bst": 460,
-        "type": "Grass Flying"
-    },
-    "190": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            12,
-            19,
-            27,
-            36,
-            46
-        ],
-        "dex": 190,
-        "name": "Aipom",
-        "tile_x": 9,
-        "tile_y": 9,
-        "bst": 360,
-        "type": "Normal"
-    },
-    "191": {
-        "evolves_at": "Stone",
-        "learns_at": [
-            4,
-            10,
-            19,
-            31,
-            46
-        ],
-        "dex": 191,
-        "name": "Sunkern",
-        "tile_x": 10,
-        "tile_y": 9,
-        "bst": 180,
-        "type": "Grass"
-    },
-    "192": {
-        "evolves_at": "None",
-        "learns_at": [
-            4,
-            10,
-            19,
-            31,
-            46
-        ],
-        "dex": 192,
-        "name": "Sunflora",
-        "tile_x": 11,
-        "tile_y": 9,
-        "bst": 425,
-        "type": "Grass"
-    },
-    "193": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            13,
-            19,
-            25,
-            31,
-            37,
-            43
-        ],
-        "dex": 193,
-        "name": "Yanma",
-        "tile_x": 12,
-        "tile_y": 9,
-        "bst": 390,
-        "type": "Bug Flying"
-    },
-    "194": {
-        "evolves_at": "20",
-        "learns_at": [
-            11,
-            21,
-            31,
-            41,
-            51,
-            51
-        ],
-        "dex": 194,
-        "name": "Wooper",
-        "tile_x": 13,
-        "tile_y": 9,
-        "bst": 210,
-        "type": "Water Ground"
-    },
-    "195": {
-        "evolves_at": "None",
-        "learns_at": [
-            11,
-            23,
-            35,
-            47,
-            59,
-            59
-        ],
-        "dex": 195,
-        "name": "Quagsire",
-        "tile_x": 14,
-        "tile_y": 9,
-        "bst": 430,
-        "type": "Water Ground"
-    },
-    "196": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            16,
-            23,
-            30,
-            36,
-            42,
-            47,
-            52
-        ],
-        "dex": 196,
-        "name": "Espeon",
-        "tile_x": 15,
-        "tile_y": 9,
-        "bst": 525,
-        "type": "Psychic"
-    },
-    "197": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            16,
-            23,
-            30,
-            36,
-            42,
-            47,
-            52
-        ],
-        "dex": 197,
-        "name": "Umbreon",
-        "tile_x": 16,
-        "tile_y": 9,
-        "bst": 525,
-        "type": "Dark"
-    },
-    "198": {
-        "evolves_at": "None",
-        "learns_at": [
-            11,
-            16,
-            26,
-            31,
-            41
-        ],
-        "dex": 198,
-        "name": "Murkrow",
-        "tile_x": 17,
-        "tile_y": 9,
-        "bst": 405,
-        "type": "Dark Flying"
-    },
-    "199": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            15,
-            20,
-            29,
-            34,
-            43,
-            48
-        ],
-        "dex": 199,
-        "name": "Slowking",
-        "tile_x": 18,
-        "tile_y": 9,
-        "bst": 490,
-        "type": "Water Psychic"
-    },
-    "200": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            12,
-            19,
-            27,
-            36,
-            46
-        ],
-        "dex": 200,
-        "name": "Misdreavus",
-        "tile_x": 19,
-        "tile_y": 9,
-        "bst": 435,
-        "type": "Ghost"
-    },
-    "201": {
-        "evolves_at": "None",
-        "learns_at": [],
-        "dex": 201,
-        "name": "Unown",
-        "tile_x": 0,
-        "tile_y": 10,
-        "bst": 336,
-        "type": "Psychic"
-    },
-    "202": {
-        "evolves_at": "None",
-        "learns_at": [],
-        "dex": 202,
-        "name": "Wobbuffet",
-        "tile_x": 1,
-        "tile_y": 10,
-        "bst": 405,
-        "type": "Psychic"
-    },
-    "203": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            13,
-            20,
-            30,
-            41,
-            54
-        ],
-        "dex": 203,
-        "name": "Girafarig",
-        "tile_x": 2,
-        "tile_y": 10,
-        "bst": 455,
-        "type": "Normal Psychic"
-    },
-    "204": {
-        "evolves_at": "31",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            36,
-            43,
-            50
-        ],
-        "dex": 204,
-        "name": "Pineco",
-        "tile_x": 3,
-        "tile_y": 10,
-        "bst": 290,
-        "type": "Bug"
-    },
-    "205": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            39,
-            49,
-            59
-        ],
-        "dex": 205,
-        "name": "Forretress",
-        "tile_x": 4,
-        "tile_y": 10,
-        "bst": 465,
-        "type": "Bug Steel"
-    },
-    "206": {
-        "evolves_at": "None",
-        "learns_at": [
-            5,
-            13,
-            18,
-            26,
-            30,
-            38
-        ],
-        "dex": 206,
-        "name": "Dunsparce",
-        "tile_x": 5,
-        "tile_y": 10,
-        "bst": 415,
-        "type": "Normal"
-    },
-    "207": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            13,
-            20,
-            28,
-            36,
-            44,
-            52
-        ],
-        "dex": 207,
-        "name": "Gligar",
-        "tile_x": 6,
-        "tile_y": 10,
-        "bst": 430,
-        "type": "Ground Flying"
-    },
-    "208": {
-        "evolves_at": "None",
-        "learns_at": [
-            10,
-            14,
-            23,
-            27,
-            36,
-            40,
-            49
-        ],
-        "dex": 208,
-        "name": "Steelix",
-        "tile_x": 7,
-        "tile_y": 10,
-        "bst": 510,
-        "type": "Steel Ground"
-    },
-    "209": {
-        "evolves_at": "23",
-        "learns_at": [
-            4,
-            8,
-            13,
-            19,
-            26,
-            34,
-            43
-        ],
-        "dex": 209,
-        "name": "Snubbull",
-        "tile_x": 8,
-        "tile_y": 10,
-        "bst": 300,
-        "type": "Normal"
-    },
-    "210": {
-        "evolves_at": "None",
-        "learns_at": [
-            4,
-            8,
-            13,
-            19,
-            26,
-            28,
-            38,
-            51
-        ],
-        "dex": 210,
-        "name": "Granbull",
-        "tile_x": 9,
-        "tile_y": 10,
-        "bst": 450,
-        "type": "Normal"
-    },
-    "211": {
-        "evolves_at": "None",
-        "learns_at": [
-            10,
-            10,
-            19,
-            28,
-            37,
-            46
-        ],
-        "dex": 211,
-        "name": "Qwilfish",
-        "tile_x": 10,
-        "tile_y": 10,
-        "bst": 440,
-        "type": "Water Poison"
-    },
-    "212": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            12,
-            18,
-            24,
-            30,
-            36,
-            42,
-            48
-        ],
-        "dex": 212,
-        "name": "Scizor",
-        "tile_x": 11,
-        "tile_y": 10,
-        "bst": 500,
-        "type": "Bug Steel"
-    },
-    "213": {
-        "evolves_at": "None",
-        "learns_at": [
-            9,
-            14,
-            23,
-            28,
-            37
-        ],
-        "dex": 213,
-        "name": "Shuckle",
-        "tile_x": 12,
-        "tile_y": 10,
-        "bst": 505,
-        "type": "Bug Rock"
-    },
-    "214": {
-        "evolves_at": "None",
-        "learns_at": [
-            6,
-            12,
-            19,
-            27,
-            35,
-            44,
-            54
-        ],
-        "dex": 214,
-        "name": "Heracross",
-        "tile_x": 13,
-        "tile_y": 10,
-        "bst": 500,
-        "type": "Bug Fighting"
-    },
-    "215": {
-        "evolves_at": "None",
-        "learns_at": [
-            9,
-            17,
-            25,
-            33,
-            41,
-            49,
-            57
-        ],
-        "dex": 215,
-        "name": "Sneasel",
-        "tile_x": 14,
-        "tile_y": 10,
-        "bst": 430,
-        "type": "Dark Ice"
-    },
-    "216": {
-        "evolves_at": "30",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            36,
-            43,
-            50
-        ],
-        "dex": 216,
-        "name": "Teddiursa",
-        "tile_x": 15,
-        "tile_y": 10,
-        "bst": 330,
-        "type": "Normal"
-    },
-    "217": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            39,
-            49,
-            59
-        ],
-        "dex": 217,
-        "name": "Ursaring",
-        "tile_x": 16,
-        "tile_y": 10,
-        "bst": 500,
-        "type": "Normal"
-    },
-    "218": {
-        "evolves_at": "38",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            36,
-            43,
-            50
-        ],
-        "dex": 218,
-        "name": "Slugma",
-        "tile_x": 17,
-        "tile_y": 10,
-        "bst": 250,
-        "type": "Fire"
-    },
-    "219": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            36,
-            48,
-            60
-        ],
-        "dex": 219,
-        "name": "Magcargo",
-        "tile_x": 18,
-        "tile_y": 10,
-        "bst": 430,
-        "type": "Fire Rock"
-    },
-    "220": {
-        "evolves_at": "33",
-        "learns_at": [
-            10,
-            19,
-            28,
-            37,
-            46
-        ],
-        "dex": 220,
-        "name": "Swinub",
-        "tile_x": 19,
-        "tile_y": 10,
-        "bst": 250,
-        "type": "Ice Ground"
-    },
-    "221": {
-        "evolves_at": "None",
-        "learns_at": [
-            10,
-            19,
-            28,
-            33,
-            42,
-            56
-        ],
-        "dex": 221,
-        "name": "Piloswine",
-        "tile_x": 0,
-        "tile_y": 11,
-        "bst": 450,
-        "type": "Ice Ground"
-    },
-    "222": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            13,
-            19,
-            25,
-            31,
-            37,
-            43
-        ],
-        "dex": 222,
-        "name": "Corsola",
-        "tile_x": 1,
-        "tile_y": 11,
-        "bst": 410,
-        "type": "Water Rock"
-    },
-    "223": {
-        "evolves_at": "25",
-        "learns_at": [
-            11,
-            22,
-            22,
-            22,
-            33,
-            44,
-            55
-        ],
-        "dex": 223,
-        "name": "Remoraid",
-        "tile_x": 2,
-        "tile_y": 11,
-        "bst": 300,
-        "type": "Water"
-    },
-    "224": {
-        "evolves_at": "None",
-        "learns_at": [
-            11,
-            22,
-            22,
-            22,
-            25,
-            38,
-            54,
-            70
-        ],
-        "dex": 224,
-        "name": "Octillery",
-        "tile_x": 3,
-        "tile_y": 11,
-        "bst": 480,
-        "type": "Water"
-    },
-    "225": {
-        "evolves_at": "None",
-        "learns_at": [],
-        "dex": 225,
-        "name": "Delibird",
-        "tile_x": 4,
-        "tile_y": 11,
-        "bst": 330,
-        "type": "Ice Flying"
-    },
-    "226": {
-        "evolves_at": "None",
-        "learns_at": [
-            10,
-            18,
-            25,
-            32,
-            40,
-            49
-        ],
-        "dex": 226,
-        "name": "Mantine",
-        "tile_x": 5,
-        "tile_y": 11,
-        "bst": 485,
-        "type": "Water Flying"
-    },
-    "227": {
-        "evolves_at": "None",
-        "learns_at": [
-            13,
-            19,
-            25,
-            37,
-            49
-        ],
-        "dex": 227,
-        "name": "Skarmory",
-        "tile_x": 6,
-        "tile_y": 11,
-        "bst": 465,
-        "type": "Steel Flying"
-    },
-    "228": {
-        "evolves_at": "24",
-        "learns_at": [
-            7,
-            13,
-            20,
-            27,
-            35,
-            43
-        ],
-        "dex": 228,
-        "name": "Houndour",
-        "tile_x": 7,
-        "tile_y": 11,
-        "bst": 330,
-        "type": "Dark Fire"
-    },
-    "229": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            13,
-            20,
-            30,
-            41,
-            52
-        ],
-        "dex": 229,
-        "name": "Houndoom",
-        "tile_x": 8,
-        "tile_y": 11,
-        "bst": 500,
-        "type": "Dark Fire"
-    },
-    "230": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            40,
-            51
-        ],
-        "dex": 230,
-        "name": "Kingdra",
-        "tile_x": 9,
-        "tile_y": 11,
-        "bst": 540,
-        "type": "Water Dragon"
-    },
-    "231": {
-        "evolves_at": "25",
-        "learns_at": [
-            9,
-            17,
-            25,
-            33,
-            41,
-            49
-        ],
-        "dex": 231,
-        "name": "Phanpy",
-        "tile_x": 10,
-        "tile_y": 11,
-        "bst": 330,
-        "type": "Ground"
-    },
-    "232": {
-        "evolves_at": "None",
-        "learns_at": [
-            9,
-            17,
-            25,
-            33,
-            41,
-            49
-        ],
-        "dex": 232,
-        "name": "Donphan",
-        "tile_x": 11,
-        "tile_y": 11,
-        "bst": 500,
-        "type": "Ground"
-    },
-    "233": {
-        "evolves_at": "None",
-        "learns_at": [
-            9,
-            12,
-            20,
-            24,
-            32,
-            36,
-            44
-        ],
-        "dex": 233,
-        "name": "Porygon2",
-        "tile_x": 12,
-        "tile_y": 11,
-        "bst": 515,
-        "type": "Normal"
-    },
-    "234": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            15,
-            23,
-            31,
-            40,
-            49
-        ],
-        "dex": 234,
-        "name": "Stantler",
-        "tile_x": 13,
-        "tile_y": 11,
-        "bst": 465,
-        "type": "Normal"
-    },
-    "235": {
-        "evolves_at": "None",
-        "learns_at": [
-            11,
-            21,
-            31,
-            41,
-            51,
-            61,
-            71,
-            81,
-            91
-        ],
-        "dex": 235,
-        "name": "Smeargle",
-        "tile_x": 14,
-        "tile_y": 11,
-        "bst": 250,
-        "type": "Normal"
-    },
-    "236": {
-        "evolves_at": "None",
-        "learns_at": [],
-        "dex": 236,
-        "name": "Tyrogue",
-        "tile_x": 15,
-        "tile_y": 11,
-        "bst": 210,
-        "type": "Fighting"
-    },
-    "237": {
-        "evolves_at": "None",
-        "learns_at": [
-            7,
-            13,
-            19,
-            25,
-            31,
-            37,
-            43,
-            49
-        ],
-        "dex": 237,
-        "name": "Hitmontop",
-        "tile_x": 16,
-        "tile_y": 11,
-        "bst": 455,
-        "type": "Fighting"
-    },
-    "238": {
-        "evolves_at": "30",
-        "learns_at": [
-            9,
-            13,
-            21,
-            25,
-            33,
-            37,
-            45,
-            49
-        ],
-        "dex": 238,
-        "name": "Smoochum",
-        "tile_x": 17,
-        "tile_y": 11,
-        "bst": 305,
-        "type": "Ice Psychic"
-    },
-    "239": {
-        "evolves_at": "30",
-        "learns_at": [
-            9,
-            17,
-            25,
-            33,
-            41,
-            49
-        ],
-        "dex": 239,
-        "name": "Elekid",
-        "tile_x": 18,
-        "tile_y": 11,
-        "bst": 360,
-        "type": "Electric"
-    },
-    "240": {
-        "evolves_at": "30",
-        "learns_at": [
-            7,
-            13,
-            19,
-            25,
-            31,
-            37,
-            43,
-            49
-        ],
-        "dex": 240,
-        "name": "Magby",
-        "tile_x": 19,
-        "tile_y": 11,
-        "bst": 365,
-        "type": "Fire"
-    },
-    "241": {
-        "evolves_at": "None",
-        "learns_at": [
-            4,
-            8,
-            13,
-            19,
-            26,
-            34,
-            43,
-            53
-        ],
-        "dex": 241,
-        "name": "Miltank",
-        "tile_x": 0,
-        "tile_y": 12,
-        "bst": 490,
-        "type": "Normal"
-    },
-    "242": {
-        "evolves_at": "None",
-        "learns_at": [
-            4,
-            7,
-            10,
-            13,
-            18,
-            23,
-            28,
-            33,
-            40,
-            47
-        ],
-        "dex": 242,
-        "name": "Blissey",
-        "tile_x": 1,
-        "tile_y": 12,
-        "bst": 540,
-        "type": "Normal"
-    },
-    "243": {
-        "evolves_at": "None",
-        "learns_at": [
-            11,
-            21,
-            31,
-            41,
-            51,
-            61,
-            71
-        ],
-        "dex": 243,
-        "name": "Raikou",
-        "tile_x": 2,
-        "tile_y": 12,
-        "bst": 580,
-        "type": "Electric"
-    },
-    "244": {
-        "evolves_at": "None",
-        "learns_at": [
-            11,
-            21,
-            31,
-            41,
-            51,
-            61,
-            71
-        ],
-        "dex": 244,
-        "name": "Entei",
-        "tile_x": 3,
-        "tile_y": 12,
-        "bst": 580,
-        "type": "Fire"
-    },
-    "245": {
-        "evolves_at": "None",
-        "learns_at": [
-            11,
-            21,
-            31,
-            41,
-            51,
-            61,
-            71
-        ],
-        "dex": 245,
-        "name": "Suicune",
-        "tile_x": 4,
-        "tile_y": 12,
-        "bst": 580,
-        "type": "Water"
-    },
-    "246": {
-        "evolves_at": "30",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            36,
-            43,
-            50,
-            57
-        ],
-        "dex": 246,
-        "name": "Larvitar",
-        "tile_x": 5,
-        "tile_y": 12,
-        "bst": 300,
-        "type": "Rock Ground"
-    },
-    "247": {
-        "evolves_at": "55",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            38,
-            47,
-            56,
-            65
-        ],
-        "dex": 247,
-        "name": "Pupitar",
-        "tile_x": 6,
-        "tile_y": 12,
-        "bst": 410,
-        "type": "Rock Ground"
-    },
-    "248": {
-        "evolves_at": "None",
-        "learns_at": [
-            8,
-            15,
-            22,
-            29,
-            38,
-            47,
-            61,
-            75
-        ],
-        "dex": 248,
-        "name": "Tyranitar",
-        "tile_x": 7,
-        "tile_y": 12,
-        "bst": 600,
-        "type": "Rock Dark"
-    },
-    "249": {
-        "evolves_at": "None",
-        "learns_at": [
-            11,
-            22,
-            33,
-            44,
-            55,
-            66,
-            77,
-            88,
-            99
-        ],
-        "dex": 249,
-        "name": "Lugia",
-        "tile_x": 8,
-        "tile_y": 12,
-        "bst": 680,
-        "type": "Psychic Flying"
-    },
-    "250": {
-        "evolves_at": "None",
-        "learns_at": [
-            11,
-            22,
-            33,
-            44,
-            55,
-            66,
-            77,
-            88,
-            99
-        ],
-        "dex": 250,
-        "name": "Ho-Oh",
-        "tile_x": 9,
-        "tile_y": 12,
-        "bst": 680,
-        "type": "Fire Flying"
-    },
-    "251": {
-        "evolves_at": "None",
-        "learns_at": [
-            10,
-            20,
-            30,
-            40,
-            50
-        ],
-        "dex": 251,
-        "name": "Celebi",
-        "tile_x": 10,
-        "tile_y": 12,
-        "bst": 600,
-        "type": "Psychic Grass"
-    },
-    "255": {
-         "evolves_at": "",
-        "learns_at": [
-        ],
-        "dex": 0,
-        "name": "",
-        "tile_x": 0,
-        "tile_y": 0,
-        "bst": 0,
-        "type": ""
-    }
+  "0": {
+    "evolves_at": "",
+    "learns_at": [],
+    "dex": 0,
+    "name": "",
+    "tile_x": 0,
+    "tile_y": 0,
+    "bst": 0,
+    "types": [
+      ""
+    ]
+  },
+  "1": {
+    "evolves_at": "16",
+    "learns_at": [
+      7,
+      10,
+      15,
+      15,
+      20,
+      25,
+      32,
+      39,
+      46
+    ],
+    "dex": 1,
+    "name": "Bulbasaur",
+    "tile_x": 0,
+    "tile_y": 0,
+    "bst": 318,
+    "types": [
+      "Grass",
+      "Poison"
+    ]
+  },
+  "2": {
+    "evolves_at": "32",
+    "learns_at": [
+      4,
+      7,
+      10,
+      15,
+      15,
+      22,
+      29,
+      38,
+      47,
+      56
+    ],
+    "dex": 2,
+    "name": "Ivysaur",
+    "tile_x": 1,
+    "tile_y": 0,
+    "bst": 405,
+    "types": [
+      "Grass",
+      "Poison"
+    ]
+  },
+  "3": {
+    "evolves_at": "None",
+    "learns_at": [
+      4,
+      7,
+      10,
+      15,
+      15,
+      22,
+      29,
+      38,
+      53,
+      65
+    ],
+    "dex": 3,
+    "name": "Venusaur",
+    "tile_x": 2,
+    "tile_y": 0,
+    "bst": 525,
+    "types": [
+      "Grass",
+      "Poison"
+    ]
+  },
+  "4": {
+    "evolves_at": "16",
+    "learns_at": [
+      7,
+      13,
+      19,
+      25,
+      31,
+      37,
+      43,
+      49
+    ],
+    "dex": 4,
+    "name": "Charmander",
+    "tile_x": 3,
+    "tile_y": 0,
+    "bst": 309,
+    "types": [
+      "Fire"
+    ]
+  },
+  "5": {
+    "evolves_at": "36",
+    "learns_at": [
+      7,
+      13,
+      20,
+      27,
+      34,
+      41,
+      48,
+      55
+    ],
+    "dex": 5,
+    "name": "Charmeleon",
+    "tile_x": 4,
+    "tile_y": 0,
+    "bst": 405,
+    "types": [
+      "Fire"
+    ]
+  },
+  "6": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      13,
+      20,
+      27,
+      34,
+      36,
+      44,
+      54,
+      64
+    ],
+    "dex": 6,
+    "name": "Charizard",
+    "tile_x": 5,
+    "tile_y": 0,
+    "bst": 534,
+    "types": [
+      "Fire",
+      "Flying"
+    ]
+  },
+  "7": {
+    "evolves_at": "16",
+    "learns_at": [
+      4,
+      7,
+      10,
+      13,
+      18,
+      23,
+      28,
+      33,
+      40,
+      47
+    ],
+    "dex": 7,
+    "name": "Squirtle",
+    "tile_x": 6,
+    "tile_y": 0,
+    "bst": 314,
+    "types": [
+      "Water"
+    ]
+  },
+  "8": {
+    "evolves_at": "36",
+    "learns_at": [
+      4,
+      7,
+      10,
+      13,
+      19,
+      25,
+      31,
+      37,
+      45,
+      53
+    ],
+    "dex": 8,
+    "name": "Wartortle",
+    "tile_x": 7,
+    "tile_y": 0,
+    "bst": 405,
+    "types": [
+      "Water"
+    ]
+  },
+  "9": {
+    "evolves_at": "None",
+    "learns_at": [
+      4,
+      7,
+      10,
+      13,
+      19,
+      25,
+      31,
+      42,
+      55,
+      68
+    ],
+    "dex": 9,
+    "name": "Blastoise",
+    "tile_x": 8,
+    "tile_y": 0,
+    "bst": 530,
+    "types": [
+      "Water"
+    ]
+  },
+  "10": {
+    "evolves_at": "7",
+    "learns_at": [],
+    "dex": 10,
+    "name": "Caterpie",
+    "tile_x": 9,
+    "tile_y": 0,
+    "bst": 195,
+    "types": [
+      "Bug"
+    ]
+  },
+  "11": {
+    "evolves_at": "10",
+    "learns_at": [
+      7
+    ],
+    "dex": 11,
+    "name": "Metapod",
+    "tile_x": 10,
+    "tile_y": 0,
+    "bst": 205,
+    "types": [
+      "Bug"
+    ]
+  },
+  "12": {
+    "evolves_at": "None",
+    "learns_at": [
+      10,
+      13,
+      14,
+      15,
+      18,
+      23,
+      28,
+      34,
+      40
+    ],
+    "dex": 12,
+    "name": "Butterfree",
+    "tile_x": 11,
+    "tile_y": 0,
+    "bst": 395,
+    "types": [
+      "Bug",
+      "Flying"
+    ]
+  },
+  "13": {
+    "evolves_at": "7",
+    "learns_at": [],
+    "dex": 13,
+    "name": "Weedle",
+    "tile_x": 12,
+    "tile_y": 0,
+    "bst": 195,
+    "types": [
+      "Bug",
+      "Poison"
+    ]
+  },
+  "14": {
+    "evolves_at": "10",
+    "learns_at": [
+      7
+    ],
+    "dex": 14,
+    "name": "Kakuna",
+    "tile_x": 13,
+    "tile_y": 0,
+    "bst": 205,
+    "types": [
+      "Bug",
+      "Poison"
+    ]
+  },
+  "15": {
+    "evolves_at": "None",
+    "learns_at": [
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40
+    ],
+    "dex": 15,
+    "name": "Beedrill",
+    "tile_x": 14,
+    "tile_y": 0,
+    "bst": 395,
+    "types": [
+      "Bug",
+      "Poison"
+    ]
+  },
+  "16": {
+    "evolves_at": "18",
+    "learns_at": [
+      5,
+      9,
+      15,
+      21,
+      29,
+      37,
+      47
+    ],
+    "dex": 16,
+    "name": "Pidgey",
+    "tile_x": 15,
+    "tile_y": 0,
+    "bst": 251,
+    "types": [
+      "Normal",
+      "Flying"
+    ]
+  },
+  "17": {
+    "evolves_at": "36",
+    "learns_at": [
+      5,
+      9,
+      15,
+      23,
+      33,
+      43,
+      55
+    ],
+    "dex": 17,
+    "name": "Pidgeotto",
+    "tile_x": 16,
+    "tile_y": 0,
+    "bst": 349,
+    "types": [
+      "Normal",
+      "Flying"
+    ]
+  },
+  "18": {
+    "evolves_at": "None",
+    "learns_at": [
+      5,
+      9,
+      15,
+      23,
+      33,
+      46,
+      61
+    ],
+    "dex": 18,
+    "name": "Pidgeot",
+    "tile_x": 17,
+    "tile_y": 0,
+    "bst": 479,
+    "types": [
+      "Normal",
+      "Flying"
+    ]
+  },
+  "19": {
+    "evolves_at": "20",
+    "learns_at": [
+      7,
+      13,
+      20,
+      27,
+      34
+    ],
+    "dex": 19,
+    "name": "Rattata",
+    "tile_x": 18,
+    "tile_y": 0,
+    "bst": 253,
+    "types": [
+      "Normal"
+    ]
+  },
+  "20": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      13,
+      20,
+      30,
+      40
+    ],
+    "dex": 20,
+    "name": "Raticate",
+    "tile_x": 19,
+    "tile_y": 0,
+    "bst": 413,
+    "types": [
+      "Normal"
+    ]
+  },
+  "21": {
+    "evolves_at": "20",
+    "learns_at": [
+      7,
+      13,
+      25,
+      31,
+      37,
+      43
+    ],
+    "dex": 21,
+    "name": "Spearow",
+    "tile_x": 0,
+    "tile_y": 1,
+    "bst": 262,
+    "types": [
+      "Normal",
+      "Flying"
+    ]
+  },
+  "22": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      13,
+      26,
+      32,
+      40,
+      47
+    ],
+    "dex": 22,
+    "name": "Fearow",
+    "tile_x": 1,
+    "tile_y": 1,
+    "bst": 442,
+    "types": [
+      "Normal",
+      "Flying"
+    ]
+  },
+  "23": {
+    "evolves_at": "22",
+    "learns_at": [
+      9,
+      15,
+      23,
+      29,
+      37,
+      43
+    ],
+    "dex": 23,
+    "name": "Ekans",
+    "tile_x": 2,
+    "tile_y": 1,
+    "bst": 288,
+    "types": [
+      "Poison"
+    ]
+  },
+  "24": {
+    "evolves_at": "None",
+    "learns_at": [
+      9,
+      15,
+      25,
+      33,
+      43,
+      51
+    ],
+    "dex": 24,
+    "name": "Arbok",
+    "tile_x": 3,
+    "tile_y": 1,
+    "bst": 448,
+    "types": [
+      "Poison"
+    ]
+  },
+  "25": {
+    "evolves_at": "Stone",
+    "learns_at": [
+      6,
+      8,
+      11,
+      15,
+      20,
+      26,
+      33,
+      41,
+      50
+    ],
+    "dex": 25,
+    "name": "Pikachu",
+    "tile_x": 4,
+    "tile_y": 1,
+    "bst": 320,
+    "types": [
+      "Electric"
+    ]
+  },
+  "26": {
+    "evolves_at": "None",
+    "learns_at": [],
+    "dex": 26,
+    "name": "Raichu",
+    "tile_x": 5,
+    "tile_y": 1,
+    "bst": 485,
+    "types": [
+      "Electric"
+    ]
+  },
+  "27": {
+    "evolves_at": "22",
+    "learns_at": [
+      6,
+      11,
+      17,
+      23,
+      30,
+      37,
+      45
+    ],
+    "dex": 27,
+    "name": "Sandshrew",
+    "tile_x": 6,
+    "tile_y": 1,
+    "bst": 300,
+    "types": [
+      "Ground"
+    ]
+  },
+  "28": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      11,
+      17,
+      24,
+      33,
+      42,
+      52
+    ],
+    "dex": 28,
+    "name": "Sandslash",
+    "tile_x": 7,
+    "tile_y": 1,
+    "bst": 450,
+    "types": [
+      "Ground"
+    ]
+  },
+  "29": {
+    "evolves_at": "16",
+    "learns_at": [
+      8,
+      12,
+      17,
+      23,
+      30,
+      38
+    ],
+    "dex": 29,
+    "name": "Nidoran#",
+    "tile_x": 8,
+    "tile_y": 1,
+    "bst": 275,
+    "types": [
+      "Poison"
+    ]
+  },
+  "30": {
+    "evolves_at": "Stone",
+    "learns_at": [
+      8,
+      12,
+      19,
+      27,
+      36,
+      46
+    ],
+    "dex": 30,
+    "name": "Nidorina",
+    "tile_x": 9,
+    "tile_y": 1,
+    "bst": 365,
+    "types": [
+      "Poison"
+    ]
+  },
+  "31": {
+    "evolves_at": "None",
+    "learns_at": [
+      23
+    ],
+    "dex": 31,
+    "name": "Nidoqueen",
+    "tile_x": 10,
+    "tile_y": 1,
+    "bst": 505,
+    "types": [
+      "Poison",
+      "Ground"
+    ]
+  },
+  "32": {
+    "evolves_at": "16",
+    "learns_at": [
+      8,
+      12,
+      17,
+      23,
+      30,
+      38
+    ],
+    "dex": 32,
+    "name": "Nidoran@",
+    "tile_x": 11,
+    "tile_y": 1,
+    "bst": 273,
+    "types": [
+      "Poison"
+    ]
+  },
+  "33": {
+    "evolves_at": "Stone",
+    "learns_at": [
+      8,
+      12,
+      19,
+      27,
+      36,
+      46
+    ],
+    "dex": 33,
+    "name": "Nidorino",
+    "tile_x": 12,
+    "tile_y": 1,
+    "bst": 365,
+    "types": [
+      "Poison"
+    ]
+  },
+  "34": {
+    "evolves_at": "None",
+    "learns_at": [
+      23
+    ],
+    "dex": 34,
+    "name": "Nidoking",
+    "tile_x": 13,
+    "tile_y": 1,
+    "bst": 505,
+    "types": [
+      "Poison",
+      "Ground"
+    ]
+  },
+  "35": {
+    "evolves_at": "Stone",
+    "learns_at": [
+      8,
+      13,
+      19,
+      26,
+      34,
+      43,
+      53
+    ],
+    "dex": 35,
+    "name": "Clefairy",
+    "tile_x": 14,
+    "tile_y": 1,
+    "bst": 323,
+    "types": [
+      "Normal"
+    ]
+  },
+  "36": {
+    "evolves_at": "None",
+    "learns_at": [],
+    "dex": 36,
+    "name": "Clefable",
+    "tile_x": 15,
+    "tile_y": 1,
+    "bst": 483,
+    "types": [
+      "Normal"
+    ]
+  },
+  "37": {
+    "evolves_at": "Stone",
+    "learns_at": [
+      7,
+      13,
+      19,
+      25,
+      31,
+      37
+    ],
+    "dex": 37,
+    "name": "Vulpix",
+    "tile_x": 16,
+    "tile_y": 1,
+    "bst": 299,
+    "types": [
+      "Fire"
+    ]
+  },
+  "38": {
+    "evolves_at": "None",
+    "learns_at": [
+      43
+    ],
+    "dex": 38,
+    "name": "Ninetales",
+    "tile_x": 17,
+    "tile_y": 1,
+    "bst": 505,
+    "types": [
+      "Fire"
+    ]
+  },
+  "39": {
+    "evolves_at": "Stone",
+    "learns_at": [
+      4,
+      9,
+      14,
+      19,
+      24,
+      29,
+      34,
+      39
+    ],
+    "dex": 39,
+    "name": "Jigglypuff",
+    "tile_x": 18,
+    "tile_y": 1,
+    "bst": 270,
+    "types": [
+      "Normal"
+    ]
+  },
+  "40": {
+    "evolves_at": "None",
+    "learns_at": [],
+    "dex": 40,
+    "name": "Wigglytuff",
+    "tile_x": 19,
+    "tile_y": 1,
+    "bst": 435,
+    "types": [
+      "Normal"
+    ]
+  },
+  "41": {
+    "evolves_at": "22",
+    "learns_at": [
+      6,
+      12,
+      19,
+      27,
+      36,
+      46
+    ],
+    "dex": 41,
+    "name": "Zubat",
+    "tile_x": 0,
+    "tile_y": 2,
+    "bst": 245,
+    "types": [
+      "Poison",
+      "Flying"
+    ]
+  },
+  "42": {
+    "evolves_at": "Frnd",
+    "learns_at": [
+      6,
+      12,
+      19,
+      30,
+      42,
+      55
+    ],
+    "dex": 42,
+    "name": "Golbat",
+    "tile_x": 1,
+    "tile_y": 2,
+    "bst": 455,
+    "types": [
+      "Poison",
+      "Flying"
+    ]
+  },
+  "43": {
+    "evolves_at": "21",
+    "learns_at": [
+      7,
+      14,
+      16,
+      18,
+      23,
+      32,
+      39
+    ],
+    "dex": 43,
+    "name": "Oddish",
+    "tile_x": 2,
+    "tile_y": 2,
+    "bst": 320,
+    "types": [
+      "Grass",
+      "Poison"
+    ]
+  },
+  "44": {
+    "evolves_at": "Stones",
+    "learns_at": [
+      7,
+      14,
+      16,
+      18,
+      24,
+      35,
+      44
+    ],
+    "dex": 44,
+    "name": "Gloom",
+    "tile_x": 3,
+    "tile_y": 2,
+    "bst": 395,
+    "types": [
+      "Grass",
+      "Poison"
+    ]
+  },
+  "45": {
+    "evolves_at": "None",
+    "learns_at": [],
+    "dex": 45,
+    "name": "Vileplume",
+    "tile_x": 4,
+    "tile_y": 2,
+    "bst": 490,
+    "types": [
+      "Grass",
+      "Poison"
+    ]
+  },
+  "46": {
+    "evolves_at": "24",
+    "learns_at": [
+      7,
+      13,
+      19,
+      25,
+      31,
+      37,
+      43
+    ],
+    "dex": 46,
+    "name": "Paras",
+    "tile_x": 5,
+    "tile_y": 2,
+    "bst": 285,
+    "types": [
+      "Bug",
+      "Grass"
+    ]
+  },
+  "47": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      13,
+      19,
+      28,
+      37,
+      46,
+      55
+    ],
+    "dex": 47,
+    "name": "Parasect",
+    "tile_x": 6,
+    "tile_y": 2,
+    "bst": 405,
+    "types": [
+      "Bug",
+      "Grass"
+    ]
+  },
+  "48": {
+    "evolves_at": "31",
+    "learns_at": [
+      9,
+      17,
+      20,
+      25,
+      28,
+      33,
+      36,
+      41
+    ],
+    "dex": 48,
+    "name": "Venonat",
+    "tile_x": 7,
+    "tile_y": 2,
+    "bst": 305,
+    "types": [
+      "Bug",
+      "Poison"
+    ]
+  },
+  "49": {
+    "evolves_at": "None",
+    "learns_at": [
+      9,
+      17,
+      20,
+      25,
+      28,
+      31,
+      36,
+      42,
+      52
+    ],
+    "dex": 49,
+    "name": "Venomoth",
+    "tile_x": 8,
+    "tile_y": 2,
+    "bst": 450,
+    "types": [
+      "Bug",
+      "Poison"
+    ]
+  },
+  "50": {
+    "evolves_at": "26",
+    "learns_at": [
+      5,
+      9,
+      17,
+      25,
+      33,
+      41,
+      49
+    ],
+    "dex": 50,
+    "name": "Diglett",
+    "tile_x": 9,
+    "tile_y": 2,
+    "bst": 265,
+    "types": [
+      "Ground"
+    ]
+  },
+  "51": {
+    "evolves_at": "None",
+    "learns_at": [
+      5,
+      9,
+      17,
+      25,
+      37,
+      49,
+      61
+    ],
+    "dex": 51,
+    "name": "Dugtrio",
+    "tile_x": 10,
+    "tile_y": 2,
+    "bst": 425,
+    "types": [
+      "Ground"
+    ]
+  },
+  "52": {
+    "evolves_at": "28",
+    "learns_at": [
+      11,
+      20,
+      28,
+      35,
+      41,
+      46
+    ],
+    "dex": 52,
+    "name": "Meowth",
+    "tile_x": 11,
+    "tile_y": 2,
+    "bst": 290,
+    "types": [
+      "Normal"
+    ]
+  },
+  "53": {
+    "evolves_at": "None",
+    "learns_at": [
+      11,
+      20,
+      38,
+      46,
+      53
+    ],
+    "dex": 53,
+    "name": "Persian",
+    "tile_x": 12,
+    "tile_y": 2,
+    "bst": 440,
+    "types": [
+      "Normal"
+    ]
+  },
+  "54": {
+    "evolves_at": "33",
+    "learns_at": [
+      5,
+      10,
+      16,
+      23,
+      31,
+      40,
+      50
+    ],
+    "dex": 54,
+    "name": "Psyduck",
+    "tile_x": 13,
+    "tile_y": 2,
+    "bst": 320,
+    "types": [
+      "Water"
+    ]
+  },
+  "55": {
+    "evolves_at": "None",
+    "learns_at": [
+      5,
+      10,
+      16,
+      23,
+      31,
+      44,
+      58
+    ],
+    "dex": 55,
+    "name": "Golduck",
+    "tile_x": 14,
+    "tile_y": 2,
+    "bst": 500,
+    "types": [
+      "Water"
+    ]
+  },
+  "56": {
+    "evolves_at": "28",
+    "learns_at": [
+      9,
+      15,
+      21,
+      27,
+      33,
+      39,
+      45,
+      51
+    ],
+    "dex": 56,
+    "name": "Mankey",
+    "tile_x": 15,
+    "tile_y": 2,
+    "bst": 305,
+    "types": [
+      "Fighting"
+    ]
+  },
+  "57": {
+    "evolves_at": "None",
+    "learns_at": [
+      9,
+      15,
+      21,
+      27,
+      28,
+      36,
+      45,
+      54,
+      63
+    ],
+    "dex": 57,
+    "name": "Primeape",
+    "tile_x": 16,
+    "tile_y": 2,
+    "bst": 455,
+    "types": [
+      "Fighting"
+    ]
+  },
+  "58": {
+    "evolves_at": "Stone",
+    "learns_at": [
+      9,
+      18,
+      26,
+      34,
+      42,
+      50
+    ],
+    "dex": 58,
+    "name": "Growlithe",
+    "tile_x": 17,
+    "tile_y": 2,
+    "bst": 350,
+    "types": [
+      "Fire"
+    ]
+  },
+  "59": {
+    "evolves_at": "None",
+    "learns_at": [
+      50
+    ],
+    "dex": 59,
+    "name": "Arcanine",
+    "tile_x": 18,
+    "tile_y": 2,
+    "bst": 555,
+    "types": [
+      "Fire"
+    ]
+  },
+  "60": {
+    "evolves_at": "25",
+    "learns_at": [
+      7,
+      13,
+      19,
+      25,
+      31,
+      37,
+      43
+    ],
+    "dex": 60,
+    "name": "Poliwag",
+    "tile_x": 19,
+    "tile_y": 2,
+    "bst": 300,
+    "types": [
+      "Water"
+    ]
+  },
+  "61": {
+    "evolves_at": "37/Stone",
+    "learns_at": [
+      7,
+      13,
+      19,
+      27,
+      35,
+      43,
+      51
+    ],
+    "dex": 61,
+    "name": "Poliwhirl",
+    "tile_x": 0,
+    "tile_y": 3,
+    "bst": 385,
+    "types": [
+      "Water"
+    ]
+  },
+  "62": {
+    "evolves_at": "None",
+    "learns_at": [
+      35,
+      51
+    ],
+    "dex": 62,
+    "name": "Poliwrath",
+    "tile_x": 1,
+    "tile_y": 3,
+    "bst": 510,
+    "types": [
+      "Water",
+      "Fighting"
+    ]
+  },
+  "63": {
+    "evolves_at": "16",
+    "learns_at": [],
+    "dex": 63,
+    "name": "Abra",
+    "tile_x": 2,
+    "tile_y": 3,
+    "bst": 310,
+    "types": [
+      "Psychic"
+    ]
+  },
+  "64": {
+    "evolves_at": "37",
+    "learns_at": [
+      16,
+      18,
+      21,
+      26,
+      31,
+      38,
+      45
+    ],
+    "dex": 64,
+    "name": "Kadabra",
+    "tile_x": 3,
+    "tile_y": 3,
+    "bst": 400,
+    "types": [
+      "Psychic"
+    ]
+  },
+  "65": {
+    "evolves_at": "None",
+    "learns_at": [
+      16,
+      18,
+      21,
+      26,
+      31,
+      38,
+      45
+    ],
+    "dex": 65,
+    "name": "Alakazam",
+    "tile_x": 4,
+    "tile_y": 3,
+    "bst": 500,
+    "types": [
+      "Psychic"
+    ]
+  },
+  "66": {
+    "evolves_at": "28",
+    "learns_at": [
+      7,
+      13,
+      19,
+      25,
+      31,
+      37,
+      43,
+      49
+    ],
+    "dex": 66,
+    "name": "Machop",
+    "tile_x": 5,
+    "tile_y": 3,
+    "bst": 305,
+    "types": [
+      "Fighting"
+    ]
+  },
+  "67": {
+    "evolves_at": "37",
+    "learns_at": [
+      8,
+      15,
+      19,
+      25,
+      34,
+      43,
+      52,
+      61
+    ],
+    "dex": 67,
+    "name": "Machoke",
+    "tile_x": 6,
+    "tile_y": 3,
+    "bst": 405,
+    "types": [
+      "Fighting"
+    ]
+  },
+  "68": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      15,
+      19,
+      25,
+      34,
+      43,
+      52,
+      61
+    ],
+    "dex": 68,
+    "name": "Machamp",
+    "tile_x": 7,
+    "tile_y": 3,
+    "bst": 505,
+    "types": [
+      "Fighting"
+    ]
+  },
+  "69": {
+    "evolves_at": "21",
+    "learns_at": [
+      6,
+      11,
+      15,
+      17,
+      19,
+      23,
+      30,
+      37,
+      45
+    ],
+    "dex": 69,
+    "name": "Bellsprout",
+    "tile_x": 8,
+    "tile_y": 3,
+    "bst": 300,
+    "types": [
+      "Grass",
+      "Poison"
+    ]
+  },
+  "70": {
+    "evolves_at": "Stone",
+    "learns_at": [
+      6,
+      11,
+      15,
+      17,
+      19,
+      24,
+      33,
+      42,
+      54
+    ],
+    "dex": 70,
+    "name": "Weepinbell",
+    "tile_x": 9,
+    "tile_y": 3,
+    "bst": 390,
+    "types": [
+      "Grass",
+      "Poison"
+    ]
+  },
+  "71": {
+    "evolves_at": "None",
+    "learns_at": [],
+    "dex": 71,
+    "name": "Victreebel",
+    "tile_x": 10,
+    "tile_y": 3,
+    "bst": 490,
+    "types": [
+      "Grass",
+      "Poison"
+    ]
+  },
+  "72": {
+    "evolves_at": "30",
+    "learns_at": [
+      6,
+      12,
+      19,
+      25,
+      30,
+      36,
+      43,
+      49
+    ],
+    "dex": 72,
+    "name": "Tentacool",
+    "tile_x": 11,
+    "tile_y": 3,
+    "bst": 335,
+    "types": [
+      "Water",
+      "Poison"
+    ]
+  },
+  "73": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      12,
+      19,
+      25,
+      30,
+      38,
+      47,
+      55
+    ],
+    "dex": 73,
+    "name": "Tentacruel",
+    "tile_x": 12,
+    "tile_y": 3,
+    "bst": 515,
+    "types": [
+      "Water",
+      "Poison"
+    ]
+  },
+  "74": {
+    "evolves_at": "25",
+    "learns_at": [
+      6,
+      11,
+      16,
+      21,
+      26,
+      31,
+      36,
+      41
+    ],
+    "dex": 74,
+    "name": "Geodude",
+    "tile_x": 13,
+    "tile_y": 3,
+    "bst": 300,
+    "types": [
+      "Rock",
+      "Ground"
+    ]
+  },
+  "75": {
+    "evolves_at": "37",
+    "learns_at": [
+      6,
+      11,
+      16,
+      21,
+      27,
+      34,
+      41,
+      48
+    ],
+    "dex": 75,
+    "name": "Graveler",
+    "tile_x": 14,
+    "tile_y": 3,
+    "bst": 390,
+    "types": [
+      "Rock",
+      "Ground"
+    ]
+  },
+  "76": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      11,
+      16,
+      21,
+      27,
+      34,
+      41,
+      48
+    ],
+    "dex": 76,
+    "name": "Golem",
+    "tile_x": 15,
+    "tile_y": 3,
+    "bst": 495,
+    "types": [
+      "Rock",
+      "Ground"
+    ]
+  },
+  "77": {
+    "evolves_at": "40",
+    "learns_at": [
+      4,
+      8,
+      13,
+      19,
+      26,
+      34,
+      43,
+      53
+    ],
+    "dex": 77,
+    "name": "Ponyta",
+    "tile_x": 16,
+    "tile_y": 3,
+    "bst": 410,
+    "types": [
+      "Fire"
+    ]
+  },
+  "78": {
+    "evolves_at": "None",
+    "learns_at": [
+      4,
+      8,
+      13,
+      19,
+      26,
+      34,
+      40,
+      47,
+      61
+    ],
+    "dex": 78,
+    "name": "Rapidash",
+    "tile_x": 17,
+    "tile_y": 3,
+    "bst": 500,
+    "types": [
+      "Fire"
+    ]
+  },
+  "79": {
+    "evolves_at": "37",
+    "learns_at": [
+      6,
+      15,
+      20,
+      29,
+      34,
+      43,
+      48
+    ],
+    "dex": 79,
+    "name": "Slowpoke",
+    "tile_x": 18,
+    "tile_y": 3,
+    "bst": 315,
+    "types": [
+      "Water",
+      "Psychic"
+    ]
+  },
+  "80": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      15,
+      20,
+      29,
+      34,
+      37,
+      46,
+      54
+    ],
+    "dex": 80,
+    "name": "Slowbro",
+    "tile_x": 19,
+    "tile_y": 3,
+    "bst": 490,
+    "types": [
+      "Water",
+      "Psychic"
+    ]
+  },
+  "81": {
+    "evolves_at": "30",
+    "learns_at": [
+      6,
+      11,
+      16,
+      21,
+      27,
+      33,
+      39,
+      45
+    ],
+    "dex": 81,
+    "name": "Magnemite",
+    "tile_x": 0,
+    "tile_y": 4,
+    "bst": 325,
+    "types": [
+      "Electric",
+      "Steel"
+    ]
+  },
+  "82": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      11,
+      16,
+      21,
+      27,
+      35,
+      43,
+      53
+    ],
+    "dex": 82,
+    "name": "Magneton",
+    "tile_x": 1,
+    "tile_y": 4,
+    "bst": 465,
+    "types": [
+      "Electric",
+      "Steel"
+    ]
+  },
+  "83": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      13,
+      19,
+      25,
+      31,
+      37,
+      44
+    ],
+    "dex": 83,
+    "name": "Farfetch'd",
+    "tile_x": 2,
+    "tile_y": 4,
+    "bst": 377,
+    "types": [
+      "Normal",
+      "Flying"
+    ]
+  },
+  "84": {
+    "evolves_at": "31",
+    "learns_at": [
+      9,
+      13,
+      21,
+      25,
+      33,
+      37
+    ],
+    "dex": 84,
+    "name": "Doduo",
+    "tile_x": 3,
+    "tile_y": 4,
+    "bst": 310,
+    "types": [
+      "Normal",
+      "Flying"
+    ]
+  },
+  "85": {
+    "evolves_at": "None",
+    "learns_at": [
+      9,
+      13,
+      21,
+      25,
+      38,
+      47
+    ],
+    "dex": 85,
+    "name": "Dodrio",
+    "tile_x": 4,
+    "tile_y": 4,
+    "bst": 470,
+    "types": [
+      "Normal",
+      "Flying"
+    ]
+  },
+  "86": {
+    "evolves_at": "34",
+    "learns_at": [
+      5,
+      16,
+      21,
+      32,
+      37,
+      48
+    ],
+    "dex": 86,
+    "name": "Seel",
+    "tile_x": 5,
+    "tile_y": 4,
+    "bst": 325,
+    "types": [
+      "Water"
+    ]
+  },
+  "87": {
+    "evolves_at": "None",
+    "learns_at": [
+      5,
+      16,
+      21,
+      32,
+      43,
+      60
+    ],
+    "dex": 87,
+    "name": "Dewgong",
+    "tile_x": 6,
+    "tile_y": 4,
+    "bst": 475,
+    "types": [
+      "Water",
+      "Ice"
+    ]
+  },
+  "88": {
+    "evolves_at": "38",
+    "learns_at": [
+      5,
+      10,
+      16,
+      23,
+      31,
+      40,
+      50
+    ],
+    "dex": 88,
+    "name": "Grimer",
+    "tile_x": 7,
+    "tile_y": 4,
+    "bst": 325,
+    "types": [
+      "Poison"
+    ]
+  },
+  "89": {
+    "evolves_at": "None",
+    "learns_at": [
+      23,
+      31,
+      33,
+      37,
+      45,
+      45,
+      60
+    ],
+    "dex": 89,
+    "name": "Muk",
+    "tile_x": 8,
+    "tile_y": 4,
+    "bst": 500,
+    "types": [
+      "Poison"
+    ]
+  },
+  "90": {
+    "evolves_at": "Stone",
+    "learns_at": [
+      9,
+      17,
+      25,
+      33,
+      41,
+      49
+    ],
+    "dex": 90,
+    "name": "Shellder",
+    "tile_x": 9,
+    "tile_y": 4,
+    "bst": 305,
+    "types": [
+      "Water"
+    ]
+  },
+  "91": {
+    "evolves_at": "None",
+    "learns_at": [
+      41
+    ],
+    "dex": 91,
+    "name": "Cloyster",
+    "tile_x": 10,
+    "tile_y": 4,
+    "bst": 525,
+    "types": [
+      "Water",
+      "Ice"
+    ]
+  },
+  "92": {
+    "evolves_at": "25",
+    "learns_at": [
+      8,
+      13,
+      16,
+      21,
+      28,
+      33,
+      36
+    ],
+    "dex": 92,
+    "name": "Gastly",
+    "tile_x": 11,
+    "tile_y": 4,
+    "bst": 310,
+    "types": [
+      "Ghost",
+      "Poison"
+    ]
+  },
+  "93": {
+    "evolves_at": "37",
+    "learns_at": [
+      8,
+      13,
+      16,
+      21,
+      31,
+      39,
+      48
+    ],
+    "dex": 93,
+    "name": "Haunter",
+    "tile_x": 12,
+    "tile_y": 4,
+    "bst": 405,
+    "types": [
+      "Ghost",
+      "Poison"
+    ]
+  },
+  "94": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      13,
+      16,
+      21,
+      31,
+      39,
+      48
+    ],
+    "dex": 94,
+    "name": "Gengar",
+    "tile_x": 13,
+    "tile_y": 4,
+    "bst": 500,
+    "types": [
+      "Ghost",
+      "Poison"
+    ]
+  },
+  "95": {
+    "evolves_at": "37",
+    "learns_at": [
+      10,
+      14,
+      23,
+      27,
+      36,
+      40
+    ],
+    "dex": 95,
+    "name": "Onix",
+    "tile_x": 14,
+    "tile_y": 4,
+    "bst": 385,
+    "types": [
+      "Rock",
+      "Ground"
+    ]
+  },
+  "96": {
+    "evolves_at": "26",
+    "learns_at": [
+      10,
+      18,
+      25,
+      31,
+      36,
+      40,
+      43,
+      45
+    ],
+    "dex": 96,
+    "name": "Drowzee",
+    "tile_x": 15,
+    "tile_y": 4,
+    "bst": 328,
+    "types": [
+      "Psychic"
+    ]
+  },
+  "97": {
+    "evolves_at": "None",
+    "learns_at": [
+      10,
+      18,
+      25,
+      33,
+      40,
+      49,
+      55,
+      60
+    ],
+    "dex": 97,
+    "name": "Hypno",
+    "tile_x": 16,
+    "tile_y": 4,
+    "bst": 483,
+    "types": [
+      "Psychic"
+    ]
+  },
+  "98": {
+    "evolves_at": "28",
+    "learns_at": [
+      5,
+      12,
+      16,
+      23,
+      27,
+      34,
+      41
+    ],
+    "dex": 98,
+    "name": "Krabby",
+    "tile_x": 17,
+    "tile_y": 4,
+    "bst": 325,
+    "types": [
+      "Water"
+    ]
+  },
+  "99": {
+    "evolves_at": "None",
+    "learns_at": [
+      5,
+      12,
+      16,
+      23,
+      27,
+      38,
+      49
+    ],
+    "dex": 99,
+    "name": "Kingler",
+    "tile_x": 18,
+    "tile_y": 4,
+    "bst": 475,
+    "types": [
+      "Water"
+    ]
+  },
+  "100": {
+    "evolves_at": "30",
+    "learns_at": [
+      9,
+      17,
+      23,
+      29,
+      33,
+      37,
+      39,
+      41
+    ],
+    "dex": 100,
+    "name": "Voltorb",
+    "tile_x": 19,
+    "tile_y": 4,
+    "bst": 330,
+    "types": [
+      "Electric"
+    ]
+  },
+  "101": {
+    "evolves_at": "None",
+    "learns_at": [
+      9,
+      17,
+      23,
+      29,
+      34,
+      40,
+      44,
+      48
+    ],
+    "dex": 101,
+    "name": "Electrode",
+    "tile_x": 0,
+    "tile_y": 5,
+    "bst": 490,
+    "types": [
+      "Electric"
+    ]
+  },
+  "102": {
+    "evolves_at": "Stone",
+    "learns_at": [
+      7,
+      13,
+      19,
+      25,
+      31,
+      37,
+      43
+    ],
+    "dex": 102,
+    "name": "Exeggcute",
+    "tile_x": 1,
+    "tile_y": 5,
+    "bst": 325,
+    "types": [
+      "Grass",
+      "Psychic"
+    ]
+  },
+  "103": {
+    "evolves_at": "None",
+    "learns_at": [
+      19,
+      31
+    ],
+    "dex": 103,
+    "name": "Exeggutor",
+    "tile_x": 2,
+    "tile_y": 5,
+    "bst": 530,
+    "types": [
+      "Grass",
+      "Psychic"
+    ]
+  },
+  "104": {
+    "evolves_at": "28",
+    "learns_at": [
+      5,
+      9,
+      13,
+      17,
+      21,
+      25,
+      29,
+      33,
+      37,
+      41
+    ],
+    "dex": 104,
+    "name": "Cubone",
+    "tile_x": 3,
+    "tile_y": 5,
+    "bst": 320,
+    "types": [
+      "Ground"
+    ]
+  },
+  "105": {
+    "evolves_at": "None",
+    "learns_at": [
+      5,
+      9,
+      13,
+      17,
+      32,
+      39,
+      46,
+      53
+    ],
+    "dex": 105,
+    "name": "Marowak",
+    "tile_x": 4,
+    "tile_y": 5,
+    "bst": 425,
+    "types": [
+      "Ground"
+    ]
+  },
+  "106": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      11,
+      16,
+      21,
+      26,
+      31,
+      36,
+      41,
+      46,
+      51
+    ],
+    "dex": 106,
+    "name": "Hitmonlee",
+    "tile_x": 5,
+    "tile_y": 5,
+    "bst": 455,
+    "types": [
+      "Fighting"
+    ]
+  },
+  "107": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      13,
+      26,
+      26,
+      26,
+      32,
+      38,
+      44,
+      50
+    ],
+    "dex": 107,
+    "name": "Hitmonchan",
+    "tile_x": 6,
+    "tile_y": 5,
+    "bst": 455,
+    "types": [
+      "Fighting"
+    ]
+  },
+  "108": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      13,
+      19,
+      25,
+      31,
+      37,
+      43
+    ],
+    "dex": 108,
+    "name": "Lickitung",
+    "tile_x": 7,
+    "tile_y": 5,
+    "bst": 385,
+    "types": [
+      "Normal"
+    ]
+  },
+  "109": {
+    "evolves_at": "35",
+    "learns_at": [
+      9,
+      17,
+      21,
+      25,
+      33,
+      41,
+      45
+    ],
+    "dex": 109,
+    "name": "Koffing",
+    "tile_x": 8,
+    "tile_y": 5,
+    "bst": 340,
+    "types": [
+      "Poison"
+    ]
+  },
+  "110": {
+    "evolves_at": "None",
+    "learns_at": [
+      9,
+      17,
+      21,
+      25,
+      33,
+      44,
+      51
+    ],
+    "dex": 110,
+    "name": "Weezing",
+    "tile_x": 9,
+    "tile_y": 5,
+    "bst": 490,
+    "types": [
+      "Poison"
+    ]
+  },
+  "111": {
+    "evolves_at": "42",
+    "learns_at": [
+      13,
+      19,
+      31,
+      37,
+      49,
+      55
+    ],
+    "dex": 111,
+    "name": "Rhyhorn",
+    "tile_x": 10,
+    "tile_y": 5,
+    "bst": 345,
+    "types": [
+      "Ground",
+      "Rock"
+    ]
+  },
+  "112": {
+    "evolves_at": "None",
+    "learns_at": [
+      13,
+      19,
+      31,
+      37,
+      54,
+      65
+    ],
+    "dex": 112,
+    "name": "Rhydon",
+    "tile_x": 11,
+    "tile_y": 5,
+    "bst": 485,
+    "types": [
+      "Ground",
+      "Rock"
+    ]
+  },
+  "113": {
+    "evolves_at": "Frnd",
+    "learns_at": [
+      5,
+      9,
+      13,
+      17,
+      23,
+      29,
+      35,
+      41,
+      49,
+      57
+    ],
+    "dex": 113,
+    "name": "Chansey",
+    "tile_x": 12,
+    "tile_y": 5,
+    "bst": 450,
+    "types": [
+      "Normal"
+    ]
+  },
+  "114": {
+    "evolves_at": "None",
+    "learns_at": [
+      4,
+      10,
+      13,
+      19,
+      25,
+      31,
+      34,
+      40,
+      46
+    ],
+    "dex": 114,
+    "name": "Tangela",
+    "tile_x": 13,
+    "tile_y": 5,
+    "bst": 435,
+    "types": [
+      "Grass"
+    ]
+  },
+  "115": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      13,
+      19,
+      25,
+      31,
+      37,
+      43,
+      49
+    ],
+    "dex": 115,
+    "name": "Kangaskhan",
+    "tile_x": 14,
+    "tile_y": 5,
+    "bst": 490,
+    "types": [
+      "Normal"
+    ]
+  },
+  "116": {
+    "evolves_at": "32",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      36,
+      43
+    ],
+    "dex": 116,
+    "name": "Horsea",
+    "tile_x": 15,
+    "tile_y": 5,
+    "bst": 295,
+    "types": [
+      "Water"
+    ]
+  },
+  "117": {
+    "evolves_at": "40",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      40,
+      51
+    ],
+    "dex": 117,
+    "name": "Seadra",
+    "tile_x": 16,
+    "tile_y": 5,
+    "bst": 440,
+    "types": [
+      "Water"
+    ]
+  },
+  "118": {
+    "evolves_at": "33",
+    "learns_at": [
+      10,
+      15,
+      24,
+      29,
+      38,
+      43,
+      52
+    ],
+    "dex": 118,
+    "name": "Goldeen",
+    "tile_x": 17,
+    "tile_y": 5,
+    "bst": 320,
+    "types": [
+      "Water"
+    ]
+  },
+  "119": {
+    "evolves_at": "None",
+    "learns_at": [
+      10,
+      15,
+      24,
+      29,
+      41,
+      49,
+      61
+    ],
+    "dex": 119,
+    "name": "Seaking",
+    "tile_x": 18,
+    "tile_y": 5,
+    "bst": 450,
+    "types": [
+      "Water"
+    ]
+  },
+  "120": {
+    "evolves_at": "Stone",
+    "learns_at": [
+      7,
+      13,
+      19,
+      25,
+      31,
+      37,
+      43,
+      50
+    ],
+    "dex": 120,
+    "name": "Staryu",
+    "tile_x": 19,
+    "tile_y": 5,
+    "bst": 340,
+    "types": [
+      "Water"
+    ]
+  },
+  "121": {
+    "evolves_at": "None",
+    "learns_at": [
+      37
+    ],
+    "dex": 121,
+    "name": "Starmie",
+    "tile_x": 0,
+    "tile_y": 6,
+    "bst": 520,
+    "types": [
+      "Water",
+      "Psychic"
+    ]
+  },
+  "122": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      11,
+      16,
+      21,
+      26,
+      26,
+      31,
+      36,
+      41,
+      46
+    ],
+    "dex": 122,
+    "name": "Mr. Mime",
+    "tile_x": 1,
+    "tile_y": 6,
+    "bst": 460,
+    "types": [
+      "Psychic"
+    ]
+  },
+  "123": {
+    "evolves_at": "37",
+    "learns_at": [
+      6,
+      12,
+      18,
+      24,
+      30,
+      36,
+      42,
+      48
+    ],
+    "dex": 123,
+    "name": "Scyther",
+    "tile_x": 2,
+    "tile_y": 6,
+    "bst": 500,
+    "types": [
+      "Bug",
+      "Flying"
+    ]
+  },
+  "124": {
+    "evolves_at": "None",
+    "learns_at": [
+      9,
+      13,
+      21,
+      25,
+      35,
+      41,
+      51,
+      57
+    ],
+    "dex": 124,
+    "name": "Jynx",
+    "tile_x": 3,
+    "tile_y": 6,
+    "bst": 455,
+    "types": [
+      "Ice",
+      "Psychic"
+    ]
+  },
+  "125": {
+    "evolves_at": "None",
+    "learns_at": [
+      9,
+      17,
+      25,
+      36,
+      47,
+      58
+    ],
+    "dex": 125,
+    "name": "Electabuzz",
+    "tile_x": 4,
+    "tile_y": 6,
+    "bst": 490,
+    "types": [
+      "Electric"
+    ]
+  },
+  "126": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      13,
+      19,
+      25,
+      33,
+      41,
+      49,
+      57
+    ],
+    "dex": 126,
+    "name": "Magmar",
+    "tile_x": 5,
+    "tile_y": 6,
+    "bst": 495,
+    "types": [
+      "Fire"
+    ]
+  },
+  "127": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      13,
+      19,
+      25,
+      31,
+      37,
+      43
+    ],
+    "dex": 127,
+    "name": "Pinsir",
+    "tile_x": 6,
+    "tile_y": 6,
+    "bst": 500,
+    "types": [
+      "Bug"
+    ]
+  },
+  "128": {
+    "evolves_at": "None",
+    "learns_at": [
+      4,
+      8,
+      13,
+      19,
+      26,
+      34,
+      43,
+      53
+    ],
+    "dex": 128,
+    "name": "Tauros",
+    "tile_x": 7,
+    "tile_y": 6,
+    "bst": 490,
+    "types": [
+      "Normal"
+    ]
+  },
+  "129": {
+    "evolves_at": "20",
+    "learns_at": [
+      15,
+      30
+    ],
+    "dex": 129,
+    "name": "Magikarp",
+    "tile_x": 8,
+    "tile_y": 6,
+    "bst": 200,
+    "types": [
+      "Water"
+    ]
+  },
+  "130": {
+    "evolves_at": "None",
+    "learns_at": [
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50
+    ],
+    "dex": 130,
+    "name": "Gyarados",
+    "tile_x": 9,
+    "tile_y": 6,
+    "bst": 540,
+    "types": [
+      "Water",
+      "Flying"
+    ]
+  },
+  "131": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      36,
+      43,
+      50,
+      57
+    ],
+    "dex": 131,
+    "name": "Lapras",
+    "tile_x": 10,
+    "tile_y": 6,
+    "bst": 535,
+    "types": [
+      "Water",
+      "Ice"
+    ]
+  },
+  "132": {
+    "evolves_at": "None",
+    "learns_at": [],
+    "dex": 132,
+    "name": "Ditto",
+    "tile_x": 11,
+    "tile_y": 6,
+    "bst": 288,
+    "types": [
+      "Normal"
+    ]
+  },
+  "133": {
+    "evolves_at": "Stn/Frnd",
+    "learns_at": [
+      8,
+      16,
+      23,
+      30,
+      36,
+      42
+    ],
+    "dex": 133,
+    "name": "Eevee",
+    "tile_x": 12,
+    "tile_y": 6,
+    "bst": 325,
+    "types": [
+      "Normal"
+    ]
+  },
+  "134": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      16,
+      23,
+      30,
+      36,
+      42,
+      47,
+      52
+    ],
+    "dex": 134,
+    "name": "Vaporeon",
+    "tile_x": 13,
+    "tile_y": 6,
+    "bst": 525,
+    "types": [
+      "Water"
+    ]
+  },
+  "135": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      16,
+      23,
+      30,
+      36,
+      42,
+      47,
+      52
+    ],
+    "dex": 135,
+    "name": "Jolteon",
+    "tile_x": 14,
+    "tile_y": 6,
+    "bst": 525,
+    "types": [
+      "Electric"
+    ]
+  },
+  "136": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      16,
+      23,
+      30,
+      36,
+      42,
+      47,
+      52
+    ],
+    "dex": 136,
+    "name": "Flareon",
+    "tile_x": 15,
+    "tile_y": 6,
+    "bst": 525,
+    "types": [
+      "Fire"
+    ]
+  },
+  "137": {
+    "evolves_at": "37",
+    "learns_at": [
+      9,
+      12,
+      20,
+      24,
+      32,
+      36,
+      44
+    ],
+    "dex": 137,
+    "name": "Porygon",
+    "tile_x": 16,
+    "tile_y": 6,
+    "bst": 395,
+    "types": [
+      "Normal"
+    ]
+  },
+  "138": {
+    "evolves_at": "40",
+    "learns_at": [
+      13,
+      19,
+      31,
+      37,
+      49,
+      55
+    ],
+    "dex": 138,
+    "name": "Omanyte",
+    "tile_x": 17,
+    "tile_y": 6,
+    "bst": 355,
+    "types": [
+      "Rock",
+      "Water"
+    ]
+  },
+  "139": {
+    "evolves_at": "None",
+    "learns_at": [
+      13,
+      19,
+      31,
+      37,
+      40,
+      54,
+      65
+    ],
+    "dex": 139,
+    "name": "Omastar",
+    "tile_x": 18,
+    "tile_y": 6,
+    "bst": 495,
+    "types": [
+      "Rock",
+      "Water"
+    ]
+  },
+  "140": {
+    "evolves_at": "40",
+    "learns_at": [
+      10,
+      19,
+      28,
+      37,
+      46,
+      55
+    ],
+    "dex": 140,
+    "name": "Kabuto",
+    "tile_x": 19,
+    "tile_y": 6,
+    "bst": 355,
+    "types": [
+      "Rock",
+      "Water"
+    ]
+  },
+  "141": {
+    "evolves_at": "None",
+    "learns_at": [
+      10,
+      19,
+      28,
+      37,
+      40,
+      51,
+      65
+    ],
+    "dex": 141,
+    "name": "Kabutops",
+    "tile_x": 0,
+    "tile_y": 7,
+    "bst": 495,
+    "types": [
+      "Rock",
+      "Water"
+    ]
+  },
+  "142": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      36,
+      43,
+      50
+    ],
+    "dex": 142,
+    "name": "Aerodactyl",
+    "tile_x": 1,
+    "tile_y": 7,
+    "bst": 515,
+    "types": [
+      "Rock",
+      "Flying"
+    ]
+  },
+  "143": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      36,
+      36,
+      43,
+      50,
+      57
+    ],
+    "dex": 143,
+    "name": "Snorlax",
+    "tile_x": 2,
+    "tile_y": 7,
+    "bst": 540,
+    "types": [
+      "Normal"
+    ]
+  },
+  "144": {
+    "evolves_at": "None",
+    "learns_at": [
+      13,
+      25,
+      37,
+      49,
+      61,
+      73
+    ],
+    "dex": 144,
+    "name": "Articuno",
+    "tile_x": 3,
+    "tile_y": 7,
+    "bst": 580,
+    "types": [
+      "Ice",
+      "Flying"
+    ]
+  },
+  "145": {
+    "evolves_at": "None",
+    "learns_at": [
+      13,
+      25,
+      37,
+      49,
+      61,
+      73
+    ],
+    "dex": 145,
+    "name": "Zapdos",
+    "tile_x": 4,
+    "tile_y": 7,
+    "bst": 580,
+    "types": [
+      "Electric",
+      "Flying"
+    ]
+  },
+  "146": {
+    "evolves_at": "None",
+    "learns_at": [
+      13,
+      25,
+      37,
+      49,
+      61,
+      73
+    ],
+    "dex": 146,
+    "name": "Moltres",
+    "tile_x": 5,
+    "tile_y": 7,
+    "bst": 580,
+    "types": [
+      "Fire",
+      "Flying"
+    ]
+  },
+  "147": {
+    "evolves_at": "30",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      36,
+      43,
+      50,
+      57
+    ],
+    "dex": 147,
+    "name": "Dratini",
+    "tile_x": 6,
+    "tile_y": 7,
+    "bst": 300,
+    "types": [
+      "Dragon"
+    ]
+  },
+  "148": {
+    "evolves_at": "55",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      38,
+      47,
+      56,
+      65
+    ],
+    "dex": 148,
+    "name": "Dragonair",
+    "tile_x": 7,
+    "tile_y": 7,
+    "bst": 420,
+    "types": [
+      "Dragon"
+    ]
+  },
+  "149": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      38,
+      47,
+      56,
+      55,
+      61,
+      75
+    ],
+    "dex": 149,
+    "name": "Dragonite",
+    "tile_x": 8,
+    "tile_y": 7,
+    "bst": 600,
+    "types": [
+      "Dragon",
+      "Flying"
+    ]
+  },
+  "150": {
+    "evolves_at": "None",
+    "learns_at": [
+      11,
+      22,
+      33,
+      44,
+      55,
+      66,
+      77,
+      88,
+      99
+    ],
+    "dex": 150,
+    "name": "Mewtwo",
+    "tile_x": 9,
+    "tile_y": 7,
+    "bst": 680,
+    "types": [
+      "Psychic"
+    ]
+  },
+  "151": {
+    "evolves_at": "None",
+    "learns_at": [
+      10,
+      20,
+      30,
+      40,
+      50
+    ],
+    "dex": 151,
+    "name": "Mew",
+    "tile_x": 10,
+    "tile_y": 7,
+    "bst": 600,
+    "types": [
+      "Psychic"
+    ]
+  },
+  "152": {
+    "evolves_at": "16",
+    "learns_at": [
+      8,
+      12,
+      15,
+      22,
+      29,
+      36,
+      43,
+      50
+    ],
+    "dex": 152,
+    "name": "Chikorita",
+    "tile_x": 11,
+    "tile_y": 7,
+    "bst": 318,
+    "types": [
+      "Grass"
+    ]
+  },
+  "153": {
+    "evolves_at": "32",
+    "learns_at": [
+      8,
+      12,
+      15,
+      23,
+      31,
+      39,
+      47,
+      55
+    ],
+    "dex": 153,
+    "name": "Bayleef",
+    "tile_x": 12,
+    "tile_y": 7,
+    "bst": 405,
+    "types": [
+      "Grass"
+    ]
+  },
+  "154": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      12,
+      15,
+      23,
+      31,
+      41,
+      51,
+      61
+    ],
+    "dex": 154,
+    "name": "Meganium",
+    "tile_x": 13,
+    "tile_y": 7,
+    "bst": 525,
+    "types": [
+      "Grass"
+    ]
+  },
+  "155": {
+    "evolves_at": "14",
+    "learns_at": [
+      6,
+      12,
+      19,
+      27,
+      36,
+      46
+    ],
+    "dex": 155,
+    "name": "Cyndaquil",
+    "tile_x": 14,
+    "tile_y": 7,
+    "bst": 309,
+    "types": [
+      "Fire"
+    ]
+  },
+  "156": {
+    "evolves_at": "36",
+    "learns_at": [
+      6,
+      12,
+      21,
+      31,
+      42,
+      54
+    ],
+    "dex": 156,
+    "name": "Quilava",
+    "tile_x": 15,
+    "tile_y": 7,
+    "bst": 405,
+    "types": [
+      "Fire"
+    ]
+  },
+  "157": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      12,
+      21,
+      31,
+      45,
+      60
+    ],
+    "dex": 157,
+    "name": "Typhlosion",
+    "tile_x": 16,
+    "tile_y": 7,
+    "bst": 534,
+    "types": [
+      "Fire"
+    ]
+  },
+  "158": {
+    "evolves_at": "18",
+    "learns_at": [
+      7,
+      13,
+      20,
+      27,
+      35,
+      43,
+      52
+    ],
+    "dex": 158,
+    "name": "Totodile",
+    "tile_x": 17,
+    "tile_y": 7,
+    "bst": 314,
+    "types": [
+      "Water"
+    ]
+  },
+  "159": {
+    "evolves_at": "30",
+    "learns_at": [
+      7,
+      13,
+      21,
+      28,
+      37,
+      45,
+      55
+    ],
+    "dex": 159,
+    "name": "Croconaw",
+    "tile_x": 18,
+    "tile_y": 7,
+    "bst": 405,
+    "types": [
+      "Water"
+    ]
+  },
+  "160": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      13,
+      21,
+      28,
+      38,
+      47,
+      58
+    ],
+    "dex": 160,
+    "name": "Feraligatr",
+    "tile_x": 19,
+    "tile_y": 7,
+    "bst": 530,
+    "types": [
+      "Water"
+    ]
+  },
+  "161": {
+    "evolves_at": "15",
+    "learns_at": [
+      5,
+      11,
+      17,
+      25,
+      33,
+      41
+    ],
+    "dex": 161,
+    "name": "Sentret",
+    "tile_x": 0,
+    "tile_y": 8,
+    "bst": 215,
+    "types": [
+      "Normal"
+    ]
+  },
+  "162": {
+    "evolves_at": "None",
+    "learns_at": [
+      5,
+      11,
+      18,
+      28,
+      38,
+      48
+    ],
+    "dex": 162,
+    "name": "Furret",
+    "tile_x": 1,
+    "tile_y": 8,
+    "bst": 415,
+    "types": [
+      "Normal"
+    ]
+  },
+  "163": {
+    "evolves_at": "20",
+    "learns_at": [
+      6,
+      11,
+      16,
+      22,
+      28,
+      34,
+      48
+    ],
+    "dex": 163,
+    "name": "Hoothoot",
+    "tile_x": 2,
+    "tile_y": 8,
+    "bst": 262,
+    "types": [
+      "Normal",
+      "Flying"
+    ]
+  },
+  "164": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      11,
+      16,
+      25,
+      33,
+      41,
+      57
+    ],
+    "dex": 164,
+    "name": "Noctowl",
+    "tile_x": 3,
+    "tile_y": 8,
+    "bst": 452,
+    "types": [
+      "Normal",
+      "Flying"
+    ]
+  },
+  "165": {
+    "evolves_at": "18",
+    "learns_at": [
+      8,
+      15,
+      22,
+      22,
+      22,
+      29,
+      36,
+      43,
+      50
+    ],
+    "dex": 165,
+    "name": "Ledyba",
+    "tile_x": 4,
+    "tile_y": 8,
+    "bst": 265,
+    "types": [
+      "Bug",
+      "Flying"
+    ]
+  },
+  "166": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      15,
+      24,
+      24,
+      24,
+      33,
+      42,
+      51,
+      60
+    ],
+    "dex": 166,
+    "name": "Ledian",
+    "tile_x": 5,
+    "tile_y": 8,
+    "bst": 390,
+    "types": [
+      "Bug",
+      "Flying"
+    ]
+  },
+  "167": {
+    "evolves_at": "22",
+    "learns_at": [
+      6,
+      11,
+      17,
+      23,
+      30,
+      37,
+      45,
+      53
+    ],
+    "dex": 167,
+    "name": "Spinarak",
+    "tile_x": 6,
+    "tile_y": 8,
+    "bst": 250,
+    "types": [
+      "Bug",
+      "Poison"
+    ]
+  },
+  "168": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      11,
+      17,
+      25,
+      34,
+      43,
+      53,
+      63
+    ],
+    "dex": 168,
+    "name": "Ariados",
+    "tile_x": 7,
+    "tile_y": 8,
+    "bst": 400,
+    "types": [
+      "Bug",
+      "Poison"
+    ]
+  },
+  "169": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      12,
+      19,
+      30,
+      42,
+      55
+    ],
+    "dex": 169,
+    "name": "Crobat",
+    "tile_x": 8,
+    "tile_y": 8,
+    "bst": 535,
+    "types": [
+      "Poison",
+      "Flying"
+    ]
+  },
+  "170": {
+    "evolves_at": "27",
+    "learns_at": [
+      5,
+      13,
+      17,
+      25,
+      29,
+      37,
+      41
+    ],
+    "dex": 170,
+    "name": "Chinchou",
+    "tile_x": 9,
+    "tile_y": 8,
+    "bst": 330,
+    "types": [
+      "Water",
+      "Electric"
+    ]
+  },
+  "171": {
+    "evolves_at": "None",
+    "learns_at": [
+      5,
+      13,
+      17,
+      25,
+      33,
+      45,
+      53
+    ],
+    "dex": 171,
+    "name": "Lanturn",
+    "tile_x": 10,
+    "tile_y": 8,
+    "bst": 460,
+    "types": [
+      "Water",
+      "Electric"
+    ]
+  },
+  "172": {
+    "evolves_at": "Frnd",
+    "learns_at": [
+      6,
+      8,
+      11
+    ],
+    "dex": 172,
+    "name": "Pichu",
+    "tile_x": 11,
+    "tile_y": 8,
+    "bst": 205,
+    "types": [
+      "Electric"
+    ]
+  },
+  "173": {
+    "evolves_at": "Frnd",
+    "learns_at": [
+      4,
+      8,
+      13
+    ],
+    "dex": 173,
+    "name": "Cleffa",
+    "tile_x": 12,
+    "tile_y": 8,
+    "bst": 218,
+    "types": [
+      "Normal"
+    ]
+  },
+  "174": {
+    "evolves_at": "Frnd",
+    "learns_at": [
+      4,
+      9,
+      14
+    ],
+    "dex": 174,
+    "name": "Igglybuff",
+    "tile_x": 13,
+    "tile_y": 8,
+    "bst": 210,
+    "types": [
+      "Normal"
+    ]
+  },
+  "175": {
+    "evolves_at": "Frnd",
+    "learns_at": [
+      7,
+      18,
+      25,
+      31,
+      38
+    ],
+    "dex": 175,
+    "name": "Togepi",
+    "tile_x": 14,
+    "tile_y": 8,
+    "bst": 245,
+    "types": [
+      "Normal"
+    ]
+  },
+  "176": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      18,
+      25,
+      31,
+      38
+    ],
+    "dex": 176,
+    "name": "Togetic",
+    "tile_x": 15,
+    "tile_y": 8,
+    "bst": 405,
+    "types": [
+      "Normal",
+      "Flying"
+    ]
+  },
+  "177": {
+    "evolves_at": "25",
+    "learns_at": [
+      10,
+      20,
+      30,
+      40,
+      50
+    ],
+    "dex": 177,
+    "name": "Natu",
+    "tile_x": 16,
+    "tile_y": 8,
+    "bst": 320,
+    "types": [
+      "Psychic",
+      "Flying"
+    ]
+  },
+  "178": {
+    "evolves_at": "None",
+    "learns_at": [
+      10,
+      20,
+      35,
+      50,
+      65
+    ],
+    "dex": 178,
+    "name": "Xatu",
+    "tile_x": 17,
+    "tile_y": 8,
+    "bst": 470,
+    "types": [
+      "Psychic",
+      "Flying"
+    ]
+  },
+  "179": {
+    "evolves_at": "15",
+    "learns_at": [
+      9,
+      16,
+      23,
+      30,
+      37
+    ],
+    "dex": 179,
+    "name": "Mareep",
+    "tile_x": 18,
+    "tile_y": 8,
+    "bst": 280,
+    "types": [
+      "Electric"
+    ]
+  },
+  "180": {
+    "evolves_at": "30",
+    "learns_at": [
+      9,
+      18,
+      27,
+      36,
+      45
+    ],
+    "dex": 180,
+    "name": "Flaaffy",
+    "tile_x": 19,
+    "tile_y": 8,
+    "bst": 365,
+    "types": [
+      "Electric"
+    ]
+  },
+  "181": {
+    "evolves_at": "None",
+    "learns_at": [
+      9,
+      18,
+      27,
+      30,
+      42,
+      57
+    ],
+    "dex": 181,
+    "name": "Ampharos",
+    "tile_x": 0,
+    "tile_y": 9,
+    "bst": 510,
+    "types": [
+      "Electric"
+    ]
+  },
+  "182": {
+    "evolves_at": "None",
+    "learns_at": [
+      55
+    ],
+    "dex": 182,
+    "name": "Bellossom",
+    "tile_x": 1,
+    "tile_y": 9,
+    "bst": 490,
+    "types": [
+      "Grass"
+    ]
+  },
+  "183": {
+    "evolves_at": "18",
+    "learns_at": [
+      3,
+      6,
+      10,
+      15,
+      21,
+      28,
+      36
+    ],
+    "dex": 183,
+    "name": "Marill",
+    "tile_x": 2,
+    "tile_y": 9,
+    "bst": 250,
+    "types": [
+      "Water"
+    ]
+  },
+  "184": {
+    "evolves_at": "None",
+    "learns_at": [
+      3,
+      6,
+      10,
+      15,
+      25,
+      36,
+      48
+    ],
+    "dex": 184,
+    "name": "Azumarill",
+    "tile_x": 3,
+    "tile_y": 9,
+    "bst": 420,
+    "types": [
+      "Water"
+    ]
+  },
+  "185": {
+    "evolves_at": "None",
+    "learns_at": [
+      10,
+      19,
+      28,
+      37,
+      46
+    ],
+    "dex": 185,
+    "name": "Sudowoodo",
+    "tile_x": 4,
+    "tile_y": 9,
+    "bst": 410,
+    "types": [
+      "Rock"
+    ]
+  },
+  "186": {
+    "evolves_at": "None",
+    "learns_at": [
+      35,
+      51
+    ],
+    "dex": 186,
+    "name": "Politoed",
+    "tile_x": 5,
+    "tile_y": 9,
+    "bst": 500,
+    "types": [
+      "Water"
+    ]
+  },
+  "187": {
+    "evolves_at": "18",
+    "learns_at": [
+      5,
+      10,
+      13,
+      15,
+      17,
+      20,
+      25,
+      30
+    ],
+    "dex": 187,
+    "name": "Hoppip",
+    "tile_x": 6,
+    "tile_y": 9,
+    "bst": 250,
+    "types": [
+      "Grass",
+      "Flying"
+    ]
+  },
+  "188": {
+    "evolves_at": "27",
+    "learns_at": [
+      5,
+      10,
+      13,
+      15,
+      17,
+      22,
+      29,
+      36
+    ],
+    "dex": 188,
+    "name": "Skiploom",
+    "tile_x": 7,
+    "tile_y": 9,
+    "bst": 340,
+    "types": [
+      "Grass",
+      "Flying"
+    ]
+  },
+  "189": {
+    "evolves_at": "None",
+    "learns_at": [
+      5,
+      10,
+      13,
+      15,
+      17,
+      22,
+      33,
+      44
+    ],
+    "dex": 189,
+    "name": "Jumpluff",
+    "tile_x": 8,
+    "tile_y": 9,
+    "bst": 460,
+    "types": [
+      "Grass",
+      "Flying"
+    ]
+  },
+  "190": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      12,
+      19,
+      27,
+      36,
+      46
+    ],
+    "dex": 190,
+    "name": "Aipom",
+    "tile_x": 9,
+    "tile_y": 9,
+    "bst": 360,
+    "types": [
+      "Normal"
+    ]
+  },
+  "191": {
+    "evolves_at": "Stone",
+    "learns_at": [
+      4,
+      10,
+      19,
+      31,
+      46
+    ],
+    "dex": 191,
+    "name": "Sunkern",
+    "tile_x": 10,
+    "tile_y": 9,
+    "bst": 180,
+    "types": [
+      "Grass"
+    ]
+  },
+  "192": {
+    "evolves_at": "None",
+    "learns_at": [
+      4,
+      10,
+      19,
+      31,
+      46
+    ],
+    "dex": 192,
+    "name": "Sunflora",
+    "tile_x": 11,
+    "tile_y": 9,
+    "bst": 425,
+    "types": [
+      "Grass"
+    ]
+  },
+  "193": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      13,
+      19,
+      25,
+      31,
+      37,
+      43
+    ],
+    "dex": 193,
+    "name": "Yanma",
+    "tile_x": 12,
+    "tile_y": 9,
+    "bst": 390,
+    "types": [
+      "Bug",
+      "Flying"
+    ]
+  },
+  "194": {
+    "evolves_at": "20",
+    "learns_at": [
+      11,
+      21,
+      31,
+      41,
+      51,
+      51
+    ],
+    "dex": 194,
+    "name": "Wooper",
+    "tile_x": 13,
+    "tile_y": 9,
+    "bst": 210,
+    "types": [
+      "Water",
+      "Ground"
+    ]
+  },
+  "195": {
+    "evolves_at": "None",
+    "learns_at": [
+      11,
+      23,
+      35,
+      47,
+      59,
+      59
+    ],
+    "dex": 195,
+    "name": "Quagsire",
+    "tile_x": 14,
+    "tile_y": 9,
+    "bst": 430,
+    "types": [
+      "Water",
+      "Ground"
+    ]
+  },
+  "196": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      16,
+      23,
+      30,
+      36,
+      42,
+      47,
+      52
+    ],
+    "dex": 196,
+    "name": "Espeon",
+    "tile_x": 15,
+    "tile_y": 9,
+    "bst": 525,
+    "types": [
+      "Psychic"
+    ]
+  },
+  "197": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      16,
+      23,
+      30,
+      36,
+      42,
+      47,
+      52
+    ],
+    "dex": 197,
+    "name": "Umbreon",
+    "tile_x": 16,
+    "tile_y": 9,
+    "bst": 525,
+    "types": [
+      "Dark"
+    ]
+  },
+  "198": {
+    "evolves_at": "None",
+    "learns_at": [
+      11,
+      16,
+      26,
+      31,
+      41
+    ],
+    "dex": 198,
+    "name": "Murkrow",
+    "tile_x": 17,
+    "tile_y": 9,
+    "bst": 405,
+    "types": [
+      "Dark",
+      "Flying"
+    ]
+  },
+  "199": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      15,
+      20,
+      29,
+      34,
+      43,
+      48
+    ],
+    "dex": 199,
+    "name": "Slowking",
+    "tile_x": 18,
+    "tile_y": 9,
+    "bst": 490,
+    "types": [
+      "Water",
+      "Psychic"
+    ]
+  },
+  "200": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      12,
+      19,
+      27,
+      36,
+      46
+    ],
+    "dex": 200,
+    "name": "Misdreavus",
+    "tile_x": 19,
+    "tile_y": 9,
+    "bst": 435,
+    "types": [
+      "Ghost"
+    ]
+  },
+  "201": {
+    "evolves_at": "None",
+    "learns_at": [],
+    "dex": 201,
+    "name": "Unown",
+    "tile_x": 0,
+    "tile_y": 10,
+    "bst": 336,
+    "types": [
+      "Psychic"
+    ]
+  },
+  "202": {
+    "evolves_at": "None",
+    "learns_at": [],
+    "dex": 202,
+    "name": "Wobbuffet",
+    "tile_x": 1,
+    "tile_y": 10,
+    "bst": 405,
+    "types": [
+      "Psychic"
+    ]
+  },
+  "203": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      13,
+      20,
+      30,
+      41,
+      54
+    ],
+    "dex": 203,
+    "name": "Girafarig",
+    "tile_x": 2,
+    "tile_y": 10,
+    "bst": 455,
+    "types": [
+      "Normal",
+      "Psychic"
+    ]
+  },
+  "204": {
+    "evolves_at": "31",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      36,
+      43,
+      50
+    ],
+    "dex": 204,
+    "name": "Pineco",
+    "tile_x": 3,
+    "tile_y": 10,
+    "bst": 290,
+    "types": [
+      "Bug"
+    ]
+  },
+  "205": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      39,
+      49,
+      59
+    ],
+    "dex": 205,
+    "name": "Forretress",
+    "tile_x": 4,
+    "tile_y": 10,
+    "bst": 465,
+    "types": [
+      "Bug",
+      "Steel"
+    ]
+  },
+  "206": {
+    "evolves_at": "None",
+    "learns_at": [
+      5,
+      13,
+      18,
+      26,
+      30,
+      38
+    ],
+    "dex": 206,
+    "name": "Dunsparce",
+    "tile_x": 5,
+    "tile_y": 10,
+    "bst": 415,
+    "types": [
+      "Normal"
+    ]
+  },
+  "207": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      13,
+      20,
+      28,
+      36,
+      44,
+      52
+    ],
+    "dex": 207,
+    "name": "Gligar",
+    "tile_x": 6,
+    "tile_y": 10,
+    "bst": 430,
+    "types": [
+      "Ground",
+      "Flying"
+    ]
+  },
+  "208": {
+    "evolves_at": "None",
+    "learns_at": [
+      10,
+      14,
+      23,
+      27,
+      36,
+      40,
+      49
+    ],
+    "dex": 208,
+    "name": "Steelix",
+    "tile_x": 7,
+    "tile_y": 10,
+    "bst": 510,
+    "types": [
+      "Steel",
+      "Ground"
+    ]
+  },
+  "209": {
+    "evolves_at": "23",
+    "learns_at": [
+      4,
+      8,
+      13,
+      19,
+      26,
+      34,
+      43
+    ],
+    "dex": 209,
+    "name": "Snubbull",
+    "tile_x": 8,
+    "tile_y": 10,
+    "bst": 300,
+    "types": [
+      "Normal"
+    ]
+  },
+  "210": {
+    "evolves_at": "None",
+    "learns_at": [
+      4,
+      8,
+      13,
+      19,
+      26,
+      28,
+      38,
+      51
+    ],
+    "dex": 210,
+    "name": "Granbull",
+    "tile_x": 9,
+    "tile_y": 10,
+    "bst": 450,
+    "types": [
+      "Normal"
+    ]
+  },
+  "211": {
+    "evolves_at": "None",
+    "learns_at": [
+      10,
+      10,
+      19,
+      28,
+      37,
+      46
+    ],
+    "dex": 211,
+    "name": "Qwilfish",
+    "tile_x": 10,
+    "tile_y": 10,
+    "bst": 440,
+    "types": [
+      "Water",
+      "Poison"
+    ]
+  },
+  "212": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      12,
+      18,
+      24,
+      30,
+      36,
+      42,
+      48
+    ],
+    "dex": 212,
+    "name": "Scizor",
+    "tile_x": 11,
+    "tile_y": 10,
+    "bst": 500,
+    "types": [
+      "Bug",
+      "Steel"
+    ]
+  },
+  "213": {
+    "evolves_at": "None",
+    "learns_at": [
+      9,
+      14,
+      23,
+      28,
+      37
+    ],
+    "dex": 213,
+    "name": "Shuckle",
+    "tile_x": 12,
+    "tile_y": 10,
+    "bst": 505,
+    "types": [
+      "Bug",
+      "Rock"
+    ]
+  },
+  "214": {
+    "evolves_at": "None",
+    "learns_at": [
+      6,
+      12,
+      19,
+      27,
+      35,
+      44,
+      54
+    ],
+    "dex": 214,
+    "name": "Heracross",
+    "tile_x": 13,
+    "tile_y": 10,
+    "bst": 500,
+    "types": [
+      "Bug",
+      "Fighting"
+    ]
+  },
+  "215": {
+    "evolves_at": "None",
+    "learns_at": [
+      9,
+      17,
+      25,
+      33,
+      41,
+      49,
+      57
+    ],
+    "dex": 215,
+    "name": "Sneasel",
+    "tile_x": 14,
+    "tile_y": 10,
+    "bst": 430,
+    "types": [
+      "Dark",
+      "Ice"
+    ]
+  },
+  "216": {
+    "evolves_at": "30",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      36,
+      43,
+      50
+    ],
+    "dex": 216,
+    "name": "Teddiursa",
+    "tile_x": 15,
+    "tile_y": 10,
+    "bst": 330,
+    "types": [
+      "Normal"
+    ]
+  },
+  "217": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      39,
+      49,
+      59
+    ],
+    "dex": 217,
+    "name": "Ursaring",
+    "tile_x": 16,
+    "tile_y": 10,
+    "bst": 500,
+    "types": [
+      "Normal"
+    ]
+  },
+  "218": {
+    "evolves_at": "38",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      36,
+      43,
+      50
+    ],
+    "dex": 218,
+    "name": "Slugma",
+    "tile_x": 17,
+    "tile_y": 10,
+    "bst": 250,
+    "types": [
+      "Fire"
+    ]
+  },
+  "219": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      36,
+      48,
+      60
+    ],
+    "dex": 219,
+    "name": "Magcargo",
+    "tile_x": 18,
+    "tile_y": 10,
+    "bst": 430,
+    "types": [
+      "Fire",
+      "Rock"
+    ]
+  },
+  "220": {
+    "evolves_at": "33",
+    "learns_at": [
+      10,
+      19,
+      28,
+      37,
+      46
+    ],
+    "dex": 220,
+    "name": "Swinub",
+    "tile_x": 19,
+    "tile_y": 10,
+    "bst": 250,
+    "types": [
+      "Ice",
+      "Ground"
+    ]
+  },
+  "221": {
+    "evolves_at": "None",
+    "learns_at": [
+      10,
+      19,
+      28,
+      33,
+      42,
+      56
+    ],
+    "dex": 221,
+    "name": "Piloswine",
+    "tile_x": 0,
+    "tile_y": 11,
+    "bst": 450,
+    "types": [
+      "Ice",
+      "Ground"
+    ]
+  },
+  "222": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      13,
+      19,
+      25,
+      31,
+      37,
+      43
+    ],
+    "dex": 222,
+    "name": "Corsola",
+    "tile_x": 1,
+    "tile_y": 11,
+    "bst": 410,
+    "types": [
+      "Water",
+      "Rock"
+    ]
+  },
+  "223": {
+    "evolves_at": "25",
+    "learns_at": [
+      11,
+      22,
+      22,
+      22,
+      33,
+      44,
+      55
+    ],
+    "dex": 223,
+    "name": "Remoraid",
+    "tile_x": 2,
+    "tile_y": 11,
+    "bst": 300,
+    "types": [
+      "Water"
+    ]
+  },
+  "224": {
+    "evolves_at": "None",
+    "learns_at": [
+      11,
+      22,
+      22,
+      22,
+      25,
+      38,
+      54,
+      70
+    ],
+    "dex": 224,
+    "name": "Octillery",
+    "tile_x": 3,
+    "tile_y": 11,
+    "bst": 480,
+    "types": [
+      "Water"
+    ]
+  },
+  "225": {
+    "evolves_at": "None",
+    "learns_at": [],
+    "dex": 225,
+    "name": "Delibird",
+    "tile_x": 4,
+    "tile_y": 11,
+    "bst": 330,
+    "types": [
+      "Ice",
+      "Flying"
+    ]
+  },
+  "226": {
+    "evolves_at": "None",
+    "learns_at": [
+      10,
+      18,
+      25,
+      32,
+      40,
+      49
+    ],
+    "dex": 226,
+    "name": "Mantine",
+    "tile_x": 5,
+    "tile_y": 11,
+    "bst": 485,
+    "types": [
+      "Water",
+      "Flying"
+    ]
+  },
+  "227": {
+    "evolves_at": "None",
+    "learns_at": [
+      13,
+      19,
+      25,
+      37,
+      49
+    ],
+    "dex": 227,
+    "name": "Skarmory",
+    "tile_x": 6,
+    "tile_y": 11,
+    "bst": 465,
+    "types": [
+      "Steel",
+      "Flying"
+    ]
+  },
+  "228": {
+    "evolves_at": "24",
+    "learns_at": [
+      7,
+      13,
+      20,
+      27,
+      35,
+      43
+    ],
+    "dex": 228,
+    "name": "Houndour",
+    "tile_x": 7,
+    "tile_y": 11,
+    "bst": 330,
+    "types": [
+      "Dark",
+      "Fire"
+    ]
+  },
+  "229": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      13,
+      20,
+      30,
+      41,
+      52
+    ],
+    "dex": 229,
+    "name": "Houndoom",
+    "tile_x": 8,
+    "tile_y": 11,
+    "bst": 500,
+    "types": [
+      "Dark",
+      "Fire"
+    ]
+  },
+  "230": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      40,
+      51
+    ],
+    "dex": 230,
+    "name": "Kingdra",
+    "tile_x": 9,
+    "tile_y": 11,
+    "bst": 540,
+    "types": [
+      "Water",
+      "Dragon"
+    ]
+  },
+  "231": {
+    "evolves_at": "25",
+    "learns_at": [
+      9,
+      17,
+      25,
+      33,
+      41,
+      49
+    ],
+    "dex": 231,
+    "name": "Phanpy",
+    "tile_x": 10,
+    "tile_y": 11,
+    "bst": 330,
+    "types": [
+      "Ground"
+    ]
+  },
+  "232": {
+    "evolves_at": "None",
+    "learns_at": [
+      9,
+      17,
+      25,
+      33,
+      41,
+      49
+    ],
+    "dex": 232,
+    "name": "Donphan",
+    "tile_x": 11,
+    "tile_y": 11,
+    "bst": 500,
+    "types": [
+      "Ground"
+    ]
+  },
+  "233": {
+    "evolves_at": "None",
+    "learns_at": [
+      9,
+      12,
+      20,
+      24,
+      32,
+      36,
+      44
+    ],
+    "dex": 233,
+    "name": "Porygon2",
+    "tile_x": 12,
+    "tile_y": 11,
+    "bst": 515,
+    "types": [
+      "Normal"
+    ]
+  },
+  "234": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      15,
+      23,
+      31,
+      40,
+      49
+    ],
+    "dex": 234,
+    "name": "Stantler",
+    "tile_x": 13,
+    "tile_y": 11,
+    "bst": 465,
+    "types": [
+      "Normal"
+    ]
+  },
+  "235": {
+    "evolves_at": "None",
+    "learns_at": [
+      11,
+      21,
+      31,
+      41,
+      51,
+      61,
+      71,
+      81,
+      91
+    ],
+    "dex": 235,
+    "name": "Smeargle",
+    "tile_x": 14,
+    "tile_y": 11,
+    "bst": 250,
+    "types": [
+      "Normal"
+    ]
+  },
+  "236": {
+    "evolves_at": "None",
+    "learns_at": [],
+    "dex": 236,
+    "name": "Tyrogue",
+    "tile_x": 15,
+    "tile_y": 11,
+    "bst": 210,
+    "types": [
+      "Fighting"
+    ]
+  },
+  "237": {
+    "evolves_at": "None",
+    "learns_at": [
+      7,
+      13,
+      19,
+      25,
+      31,
+      37,
+      43,
+      49
+    ],
+    "dex": 237,
+    "name": "Hitmontop",
+    "tile_x": 16,
+    "tile_y": 11,
+    "bst": 455,
+    "types": [
+      "Fighting"
+    ]
+  },
+  "238": {
+    "evolves_at": "30",
+    "learns_at": [
+      9,
+      13,
+      21,
+      25,
+      33,
+      37,
+      45,
+      49
+    ],
+    "dex": 238,
+    "name": "Smoochum",
+    "tile_x": 17,
+    "tile_y": 11,
+    "bst": 305,
+    "types": [
+      "Ice",
+      "Psychic"
+    ]
+  },
+  "239": {
+    "evolves_at": "30",
+    "learns_at": [
+      9,
+      17,
+      25,
+      33,
+      41,
+      49
+    ],
+    "dex": 239,
+    "name": "Elekid",
+    "tile_x": 18,
+    "tile_y": 11,
+    "bst": 360,
+    "types": [
+      "Electric"
+    ]
+  },
+  "240": {
+    "evolves_at": "30",
+    "learns_at": [
+      7,
+      13,
+      19,
+      25,
+      31,
+      37,
+      43,
+      49
+    ],
+    "dex": 240,
+    "name": "Magby",
+    "tile_x": 19,
+    "tile_y": 11,
+    "bst": 365,
+    "types": [
+      "Fire"
+    ]
+  },
+  "241": {
+    "evolves_at": "None",
+    "learns_at": [
+      4,
+      8,
+      13,
+      19,
+      26,
+      34,
+      43,
+      53
+    ],
+    "dex": 241,
+    "name": "Miltank",
+    "tile_x": 0,
+    "tile_y": 12,
+    "bst": 490,
+    "types": [
+      "Normal"
+    ]
+  },
+  "242": {
+    "evolves_at": "None",
+    "learns_at": [
+      4,
+      7,
+      10,
+      13,
+      18,
+      23,
+      28,
+      33,
+      40,
+      47
+    ],
+    "dex": 242,
+    "name": "Blissey",
+    "tile_x": 1,
+    "tile_y": 12,
+    "bst": 540,
+    "types": [
+      "Normal"
+    ]
+  },
+  "243": {
+    "evolves_at": "None",
+    "learns_at": [
+      11,
+      21,
+      31,
+      41,
+      51,
+      61,
+      71
+    ],
+    "dex": 243,
+    "name": "Raikou",
+    "tile_x": 2,
+    "tile_y": 12,
+    "bst": 580,
+    "types": [
+      "Electric"
+    ]
+  },
+  "244": {
+    "evolves_at": "None",
+    "learns_at": [
+      11,
+      21,
+      31,
+      41,
+      51,
+      61,
+      71
+    ],
+    "dex": 244,
+    "name": "Entei",
+    "tile_x": 3,
+    "tile_y": 12,
+    "bst": 580,
+    "types": [
+      "Fire"
+    ]
+  },
+  "245": {
+    "evolves_at": "None",
+    "learns_at": [
+      11,
+      21,
+      31,
+      41,
+      51,
+      61,
+      71
+    ],
+    "dex": 245,
+    "name": "Suicune",
+    "tile_x": 4,
+    "tile_y": 12,
+    "bst": 580,
+    "types": [
+      "Water"
+    ]
+  },
+  "246": {
+    "evolves_at": "30",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      36,
+      43,
+      50,
+      57
+    ],
+    "dex": 246,
+    "name": "Larvitar",
+    "tile_x": 5,
+    "tile_y": 12,
+    "bst": 300,
+    "types": [
+      "Rock",
+      "Ground"
+    ]
+  },
+  "247": {
+    "evolves_at": "55",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      38,
+      47,
+      56,
+      65
+    ],
+    "dex": 247,
+    "name": "Pupitar",
+    "tile_x": 6,
+    "tile_y": 12,
+    "bst": 410,
+    "types": [
+      "Rock",
+      "Ground"
+    ]
+  },
+  "248": {
+    "evolves_at": "None",
+    "learns_at": [
+      8,
+      15,
+      22,
+      29,
+      38,
+      47,
+      61,
+      75
+    ],
+    "dex": 248,
+    "name": "Tyranitar",
+    "tile_x": 7,
+    "tile_y": 12,
+    "bst": 600,
+    "types": [
+      "Rock",
+      "Dark"
+    ]
+  },
+  "249": {
+    "evolves_at": "None",
+    "learns_at": [
+      11,
+      22,
+      33,
+      44,
+      55,
+      66,
+      77,
+      88,
+      99
+    ],
+    "dex": 249,
+    "name": "Lugia",
+    "tile_x": 8,
+    "tile_y": 12,
+    "bst": 680,
+    "types": [
+      "Psychic",
+      "Flying"
+    ]
+  },
+  "250": {
+    "evolves_at": "None",
+    "learns_at": [
+      11,
+      22,
+      33,
+      44,
+      55,
+      66,
+      77,
+      88,
+      99
+    ],
+    "dex": 250,
+    "name": "Ho-Oh",
+    "tile_x": 9,
+    "tile_y": 12,
+    "bst": 680,
+    "types": [
+      "Fire",
+      "Flying"
+    ]
+  },
+  "251": {
+    "evolves_at": "None",
+    "learns_at": [
+      10,
+      20,
+      30,
+      40,
+      50
+    ],
+    "dex": 251,
+    "name": "Celebi",
+    "tile_x": 10,
+    "tile_y": 12,
+    "bst": 600,
+    "types": [
+      "Psychic",
+      "Grass"
+    ]
+  },
+  "255": {
+    "evolves_at": "",
+    "learns_at": [],
+    "dex": 0,
+    "name": "",
+    "tile_x": 0,
+    "tile_y": 0,
+    "bst": 0,
+    "types": [
+      ""
+    ]
+  }
 }

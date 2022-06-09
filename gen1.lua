@@ -12,6 +12,7 @@ TEAM_SIZE_ADDR = tonumber("0x1163")
 POKE_ENEMY_ID_ADDR = tonumber("0x0FD8")
 POKE_ENEMY_LEVEL_ADDR = tonumber("0x0FF3")
 POKE_ENEMY_IV_ADDR = tonumber("0x0FF1")
+POKE_ENEMY_TYPE_ADDR = tonumber("0x0FEA")
 
 POKE_1_NAME_ADDR = tonumber("0x12B5")
 POKE_1_ID_ADDR = tonumber("0x1164")
@@ -29,6 +30,24 @@ RED = 82
 BLUE = 66
 YELLOW = 89
 
+TYPES = {
+   [0] = 'Normal',
+   [1] = 'Fighting',
+   [2] = 'Flying',
+   [3] = 'Poison',
+   [4] = 'Ground',
+   [5] = 'Rock',
+   [6] = 'Bug',
+   [7] = 'Ghost',
+   [20] =  'Fire',
+   [21] = 'Water',
+   [22] = 'Grass',
+   [23] =  'Electric',
+   [24] = 'Psychic',
+   [25] = 'Ice',
+   [26] = 'Dragon'
+}
+
 function loadYellowAddresses()
     POKE_1_START_ADDR = POKE_1_START_ADDR - 1
     POKE_1_ID_ADDR = POKE_1_ID_ADDR - 1
@@ -39,6 +58,7 @@ function loadYellowAddresses()
     POKE_ENEMY_ID_ADDR = POKE_ENEMY_ID_ADDR - 1
     POKE_ENEMY_LEVEL_ADDR = tonumber("0x0FF2")
     POKE_ENEMY_IV_ADDR = POKE_ENEMY_IV_ADDR - 1
+    POKE_ENEMY_TYPE_ADDR = tonumber("0x0FE9")
 end
 
 function getPP(pp)
@@ -51,6 +71,17 @@ function getPP(pp)
         pp_val = pp_val - 64
     end
     return pp_val
+end
+
+function getEnemyTypes()
+    type1code = memory.readbyte(POKE_ENEMY_TYPE_ADDR)
+    type2code = memory.readbyte(POKE_ENEMY_TYPE_ADDR + 1)
+
+    if type1code == type2code then
+        return '"' .. TYPES[type1code] .. '"'
+    else
+        return '"' .. TYPES[type1code] .. '", "' .. TYPES[type2code] .. '"'
+    end
 end
 
 function getPokeName(startAddress)
@@ -138,6 +169,7 @@ function buildEnemyPoke()
  poke = "\"enemy\": { "
  poke = poke .. "\"id\": \"" .. memory.readbyte(POKE_ENEMY_ID_ADDR) .. "\"" .. ", "
  poke = poke .. "\"level\": " .. memory.readbyte(POKE_ENEMY_LEVEL_ADDR) .. ", "
+ poke = poke .. "\"types\": [" .. getEnemyTypes() .. "], "
  poke = poke .. "\"is_shiny\": " .. 0 .. " "
 
  return poke .. "}"

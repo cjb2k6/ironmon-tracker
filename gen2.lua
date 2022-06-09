@@ -15,6 +15,7 @@ TEAM_SIZE_ADDR = tonumber("0x1A22")
 POKE_ENEMY_ID_ADDR = tonumber("0x10ED")
 POKE_ENEMY_LEVEL_ADDR = tonumber("0x10FC")
 POKE_ENEMY_IV_ADDR = tonumber("0x10F5")
+POKE_ENEMY_TYPE_ADDR = tonumber("0x110D")
 
 POKE_1_NAME_ADDR = tonumber("0x1B8C")
 POKE_1_ID_ADDR = tonumber("0x1A23")
@@ -39,7 +40,25 @@ SILVER = 83
 GOLD = 71
 CRYSTAL = 65
 
-TEST = true
+TYPES = {
+   [0] = 'Normal',
+   [1] = 'Fighting',
+   [2] = 'Flying',
+   [3] = 'Poison',
+   [4] = 'Ground',
+   [5] = 'Rock',
+   [6] = 'Bug',
+   [7] = 'Ghost',
+   [8] = 'Steel',
+   [20] =  'Fire',
+   [21] = 'Water',
+   [22] = 'Grass',
+   [23] =  'Electric',
+   [24] = 'Psychic',
+   [25] = 'Ice',
+   [26] = 'Dragon',
+   [27] = 'Dark'
+}
 
 function loadCrystalAddresses()
     TEAM_SIZE_ADDR = tonumber("0x1CD7")
@@ -50,6 +69,7 @@ function loadCrystalAddresses()
     POKE_ENEMY_ID_ADDR = tonumber("0x1204")
     POKE_ENEMY_LEVEL_ADDR = tonumber("0x1213")
     POKE_ENEMY_IV_ADDR = tonumber("0x120C")
+    POKE_ENEMY_TYPE_ADDR = tonumber("0x1224")
 
     BATTLE_TYPE = tonumber("0x122D")
 
@@ -102,6 +122,17 @@ function getPP(pp)
         pp_val = pp_val - 64
     end
     return pp_val
+end
+
+function getEnemyTypes()
+    type1code = memory.readbyte(POKE_ENEMY_TYPE_ADDR)
+    type2code = memory.readbyte(POKE_ENEMY_TYPE_ADDR + 1)
+
+    if type1code == type2code then
+        return '"' .. TYPES[type1code] .. '"'
+    else
+        return '"' .. TYPES[type1code] .. '", "' .. TYPES[type2code] .. '"'
+    end
 end
 
 function mail()
@@ -191,6 +222,7 @@ function buildEnemyPoke()
  poke = "\"enemy\": { "
  poke = poke .. "\"id\": \"" .. memory.readbyte(POKE_ENEMY_ID_ADDR) .. "\"" .. ", "
  poke = poke .. "\"level\": " .. memory.readbyte(POKE_ENEMY_LEVEL_ADDR) .. ", "
+ poke = poke .. "\"types\": [" .. getEnemyTypes() .. "], "
  poke = poke .. "\"is_shiny\": " .. getIsShiny(POKE_ENEMY_IV_ADDR) .. " "
 
  return poke .. "}"

@@ -1,7 +1,5 @@
 from json import JSONDecodeError
 
-from pygame import K_KP0, K_RCTRL, K_LCTRL, K_s, K_m, K_r
-
 import json
 
 import sys
@@ -10,6 +8,10 @@ import numpy as np
 import pygame
 import pygame.freetype
 
+from pokemon.pokesprites import PokeSprites
+from pokemon.poketypes import PokeTypes
+
+import copy
 
 class Poke:
     """Overall class to manage game assets and behavior."""
@@ -17,7 +19,7 @@ class Poke:
     def __init__(self):
         """Initialize the game, and create resources."""
         pygame.init()
-        self.font = 'pokemon_generation_1.ttf'
+        self.font = 'pokemon-generation_1_custom.ttf'
         self.XL_FONT = pygame.freetype.Font(self.font, 26)
         self.LG_FONT = pygame.freetype.Font(self.font, 22)
         self.MD_FONT = pygame.freetype.Font(self.font, 20)
@@ -63,6 +65,7 @@ class Poke:
                 "enemy": {
                     "id": "0",
                     "level": 0,
+                    "types": [],
                     "is_shiny": 0
                 }
             }
@@ -161,6 +164,8 @@ class Poke:
             f.close()
 
         self.mail_set = True
+        self.mail_initialized = False
+
 
         f = open('json/natDexToGen1Map.json')
         self.natDexToGen1Map = json.load(f)
@@ -224,6 +229,8 @@ class Poke:
             self.poke_sprites.blank_sprite(self, 2)
             self.poke_sprites.blank_sprite(self, 3)
 
+        self.poke_types = PokeTypes()
+
     def run_game(self):
         self._update_data()
         self._update_screen()
@@ -253,20 +260,25 @@ class Poke:
             if event.type == pygame.QUIT:
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_q:
-                    sys.exit()
-                elif event.key == pygame.K_KP_PLUS:
+                if event.key == pygame.K_KP_PLUS or event.key == pygame.K_EQUALS:
                     self.modify_attempts()
-                elif event.key == pygame.K_KP_MINUS:
+                elif event.key == pygame.K_KP_MINUS or event.key == pygame.K_MINUS:
                     self.modify_attempts(False)
-                elif pressed_keys[K_RCTRL] or pressed_keys[K_LCTRL]:
-                    if pressed_keys[K_KP0] or pressed_keys[K_r]:
+                elif pressed_keys[pygame.K_RCTRL] or pressed_keys[pygame.K_LCTRL]:
+                    if pressed_keys[pygame.K_KP0] or pressed_keys[pygame.K_r]:
                         self.modify_attempts()
-                        self.__init__()
-                    elif pressed_keys[K_s]:
+                        self.reset()
+                    elif pressed_keys[pygame.K_s]:
                         self.update_mail_operation('2')
-                    elif pressed_keys[K_m]:
+                    elif pressed_keys[pygame.K_m]:
                         self.compose_mail()
+                    elif pressed_keys[pygame.K_q]:
+                        sys.exit()
+
+    def reset(self):
+        self.__init__()
+        self._update_data()
+        self._draw_tracker()
 
     def save_settings(self):
         with open("settings.json", "w") as jsonFile:
@@ -279,6 +291,8 @@ class Poke:
                 self.settings['attempts'] += 1
             else:
                 self.settings['attempts'] -= 1
+            if self.settings['attempts'] < 0:
+                self.settings['attempts'] = 0
             self.save_settings()
 
     def handle_mail(self):
@@ -524,13 +538,14 @@ class Poke:
 
         # Moves
         move_y = 220
-        move_x = 20
-        type_x = 290
-        pp_x = 440
-        pow_x = 540
+        move_x = 24
+        type_x = 306
+        pp_x = 456
+        pow_x = 556
         acc_x = 660
 
         move_y_offset = 50
+        type_y_offset = 3
 
         text_surface, rect = self.XL_FONT.render('Move', (0, 0, 0))
         self.screen.blit(text_surface, (move_x, move_y + (81 * 0)))
@@ -550,7 +565,7 @@ class Poke:
         text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_1'])['name'].upper(), (0, 0, 0))
         self.screen.blit(text_surface, (move_x, move_y + (move_y_offset * 1) + (81 * 0)))
         text_surface, rect = self.GAME_FONT.render(self.get_move(self.poke_1_data['move_1'])['type'].upper(), (0, 0, 0))
-        self.screen.blit(text_surface, (type_x, move_y + (move_y_offset * 1) + (81 * 0)))
+        self.screen.blit(text_surface, (type_x, move_y + type_y_offset + (move_y_offset * 1) + (81 * 0)))
         text_surface, rect = self.LG_FONT.render(self.poke_1_data['pp_1'], (0, 0, 0))
         self.screen.blit(text_surface, (pp_x, move_y + (move_y_offset * 1) + (81 * 0)))
         text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_1'])['power'], (0, 0, 0))
@@ -561,7 +576,7 @@ class Poke:
         text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_2'])['name'].upper(), (0, 0, 0))
         self.screen.blit(text_surface, (move_x, move_y + (move_y_offset * 2) + (81 * 0)))
         text_surface, rect = self.GAME_FONT.render(self.get_move(self.poke_1_data['move_2'])['type'].upper(), (0, 0, 0))
-        self.screen.blit(text_surface, (type_x, move_y + (move_y_offset * 2) + (81 * 0)))
+        self.screen.blit(text_surface, (type_x, move_y + type_y_offset + (move_y_offset * 2) + (81 * 0)))
         text_surface, rect = self.LG_FONT.render(self.poke_1_data['pp_2'], (0, 0, 0))
         self.screen.blit(text_surface, (pp_x, move_y + (move_y_offset * 2) + (81 * 0)))
         text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_2'])['power'], (0, 0, 0))
@@ -572,7 +587,7 @@ class Poke:
         text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_3'])['name'].upper(), (0, 0, 0))
         self.screen.blit(text_surface, (move_x, move_y + (move_y_offset * 3) + (81 * 0)))
         text_surface, rect = self.GAME_FONT.render(self.get_move(self.poke_1_data['move_3'])['type'].upper(), (0, 0, 0))
-        self.screen.blit(text_surface, (type_x, move_y + (move_y_offset * 3) + (81 * 0)))
+        self.screen.blit(text_surface, (type_x, move_y + type_y_offset + (move_y_offset * 3) + (81 * 0)))
         text_surface, rect = self.LG_FONT.render(self.poke_1_data['pp_3'], (0, 0, 0))
         self.screen.blit(text_surface, (pp_x, move_y + (move_y_offset * 3) + (81 * 0)))
         text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_3'])['power'], (0, 0, 0))
@@ -583,13 +598,35 @@ class Poke:
         text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_4'])['name'].upper(), (0, 0, 0))
         self.screen.blit(text_surface, (move_x, move_y + (move_y_offset * 4) + (81 * 0)))
         text_surface, rect = self.GAME_FONT.render(self.get_move(self.poke_1_data['move_4'])['type'].upper(), (0, 0, 0))
-        self.screen.blit(text_surface, (type_x, move_y + (move_y_offset * 4) + (81 * 0)))
+        self.screen.blit(text_surface, (type_x, move_y + type_y_offset + (move_y_offset * 4) + (81 * 0)))
         text_surface, rect = self.LG_FONT.render(self.poke_1_data['pp_4'], (0, 0, 0))
         self.screen.blit(text_surface, (pp_x, move_y + (move_y_offset * 4) + (81 * 0)))
         text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_4'])['power'], (0, 0, 0))
         self.screen.blit(text_surface, (pow_x, move_y + (move_y_offset * 4) + (81 * 0)))
         text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_4'])['acc'], (0, 0, 0))
         self.screen.blit(text_surface, (acc_x, move_y + (move_y_offset * 4) + (81 * 0)))
+
+        if int(self.battle_type) > 0:
+            text_surface, rect = self.LG_FONT.render(
+                self.poke_types.get_multiplier_char(
+                    self.enemy['types'],
+                    self.move_list[self.poke_1_data['move_1']]), (0, 0, 0))
+            self.screen.blit(text_surface, (move_x - 20, move_y + 2 + (move_y_offset * 1) + (81 * 0)))
+            text_surface, rect = self.LG_FONT.render(
+                self.poke_types.get_multiplier_char(
+                    self.enemy['types'],
+                    self.move_list[self.poke_1_data['move_2']]), (0, 0, 0))
+            self.screen.blit(text_surface, (move_x - 20, move_y + 2 + (move_y_offset * 2) + (81 * 0)))
+            text_surface, rect = self.LG_FONT.render(
+                self.poke_types.get_multiplier_char(
+                    self.enemy['types'],
+                    self.move_list[self.poke_1_data['move_3']]), (0, 0, 0))
+            self.screen.blit(text_surface, (move_x - 20, move_y + 2 + (move_y_offset * 3) + (81 * 0)))
+            text_surface, rect = self.LG_FONT.render(
+                self.poke_types.get_multiplier_char(
+                    self.enemy['types'],
+                    self.move_list[self.poke_1_data['move_4']]), (0, 0, 0))
+            self.screen.blit(text_surface, (move_x - 20, move_y + 2 + (move_y_offset * 4) + (81 * 0)))
 
         # Attempts
         attempts_y = 414
@@ -637,7 +674,11 @@ class Poke:
         return str(self.pokedex[poke_data['id']]['bst'])
 
     def get_type(self, poke_data):
-        return str(self.pokedex[poke_data['id']]['type']).upper()
+        types = self.pokedex[poke_data['id']]['types']
+
+        if len(types) == 2:
+            return str(types[0]).upper() + ' ' + str(types[1]).upper()
+        return str(types[0]).upper()
 
     def get_stat(self, poke_data, key):
         return str(poke_data[key])
@@ -662,12 +703,15 @@ class Poke:
         return 'No More Moves'
 
     def get_move(self, move_id):
-        return self.move_list[move_id]
+        try:
+            return self.move_list[move_id]
+        except KeyError:
+            return 'Error: ' + move_id
 
     def get_enemy(self):
         try:
             name = self.pokedex[self.enemy['id']]['name'].upper()
-            type = self.pokedex[self.enemy['id']]['type'].upper()
+            type = self.get_type(self.enemy)
         except KeyError:
             return ""
         if self.battle_type == "0" or name == "":
@@ -704,10 +748,11 @@ class Poke:
     def _update_data(self):
         self.team_size = self.data["team"]["size"]
 
-        if self.gen == 2:
+        if self.gen == 2 and not self.mail_initialized:
             self.has_starter = self.data["team"]["has_starter"]
-            if self.has_starter > 0:
+            if self.has_starter > 0 and self.mail_set:
                 self.mail_set = False
+                self.mail_initialized = True
 
         self.enemy = self.data["enemy"]
 
@@ -722,230 +767,6 @@ class Poke:
             self.poke_sprites.update_sprite(poke, 0, self.poke_1_data, True)
         else:
             self.poke_sprites.blank_sprite(poke, 0)
-
-
-class Pokemon:
-    """Represents a pokemon image."""
-
-    def __init__(self, poke):
-        """Initialize attributes to represent a pokemon."""
-        self.image = None
-        self.name = ''
-        self.color = ''
-
-        self.screen = poke.screen
-
-        # Start each piece off at the top left corner.
-        self.x, self.y = 20.0, 0.0
-
-    def blitme(self):
-        """Draw the piece at its current location."""
-        self.rect = self.image.get_rect()
-        self.rect.topleft = self.x, self.y
-        self.screen.blit(self.image, self.rect)
-
-
-class PokeSprites:
-    """Represents a set of pokemon sprites.
-    Each piece is an object of the Piece class.
-    """
-
-    def __init__(self, poke):
-        """Initialize attributes to represent the overall set of pieces."""
-
-        self.poke = poke
-        self.sprites = []
-        color_key = 'red'
-        sheet_file = 'sprites/pokemon-rb.png'
-        shiny_file = 'sprites/pokemon-rb.png'
-        if poke.gen == 2:
-            color_key = 'white'
-            if poke.game == 'gold':
-                shiny_file = 'sprites/gold-shiny.png'
-                sheet_file = 'sprites/gold.png'
-            elif poke.game == 'silver':
-                shiny_file = 'sprites/silver-shiny.png'
-                sheet_file = 'sprites/silver.png'
-            else:
-                shiny_file = 'sprites/crystal-shiny.png'
-                sheet_file = 'sprites/crystal.png'
-        elif poke.game == 'yellow':
-            color_key = 'white'
-            shiny_file = 'sprites/yellow.png'
-            sheet_file = 'sprites/yellow.png'
-        elif poke.show_color:
-            color_key = 'white'
-            shiny_file = 'sprites/rb-color.png'
-            sheet_file = 'sprites/rb-color.png'
-
-        self.color_key = color_key
-        self.poke_ss = SpriteSheet(sheet_file)
-        self.poke_ss_shiny = SpriteSheet(shiny_file)
-        self._load_sprites(color_key)
-
-    def _load_sprites(self, color_key):
-        """Builds the overall set:
-        - Loads images from the sprite sheet.
-        - Creates a Pokemon object, and sets appropriate attributes
-          for that pokemon.
-        - Adds each pokemon to the group self.pokemon.
-        """
-        self.sprites = []
-        x = 11
-        y = 12
-        border_offset = 1
-        rect = (x * 57 + 1, y * 57 + 1, 56, 56)
-
-        # Poke 1
-        poke_1_rect = rect
-        poke_1_image = self.poke_ss.image_at(poke_1_rect, color_key)
-
-        poke_1 = Pokemon(self.poke)
-        poke_1.image = poke_1_image
-        poke_1.name = 'poke_1'
-        self.sprites.append(poke_1)
-
-        fave_x = 540
-        fave_x_offset = 60
-        fave_y = 440
-
-        # Fave 1
-        fave_1_rect = rect
-        fave_1_image = self.poke_ss.image_at(fave_1_rect, color_key)
-
-        fave_1 = Pokemon(self.poke)
-        fave_1.image = fave_1_image
-        fave_1.name = 'fave_1'
-        fave_1.x = fave_x + (fave_x_offset * 0)
-        fave_1.y = fave_y + border_offset
-        self.sprites.append(fave_1)
-
-        # Fave 2
-        fave_2_rect = rect
-        fave_2_image = self.poke_ss.image_at(fave_2_rect, color_key)
-
-        fave_2 = Pokemon(self.poke)
-        fave_2.image = fave_2_image
-        fave_2.name = 'fave_2'
-        fave_2.x = fave_x + (fave_x_offset * 1)
-        fave_2.y = fave_y + border_offset
-        self.sprites.append(fave_2)
-
-        # Fave 3
-        fave_3_rect = rect
-        fave_3_image = self.poke_ss.image_at(fave_3_rect, color_key)
-
-        fave_3 = Pokemon(self.poke)
-        fave_3.image = fave_3_image
-        fave_3.name = 'fave_3'
-        fave_3.x = fave_x + (fave_x_offset * 2)
-        fave_3.y = fave_y + border_offset
-        self.sprites.append(fave_3)
-
-    def update_sprite(self, poke, index, poke_data, big=False):
-        x = 11
-        x_mult = 57
-        y_mult = 57
-        x_off = 1
-        y_off = 1
-        y = 12
-        is_shiny = False
-
-        if poke.gen == 2 or poke.game == 'yellow' or poke.show_color:
-            x_off = 0
-            y_off = 0
-            x_mult = 56
-            y_mult = 56
-            is_shiny = poke_data['is_shiny'] == 1
-        if poke_data['id'] != '0':
-            try:
-                if poke_data['id'] == '255':
-                    raise KeyError
-                if poke.gen != 2 and (poke.game == 'yellow' or poke.show_color):
-                    id = poke.pokedex[poke_data['id']]['dex']
-                    y = np.ceil(id / 16) - 1
-                    x = (id % 16)
-                    if x == 0:
-                        x = 15
-                    else:
-                        x = x - 1
-                else:
-                    pokedex = poke.pokedex[poke_data['id']]
-                    x = pokedex['tile_x']
-                    y = pokedex['tile_y']
-            except KeyError:
-                if poke.gen == 2 or poke.game == 'yellow' or poke.show_color:
-                    x = 11
-                    y = 9
-                else:
-                    x = 11
-                    y = 12
-        rect = (x * x_mult + x_off, y * y_mult + y_off, 56, 56)
-        if is_shiny:
-            image = self.poke_ss_shiny.image_at(rect, self.color_key)
-        else:
-            image = self.poke_ss.image_at(rect, self.color_key)
-        image = pygame.transform.flip(image, True, False)
-        if big:
-            image = pygame.transform.scale(image, (180, 180))
-        poke.poke_sprites.sprites[index].image = image
-
-    def blank_sprite(self, poke, index):
-        x = 11
-        x_mult = 57
-        y_mult = 57
-        x_off = 1
-        y_off = 1
-        y = 12
-
-        if poke.gen == 2:
-            x_off = 0
-            y_off = 0
-            x_mult = 56
-            y_mult = 56
-        elif poke.game == 'yellow' or poke.show_color:
-            x_off = 0
-            y_off = 0
-            x_mult = 56
-            y_mult = 56
-            x = 7
-            y = 9
-        rect = (x * x_mult + x_off, y * y_mult + y_off, 56, 56)
-        image = self.poke_ss.image_at(rect, self.color_key)
-        poke.poke_sprites.sprites[index].image = image
-
-
-class SpriteSheet:
-
-    def __init__(self, filename):
-        """Load the sheet."""
-        try:
-            self.sheet = pygame.image.load(filename).convert()
-        except pygame.error as e:
-            print(f"Unable to load spritesheet image: {filename}")
-            raise SystemExit(e)
-
-    def image_at(self, rectangle, colorkey=None):
-        """Load a specific image from a specific rectangle."""
-        # Loads image from x, y, x+offset, y+offset.
-        rect = pygame.Rect(rectangle)
-        image = pygame.Surface(rect.size).convert()
-        image.blit(self.sheet, (0, 0), rect)
-        if colorkey is not None:
-            if colorkey == -1:
-                colorkey = image.get_at((0, 0))
-            image.set_colorkey(colorkey, pygame.RLEACCEL)
-        return image
-
-    def images_at(self, rects, colorkey=None):
-        """Load a whole bunch of images and return them as a list."""
-        return [self.image_at(rect, colorkey) for rect in rects]
-
-    def load_strip(self, rect, image_count, colorkey=None):
-        """Load a whole strip of images, and return them as a list."""
-        tups = [(rect[0] + rect[2] * x, rect[1], rect[2], rect[3])
-                for x in range(image_count)]
-        return self.images_at(tups, colorkey)
 
 
 if __name__ == '__main__':
