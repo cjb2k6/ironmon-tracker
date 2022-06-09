@@ -104,6 +104,23 @@ class PokeTypes:
         }
     }
 
+    typeless_moves = [
+        "Beat Up",
+        "Bide",
+        "Counter",
+        "Dragon Rage",
+        "Fissure",
+        "Guillotine",
+        "Hidden Power",
+        "Horn Drill",
+        "Night Shade",
+        "Psywave",
+        "Seismic Toss",
+        "Sheer Cold",
+        "Sonic Boom",
+        "Super Fang",
+    ]
+
     def is_weak_to(self, defender_type, attacker_type):
         try:
             return attacker_type in self.types[defender_type]['weak_to']
@@ -124,7 +141,7 @@ class PokeTypes:
 
     def get_multiplier_char(self, defender_types, attack):
         multiplier = 0
-        if attack['cat'] == 'Status':
+        if attack['cat'] == 'Status' or attack['name'] in self.typeless_moves:
             return ''
         for def_type in defender_types:
             if self.is_immune_to(def_type, attack['type']):
