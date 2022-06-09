@@ -82,13 +82,12 @@ RAM and displays it in a separate window written in Python.
 
 Key Combination | Action
 ------------- | -------------
-Ctrl + Q  | Close Tracker Program
-= OR NumPad +  | Increment Attempts
-- OR NumPad -  | Decrement Attempts
-Ctrl + R  | Reset and Increment Attempts
-Ctrl + Num 0 | Reset and Increment Attempts
-Ctrl + M  | Load random mail message
-Ctrl + S  | Save current mail message to file
+Ctrl+Q  | Close Tracker Program
+Equals OR NumPad-Plus  | Increment Attempts
+Minus OR NumPad-Minus  | Decrement Attempts
+Ctrl+R OR Ctrl+NumPad-0 | Reset and Increment Attempts
+Ctrl+M  | Load random mail message
+Ctrl+S  | Save current mail message to file
 
 ### Mail Randomizer ###
 
