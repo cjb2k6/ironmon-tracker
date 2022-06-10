@@ -47,17 +47,17 @@ TYPES = {
    [3] = 'Poison',
    [4] = 'Ground',
    [5] = 'Rock',
-   [6] = 'Bug',
-   [7] = 'Ghost',
-   [8] = 'Steel',
-   [20] =  'Fire',
-   [21] = 'Water',
-   [22] = 'Grass',
-   [23] =  'Electric',
-   [24] = 'Psychic',
-   [25] = 'Ice',
-   [26] = 'Dragon',
-   [27] = 'Dark'
+   [7] = 'Bug',
+   [8] = 'Ghost',
+   [9] = 'Steel',
+   [20] = 'Fire',       -- 14
+   [21] = 'Water',      -- 15
+   [22] = 'Grass',      -- 16
+   [23] = 'Electric',   -- 17
+   [24] = 'Psychic',    -- 18
+   [25] = 'Ice',        -- 19
+   [26] = 'Dragon',     -- 1A
+   [27] = 'Dark'        -- 1B
 }
 
 function loadCrystalAddresses()
@@ -127,6 +127,13 @@ end
 function getEnemyTypes()
     type1code = memory.readbyte(POKE_ENEMY_TYPE_ADDR)
     type2code = memory.readbyte(POKE_ENEMY_TYPE_ADDR + 1)
+
+    type1string = TYPES[type1code]
+    type2string = TYPES[type2code]
+
+    if type1string == nil or type2string == nil then
+        return ''
+    end
 
     if type1code == type2code then
         return '"' .. TYPES[type1code] .. '"'
