@@ -63,11 +63,11 @@ end
 
 function getPP(pp)
     pp_val = tonumber(pp)
-    if pp_val > 192 then
+    if pp_val >= 192 then
         pp_val = pp_val - 192
-    elseif pp_val > 128 then
+    elseif pp_val >= 128 then
         pp_val = pp_val - 128
-    elseif pp_val > 64 then
+    elseif pp_val >= 64 then
         pp_val = pp_val - 64
     end
     return pp_val
