@@ -90,6 +90,40 @@ Ctrl+R OR Ctrl+NumPad-0 | Reset and Increment Attempts
 Ctrl+M  | Load random mail message
 Ctrl+S  | Save current mail message to file
 
+Settings (edit 'settings.json' in a text editor, remember to save)
+
+Setting | Description | Values
+------------- | ------------- | ------------
+showFavorites  | Displays sprites of favorite Pokémon | true or false
+favorites  | Define what favorite Pokémon to show | enter 3 different national dex numbers as strings (in double quotes) separed by commas
+showAttempts  | Show number of attempts at challenge | true or false
+attempts  | Current number of attempts | a positive whole number representing number of attempts
+rbColor  | Enable to show Pokémon Red/Blue sprites in Super Game Boy color pallet | true or false
+randomMail  | See Mail Randomizer section below  | true or false
+
 ### Mail Randomizer ###
 
-* Mail Stuff
+This is an optional feature exclusive to the generation 2 games and requires changing a setting in the randomizer.
+If enabled and your starter Pokémon comes with a held mail item, you can load a random message into the mail item.
+
+Disclaimer:
+This is purely for fun and serves no benefit to the player.
+In a way, it may make the game a bit harder because you will lower your chances of starting with a good item.
+This will directly modify in-game RAM values, specifically the data stored in addresses related to mail items.
+This is the only feature of the tracker that can write data to the game's memory.
+While this offers no benefit to the player, some may take issue with an outside program manipulating the game's memory.
+This also technically changes the official IronMON randomizer settings in a minor, but still game changing way, so some may view this violating the rules of the challenge.
+Use at your own discretion.
+
+To use the mail randomizer:
+
+* Open the settings.json file into a text editor, set randomMail to true, and save.
+  * > "randomMail": true
+* In the randomizer settings, you must disable Ban Bad Items for your starter Pokémon. This will give your Pokémon a chance to start with a mail item. This also means that you will have a lower chance of starting with a good item.
+* As soon as you get your starter Pokémon, the message of their mail item will be overwritten with a random message.
+* The messages are selected from the file '/json/mail.json'. You can edit this file directly to remove messages. Adding new messages directly to this file is not recommended.
+* You can add new messages to the pool of random messages in game. To do this, follow these steps:
+  * Give a mail item to the Pokémon in your first party slot.
+  * Write whatever message you want to save into the mail item using the in-game mail editor.
+  * Click on the tracker and press the 'Ctrl' and 'S' keys at the same time to write to the file.
+  * You can test loading random messages into the slot 1 Pokémon's held mail by pressing 'Ctrl' and 'M' keys at the same time in the tracker. If you are still reading the old mail in-game, you must back out and select Read on the held mail again.
