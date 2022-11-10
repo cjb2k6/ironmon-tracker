@@ -1,3 +1,5 @@
+import numpy
+
 from json import JSONDecodeError
 
 import json
@@ -11,7 +13,6 @@ import pygame.freetype
 from pokemon.pokesprites import PokeSprites
 from pokemon.poketypes import PokeTypes
 
-import copy
 
 class Poke:
     """Overall class to manage game assets and behavior."""
@@ -24,6 +25,7 @@ class Poke:
         self.LG_FONT = pygame.freetype.Font(self.font, 22)
         self.MD_FONT = pygame.freetype.Font(self.font, 20)
         self.GAME_FONT = pygame.freetype.Font(self.font, 18)
+        self.NORMAL_FONT = pygame.freetype.Font(self.font, 15)
         self.SM_FONT = pygame.freetype.Font(self.font, 12)
         self.XS_FONT = pygame.freetype.Font(self.font, 8)
 
@@ -36,6 +38,7 @@ class Poke:
                 "game": "crystal",
                 "team": {
                     "size": 0,
+                    "items": [],
                     "view": "lead",
                     "has_starter": 0,
                     "poke1": {
@@ -200,7 +203,7 @@ class Poke:
         self.move_list = json.load(f)
         f.close()
 
-        f = open('json/items.json')
+        f = open('json/items-gen1.json')
         self.items = json.load(f)
         f.close()
 
@@ -216,6 +219,10 @@ class Poke:
 
             f = open('json/moveList2.json')
             self.move_list = json.load(f)
+            f.close()
+
+            f = open('json/items-gen2.json')
+            self.items = json.load(f)
             f.close()
 
         self.poke_1_data = self.data["team"]["poke1"]
@@ -446,49 +453,57 @@ class Poke:
         for sprite in self.poke_sprites.sprites:
             sprite.blitme()
 
-        main_x = 220
+        main_x = 228
 
         if self.team_size > 0:
-            # Name
-            text_surface, rect = self.XL_FONT.render(self.decode_poke_name(self.poke_1_data), (0, 0, 0))
-            self.screen.blit(text_surface, (main_x, 28 + (81 * 0)))
 
             # Type
-            text_surface, rect = self.GAME_FONT.render(self.get_type(self.poke_1_data), (0, 0, 0))
-            self.screen.blit(text_surface, (main_x, 60 + (81 * 0)))
+            text_surface, rect = self.NORMAL_FONT.render(self.get_type(self.poke_1_data), (0, 0, 0))
+            text_rect = text_surface.get_rect(center=(110, 180))
+            self.screen.blit(text_surface, text_rect)
+
+            # Name
+            text_surface, rect = self.XL_FONT.render(self.decode_poke_name(self.poke_1_data), (0, 0, 0))
+            self.screen.blit(text_surface, (main_x, 20 + (81 * 0)))
+
+            info_base_y = 52
+            info_offset_y = 30
 
             # Level
             text_surface, rect = self.GAME_FONT.render(self.get_level(self.poke_1_data), (0, 0, 0))
-            self.screen.blit(text_surface, (main_x, 80 + (81 * 0)))
+            self.screen.blit(text_surface, (main_x, info_base_y + (81 * 0)))
 
             # Evolves
             evo = self.pokedex[self.poke_1_data['id']]['evolves_at']
             text_surface, rect = self.GAME_FONT.render('Evo: ' + evo, (0, 0, 0))
-            self.screen.blit(text_surface, (main_x + 100, 80 + (81 * 0)))
+            self.screen.blit(text_surface, (main_x + 100, info_base_y + (81 * 0)))
 
             # HP
             text_surface, rect = self.GAME_FONT.render(self.get_hp(self.poke_1_data), (0, 0, 0))
-            self.screen.blit(text_surface, (main_x, 100 + (81 * 0)))
+            self.screen.blit(text_surface, (main_x, info_base_y + (info_offset_y * 1) + (81 * 0)))
 
             # Learned Moves
-            text_surface, rect = self.GAME_FONT.render(self.get_learned_moves(self.poke_1_data), (0, 0, 0))
-            self.screen.blit(text_surface, (main_x, 120 + (81 * 0)))
+            text_surface, rect = self.GAME_FONT.render(self.get_learned_moves(self.poke_1_data) +
+                                                       " " + self.get_next_move(self.poke_1_data), (0, 0, 0))
+            self.screen.blit(text_surface, (main_x, info_base_y + (info_offset_y * 2) + (81 * 0)))
 
-            # Next Move
-            text_surface, rect = self.GAME_FONT.render(self.get_next_move(self.poke_1_data), (0, 0, 0))
-            self.screen.blit(text_surface, (main_x, 142 + (81 * 0)))
+            # Heals in Bag
+            text_surface, rect = self.GAME_FONT.render("Bag Heals: " + self.get_heals(self.poke_1_data), (0, 0, 0))
+            self.screen.blit(text_surface, (main_x, info_base_y + (info_offset_y * 3) + (81 * 0)))
 
             # Held Item
             if self.gen == 2:
                 item = self.items[self.poke_1_data['item']]['name'].upper()
-                text_surface, rect = self.GAME_FONT.render('Item: ' + item, (0, 0, 0))
-                self.screen.blit(text_surface, (main_x, 165 + (81 * 0)))
+                text_surface, rect = self.GAME_FONT.render('Held: ' + item, (0, 0, 0))
+                self.screen.blit(text_surface, (main_x, info_base_y + (info_offset_y * 4) + (81 * 0)))
+
+                # 168
 
         # Stats
-        stat_x = 530
+        stat_x = 556
         stat_num_offset = 100
-        stat_base_y = 0
-        stat_y_offset = 28
+        stat_base_y = -8
+        stat_y_offset = 30
 
         text_surface, rect = self.GAME_FONT.render("Atk:", (0, 0, 0))
         self.screen.blit(text_surface, (stat_x, stat_base_y + (stat_y_offset * 1) + (81 * 0)))
@@ -537,14 +552,14 @@ class Poke:
             self.screen.blit(text_surface, (stat_x + stat_num_offset, stat_base_y + (stat_y_offset * 5) + (81 * 0)))
 
         # Moves
-        move_y = 220
+        move_y = 210
         move_x = 24
         type_x = 306
         pp_x = 456
         pow_x = 556
         acc_x = 660
 
-        move_y_offset = 50
+        move_y_offset = 46
         type_y_offset = 3
 
         text_surface, rect = self.XL_FONT.render('Move', (0, 0, 0))
@@ -683,6 +698,30 @@ class Poke:
     def get_stat(self, poke_data, key):
         return str(poke_data[key])
 
+    def get_heals(self, poke_data):
+        items = self.data['team']['items']
+        total_hp = 0
+        total_heals = 0
+
+        for item in items:
+            try:
+                hp = self.items[item['item']]['heal']
+            except KeyError:
+                hp = 0
+
+            if hp != 0:
+                qty = item['qty']
+                total_heals += qty
+                if hp <= 1:
+                    total_hp += poke_data['max_hp'] * hp * qty
+                else:
+                    total_hp += hp * qty
+        if poke_data['max_hp'] < 1:
+            percentage = 0
+        else:
+            percentage = numpy.round(total_hp / poke_data['max_hp'] * 100)
+        return str(int(percentage)) + "%HP (" + str(total_heals) + ")"
+
     def get_learned_moves(self, poke_data):
         count_learned = 0
         total_moves = 0
@@ -692,15 +731,15 @@ class Poke:
             total_moves += 1
             if move <= level:
                 count_learned += 1
-        return 'Learned: ' + str(count_learned) + '/' + str(total_moves)
+        return 'Moves: ' + str(count_learned) + '/' + str(total_moves)
 
     def get_next_move(self, poke_data):
         level = poke_data['level']
         moves = self.pokedex[poke_data['id']]['learns_at']
         for move in moves:
             if move > level:
-                return 'Next at: ' + str(move)
-        return 'No More Moves'
+                return "(" + str(move) + ")"
+        return ''
 
     def get_move(self, move_id):
         try:

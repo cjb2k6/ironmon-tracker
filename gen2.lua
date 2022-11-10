@@ -21,6 +21,8 @@ POKE_1_NAME_ADDR = tonumber("0x1B8C")
 POKE_1_ID_ADDR = tonumber("0x1A23")
 POKE_1_LEVEL_ADDR = tonumber("0x1A49")
 
+BAG_ADDR = tonumber("0x15B8")
+
 GOT_STARTER_ADDR = tonumber("0x1986")
 
 ITEM_OFFSET = 8
@@ -70,6 +72,8 @@ function loadCrystalAddresses()
     POKE_ENEMY_LEVEL_ADDR = tonumber("0x1213")
     POKE_ENEMY_IV_ADDR = tonumber("0x120C")
     POKE_ENEMY_TYPE_ADDR = tonumber("0x1224")
+
+    BAG_ADDR = tonumber("0x1893")
 
     BATTLE_TYPE = tonumber("0x122D")
 
@@ -122,6 +126,27 @@ function getPP(pp)
         pp_val = pp_val - 64
     end
     return pp_val
+end
+
+function getItems()
+    items = ""
+    count = 0
+
+    while count <= 20 do
+        item = memory.readbyte(BAG_ADDR + (count * 2))
+        if item == 255 then
+            return items
+        else
+            qty = memory.readbyte(BAG_ADDR + (count * 2) + 1)
+            if items ~= "" then
+                items = items .. ", "
+            end
+            items = items .. "{ \"item\": \"" .. item .. "\", \"qty\": " .. qty .. "}"
+        end
+        count = count + 1
+    end
+
+    return items
 end
 
 function getEnemyTypes()
@@ -263,6 +288,7 @@ while true do
 		end
 
 		output = output .. "\"size\": " .. size .. ", "
+		output = output .. "\"items\": [" .. getItems() .. "], "
 		output = output .. "\"view\": \"" .. view .. "\", "
 		output = output .. "\"has_starter\": " .. memory.readbyte(GOT_STARTER_ADDR) .. ", "
 		output = output .. buildPoke(1, POKE_1_NAME_ADDR, POKE_1_ID_ADDR, POKE_1_LEVEL_ADDR) .. "}, "

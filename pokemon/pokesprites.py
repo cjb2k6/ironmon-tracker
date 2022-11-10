@@ -144,7 +144,7 @@ class PokeSprites:
             image = self.poke_ss.image_at(rect, self.color_key)
         image = pygame.transform.flip(image, True, False)
         if big:
-            image = pygame.transform.scale(image, (180, 180))
+            image = pygame.transform.scale(image, (170, 170))
         poke.poke_sprites.sprites[index].image = image
 
     def blank_sprite(self, poke, index):

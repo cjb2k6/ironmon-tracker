@@ -25,6 +25,8 @@ BATTLE_TYPE = tonumber("0x1057")
 MOVE_OFFSET = 8
 PP_OFFSET = 29
 
+BAG_ADDR = tonumber("0x131E")
+
 GAME_ADDR = tonumber("0x013C")
 RED = 82
 BLUE = 66
@@ -59,6 +61,8 @@ function loadYellowAddresses()
     POKE_ENEMY_LEVEL_ADDR = tonumber("0x0FF2")
     POKE_ENEMY_IV_ADDR = POKE_ENEMY_IV_ADDR - 1
     POKE_ENEMY_TYPE_ADDR = tonumber("0x0FE9")
+
+    BAG_ADDR = tonumber("0x131D")
 end
 
 function getPP(pp)
@@ -72,6 +76,28 @@ function getPP(pp)
     end
     return pp_val
 end
+
+function getItems()
+    items = ""
+    count = 0
+
+    while count <= 20 do
+        item = memory.readbyte(BAG_ADDR + (count * 2))
+        if item == 255 then
+            return items
+        else
+            qty = memory.readbyte(BAG_ADDR + (count * 2) + 1)
+            if items ~= "" then
+                items = items .. ", "
+            end
+            items = items .. "{ \"item\": \"" .. item .. "\", \"qty\": " .. qty .. "}"
+        end
+        count = count + 1
+    end
+
+    return items
+end
+
 
 function getEnemyTypes()
     type1code = memory.readbyte(POKE_ENEMY_TYPE_ADDR)
@@ -201,6 +227,7 @@ while true do
 		    end
 		end
 		output = output .. "\"size\": " .. size .. ", "
+		output = output .. "\"items\": [" .. getItems() .. "], "
 		output = output .. "\"view\": \"" .. view .. "\", "
 		output = output .. buildPoke(1, POKE_1_NAME_ADDR, POKE_1_ID_ADDR, POKE_1_LEVEL_ADDR, POKE_1_START_ADDR) .. "}, "
 		output = output .. "\"battleType\": \"" .. memory.readbyte(BATTLE_TYPE) .. "\", "

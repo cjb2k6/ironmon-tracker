@@ -57,23 +57,28 @@
     },
     "14": {
         "name": "Full Restore",
-        "pocket": "Items pocket"
+        "pocket": "Items pocket",
+        "heal": 1
     },
     "15": {
         "name": "Max Potion",
-        "pocket": "Items pocket"
+        "pocket": "Items pocket",
+        "heal": 1
     },
     "16": {
         "name": "Hyper Potion",
-        "pocket": "Items pocket"
+        "pocket": "Items pocket",
+        "heal": 200
     },
     "17": {
         "name": "Super Potion",
-        "pocket": "Items pocket"
+        "pocket": "Items pocket",
+        "heal": 50
     },
     "18": {
         "name": "Potion",
-        "pocket": "Items pocket"
+        "pocket": "Items pocket",
+        "heal": 20
     },
     "19": {
         "name": "Escape Rope",
@@ -185,15 +190,18 @@
     },
     "46": {
         "name": "Fresh Water",
-        "pocket": "Items pocket"
+        "pocket": "Items pocket",
+        "heal": 50
     },
     "47": {
         "name": "Soda Pop",
-        "pocket": "Items pocket"
+        "pocket": "Items pocket",
+        "heal": 60
     },
     "48": {
         "name": "Lemonade",
-        "pocket": "Items pocket"
+        "pocket": "Items pocket",
+        "heal": 80
     },
     "49": {
         "name": "X Attack",
@@ -289,7 +297,8 @@
     },
     "72": {
         "name": "Moomoo Milk",
-        "pocket": "Items pocket"
+        "pocket": "Items pocket",
+        "heal": 100
     },
     "73": {
         "name": "Quick Claw",
@@ -457,7 +466,8 @@
     },
     "114": {
         "name": "RageCandyBar",
-        "pocket": "Items pocket"
+        "pocket": "Items pocket",
+        "heal": 20
     },
     "115": {
         "name": "GS Ball*",
@@ -485,11 +495,13 @@
     },
     "121": {
         "name": "EnergyPowder",
-        "pocket": "Items pocket"
+        "pocket": "Items pocket",
+        "heal": 50
     },
     "122": {
         "name": "Energy Root",
-        "pocket": "Items pocket"
+        "pocket": "Items pocket",
+        "heal": 200
     },
     "123": {
         "name": "Heal Powder",
@@ -693,11 +705,13 @@
     },
     "173": {
         "name": "Berry",
-        "pocket": "Items pocket"
+        "pocket": "Items pocket",
+        "heal": 10
     },
     "174": {
         "name": "Gold Berry",
-        "pocket": "Items pocket"
+        "pocket": "Items pocket",
+        "heal": 30
     },
     "175": {
         "name": "SquirtBottle",

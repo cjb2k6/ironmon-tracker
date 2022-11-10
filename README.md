@@ -14,6 +14,7 @@ RAM and displays it in a separate window written in Python.
     * Current HP / Total HP
     * Number of Moves Learned / Total Moves Learnable
     * Level of Next Learned Move
+    * Total Percentage of Heals / Total Number of Healing Items in Bag
     * Current Held Item (Gen 2)
     * Stats and Base Stat Total
   * Lead Pokémon Moves
@@ -55,7 +56,7 @@ RAM and displays it in a separate window written in Python.
   * For Windows users, run the Start_Tracker_Windows.bat file
   * For other platforms, run the following terminal command from the tracker's root directory
   * >python tracker.py
-* If successful, you should see the tracker with no data filled you
+* If successful, you should see the tracker with no data filled out
 * Close the tracker for now
 
 ### Using the Tracker ###

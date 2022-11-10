@@ -1,0 +1,606 @@
+{
+    "0": {
+        "name": "---",
+        "pocket": "N/A"
+    },
+    "1": {
+        "name": "Master Ball",
+        "pocket": "N/A"
+    },
+    "2": {
+        "name": "Ultra Ball",
+        "pocket": "N/A"
+    },
+    "3": {
+        "name": "Great Ball",
+        "pocket": "N/A"
+    },
+    "4": {
+        "name": "Poke Ball",
+        "pocket": "N/A"
+    },
+    "5": {
+        "name": "Town Map",
+        "pocket": "N/A"
+    },
+    "6": {
+        "name": "Bicycle",
+        "pocket": "N/A"
+    },
+    "7": {
+        "name": "?????",
+        "pocket": "N/A"
+    },
+    "8": {
+        "name": "Safari Ball",
+        "pocket": "N/A"
+    },
+    "9": {
+        "name": "Pokedex",
+        "pocket": "N/A"
+    },
+    "10": {
+        "name": "Moon Stone",
+        "pocket": "N/A"
+    },
+    "11": {
+        "name": "Antidote",
+        "pocket": "N/A"
+    },
+    "12": {
+        "name": "Burn Heal",
+        "pocket": "N/A"
+    },
+    "13": {
+        "name": "Ice Heal",
+        "pocket": "N/A"
+    },
+    "14": {
+        "name": "Awakening",
+        "pocket": "N/A"
+    },
+    "15": {
+        "name": "Parlyz Heal",
+        "pocket": "N/A"
+    },
+    "16": {
+        "name": "Full Restore",
+        "pocket": "N/A",
+        "heal": 1
+    },
+    "17": {
+        "name": "Max Potion",
+        "pocket": "N/A",
+        "heal": 1
+    },
+    "18": {
+        "name": "Hyper Potion",
+        "pocket": "N/A",
+        "heal": 200
+    },
+    "19": {
+        "name": "Super Potion",
+        "pocket": "N/A",
+        "heal": 50
+    },
+    "20": {
+        "name": "Potion",
+        "pocket": "N/A",
+        "heal": 20
+    },
+    "21": {
+        "name": "BoulderBadge",
+        "pocket": "N/A"
+    },
+    "22": {
+        "name": "CascadeBadge",
+        "pocket": "N/A"
+    },
+    "23": {
+        "name": "ThunderBadge",
+        "pocket": "N/A"
+    },
+    "24": {
+        "name": "RainbowBadge",
+        "pocket": "N/A"
+    },
+    "25": {
+        "name": "SoulBadge",
+        "pocket": "N/A"
+    },
+    "26": {
+        "name": "MarshBadge",
+        "pocket": "N/A"
+    },
+    "27": {
+        "name": "VolcanoBadge",
+        "pocket": "N/A"
+    },
+    "28": {
+        "name": "EarthBadge",
+        "pocket": "N/A"
+    },
+    "29": {
+        "name": "Escape Rope",
+        "pocket": "N/A"
+    },
+    "30": {
+        "name": "Repel",
+        "pocket": "N/A"
+    },
+    "31": {
+        "name": "Old Amber",
+        "pocket": "N/A"
+    },
+    "32": {
+        "name": "Fire Stone",
+        "pocket": "N/A"
+    },
+    "33": {
+        "name": "Thunderstone",
+        "pocket": "N/A"
+    },
+    "34": {
+        "name": "Water Stone",
+        "pocket": "N/A"
+    },
+    "35": {
+        "name": "HP Up",
+        "pocket": "N/A"
+    },
+    "36": {
+        "name": "Protein",
+        "pocket": "N/A"
+    },
+    "37": {
+        "name": "Iron",
+        "pocket": "N/A"
+    },
+    "38": {
+        "name": "Carbos",
+        "pocket": "N/A"
+    },
+    "39": {
+        "name": "Calcium",
+        "pocket": "N/A"
+    },
+    "40": {
+        "name": "Rare Candy",
+        "pocket": "N/A"
+    },
+    "41": {
+        "name": "Dome Fossil",
+        "pocket": "N/A"
+    },
+    "42": {
+        "name": "Helix Fossil",
+        "pocket": "N/A"
+    },
+    "43": {
+        "name": "Secret Key",
+        "pocket": "N/A"
+    },
+    "44": {
+        "name": "?????",
+        "pocket": "N/A"
+    },
+    "45": {
+        "name": "Bike Voucher",
+        "pocket": "N/A"
+    },
+    "46": {
+        "name": "X Accuracy",
+        "pocket": "N/A"
+    },
+    "47": {
+        "name": "Leaf Stone",
+        "pocket": "N/A"
+    },
+    "48": {
+        "name": "Card Key",
+        "pocket": "N/A"
+    },
+    "49": {
+        "name": "Nugget",
+        "pocket": "N/A"
+    },
+    "50": {
+        "name": "PP Up*",
+        "pocket": "N/A"
+    },
+    "51": {
+        "name": "Poke Doll",
+        "pocket": "N/A"
+    },
+    "52": {
+        "name": "Full Heal",
+        "pocket": "N/A"
+    },
+    "53": {
+        "name": "Revive",
+        "pocket": "N/A"
+    },
+    "54": {
+        "name": "Max Revive",
+        "pocket": "N/A"
+    },
+    "55": {
+        "name": "Guard Spec.",
+        "pocket": "N/A"
+    },
+    "56": {
+        "name": "Super Repel",
+        "pocket": "N/A"
+    },
+    "57": {
+        "name": "Max Repel",
+        "pocket": "N/A"
+    },
+    "58": {
+        "name": "Dire Hit",
+        "pocket": "N/A"
+    },
+    "59": {
+        "name": "Coin",
+        "pocket": "N/A"
+    },
+    "60": {
+        "name": "Fresh Water",
+        "pocket": "N/A",
+        "heal": 50
+    },
+    "61": {
+        "name": "Soda Pop",
+        "pocket": "N/A",
+        "heal": 60
+    },
+    "62": {
+        "name": "Lemonade",
+        "pocket": "N/A",
+        "heal": 80
+    },
+    "63": {
+        "name": "S.S. Ticket",
+        "pocket": "N/A"
+    },
+    "64": {
+        "name": "Gold Teeth",
+        "pocket": "N/A"
+    },
+    "65": {
+        "name": "X Attack",
+        "pocket": "N/A"
+    },
+    "66": {
+        "name": "X Defend",
+        "pocket": "N/A"
+    },
+    "67": {
+        "name": "X Speed",
+        "pocket": "N/A"
+    },
+    "68": {
+        "name": "X Special",
+        "pocket": "N/A"
+    },
+    "69": {
+        "name": "Coin Case",
+        "pocket": "N/A"
+    },
+    "70": {
+        "name": "Oak's Parcel",
+        "pocket": "N/A"
+    },
+    "71": {
+        "name": "Itemfinder",
+        "pocket": "N/A"
+    },
+    "72": {
+        "name": "Silph Scope",
+        "pocket": "N/A"
+    },
+    "73": {
+        "name": "Poke Flute",
+        "pocket": "N/A"
+    },
+    "74": {
+        "name": "Lift Key",
+        "pocket": "N/A"
+    },
+    "75": {
+        "name": "Exp. All",
+        "pocket": "N/A"
+    },
+    "76": {
+        "name": "Old Rod",
+        "pocket": "N/A"
+    },
+    "77": {
+        "name": "Good Rod",
+        "pocket": "N/A"
+    },
+    "78": {
+        "name": "Super Rod",
+        "pocket": "N/A"
+    },
+    "79": {
+        "name": "PP Up",
+        "pocket": "N/A"
+    },
+    "80": {
+        "name": "Ether",
+        "pocket": "N/A"
+    },
+    "81": {
+        "name": "Max Ether",
+        "pocket": "N/A"
+    },
+    "82": {
+        "name": "Elixer",
+        "pocket": "N/A"
+    },
+    "83": {
+        "name": "Max Elixer",
+        "pocket": "N/A"
+    },
+    "117": {
+        "name": "?",
+        "pocket": "N/A"
+    },
+    "118": {
+        "name": "?",
+        "pocket": "N/A"
+    },
+    "119": {
+        "name": "4",
+        "pocket": "N/A"
+    },
+    "120": {
+        "name": "?",
+        "pocket": "N/A"
+    },
+    "121": {
+        "name": "$ ?",
+        "pocket": "N/A"
+    },
+    "196": {
+        "name": "HM01",
+        "pocket": "N/A"
+    },
+    "197": {
+        "name": "HM02",
+        "pocket": "N/A"
+    },
+    "198": {
+        "name": "HM03",
+        "pocket": "N/A"
+    },
+    "199": {
+        "name": "HM04",
+        "pocket": "N/A"
+    },
+    "200": {
+        "name": "HM05",
+        "pocket": "N/A"
+    },
+    "201": {
+        "name": "TM01",
+        "pocket": "N/A"
+    },
+    "202": {
+        "name": "TM02",
+        "pocket": "N/A"
+    },
+    "203": {
+        "name": "TM03",
+        "pocket": "N/A"
+    },
+    "204": {
+        "name": "TM04",
+        "pocket": "N/A"
+    },
+    "205": {
+        "name": "TM05",
+        "pocket": "N/A"
+    },
+    "206": {
+        "name": "TM06",
+        "pocket": "N/A"
+    },
+    "207": {
+        "name": "TM07",
+        "pocket": "N/A"
+    },
+    "208": {
+        "name": "TM08",
+        "pocket": "N/A"
+    },
+    "209": {
+        "name": "TM09",
+        "pocket": "N/A"
+    },
+    "210": {
+        "name": "TM10",
+        "pocket": "N/A"
+    },
+    "211": {
+        "name": "TM11",
+        "pocket": "N/A"
+    },
+    "212": {
+        "name": "TM12",
+        "pocket": "N/A"
+    },
+    "213": {
+        "name": "TM13",
+        "pocket": "N/A"
+    },
+    "214": {
+        "name": "TM14",
+        "pocket": "N/A"
+    },
+    "215": {
+        "name": "TM15",
+        "pocket": "N/A"
+    },
+    "216": {
+        "name": "TM16",
+        "pocket": "N/A"
+    },
+    "217": {
+        "name": "TM17",
+        "pocket": "N/A"
+    },
+    "218": {
+        "name": "TM18",
+        "pocket": "N/A"
+    },
+    "219": {
+        "name": "TM19",
+        "pocket": "N/A"
+    },
+    "220": {
+        "name": "TM20",
+        "pocket": "N/A"
+    },
+    "221": {
+        "name": "TM21",
+        "pocket": "N/A"
+    },
+    "222": {
+        "name": "TM22",
+        "pocket": "N/A"
+    },
+    "223": {
+        "name": "TM23",
+        "pocket": "N/A"
+    },
+    "224": {
+        "name": "TM24",
+        "pocket": "N/A"
+    },
+    "225": {
+        "name": "TM25",
+        "pocket": "N/A"
+    },
+    "226": {
+        "name": "TM26",
+        "pocket": "N/A"
+    },
+    "227": {
+        "name": "TM27",
+        "pocket": "N/A"
+    },
+    "228": {
+        "name": "TM28",
+        "pocket": "N/A"
+    },
+    "229": {
+        "name": "TM29",
+        "pocket": "N/A"
+    },
+    "230": {
+        "name": "TM30",
+        "pocket": "N/A"
+    },
+    "231": {
+        "name": "TM31",
+        "pocket": "N/A"
+    },
+    "232": {
+        "name": "TM32",
+        "pocket": "N/A"
+    },
+    "233": {
+        "name": "TM33",
+        "pocket": "N/A"
+    },
+    "234": {
+        "name": "TM34",
+        "pocket": "N/A"
+    },
+    "235": {
+        "name": "TM35",
+        "pocket": "N/A"
+    },
+    "236": {
+        "name": "TM36",
+        "pocket": "N/A"
+    },
+    "237": {
+        "name": "TM37",
+        "pocket": "N/A"
+    },
+    "238": {
+        "name": "TM38",
+        "pocket": "N/A"
+    },
+    "239": {
+        "name": "TM39",
+        "pocket": "N/A"
+    },
+    "240": {
+        "name": "TM40",
+        "pocket": "N/A"
+    },
+    "241": {
+        "name": "TM41",
+        "pocket": "N/A"
+    },
+    "242": {
+        "name": "TM42",
+        "pocket": "N/A"
+    },
+    "243": {
+        "name": "TM43",
+        "pocket": "N/A"
+    },
+    "244": {
+        "name": "TM44",
+        "pocket": "N/A"
+    },
+    "245": {
+        "name": "TM45",
+        "pocket": "N/A"
+    },
+    "246": {
+        "name": "TM46",
+        "pocket": "N/A"
+    },
+    "247": {
+        "name": "TM47",
+        "pocket": "N/A"
+    },
+    "248": {
+        "name": "TM48",
+        "pocket": "N/A"
+    },
+    "249": {
+        "name": "TM49",
+        "pocket": "N/A"
+    },
+    "250": {
+        "name": "TM50",
+        "pocket": "N/A"
+    },
+    "251": {
+        "name": "TM51",
+        "pocket": "N/A"
+    },
+    "252": {
+        "name": "TM52",
+        "pocket": "N/A"
+    },
+    "253": {
+        "name": "TM53",
+        "pocket": "N/A"
+    },
+    "254": {
+        "name": "TM54",
+        "pocket": "N/A"
+    },
+    "255": {
+        "name": "TM55",
+        "pocket": "N/A"
+    }
+}
