@@ -655,7 +655,7 @@ class Poke:
 
         # Enemy Poke
 
-        enemy_y = 450
+        enemy_y = 456
 
         text_surface, rect = self.MD_FONT.render(self.get_enemy(), (0, 0, 0))
         self.screen.blit(text_surface, (move_x, enemy_y + (move_y_offset * 1) + (81 * 0)))
