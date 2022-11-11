@@ -193,8 +193,6 @@ class Poke:
 
         self.poke_sprites = PokeSprites(self)
 
-        self.frame_count = 0
-
         f = open('json/pokedex.json')
         self.pokedex = json.load(f)
         f.close()
@@ -241,25 +239,25 @@ class Poke:
     def run_game(self):
         self._update_data()
         self._update_screen()
+        clock = pygame.time.Clock()
         """Start the main loop for the game."""
         while True:
-            self.frame_count += 1
+            clock.tick(60)
             self._check_events()
-            if self.frame_count > 60:
-                self.frame_count = 0
-                if self.settings['randomMail']:
-                    if not self.mail_set and self.team_size > 0:
-                        self.compose_mail()
-                    self.handle_mail()
-                f = open('poke.json')
-                try:
-                    new_data = json.load(f)
-                    if self.data != new_data:
-                        self.data = new_data
-                        self._update_data()
-                        self._update_screen()
-                except JSONDecodeError:
-                    continue
+            if self.settings['randomMail']:
+                if not self.mail_set and self.team_size > 0:
+                    self.compose_mail()
+                self.handle_mail()
+            f = open('poke.json')
+            try:
+                new_data = json.load(f)
+                if self.data != new_data:
+                    self.data = new_data
+                    self._update_data()
+                    self._update_screen()
+            except JSONDecodeError:
+                continue
+            f.close()
 
     def _check_events(self):
         for event in pygame.event.get():
