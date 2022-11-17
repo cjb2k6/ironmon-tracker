@@ -169,7 +169,6 @@ class Poke:
         self.mail_set = True
         self.mail_initialized = False
 
-
         f = open('json/natDexToGen1Map.json')
         self.natDexToGen1Map = json.load(f)
         f.close()
