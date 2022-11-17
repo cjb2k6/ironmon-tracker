@@ -713,6 +713,8 @@ class Poke:
                 if hp <= 1:
                     total_hp += poke_data['max_hp'] * hp * qty
                 else:
+                    if hp > poke_data['max_hp']:
+                        hp = poke_data['max_hp']
                     total_hp += hp * qty
         if poke_data['max_hp'] < 1:
             percentage = 0
