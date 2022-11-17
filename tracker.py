@@ -494,8 +494,6 @@ class Poke:
                 text_surface, rect = self.GAME_FONT.render('Held: ' + item, (0, 0, 0))
                 self.screen.blit(text_surface, (main_x, info_base_y + (info_offset_y * 4) + (81 * 0)))
 
-                # 168
-
         # Stats
         stat_x = 556
         stat_num_offset = 100
