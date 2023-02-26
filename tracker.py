@@ -36,6 +36,7 @@ class Poke:
         except FileNotFoundError:
             self.data = {
                 "game": "crystal",
+                "gen": 2,
                 "team": {
                     "size": 0,
                     "items": [],
@@ -78,10 +79,7 @@ class Poke:
 
         self.game = self.data["game"]
 
-        self.gen = 1
-
-        if self.game == 'gold' or self.game == 'silver' or self.game == 'crystal':
-            self.gen = 2
+        self.gen = self.data["gen"]
 
         self.view = "party"
 

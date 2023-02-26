@@ -1492,5 +1492,14 @@
     "acc": "90",
     "pp": "20",
     "effect": "Traps opponent, damaging them for 4-5 turns."
+  },
+    "255": {
+    "name": "-",
+    "type": "-",
+    "cat": "None",
+    "power": "-",
+    "acc": "-",
+    "pp": 0,
+    "effect": ""
   }
 }
