@@ -50,16 +50,15 @@ RAM and displays it in a separate window written in Python.
     * >pip install pygame
     * >pip install numpy
       
-### First Time Run ###
+### Running the Tracker ###
 
-* Run the tracker to ensure it works. This will also generate some more files
+* Open the Tracker Program
   * For Windows users, run the Start_Tracker_Windows.bat file
   * For other platforms, run the following terminal command from the tracker's root directory
   * >python tracker.py
 * If successful, you should see the tracker with no data filled out
-* Close the tracker for now
 
-### Using the Tracker ###
+### Using the Tracker with Your Game ###
 
 * Open BizHawk and load your game ROM file
   * Tracker supports the following games, only English ROMs have been tested
@@ -73,7 +72,6 @@ RAM and displays it in a separate window written in Python.
   * In the Lua console, select Script from menu bar then select Open Script
     * Navigate to the folder containing the tracker files and open tracker.lua
   * Upon loading, there should be a message in the Lua console with your game version
-* Open the Tracker using the same bat file or command from the First Time Run
 
 ### Configuring the Tracker ###
 
