@@ -188,7 +188,7 @@ class Poke:
 
         self.screen = pygame.display.set_mode(
             (750, 550))
-        pygame.display.set_caption("Ironmon Tracker")
+        pygame.display.set_caption("IronMON Tracker - Pokémon " + self.game.title() + " Version")
 
         self.poke_sprites = PokeSprites(self)
 
@@ -250,7 +250,7 @@ class Poke:
             f = open('poke.json')
             try:
                 new_data = json.load(f)
-                if new_data['gen'] != self.gen:
+                if new_data['game'] != self.game:
                     self.reset()
                 if self.data != new_data:
                     self.data = new_data

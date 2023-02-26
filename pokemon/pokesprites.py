@@ -107,6 +107,7 @@ class PokeSprites:
         y_off = 1
         y = 12
         is_shiny = False
+        missing = False
 
         if poke.gen == 2 or poke.game == 'yellow' or poke.show_color:
             x_off = 0
@@ -131,24 +132,29 @@ class PokeSprites:
                     x = pokedex['tile_x']
                     y = pokedex['tile_y']
             except KeyError:
-                if poke.gen == 2 or poke.game == 'yellow' or poke.show_color:
+                missing = True
+                if poke.gen == 2:
                     x = 11
+                    y = 12
+                elif poke.game == 'yellow' or poke.show_color:
+                    x = 7
                     y = 9
                 else:
-                    x = 11
+                    x = 7
                     y = 12
         rect = (x * x_mult + x_off, y * y_mult + y_off, 56, 56)
         if is_shiny:
             image = self.poke_ss_shiny.image_at(rect, self.color_key)
         else:
             image = self.poke_ss.image_at(rect, self.color_key)
-        image = pygame.transform.flip(image, True, False)
+        if not missing:
+            image = pygame.transform.flip(image, True, False)
         if big:
             image = pygame.transform.scale(image, (170, 170))
         poke.poke_sprites.sprites[index].image = image
 
     def blank_sprite(self, poke, index):
-        x = 11
+        x = 8
         x_mult = 57
         y_mult = 57
         x_off = 1
@@ -156,6 +162,7 @@ class PokeSprites:
         y = 12
 
         if poke.gen == 2:
+            x = 13
             x_off = 0
             y_off = 0
             x_mult = 56
@@ -165,7 +172,7 @@ class PokeSprites:
             y_off = 0
             x_mult = 56
             y_mult = 56
-            x = 7
+            x = 8
             y = 9
         rect = (x * x_mult + x_off, y * y_mult + y_off, 56, 56)
         image = self.poke_ss.image_at(rect, self.color_key)
