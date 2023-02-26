@@ -71,9 +71,7 @@ RAM and displays it in a separate window written in Python.
     * Pokémon Crystal Version
 * In BizHawk, select Tools from menu bar and then select Lua Console
   * In the Lua console, select Script from menu bar then select Open Script
-    * Navigate to the folder containing the tracker files and open one of the two Lua scripts
-      * gen1.lua for Pokémon Red, Blue, and Yellow
-      * gen2.lua for Pokémon Gold, Silver, and Crystal
+    * Navigate to the folder containing the tracker files and open tracker.lua
   * Upon loading, there should be a message in the Lua console with your game version
 * Open the Tracker using the same bat file or command from the First Time Run
 

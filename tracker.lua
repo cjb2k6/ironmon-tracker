@@ -2,8 +2,9 @@ timeLimit = 30
 diff = 0
 
 game='gold'
+gen = 2
 
-view='lead'
+view = 'lead'
 
 attack_ivs = {'2', '3', '6', '7', 'a', 'e', 'f'}
 attack_ivs_length = 7
@@ -20,6 +21,10 @@ POKE_ENEMY_TYPE_ADDR = tonumber("0x110D")
 POKE_1_NAME_ADDR = tonumber("0x1B8C")
 POKE_1_ID_ADDR = tonumber("0x1A23")
 POKE_1_LEVEL_ADDR = tonumber("0x1A49")
+
+--GEN 1 Pointers
+POKE_1_START_ADDR = tonumber("0x116B")
+POKE_1_HP_ADDR = tonumber("0x116C")
 
 BAG_ADDR = tonumber("0x15B8")
 
@@ -41,6 +46,9 @@ GAME_ADDR = tonumber("0x013C")
 SILVER = 83
 GOLD = 71
 CRYSTAL = 65
+RED = 82
+BLUE = 66
+YELLOW = 89
 
 TYPES = {
    [0] = 'Normal',
@@ -80,6 +88,43 @@ function loadCrystalAddresses()
     ITEM_OFFSET = 1
     MOVE_OFFSET = 2
     PP_OFFSET = 23
+end
+
+function loadYellowAddresses()
+    gen = 1
+    POKE_1_START_ADDR = tonumber("0x116A")
+    POKE_1_ID_ADDR = tonumber("0x1163")
+    POKE_1_HP_ADDR = tonumber("0x116B")
+    POKE_1_NAME_ADDR = tonumber("0x12B4")
+    POKE_1_LEVEL_ADDR = tonumber("0x118B")
+    BATTLE_TYPE = tonumber("0x1056")
+    POKE_ENEMY_ID_ADDR = tonumber("0x0FD7")
+    POKE_ENEMY_LEVEL_ADDR = tonumber("0x0FF2")
+    POKE_ENEMY_IV_ADDR = tonumber("0x0FF0")
+    POKE_ENEMY_TYPE_ADDR = tonumber("0x0FE9")
+    TEAM_SIZE_ADDR = tonumber("0x1163")
+    BAG_ADDR = tonumber("0x131D")
+    MOVE_OFFSET = 8
+    PP_OFFSET = 29
+end
+
+function loadRedBlueAddresses()
+    gen = 1
+    POKE_1_NAME_ADDR = tonumber("0x12B5")
+    POKE_1_ID_ADDR = tonumber("0x1164")
+    POKE_1_HP_ADDR = tonumber("0x116C")
+    POKE_1_LEVEL_ADDR = tonumber("0x118C")
+    POKE_1_START_ADDR = tonumber("0x116B")
+    BATTLE_TYPE = tonumber("0x1057")
+    POKE_ENEMY_ID_ADDR = tonumber("0x0FD8")
+    POKE_ENEMY_LEVEL_ADDR = tonumber("0x0FF3")
+    POKE_ENEMY_IV_ADDR = tonumber("0x0FF1")
+    POKE_ENEMY_TYPE_ADDR = tonumber("0x0FEA")
+    TEAM_SIZE_ADDR = tonumber("0x1163")
+    BAG_ADDR = tonumber("0x131E")
+    BATTLE_TYPE = tonumber("0x1057")
+    MOVE_OFFSET = 8
+    PP_OFFSET = 29
 end
 
 function getPokeName(startAddress)
@@ -250,12 +295,42 @@ function buildPoke(number, nameAddr, idAddr, lvlAddr)
  return poke .. "}"
 end
 
+function buildPokeGen1(number, nameAddr, idAddr, lvlAddr, startAddr)
+ poke = "\"poke" .. number .. "\": {"
+ poke = poke .. "\"name\": " .. getPokeName(nameAddr) .. ", "
+ poke = poke .. "\"id\": \"" .. memory.readbyte(idAddr) .. "\"" .. ", "
+ poke = poke .. "\"item\": \"" .. "0" .. "\"" .. ", "
+ poke = poke .. "\"move_1\": \"" .. memory.readbyte(startAddr + MOVE_OFFSET) .. "\"" .. ", "
+ poke = poke .. "\"move_2\": \"" .. memory.readbyte(startAddr + MOVE_OFFSET + 1) .. "\"" .. ", "
+ poke = poke .. "\"move_3\": \"" .. memory.readbyte(startAddr  + MOVE_OFFSET + 2) .. "\"" .. ", "
+ poke = poke .. "\"move_4\": \"" .. memory.readbyte(startAddr + MOVE_OFFSET + 3) .. "\"" .. ", "
+ poke = poke .. "\"pp_1\": \"" .. getPP(memory.readbyte(startAddr + PP_OFFSET)) .. "\"" .. ", "
+ poke = poke .. "\"pp_2\": \"" .. getPP(memory.readbyte(startAddr + PP_OFFSET + 1)) .. "\"" .. ", "
+ poke = poke .. "\"pp_3\": \"" .. getPP(memory.readbyte(startAddr + PP_OFFSET + 2)) .. "\"" .. ", "
+ poke = poke .. "\"pp_4\": \"" .. getPP(memory.readbyte(startAddr + PP_OFFSET + 3)) .. "\"" .. ", "
+ poke = poke .. "\"level\": " .. memory.readbyte(lvlAddr) .. ", "
+ poke = poke .. "\"hp\": " .. memory.read_u16_be(POKE_1_HP_ADDR) .. ", "
+ poke = poke .. "\"max_hp\": " .. memory.read_u16_be(lvlAddr + 1) .. ", "
+ poke = poke .. "\"attack\": " .. memory.read_u16_be(lvlAddr + 3) .. ", "
+ poke = poke .. "\"defense\": " .. memory.read_u16_be(lvlAddr + 5) .. ", "
+ poke = poke .. "\"speed\": " .. memory.read_u16_be(lvlAddr + 7) .. ", "
+ poke = poke .. "\"special_attack\": " .. memory.read_u16_be(lvlAddr + 9) .. ", "
+ poke = poke .. "\"special_defense\": " .. memory.read_u16_be(lvlAddr + 9) .. ", "
+ poke = poke .. "\"is_shiny\": " .. 0 .. ""
+
+ return poke .. "}"
+end
+
 function buildEnemyPoke()
  poke = "\"enemy\": { "
  poke = poke .. "\"id\": \"" .. memory.readbyte(POKE_ENEMY_ID_ADDR) .. "\"" .. ", "
  poke = poke .. "\"level\": " .. memory.readbyte(POKE_ENEMY_LEVEL_ADDR) .. ", "
  poke = poke .. "\"types\": [" .. getEnemyTypes() .. "], "
- poke = poke .. "\"is_shiny\": " .. getIsShiny(POKE_ENEMY_IV_ADDR) .. " "
+ if gen == 2 then
+    poke = poke .. "\"is_shiny\": " .. getIsShiny(POKE_ENEMY_IV_ADDR) .. " "
+ else
+    poke = poke .. "\"is_shiny\": " .. 0 .. " "
+ end
 
  return poke .. "}"
 end
@@ -268,8 +343,17 @@ if gameCode == SILVER then
 elseif gameCode == CRYSTAL then
     game = 'crystal'
     loadCrystalAddresses()
-else
+elseif gameCode == GOLD then
     game = 'gold'
+elseif gameCode == RED then
+    game = 'red'
+    loadRedBlueAddresses()
+elseif gameCode == BLUE then
+    game = 'blue'
+    loadRedBlueAddresses()
+elseif gameCode == YELLOW then
+    game = 'yellow'
+    loadYellowAddresses()
 end
 
 print('pokemon ' .. game .. ' version tracker')
@@ -278,7 +362,7 @@ while true do
 	if diff > timeLimit then
 	    mail()
 	    memory.usememorydomain("WRAM")
-		output = "{ " .. "\"game\":\"" .. game .. "\", \"team\": {"
+		output = "{ " .. "\"game\":\"" .. game .. "\", \"gen\": " .. gen .. ", \"team\": {"
 		diff = -1
 		size = memory.readbyte(TEAM_SIZE_ADDR)
 		if view ~= "team" then
@@ -290,8 +374,13 @@ while true do
 		output = output .. "\"size\": " .. size .. ", "
 		output = output .. "\"items\": [" .. getItems() .. "], "
 		output = output .. "\"view\": \"" .. view .. "\", "
-		output = output .. "\"has_starter\": " .. memory.readbyte(GOT_STARTER_ADDR) .. ", "
-		output = output .. buildPoke(1, POKE_1_NAME_ADDR, POKE_1_ID_ADDR, POKE_1_LEVEL_ADDR) .. "}, "
+		if gen == 2 then
+		    output = output .. "\"has_starter\": " .. memory.readbyte(GOT_STARTER_ADDR) .. ", "
+		    output = output .. buildPoke(1, POKE_1_NAME_ADDR, POKE_1_ID_ADDR, POKE_1_LEVEL_ADDR) .. "}, "
+		else
+		    output = output .. "\"has_starter\": " .. 0 .. ", "
+		    output = output .. buildPokeGen1(1, POKE_1_NAME_ADDR, POKE_1_ID_ADDR, POKE_1_LEVEL_ADDR, POKE_1_START_ADDR) .. "}, "
+		end
         output = output .. "\"battleType\": \"" .. memory.readbyte(BATTLE_TYPE) .. "\", "
         output = output .. buildEnemyPoke()
 

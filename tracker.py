@@ -250,6 +250,8 @@ class Poke:
             f = open('poke.json')
             try:
                 new_data = json.load(f)
+                if new_data['gen'] != self.gen:
+                    self.reset()
                 if self.data != new_data:
                     self.data = new_data
                     self._update_data()
