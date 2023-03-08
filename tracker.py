@@ -171,6 +171,8 @@ class Poke:
         self.natDexToGen1Map = json.load(f)
         f.close()
 
+        self.backup_faves = self.settings['favorites']
+
         if self.gen == 1:
             nat_dex_faves = []
             for fave in self.settings['favorites']:
@@ -286,7 +288,9 @@ class Poke:
 
     def save_settings(self):
         with open("settings.json", "w") as jsonFile:
-            json.dump(self.settings, jsonFile, indent=2)
+            settings_to_write = self.settings.copy()
+            settings_to_write['favorites'] = self.backup_faves
+            json.dump(settings_to_write, jsonFile, indent=2)
         self._update_screen()
 
     def modify_attempts(self, add=True):

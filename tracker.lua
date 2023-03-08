@@ -102,7 +102,7 @@ function loadYellowAddresses()
     POKE_ENEMY_LEVEL_ADDR = tonumber("0x0FF2")
     POKE_ENEMY_IV_ADDR = tonumber("0x0FF0")
     POKE_ENEMY_TYPE_ADDR = tonumber("0x0FE9")
-    TEAM_SIZE_ADDR = tonumber("0x1163")
+    TEAM_SIZE_ADDR = tonumber("0x1162")
     BAG_ADDR = tonumber("0x131D")
     MOVE_OFFSET = 8
     PP_OFFSET = 29
