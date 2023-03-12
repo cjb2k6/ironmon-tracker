@@ -235,6 +235,11 @@ class Poke:
 
         self.poke_types = PokeTypes()
 
+        icon_id = "28"
+        if self.gen == 1:
+            icon_id = self.natDexToGen1Map[icon_id]
+        self.poke_sprites.set_icon(self, icon_id)
+
     def run_game(self):
         self._update_data()
         self._update_screen()

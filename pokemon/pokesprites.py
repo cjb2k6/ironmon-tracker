@@ -99,7 +99,7 @@ class PokeSprites:
         fave_3.y = fave_y + border_offset
         self.sprites.append(fave_3)
 
-    def update_sprite(self, poke, index, poke_data, big=False):
+    def get_image(self, poke, poke_data, big, icon):
         x = 11
         x_mult = 57
         y_mult = 57
@@ -142,7 +142,10 @@ class PokeSprites:
                 else:
                     x = 7
                     y = 12
-        rect = (x * x_mult + x_off, y * y_mult + y_off, 56, 56)
+        if icon:
+            rect = (x * x_mult + x_off + 5, y * y_mult + y_off + 5, 35, 35)
+        else:
+            rect = (x * x_mult + x_off, y * y_mult + y_off, 56, 56)
         if is_shiny:
             image = self.poke_ss_shiny.image_at(rect, self.color_key)
         else:
@@ -151,6 +154,11 @@ class PokeSprites:
             image = pygame.transform.flip(image, True, False)
         if big:
             image = pygame.transform.scale(image, (170, 170))
+
+        return image
+
+    def update_sprite(self, poke, index, poke_data, big=False):
+        image = self.get_image(poke, poke_data, big, False)
         poke.poke_sprites.sprites[index].image = image
 
     def blank_sprite(self, poke, index):
@@ -177,6 +185,14 @@ class PokeSprites:
         rect = (x * x_mult + x_off, y * y_mult + y_off, 56, 56)
         image = self.poke_ss.image_at(rect, self.color_key)
         poke.poke_sprites.sprites[index].image = image
+
+    def set_icon(self, poke, id):
+        data = {
+            "id": id,
+            "is_shiny": False
+        }
+        image = self.get_image(poke, data, False, True)
+        pygame.display.set_icon(image)
 
 
 class SpriteSheet:
