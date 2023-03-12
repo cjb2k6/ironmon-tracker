@@ -20,7 +20,7 @@ class Poke:
     def __init__(self):
         """Initialize the game, and create resources."""
         pygame.init()
-        self.font = 'pokemon-generation_1_custom.ttf'
+        self.font = 'assets/pokemon-generation_1_custom.ttf'
         self.XL_FONT = pygame.freetype.Font(self.font, 26)
         self.LG_FONT = pygame.freetype.Font(self.font, 22)
         self.MD_FONT = pygame.freetype.Font(self.font, 20)

@@ -13,27 +13,27 @@ class PokeSprites:
         self.poke = poke
         self.sprites = []
         color_key = 'red'
-        sheet_file = 'sprites/pokemon-rb.png'
-        shiny_file = 'sprites/pokemon-rb.png'
+        sheet_file = 'assets/sprites/pokemon-rb.png'
+        shiny_file = 'assets/sprites/pokemon-rb.png'
         if poke.gen == 2:
             color_key = 'white'
             if poke.game == 'gold':
-                shiny_file = 'sprites/gold-shiny.png'
-                sheet_file = 'sprites/gold.png'
+                shiny_file = 'assets/sprites/gold-shiny.png'
+                sheet_file = 'assets/sprites/gold.png'
             elif poke.game == 'silver':
-                shiny_file = 'sprites/silver-shiny.png'
-                sheet_file = 'sprites/silver.png'
+                shiny_file = 'assets/sprites/silver-shiny.png'
+                sheet_file = 'assets/sprites/silver.png'
             else:
-                shiny_file = 'sprites/crystal-shiny.png'
-                sheet_file = 'sprites/crystal.png'
+                shiny_file = 'assets/sprites/crystal-shiny.png'
+                sheet_file = 'assets/sprites/crystal.png'
         elif poke.game == 'yellow':
             color_key = 'white'
-            shiny_file = 'sprites/yellow.png'
-            sheet_file = 'sprites/yellow.png'
+            shiny_file = 'assets/sprites/yellow.png'
+            sheet_file = 'assets/sprites/yellow.png'
         elif poke.show_color:
             color_key = 'white'
-            shiny_file = 'sprites/rb-color.png'
-            sheet_file = 'sprites/rb-color.png'
+            shiny_file = 'assets/sprites/rb-color.png'
+            sheet_file = 'assets/sprites/rb-color.png'
 
         self.color_key = color_key
         self.poke_ss = SpriteSheet(sheet_file)
