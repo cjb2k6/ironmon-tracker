@@ -62,9 +62,9 @@ class PokeSprites:
         poke_1.name = 'poke_1'
         self.sprites.append(poke_1)
 
-        fave_x = 540
+        fave_x = 565
         fave_x_offset = 60
-        fave_y = 440
+        fave_y = 430
 
         # Fave 1
         fave_1_rect = rect

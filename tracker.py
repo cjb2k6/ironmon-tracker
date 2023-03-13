@@ -12,6 +12,7 @@ import pygame.freetype
 
 from pokemon.pokesprites import PokeSprites
 from pokemon.poketypes import PokeTypes
+from pokemon.tiles import Tiles
 
 
 class Poke:
@@ -29,6 +30,10 @@ class Poke:
         self.SM_FONT = pygame.freetype.Font(self.font, 12)
         self.XS_FONT = pygame.freetype.Font(self.font, 8)
 
+        self.bg_color = pygame.Color(248, 248, 248)
+        self.WINDOW_X = 800
+        self.WINDOW_Y = 500
+
         try:
             g = open('poke.json')
             self.data = json.load(g)
@@ -37,6 +42,7 @@ class Poke:
             self.data = {
                 "game": "crystal",
                 "gen": 2,
+                "frame": 1,
                 "team": {
                     "size": 0,
                     "items": [],
@@ -104,16 +110,18 @@ class Poke:
             f.close()
         except FileNotFoundError:
             self.settings = {
-                "showFavorites": False,
+                "showFavorites": True,
                 "favorites": [
                     "1",
                     "4",
                     "7"
                 ],
-                "showAttempts": False,
+                "showAttempts": True,
                 "attempts": 0,
                 "rbColor": True,
-                "randomMail": False
+                "randomMail": False,
+                "showMoveBorder": True,
+                "borderType": -1
             }
             f = open('settings.json', 'w')
             f.write(json.dumps(self.settings, indent=2))
@@ -186,8 +194,7 @@ class Poke:
 
         self.show_color = self.settings['rbColor']
 
-        self.screen = pygame.display.set_mode(
-            (750, 550))
+        self.screen = pygame.display.set_mode((self.WINDOW_X, self.WINDOW_Y))
         pygame.display.set_caption("IronMON Tracker - Pokémon " + self.game.title() + " Version")
 
         self.poke_sprites = PokeSprites(self)
@@ -224,16 +231,9 @@ class Poke:
 
         self.poke_1_data = self.data["team"]["poke1"]
 
-        if self.settings["showFavorites"]:
-            self.poke_sprites.update_sprite(self, 1, {"id": self.settings["favorites"][0], "is_shiny": 0})
-            self.poke_sprites.update_sprite(self, 2, {"id": self.settings["favorites"][1], "is_shiny": 0})
-            self.poke_sprites.update_sprite(self, 3, {"id": self.settings["favorites"][2], "is_shiny": 0})
-        else:
-            self.poke_sprites.blank_sprite(self, 1)
-            self.poke_sprites.blank_sprite(self, 2)
-            self.poke_sprites.blank_sprite(self, 3)
-
         self.poke_types = PokeTypes()
+
+        self.tileset = Tiles("assets/sprites/menu-tiles.png")
 
         icon_id = "28"
         if self.gen == 1:
@@ -266,25 +266,28 @@ class Poke:
             f.close()
 
     def _check_events(self):
-        for event in pygame.event.get():
-            pressed_keys = pygame.key.get_pressed()
-            if event.type == pygame.QUIT:
-                sys.exit()
-            elif event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_KP_PLUS or event.key == pygame.K_EQUALS:
-                    self.modify_attempts()
-                elif event.key == pygame.K_KP_MINUS or event.key == pygame.K_MINUS:
-                    self.modify_attempts(False)
-                elif pressed_keys[pygame.K_RCTRL] or pressed_keys[pygame.K_LCTRL]:
-                    if pressed_keys[pygame.K_KP0] or pressed_keys[pygame.K_r]:
+        try:
+            for event in pygame.event.get():
+                pressed_keys = pygame.key.get_pressed()
+                if event.type == pygame.QUIT:
+                    sys.exit()
+                elif event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_KP_PLUS or event.key == pygame.K_EQUALS:
                         self.modify_attempts()
-                        self.reset()
-                    elif pressed_keys[pygame.K_s]:
-                        self.update_mail_operation('2')
-                    elif pressed_keys[pygame.K_m]:
-                        self.compose_mail()
-                    elif pressed_keys[pygame.K_q]:
-                        sys.exit()
+                    elif event.key == pygame.K_KP_MINUS or event.key == pygame.K_MINUS:
+                        self.modify_attempts(False)
+                    elif pressed_keys[pygame.K_RCTRL] or pressed_keys[pygame.K_LCTRL]:
+                        if pressed_keys[pygame.K_KP0] or pressed_keys[pygame.K_r]:
+                            self.modify_attempts()
+                            self.reset()
+                        elif pressed_keys[pygame.K_s]:
+                            self.update_mail_operation('2')
+                        elif pressed_keys[pygame.K_m]:
+                            self.compose_mail()
+                        elif pressed_keys[pygame.K_q]:
+                            sys.exit()
+        except KeyError:
+            print('Invalid Key Press')
 
     def reset(self):
         self.__init__()
@@ -453,8 +456,7 @@ class Poke:
         self._draw_tracker()
 
     def _draw_tracker(self):
-        bg_color = pygame.Color(248, 248, 248)
-        self.screen.fill(bg_color)
+        self.screen.fill(self.bg_color)
 
         for sprite in self.poke_sprites.sprites:
             sprite.blitme()
@@ -504,7 +506,7 @@ class Poke:
                 self.screen.blit(text_surface, (main_x, info_base_y + (info_offset_y * 4) + (81 * 0)))
 
         # Stats
-        stat_x = 556
+        stat_x = 556 + 25
         stat_num_offset = 100
         stat_base_y = -8
         stat_y_offset = 30
@@ -557,29 +559,51 @@ class Poke:
 
         # Moves
         move_y = 210
-        move_x = 24
-        type_x = 306
-        pp_x = 456
-        pow_x = 556
-        acc_x = 660
+        move_x = 49
+        type_x = 331
+        pp_x = 481
+        pow_x = 581
+        acc_x = 685
 
-        move_y_offset = 46
+        move_y_offset = 44
         type_y_offset = 3
 
+        # Draw Move Border
+        if self.settings['showMoveBorder']:
+            if self.settings['borderType'] < 0 or self.settings['borderType'] > 8:
+                self.tileset.draw_border_rect(self.screen, int(self.data["frame"]), 33, 9, move_x - 42, move_y + 6, 3)
+            else:
+                self.tileset.draw_border_rect(self.screen, self.settings['borderType'], 33, 9, move_x - 42, move_y + 6, 3)
+
         text_surface, rect = self.XL_FONT.render('Move', (0, 0, 0))
-        self.screen.blit(text_surface, (move_x, move_y + (81 * 0)))
+        box_surface = pygame.Surface(text_surface.get_rect().inflate(10, 10).size)
+        box_surface.fill(self.bg_color)
+        box_surface.blit(text_surface, text_surface.get_rect(center=box_surface.get_rect().center))
+        self.screen.blit(box_surface, (move_x - 5, move_y + (81 * 0)))
 
         text_surface, rect = self.XL_FONT.render('Type', (0, 0, 0))
-        self.screen.blit(text_surface, (type_x, move_y + (81 * 0)))
+        box_surface = pygame.Surface(text_surface.get_rect().inflate(10, 10).size)
+        box_surface.fill(self.bg_color)
+        box_surface.blit(text_surface, text_surface.get_rect(center=box_surface.get_rect().center))
+        self.screen.blit(box_surface, (type_x - 5, move_y + (81 * 0)))
 
         text_surface, rect = self.XL_FONT.render('PP', (0, 0, 0))
-        self.screen.blit(text_surface, (pp_x, move_y + (81 * 0)))
+        box_surface = pygame.Surface(text_surface.get_rect().inflate(10, 10).size)
+        box_surface.fill(self.bg_color)
+        box_surface.blit(text_surface, text_surface.get_rect(center=box_surface.get_rect().center))
+        self.screen.blit(box_surface, (pp_x - 5, move_y + (81 * 0)))
 
-        text_surface, rect = self.XL_FONT.render('Pow', (0, 0, 0))
-        self.screen.blit(text_surface, (pow_x, move_y + (81 * 0)))
+        text_surface, rect = self.XL_FONT.render('Pow', (0, 0, 0),)
+        box_surface = pygame.Surface(text_surface.get_rect().inflate(10, 10).size)
+        box_surface.fill(self.bg_color)
+        box_surface.blit(text_surface, text_surface.get_rect(center=box_surface.get_rect().center))
+        self.screen.blit(box_surface, (pow_x - 5, move_y + (81 * 0)))
 
         text_surface, rect = self.XL_FONT.render('Acc', (0, 0, 0))
-        self.screen.blit(text_surface, (acc_x, move_y + (81 * 0)))
+        box_surface = pygame.Surface(text_surface.get_rect().inflate(10, 10).size)
+        box_surface.fill(self.bg_color)
+        box_surface.blit(text_surface, text_surface.get_rect(center=box_surface.get_rect().center))
+        self.screen.blit(box_surface, (acc_x - 5, move_y + (81 * 0)))
 
         text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_1'])['name'].upper(), (0, 0, 0))
         self.screen.blit(text_surface, (move_x, move_y + (move_y_offset * 1) + (81 * 0)))
@@ -647,27 +671,29 @@ class Poke:
                     self.move_list[self.poke_1_data['move_4']]), (0, 0, 0))
             self.screen.blit(text_surface, (move_x - 20, move_y + 2 + (move_y_offset * 4) + (81 * 0)))
 
-        # Attempts
-        attempts_y = 414
+        attempts_y = 412
         fav_x_offset = 350  # about tree fiddy
 
-        if self.settings["showAttempts"]:
-            text_surface, rect = self.MD_FONT.render(self.get_attempts(), (0, 0, 0))
-            self.screen.blit(text_surface, (move_x, attempts_y + (move_y_offset * 1) + (81 * 0)))
+        # Attempts and Favorites
+        if self.battle_type == "0":
+            if self.settings["showAttempts"]:
+                text_surface, rect = self.MD_FONT.render(self.get_attempts(), (0, 0, 0))
+                self.screen.blit(text_surface, (move_x, attempts_y + (move_y_offset * 1) + (81 * 0)))
 
-        if self.settings["showFavorites"]:
-            text_surface, rect = self.MD_FONT.render("Favorites: ", (0, 0, 0))
-            self.screen.blit(text_surface, (move_x + fav_x_offset, attempts_y + (move_y_offset * 1) + (81 * 0)))
+            if self.settings["showFavorites"]:
+                text_surface, rect = self.MD_FONT.render("Favorites: ", (0, 0, 0))
+                self.screen.blit(text_surface, (move_x + fav_x_offset, attempts_y + (move_y_offset * 1) + (81 * 0)))
+        else:
+            enemy_y = attempts_y - 22
+            # Enemy Poke
+            text_surface, rect = self.SM_FONT.render("Enemy:", (0, 0, 0))
+            self.screen.blit(text_surface, (move_x, enemy_y + (move_y_offset * 1) + (81 * 0)))
 
-        # Enemy Poke
+            text_surface, rect = self.MD_FONT.render(self.get_enemy(), (0, 0, 0))
+            self.screen.blit(text_surface, (move_x, enemy_y + 20 + (move_y_offset * 1) + (81 * 0)))
 
-        enemy_y = 456
-
-        text_surface, rect = self.MD_FONT.render(self.get_enemy(), (0, 0, 0))
-        self.screen.blit(text_surface, (move_x, enemy_y + (move_y_offset * 1) + (81 * 0)))
-
-        text_surface, rect = self.MD_FONT.render(self.get_wild(), (0, 0, 0))
-        self.screen.blit(text_surface, (move_x, enemy_y + 20 + (move_y_offset * 1) + (81 * 0)))
+            text_surface, rect = self.MD_FONT.render(self.get_wild(), (0, 0, 0))
+            self.screen.blit(text_surface, (move_x, enemy_y + 40 + (move_y_offset * 1) + (81 * 0)))
 
         pygame.display.flip()
 
@@ -807,6 +833,15 @@ class Poke:
             self.view = self.data["team"]["view"]
 
         self.poke_1_data = self.data["team"]["poke1"]
+
+        if self.settings["showFavorites"] and self.battle_type == "0":
+            self.poke_sprites.update_sprite(self, 1, {"id": self.settings["favorites"][0], "is_shiny": 0})
+            self.poke_sprites.update_sprite(self, 2, {"id": self.settings["favorites"][1], "is_shiny": 0})
+            self.poke_sprites.update_sprite(self, 3, {"id": self.settings["favorites"][2], "is_shiny": 0})
+        else:
+            self.poke_sprites.blank_sprite(self, 1)
+            self.poke_sprites.blank_sprite(self, 2)
+            self.poke_sprites.blank_sprite(self, 3)
 
         if self.team_size > 0:
             self.poke_sprites.update_sprite(poke, 0, self.poke_1_data, True)

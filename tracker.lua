@@ -41,6 +41,7 @@ READ_MAIL = "2"
 SAVE_MAIL = "3"
 
 BATTLE_TYPE = tonumber("0x1116")
+FRAME_TYPE = tonumber("0x119B")
 
 GAME_ADDR = tonumber("0x013C")
 SILVER = 83
@@ -84,6 +85,7 @@ function loadCrystalAddresses()
     BAG_ADDR = tonumber("0x1893")
 
     BATTLE_TYPE = tonumber("0x122D")
+    FRAME_TYPE = tonumber("0x0FCE")
 
     ITEM_OFFSET = 1
     MOVE_OFFSET = 2
@@ -268,6 +270,14 @@ function mail()
     io.close(file)
 end
 
+function getFrameType()
+    if gen == 1 then
+        return 0
+    end
+
+    return tonumber(memory.readbyte(FRAME_TYPE)) + 1
+end
+
 
 function buildPoke(number, nameAddr, idAddr, lvlAddr)
  poke = "\"poke" .. number .. "\": {"
@@ -362,7 +372,7 @@ while true do
 	if diff > timeLimit then
 	    mail()
 	    memory.usememorydomain("WRAM")
-		output = "{ " .. "\"game\":\"" .. game .. "\", \"gen\": " .. gen .. ", \"team\": {"
+		output = "{ " .. "\"game\":\"" .. game .. "\", \"gen\": " .. gen .. ", \"frame\": " .. getFrameType() .. ", \"team\": {"
 		diff = -1
 		size = memory.readbyte(TEAM_SIZE_ADDR)
 		if view ~= "team" then

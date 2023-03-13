@@ -96,6 +96,8 @@ showAttempts  | Show number of attempts at challenge | true or false
 attempts  | Current number of attempts | a positive whole number representing number of attempts
 rbColor  | Enable to show Pokémon Red/Blue sprites in Super Game Boy color pallet | true or false
 randomMail  | See Mail Randomizer section below  | true or false
+showMoveBorder  | Display a frame around the moves  | true or false
+borderType  | The type of frame used to border the moves | a whole number representing the frame type. If -1, then it will load frame from game. Frame 0 is the Gen 1 frame. Frames 1 through 8 are the Gen 2 borders.
 
 ### Mail Randomizer ###
 
