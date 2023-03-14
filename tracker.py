@@ -96,7 +96,7 @@ class Poke:
         self.battle_type = "0"
 
         self.enemy = {"id": "0", "level": 0, "is_shiny": 0}
-        
+
         m = open('json/decodeCharMap.json')
         self.decode_char_map = json.load(m)
 
@@ -234,6 +234,24 @@ class Poke:
         self.poke_types = PokeTypes()
 
         self.tileset = Tiles("assets/sprites/menu-tiles.png")
+
+        self.stat_vals = {
+            "stat_x": 556 + 25,
+            "stat_num_offset": 100,
+            "stat_base_y": -8,
+            "stat_y_offset": 30
+        }
+
+        self.move_vals = {
+            "move_y": 210,
+            "move_x": 49,
+            "type_x": 331,
+            "pp_x": 481,
+            "pow_x": 581,
+            "acc_x": 685,
+            "move_y_offset": 44,
+            "type_y_offset": 3
+        }
 
         icon_id = "28"
         if self.gen == 1:
@@ -461,216 +479,145 @@ class Poke:
         for sprite in self.poke_sprites.sprites:
             sprite.blitme()
 
+        if self.team_size > 0:
+            self.draw_pokemon_info()
+
+        self.draw_pokemon_stats()
+        self.draw_pokemon_moves()
+        self.draw_attempts()
+
+        pygame.display.flip()
+
+    def draw_pokemon_info(self):
         main_x = 228
 
-        if self.team_size > 0:
+        # Type
+        text_surface, rect = self.NORMAL_FONT.render(self.get_type(self.poke_1_data), (0, 0, 0))
+        text_rect = text_surface.get_rect(center=(110, 180))
+        self.screen.blit(text_surface, text_rect)
 
-            # Type
-            text_surface, rect = self.NORMAL_FONT.render(self.get_type(self.poke_1_data), (0, 0, 0))
-            text_rect = text_surface.get_rect(center=(110, 180))
-            self.screen.blit(text_surface, text_rect)
+        # Name
+        self.draw_text(self.decode_poke_name(self.poke_1_data), self.XL_FONT, main_x, 20 + (81 * 0))
 
-            # Name
-            text_surface, rect = self.XL_FONT.render(self.decode_poke_name(self.poke_1_data), (0, 0, 0))
-            self.screen.blit(text_surface, (main_x, 20 + (81 * 0)))
+        info_base_y = 52
+        info_offset_y = 30
 
-            info_base_y = 52
-            info_offset_y = 30
+        # Level
+        self.draw_text(self.get_level(self.poke_1_data), self.GAME_FONT, main_x, info_base_y + (81 * 0))
 
-            # Level
-            text_surface, rect = self.GAME_FONT.render(self.get_level(self.poke_1_data), (0, 0, 0))
-            self.screen.blit(text_surface, (main_x, info_base_y + (81 * 0)))
+        # Evolves
+        evo = self.pokedex[self.poke_1_data['id']]['evolves_at']
+        self.draw_text('Evo: ' + evo, self.GAME_FONT, main_x + 100, info_base_y + (81 * 0))
 
-            # Evolves
-            evo = self.pokedex[self.poke_1_data['id']]['evolves_at']
-            text_surface, rect = self.GAME_FONT.render('Evo: ' + evo, (0, 0, 0))
-            self.screen.blit(text_surface, (main_x + 100, info_base_y + (81 * 0)))
+        # HP
+        self.draw_text(self.get_hp(self.poke_1_data), self.GAME_FONT, main_x, info_base_y + (info_offset_y * 1) +
+                       (81 * 0))
 
-            # HP
-            text_surface, rect = self.GAME_FONT.render(self.get_hp(self.poke_1_data), (0, 0, 0))
-            self.screen.blit(text_surface, (main_x, info_base_y + (info_offset_y * 1) + (81 * 0)))
+        # Learned Moves
+        self.draw_text(self.get_learned_moves(self.poke_1_data) + " " + self.get_next_move(self.poke_1_data),
+                       self.GAME_FONT, main_x, info_base_y + (info_offset_y * 2) + (81 * 0))
 
-            # Learned Moves
-            text_surface, rect = self.GAME_FONT.render(self.get_learned_moves(self.poke_1_data) +
-                                                       " " + self.get_next_move(self.poke_1_data), (0, 0, 0))
-            self.screen.blit(text_surface, (main_x, info_base_y + (info_offset_y * 2) + (81 * 0)))
+        # Heals in Bag
+        self.draw_text("Bag Heals: " + self.get_heals(self.poke_1_data), self.GAME_FONT, main_x, info_base_y
+                       + (info_offset_y * 3) + (81 * 0))
 
-            # Heals in Bag
-            text_surface, rect = self.GAME_FONT.render("Bag Heals: " + self.get_heals(self.poke_1_data), (0, 0, 0))
-            self.screen.blit(text_surface, (main_x, info_base_y + (info_offset_y * 3) + (81 * 0)))
+        # Held Item
+        if self.gen == 2:
+            item = self.items[self.poke_1_data['item']]['name'].upper()
+            self.draw_text('Held: ' + item, self.GAME_FONT, main_x, info_base_y + (info_offset_y * 4) + (81 * 0))
 
-            # Held Item
-            if self.gen == 2:
-                item = self.items[self.poke_1_data['item']]['name'].upper()
-                text_surface, rect = self.GAME_FONT.render('Held: ' + item, (0, 0, 0))
-                self.screen.blit(text_surface, (main_x, info_base_y + (info_offset_y * 4) + (81 * 0)))
-
-        # Stats
-        stat_x = 556 + 25
-        stat_num_offset = 100
-        stat_base_y = -8
-        stat_y_offset = 30
-
-        text_surface, rect = self.GAME_FONT.render("Atk:", (0, 0, 0))
-        self.screen.blit(text_surface, (stat_x, stat_base_y + (stat_y_offset * 1) + (81 * 0)))
-        text_surface, rect = self.GAME_FONT.render(self.get_stat(self.poke_1_data, 'attack'), (0, 0, 0))
-        self.screen.blit(text_surface, (stat_x + stat_num_offset, stat_base_y + (stat_y_offset * 1) + (81 * 0)))
-
-        text_surface, rect = self.GAME_FONT.render("Def:", (0, 0, 0))
-        self.screen.blit(text_surface, (stat_x, stat_base_y + (stat_y_offset * 2) + (81 * 0)))
-        text_surface, rect = self.GAME_FONT.render(self.get_stat(self.poke_1_data, 'defense'), (0, 0, 0))
-        self.screen.blit(text_surface, (stat_x + stat_num_offset, stat_base_y + (stat_y_offset * 2) + (81 * 0)))
+    def draw_pokemon_stats(self):
+        self.draw_stat('Atk:', 'attack', 1)
+        self.draw_stat('Def:', 'defense', 2)
 
         if self.gen == 2:
-            text_surface, rect = self.GAME_FONT.render("SpAtk:", (0, 0, 0))
-            self.screen.blit(text_surface, (stat_x, stat_base_y + (stat_y_offset * 3) + (81 * 0)))
-            text_surface, rect = self.GAME_FONT.render(self.get_stat(self.poke_1_data, 'special_attack'), (0, 0, 0))
-            self.screen.blit(text_surface, (stat_x + stat_num_offset, stat_base_y + (stat_y_offset * 3) + (81 * 0)))
+            self.draw_stat('SpAtk:', 'special_attack', 3)
+            self.draw_stat('SpDef:', 'special_defense', 4)
+            self.draw_stat('Spd:', 'speed', 5)
+            self.draw_stat('BST:', 'bst', 6)
 
-            text_surface, rect = self.GAME_FONT.render("SpDef:", (0, 0, 0))
-            self.screen.blit(text_surface, (stat_x, stat_base_y + (stat_y_offset * 4) + (81 * 0)))
-            text_surface, rect = self.GAME_FONT.render(self.get_stat(self.poke_1_data, 'special_defense'), (0, 0, 0))
-            self.screen.blit(text_surface, (stat_x + stat_num_offset, stat_base_y + (stat_y_offset * 4) + (81 * 0)))
-
-            text_surface, rect = self.GAME_FONT.render("Spd:", (0, 0, 0))
-            self.screen.blit(text_surface, (stat_x, stat_base_y + (stat_y_offset * 5) + (81 * 0)))
-            text_surface, rect = self.GAME_FONT.render(self.get_stat(self.poke_1_data, 'speed'), (0, 0, 0))
-            self.screen.blit(text_surface, (stat_x + stat_num_offset, stat_base_y + (stat_y_offset * 5) + (81 * 0)))
-
-            text_surface, rect = self.GAME_FONT.render("BST:", (0, 0, 0))
-            self.screen.blit(text_surface, (stat_x, stat_base_y + (stat_y_offset * 6) + (81 * 0)))
-            text_surface, rect = self.GAME_FONT.render(self.get_bst(self.poke_1_data), (0, 0, 0))
-            self.screen.blit(text_surface, (stat_x + stat_num_offset, stat_base_y + (stat_y_offset * 6) + (81 * 0)))
         else:
-            text_surface, rect = self.GAME_FONT.render("Spd:", (0, 0, 0))
-            self.screen.blit(text_surface, (stat_x, stat_base_y + (stat_y_offset * 3) + (81 * 0)))
-            text_surface, rect = self.GAME_FONT.render(self.get_stat(self.poke_1_data, 'speed'), (0, 0, 0))
-            self.screen.blit(text_surface, (stat_x + stat_num_offset, stat_base_y + (stat_y_offset * 3) + (81 * 0)))
+            self.draw_stat('Spd:', 'speed', 3)
+            self.draw_stat('Spcl:', 'special_attack', 4)
+            self.draw_stat('BST:', 'bst', 5)
 
-            text_surface, rect = self.GAME_FONT.render("Spcl:", (0, 0, 0))
-            self.screen.blit(text_surface, (stat_x, stat_base_y + (stat_y_offset * 4) + (81 * 0)))
-            text_surface, rect = self.GAME_FONT.render(self.get_stat(self.poke_1_data, 'special_attack'), (0, 0, 0))
-            self.screen.blit(text_surface, (stat_x + stat_num_offset, stat_base_y + (stat_y_offset * 4) + (81 * 0)))
+    def draw_stat(self, title, stat, position):
+        self.draw_text(title, self.GAME_FONT, self.stat_vals['stat_x'],
+                       self.stat_vals['stat_base_y'] + (self.stat_vals['stat_y_offset'] * position) + (81 * 0))
+        if stat == 'bst':
+            text = self.get_bst(self.poke_1_data)
+        else:
+            text = self.get_stat(self.poke_1_data, stat)
+        self.draw_text(text, self.GAME_FONT, self.stat_vals['stat_x'] + self.stat_vals['stat_num_offset'],
+                       self.stat_vals['stat_base_y'] + (self.stat_vals['stat_y_offset'] * position + (81 * 0)))
 
-            text_surface, rect = self.GAME_FONT.render("BST:", (0, 0, 0))
-            self.screen.blit(text_surface, (stat_x, stat_base_y + (stat_y_offset * 5) + (81 * 0)))
-            text_surface, rect = self.GAME_FONT.render(self.get_bst(self.poke_1_data), (0, 0, 0))
-            self.screen.blit(text_surface, (stat_x + stat_num_offset, stat_base_y + (stat_y_offset * 5) + (81 * 0)))
-
-        # Moves
-        move_y = 210
-        move_x = 49
-        type_x = 331
-        pp_x = 481
-        pow_x = 581
-        acc_x = 685
-
-        move_y_offset = 44
-        type_y_offset = 3
-
+    def draw_pokemon_moves(self):
         # Draw Move Border
         if self.settings['showMoveBorder']:
             if self.settings['borderType'] < 0 or self.settings['borderType'] > 8:
-                self.tileset.draw_border_rect(self.screen, int(self.data["frame"]), 33, 9, move_x - 42, move_y + 6, 3)
+                self.tileset.draw_border_rect(self.screen, int(self.data["frame"]), 33, 9, self.move_vals["move_x"]
+                                              - 42, self.move_vals["move_y"] + 6, 3)
             else:
-                self.tileset.draw_border_rect(self.screen, self.settings['borderType'], 33, 9, move_x - 42, move_y + 6, 3)
+                self.tileset.draw_border_rect(self.screen, self.settings['borderType'], 33, 9, self.move_vals["move_x"]
+                                              - 42, self.move_vals["move_y"] + 6, 3)
 
-        text_surface, rect = self.XL_FONT.render('Move', (0, 0, 0))
-        box_surface = pygame.Surface(text_surface.get_rect().inflate(10, 10).size)
-        box_surface.fill(self.bg_color)
-        box_surface.blit(text_surface, text_surface.get_rect(center=box_surface.get_rect().center))
-        self.screen.blit(box_surface, (move_x - 5, move_y + (81 * 0)))
+        # Draw Move Table Headings
+        self.draw_move_title('Move', 'move_x')
+        self.draw_move_title('Type', 'type_x')
+        self.draw_move_title('PP', 'pp_x')
+        self.draw_move_title('Pow', 'pow_x')
+        self.draw_move_title('Acc', 'acc_x')
 
-        text_surface, rect = self.XL_FONT.render('Type', (0, 0, 0))
-        box_surface = pygame.Surface(text_surface.get_rect().inflate(10, 10).size)
-        box_surface.fill(self.bg_color)
-        box_surface.blit(text_surface, text_surface.get_rect(center=box_surface.get_rect().center))
-        self.screen.blit(box_surface, (type_x - 5, move_y + (81 * 0)))
-
-        text_surface, rect = self.XL_FONT.render('PP', (0, 0, 0))
-        box_surface = pygame.Surface(text_surface.get_rect().inflate(10, 10).size)
-        box_surface.fill(self.bg_color)
-        box_surface.blit(text_surface, text_surface.get_rect(center=box_surface.get_rect().center))
-        self.screen.blit(box_surface, (pp_x - 5, move_y + (81 * 0)))
-
-        text_surface, rect = self.XL_FONT.render('Pow', (0, 0, 0),)
-        box_surface = pygame.Surface(text_surface.get_rect().inflate(10, 10).size)
-        box_surface.fill(self.bg_color)
-        box_surface.blit(text_surface, text_surface.get_rect(center=box_surface.get_rect().center))
-        self.screen.blit(box_surface, (pow_x - 5, move_y + (81 * 0)))
-
-        text_surface, rect = self.XL_FONT.render('Acc', (0, 0, 0))
-        box_surface = pygame.Surface(text_surface.get_rect().inflate(10, 10).size)
-        box_surface.fill(self.bg_color)
-        box_surface.blit(text_surface, text_surface.get_rect(center=box_surface.get_rect().center))
-        self.screen.blit(box_surface, (acc_x - 5, move_y + (81 * 0)))
-
-        text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_1'])['name'].upper(), (0, 0, 0))
-        self.screen.blit(text_surface, (move_x, move_y + (move_y_offset * 1) + (81 * 0)))
-        text_surface, rect = self.GAME_FONT.render(self.get_move(self.poke_1_data['move_1'])['type'].upper(), (0, 0, 0))
-        self.screen.blit(text_surface, (type_x, move_y + type_y_offset + (move_y_offset * 1) + (81 * 0)))
-        text_surface, rect = self.LG_FONT.render(self.poke_1_data['pp_1'], (0, 0, 0))
-        self.screen.blit(text_surface, (pp_x, move_y + (move_y_offset * 1) + (81 * 0)))
-        text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_1'])['power'], (0, 0, 0))
-        self.screen.blit(text_surface, (pow_x, move_y + (move_y_offset * 1) + (81 * 0)))
-        text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_1'])['acc'], (0, 0, 0))
-        self.screen.blit(text_surface, (acc_x, move_y + (move_y_offset * 1) + (81 * 0)))
-
-        text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_2'])['name'].upper(), (0, 0, 0))
-        self.screen.blit(text_surface, (move_x, move_y + (move_y_offset * 2) + (81 * 0)))
-        text_surface, rect = self.GAME_FONT.render(self.get_move(self.poke_1_data['move_2'])['type'].upper(), (0, 0, 0))
-        self.screen.blit(text_surface, (type_x, move_y + type_y_offset + (move_y_offset * 2) + (81 * 0)))
-        text_surface, rect = self.LG_FONT.render(self.poke_1_data['pp_2'], (0, 0, 0))
-        self.screen.blit(text_surface, (pp_x, move_y + (move_y_offset * 2) + (81 * 0)))
-        text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_2'])['power'], (0, 0, 0))
-        self.screen.blit(text_surface, (pow_x, move_y + (move_y_offset * 2) + (81 * 0)))
-        text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_2'])['acc'], (0, 0, 0))
-        self.screen.blit(text_surface, (acc_x, move_y + (move_y_offset * 2) + (81 * 0)))
-
-        text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_3'])['name'].upper(), (0, 0, 0))
-        self.screen.blit(text_surface, (move_x, move_y + (move_y_offset * 3) + (81 * 0)))
-        text_surface, rect = self.GAME_FONT.render(self.get_move(self.poke_1_data['move_3'])['type'].upper(), (0, 0, 0))
-        self.screen.blit(text_surface, (type_x, move_y + type_y_offset + (move_y_offset * 3) + (81 * 0)))
-        text_surface, rect = self.LG_FONT.render(self.poke_1_data['pp_3'], (0, 0, 0))
-        self.screen.blit(text_surface, (pp_x, move_y + (move_y_offset * 3) + (81 * 0)))
-        text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_3'])['power'], (0, 0, 0))
-        self.screen.blit(text_surface, (pow_x, move_y + (move_y_offset * 3) + (81 * 0)))
-        text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_3'])['acc'], (0, 0, 0))
-        self.screen.blit(text_surface, (acc_x, move_y + (move_y_offset * 3) + (81 * 0)))
-
-        text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_4'])['name'].upper(), (0, 0, 0))
-        self.screen.blit(text_surface, (move_x, move_y + (move_y_offset * 4) + (81 * 0)))
-        text_surface, rect = self.GAME_FONT.render(self.get_move(self.poke_1_data['move_4'])['type'].upper(), (0, 0, 0))
-        self.screen.blit(text_surface, (type_x, move_y + type_y_offset + (move_y_offset * 4) + (81 * 0)))
-        text_surface, rect = self.LG_FONT.render(self.poke_1_data['pp_4'], (0, 0, 0))
-        self.screen.blit(text_surface, (pp_x, move_y + (move_y_offset * 4) + (81 * 0)))
-        text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_4'])['power'], (0, 0, 0))
-        self.screen.blit(text_surface, (pow_x, move_y + (move_y_offset * 4) + (81 * 0)))
-        text_surface, rect = self.LG_FONT.render(self.get_move(self.poke_1_data['move_4'])['acc'], (0, 0, 0))
-        self.screen.blit(text_surface, (acc_x, move_y + (move_y_offset * 4) + (81 * 0)))
+        # Draw Moves
+        self.draw_move('move_1', 1)
+        self.draw_move('move_2', 2)
+        self.draw_move('move_3', 3)
+        self.draw_move('move_4', 4)
 
         if int(self.battle_type) > 0:
             text_surface, rect = self.LG_FONT.render(
                 self.poke_types.get_multiplier_char(
                     self.enemy['types'],
                     self.move_list[self.poke_1_data['move_1']]), (0, 0, 0))
-            self.screen.blit(text_surface, (move_x - 20, move_y + 2 + (move_y_offset * 1) + (81 * 0)))
+            self.screen.blit(text_surface, (self.move_vals["move_x"] - 20, self.move_vals["move_y"] + 2 +
+                                            (self.move_vals["move_y_offset"] * 1) + (81 * 0)))
             text_surface, rect = self.LG_FONT.render(
                 self.poke_types.get_multiplier_char(
                     self.enemy['types'],
                     self.move_list[self.poke_1_data['move_2']]), (0, 0, 0))
-            self.screen.blit(text_surface, (move_x - 20, move_y + 2 + (move_y_offset * 2) + (81 * 0)))
+            self.screen.blit(text_surface, (self.move_vals["move_x"] - 20, self.move_vals["move_y"] + 2 +
+                                            (self.move_vals["move_y_offset"] * 2) + (81 * 0)))
             text_surface, rect = self.LG_FONT.render(
                 self.poke_types.get_multiplier_char(
                     self.enemy['types'],
                     self.move_list[self.poke_1_data['move_3']]), (0, 0, 0))
-            self.screen.blit(text_surface, (move_x - 20, move_y + 2 + (move_y_offset * 3) + (81 * 0)))
+            self.screen.blit(text_surface, (self.move_vals["move_x"] - 20, self.move_vals["move_y"] + 2 +
+                                            (self.move_vals["move_y_offset"] * 3) + (81 * 0)))
             text_surface, rect = self.LG_FONT.render(
                 self.poke_types.get_multiplier_char(
                     self.enemy['types'],
                     self.move_list[self.poke_1_data['move_4']]), (0, 0, 0))
-            self.screen.blit(text_surface, (move_x - 20, move_y + 2 + (move_y_offset * 4) + (81 * 0)))
+            self.screen.blit(text_surface, (self.move_vals["move_x"] - 20, self.move_vals["move_y"] + 2 +
+                                            (self.move_vals["move_y_offset"] * 4) + (81 * 0)))
 
+    def draw_move_title(self, title, x_index):
+        text_surface, rect = self.XL_FONT.render(title, (0, 0, 0))
+        box_surface = pygame.Surface(text_surface.get_rect().inflate(10, 10).size)
+        box_surface.fill(self.bg_color)
+        box_surface.blit(text_surface, text_surface.get_rect(center=box_surface.get_rect().center))
+        self.screen.blit(box_surface, (self.move_vals[x_index] - 5, self.move_vals["move_y"] + (81 * 0)))
+
+    def draw_move(self, move, position):
+        move_data = self.get_move(self.poke_1_data[move])
+        y = self.move_vals["move_y"] + (self.move_vals["move_y_offset"] * position) + (81 * 0)
+
+        self.draw_text(move_data['name'].upper(), self.LG_FONT, self.move_vals["move_x"], y)
+        self.draw_text(move_data['type'].upper(), self.GAME_FONT, self.move_vals["type_x"], y)
+        self.draw_text(self.poke_1_data['pp_' + str(position)], self.LG_FONT, self.move_vals["pp_x"], y)
+        self.draw_text(move_data['power'].upper(), self.LG_FONT, self.move_vals["pow_x"], y)
+        self.draw_text(move_data['acc'].upper(), self.LG_FONT, self.move_vals["acc_x"], y)
+
+    def draw_attempts(self):
         attempts_y = 412
         fav_x_offset = 350  # about tree fiddy
 
@@ -678,24 +625,31 @@ class Poke:
         if self.battle_type == "0":
             if self.settings["showAttempts"]:
                 text_surface, rect = self.MD_FONT.render(self.get_attempts(), (0, 0, 0))
-                self.screen.blit(text_surface, (move_x, attempts_y + (move_y_offset * 1) + (81 * 0)))
+                self.screen.blit(text_surface, (self.move_vals["move_x"], attempts_y +
+                                                (self.move_vals["move_y_offset"] * 1) + (81 * 0)))
 
             if self.settings["showFavorites"]:
                 text_surface, rect = self.MD_FONT.render("Favorites: ", (0, 0, 0))
-                self.screen.blit(text_surface, (move_x + fav_x_offset, attempts_y + (move_y_offset * 1) + (81 * 0)))
+                self.screen.blit(text_surface, (self.move_vals["move_x"] + fav_x_offset, attempts_y +
+                                                (self.move_vals["move_y_offset"] * 1) + (81 * 0)))
         else:
             enemy_y = attempts_y - 22
             # Enemy Poke
             text_surface, rect = self.SM_FONT.render("Enemy:", (0, 0, 0))
-            self.screen.blit(text_surface, (move_x, enemy_y + (move_y_offset * 1) + (81 * 0)))
+            self.screen.blit(text_surface, (self.move_vals["move_x"], enemy_y + (self.move_vals["move_y_offset"] * 1)
+                                            + (81 * 0)))
 
             text_surface, rect = self.MD_FONT.render(self.get_enemy(), (0, 0, 0))
-            self.screen.blit(text_surface, (move_x, enemy_y + 20 + (move_y_offset * 1) + (81 * 0)))
+            self.screen.blit(text_surface, (self.move_vals["move_x"], enemy_y + 20 + (self.move_vals["move_y_offset"]
+                                                                                      * 1) + (81 * 0)))
 
             text_surface, rect = self.MD_FONT.render(self.get_wild(), (0, 0, 0))
-            self.screen.blit(text_surface, (move_x, enemy_y + 40 + (move_y_offset * 1) + (81 * 0)))
+            self.screen.blit(text_surface, (self.move_vals["move_x"], enemy_y + 40 + (self.move_vals["move_y_offset"]
+                                                                                      * 1) + (81 * 0)))
 
-        pygame.display.flip()
+    def draw_text(self, text, font, x, y):
+        text_surface, rect = font.render(text, (0, 0, 0))
+        self.screen.blit(text_surface, (x, y))
 
     def decode_poke_name(self, poke_data):
         name_array = poke_data['name']
