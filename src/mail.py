@@ -5,17 +5,18 @@ import numpy as np
 
 class Mail:
     def __init__(self, encode_char_map, decode_char_map):
+        self.jsonPath = os.path.join(os.getcwd(), 'json', 'mail.json')
+        self.mailPath = os.path.join(os.getcwd(), 'mail')
+        
         # Check if mail file exists, create if not
         try:
-            f = open('../mail')
+            f = open(self.mailPath)
             f.close()
         except FileNotFoundError:
-            f = open('../mail', 'w')
+            f = open(self.mailPath, 'w')
             f.write('0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,78,0,0'
                     ',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0')
             f.close()
-
-        self.jsonPath = os.path.join(os.getcwd(), 'json', 'mail.json')
 
         try:
             f = open(self.jsonPath)
@@ -58,7 +59,7 @@ class Mail:
         self.decode_char_map = decode_char_map
 
     def handle_mail(self):
-        f = open("../mail", 'r')
+        f = open(self.mailPath, 'r')
         tokens = f.read().split(',')
         f.close()
 
@@ -68,14 +69,14 @@ class Mail:
                 self.save_mail(tokens)
 
     def update_mail_operation(self, op):
-        f = open("../mail", 'r')
+        f = open(self.mailPath, 'r')
         tokens = f.read().split(',')
         f.close()
 
         tokens[0] = op
         output = ",".join(tokens)
 
-        f = open("../mail", 'w')
+        f = open(self.mailPath, 'w')
         f.write(output)
         f.close()
 
@@ -110,7 +111,7 @@ class Mail:
         tokens[0] = '0'
         output = ",".join(tokens)
 
-        f = open("../mail", 'w')
+        f = open(self.mailPath, 'w')
         f.write(output)
         f.close()
 
@@ -127,7 +128,7 @@ class Mail:
         encoded_message += self.encode_line(mail['line2'])
         encoded_message += signature
 
-        f = open("../mail", "w")
+        f = open(self.mailPath, "w")
         f.write(encoded_message)
         f.close()
 
