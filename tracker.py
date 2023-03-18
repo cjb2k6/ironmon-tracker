@@ -574,7 +574,7 @@ class Poke:
         self.draw_move('move_3', 3)
         self.draw_move('move_4', 4)
 
-        if int(self.battle_type) > 0:
+        if int(self.battle_type) > 0 and self.pokedex[self.enemy['id']]['name'] != "":
             text_surface, rect = self.LG_FONT.render(
                 self.poke_types.get_multiplier_char(
                     self.enemy['types'],
