@@ -10,9 +10,9 @@ import numpy as np
 import pygame
 import pygame.freetype
 
-from pokemon.pokesprites import PokeSprites
-from pokemon.poketypes import PokeTypes
-from pokemon.tiles import Tiles
+from src.pokesprites import PokeSprites
+from src.poketypes import PokeTypes
+from src.tiles import Tiles
 
 
 class Poke:
