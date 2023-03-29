@@ -314,7 +314,10 @@ class Poke:
         # Draw Move Border
         if self.settings['showMoveBorder']:
             if self.settings['borderType'] < 0 or self.settings['borderType'] > 8:
-                self.tileset.draw_border_rect(self.screen, int(self.data["frame"]), 33, 9, self.move_vals["move_x"]
+                frame = int(self.data["frame"])
+                if frame > 8:
+                    frame = 1
+                self.tileset.draw_border_rect(self.screen, frame, 33, 9, self.move_vals["move_x"]
                                               - 42, self.move_vals["move_y"] + 6, 3)
             else:
                 self.tileset.draw_border_rect(self.screen, self.settings['borderType'], 33, 9, self.move_vals["move_x"]
