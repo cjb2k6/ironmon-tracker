@@ -86,7 +86,7 @@ Ctrl+R OR Ctrl+NumPad-0 | Reset and Increment Attempts
 Ctrl+M  | Load random mail message
 Ctrl+S  | Save current mail message to file
 
-Settings (edit 'settings.json' in a text editor, remember to save)
+Settings (edit 'settings.json' in a text editor, remember to save and restart the tracker)
 
 Setting | Description | Values
 ------------- | ------------- | ------------
