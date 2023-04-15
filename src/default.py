@@ -41,13 +41,13 @@ class Default:
                 }
             }
         self._settings = {
-                "showFavorites": True,
+                "showFavorites": False,
                 "favorites": [
                     "1",
                     "4",
                     "7"
                 ],
-                "showAttempts": True,
+                "showAttempts": False,
                 "attempts": 0,
                 "rbColor": True,
                 "randomMail": False,
