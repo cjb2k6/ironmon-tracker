@@ -23,6 +23,8 @@ class Menu:
         self.option_x_offset = 30
         self.option_y_offset = 55
 
+        self.opt_width = width * 20
+
         bool_dict = {
             True: 'ON',
             False: 'OFF'
@@ -41,43 +43,43 @@ class Menu:
             8: 'TYPE 8',
         }
         self.options.append(
-            MenuOption(self.tiles, self.screen, self.bg_color, self.font, width, height, x + self.option_x_offset,
+            MenuOption(self.tiles, self.screen, self.bg_color, self.font, self.opt_width, self.option_y_offset, x + self.option_x_offset,
                        self.option_start_y + (self.option_y_offset * 0), 'SHOW ATTEMPTS', bool_dict, 'showAttempts',
                        settings['showAttempts'], 'boolean')
         )
 
         self.options.append(
-            MenuOption(self.tiles, self.screen, self.bg_color, self.font, width, height, x + self.option_x_offset,
+            MenuOption(self.tiles, self.screen, self.bg_color, self.font, self.opt_width, self.option_y_offset, x + self.option_x_offset,
                        self.option_start_y + (self.option_y_offset * 1), 'SHOW FAVORITES', bool_dict, 'showFavorites',
                        settings['showFavorites'], 'boolean')
         )
 
         self.options.append(
-            MenuOption(self.tiles, self.screen, self.bg_color, self.font, width, height, x + self.option_x_offset,
+            MenuOption(self.tiles, self.screen, self.bg_color, self.font, self.opt_width, self.option_y_offset, x + self.option_x_offset,
                        self.option_start_y + (self.option_y_offset * 2), 'FAVORITE 1', dex, 'favorites',
                        settings['favorites'][0], 'dex', 0, 255, 0)
         )
 
         self.options.append(
-            MenuOption(self.tiles, self.screen, self.bg_color, self.font, width, height, x + self.option_x_offset,
+            MenuOption(self.tiles, self.screen, self.bg_color, self.font, self.opt_width, self.option_y_offset, x + self.option_x_offset,
                        self.option_start_y + (self.option_y_offset * 3), 'FAVORITE 2', dex, 'favorites',
                        settings['favorites'][1], 'dex', 0, 255, 1)
         )
 
         self.options.append(
-            MenuOption(self.tiles, self.screen, self.bg_color, self.font, width, height, x + self.option_x_offset,
+            MenuOption(self.tiles, self.screen, self.bg_color, self.font, self.opt_width, self.option_y_offset, x + self.option_x_offset,
                        self.option_start_y + (self.option_y_offset * 4), 'FAVORITE 3', dex, 'favorites',
                        settings['favorites'][2], 'dex', 0, 255, 2)
         )
 
         self.options.append(
-            MenuOption(self.tiles, self.screen, self.bg_color, self.font, width, height, x + self.option_x_offset,
+            MenuOption(self.tiles, self.screen, self.bg_color, self.font, self.opt_width, self.option_y_offset, x + self.option_x_offset,
                        self.option_start_y + (self.option_y_offset * 5), 'RB COLOR', bool_dict, 'rbColor',
                        settings['rbColor'], 'boolean')
         )
 
         self.options.append(
-            MenuOption(self.tiles, self.screen, self.bg_color, self.font, width, height, x + self.option_x_offset,
+            MenuOption(self.tiles, self.screen, self.bg_color, self.font, self.opt_width, self.option_y_offset, x + self.option_x_offset,
                        self.option_start_y + (self.option_y_offset * 6), 'FRAME', frame_dict, 'borderType',
                        settings['borderType'], 'number', -1, 8)
         )

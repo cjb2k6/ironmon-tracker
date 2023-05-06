@@ -226,6 +226,21 @@ class Poke:
                     if self.is_menu_open:
                         if pygame.mouse.get_pos()[0] < self.menu_x:
                             self.close_menu()
+                        else:
+                            opt_index = 0
+                            for option in self.menu.options:
+                                if option.rect.collidepoint(pygame.mouse.get_pos()):
+                                    if self.menu.index != opt_index:
+                                        self.menu.index = opt_index
+                                        self.menu.set_selected_option()
+                                    else:
+                                        if event.button == 1 or event.button == 4:
+                                            self.menu.increment_selected_option()
+                                        elif event.button == 3 or event.button == 5:
+                                            self.menu.decrement_selected_option()
+                                        self.update_on_setting_change()
+                                    break
+                                opt_index = opt_index + 1
                     else:
                         if self.menu_button.collidepoint(pygame.mouse.get_pos()):
                             self.is_menu_open = True

@@ -75,7 +75,7 @@ RAM and displays it in a separate window written in Python.
 
 ### Configuring the Tracker ###
 
-* Keybinds and Settings
+* Keybinds
 
 Key Combination | Action
 ------------- | -------------
@@ -85,8 +85,13 @@ Minus OR NumPad-Minus  | Decrement Attempts
 Ctrl+R OR Ctrl+NumPad-0 | Reset and Increment Attempts
 Ctrl+M  | Load random mail message
 Ctrl+S  | Save current mail message to file
+Backspace  | Open/Close(and save) Settings Menu
+Up/Down Arrow  | Navigate Settings Menu
+Left/Right Arrow Key or Click OR Scroll Wheel on Mouse Over  | Change Settings in Menu
 
-Settings (edit 'settings.json' in a text editor, remember to save and restart the tracker)
+* Settings
+  * You can edit most of these in the tracker by pressing the Backspace key or clicking the little Pokéball on the top right. You can use a mouse or arrow keys to select/change settings. Press Backspace or click outside the menu to close and save.
+  * Some settings can only be changed by opening settings.json in a text editor and manually changing the values. Remember to save and restart the tracker.
 
 Setting | Description | Values
 ------------- | ------------- | ------------
@@ -96,7 +101,6 @@ showAttempts  | Show number of attempts at challenge | true or false
 attempts  | Current number of attempts | a positive whole number representing number of attempts
 rbColor  | Enable to show Pokémon Red/Blue sprites in Super Game Boy color pallet | true or false
 randomMail  | See Mail Randomizer section below  | true or false
-showMoveBorder  | Display a frame around the moves  | true or false
 borderType  | The type of frame used to border the moves | a whole number representing the frame type. If -1, then it will load frame from game. Frame 0 is the Gen 1 frame. Frames 1 through 8 are the Gen 2 borders.
 
 ### Mail Randomizer ###
