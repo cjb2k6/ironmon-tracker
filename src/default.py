@@ -51,7 +51,6 @@ class Default:
                 "attempts": 0,
                 "rbColor": True,
                 "randomMail": False,
-                "showMoveBorder": True,
                 "borderType": -1
             }
 

@@ -1,1 +1,2 @@
 python tracker.py
+pause

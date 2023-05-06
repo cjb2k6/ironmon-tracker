@@ -10,6 +10,7 @@ from src.poketypes import PokeTypes
 from src.mail import Mail
 from src.default import Default
 from src.tiles import Tiles
+from src.menu import Menu
 
 
 class Poke:
@@ -78,15 +79,6 @@ class Poke:
 
         self.backup_faves = self.settings['favorites']
 
-        if self.gen == 1:
-            nat_dex_faves = []
-            for fave in self.settings['favorites']:
-                try:
-                    nat_dex_faves.append(self.natDexToGen1Map[fave])
-                except KeyError:
-                    nat_dex_faves.append("255")
-            self.settings['favorites'] = nat_dex_faves
-
         self.faves_set = False
 
         self.show_color = self.settings['rbColor']
@@ -130,7 +122,14 @@ class Poke:
 
         self.poke_types = PokeTypes()
 
+        f = open('json/pokedex2.json')
+        menu_dex = json.load(f)
+        f.close()
+
         self.tileset = Tiles("assets/sprites/menu-tiles.png")
+        self.menu_x = self.WINDOW_X - 358
+        self.menu = Menu(self.tileset, self.screen, self.bg_color, self.MD_FONT, 15, 18, self.menu_x, 0, 3,
+                         self.settings, menu_dex)
 
         self.stat_vals = {
             "stat_x": 556 + 25,
@@ -149,6 +148,9 @@ class Poke:
             "move_y_offset": 44,
             "type_y_offset": 3
         }
+
+        self.menu_button = pygame.draw.rect(self.screen, self.bg_color, (760, 0, 800, 30))
+        self.is_menu_open = False
 
         icon_id = "28"
         if self.gen == 1:
@@ -176,6 +178,9 @@ class Poke:
                     self.data = new_data
                     self._update_data()
                     self._update_screen()
+                if self.is_menu_open:
+                    self.draw_menu()
+                pygame.display.flip()
             except JSONDecodeError:
                 continue
             f.close()
@@ -201,6 +206,29 @@ class Poke:
                             self.mail.compose_mail(self.get_signature())
                         elif pressed_keys[pygame.K_q]:
                             sys.exit()
+                    if self.is_menu_open:
+                        if event.key == pygame.K_BACKSPACE:
+                            self.close_menu()
+                        elif event.key == pygame.K_UP:
+                            self.menu.prev_option()
+                        elif event.key == pygame.K_DOWN:
+                            self.menu.next_option()
+                        elif event.key == pygame.K_RIGHT:
+                            self.menu.increment_selected_option()
+                            self.update_on_setting_change()
+                        elif event.key == pygame.K_LEFT:
+                            self.menu.decrement_selected_option()
+                            self.update_on_setting_change()
+                    else:
+                        if event.key == pygame.K_BACKSPACE:
+                            self.is_menu_open = True
+                elif event.type == pygame.MOUSEBUTTONDOWN:
+                    if self.is_menu_open:
+                        if pygame.mouse.get_pos()[0] < self.menu_x:
+                            self.close_menu()
+                    else:
+                        if self.menu_button.collidepoint(pygame.mouse.get_pos()):
+                            self.is_menu_open = True
         except KeyError:
             print('Invalid Key Press')
 
@@ -245,7 +273,26 @@ class Poke:
         self.draw_pokemon_moves()
         self.draw_attempts()
 
-        pygame.display.flip()
+        self.draw_menu_button()
+
+    def draw_menu_button(self):
+        text_surface, rect = self.XL_FONT.render('&', (0, 0, 0))
+        self.screen.blit(text_surface, (self.WINDOW_X - 30, 5))
+
+    def draw_menu(self):
+        self.menu.draw_border(self.get_frame())
+        self.menu.draw_options()
+
+    def update_on_setting_change(self):
+        self.show_color = self.settings['rbColor']
+        self.poke_sprites = PokeSprites(self)
+        self._update_data()
+        self._update_screen()
+
+    def close_menu(self):
+        self.is_menu_open = False
+        self.save_settings()
+        self._update_screen()
 
     def draw_pokemon_info(self):
         main_x = 228
@@ -310,18 +357,19 @@ class Poke:
         self.draw_text(text, self.GAME_FONT, self.stat_vals['stat_x'] + self.stat_vals['stat_num_offset'],
                        self.stat_vals['stat_base_y'] + (self.stat_vals['stat_y_offset'] * position))
 
+    def get_frame(self):
+        if self.settings['borderType'] < 0 or self.settings['borderType'] > 8:
+            frame = int(self.data["frame"])
+            if frame > 8:
+                frame = 1
+            return frame
+        else:
+            return self.settings['borderType']
+
     def draw_pokemon_moves(self):
         # Draw Move Border
-        if self.settings['showMoveBorder']:
-            if self.settings['borderType'] < 0 or self.settings['borderType'] > 8:
-                frame = int(self.data["frame"])
-                if frame > 8:
-                    frame = 1
-                self.tileset.draw_border_rect(self.screen, frame, 33, 9, self.move_vals["move_x"]
-                                              - 42, self.move_vals["move_y"] + 6, 3)
-            else:
-                self.tileset.draw_border_rect(self.screen, self.settings['borderType'], 33, 9, self.move_vals["move_x"]
-                                              - 42, self.move_vals["move_y"] + 6, 3)
+        self.tileset.draw_border_rect(self.screen, self.get_frame(), 33, 9, self.move_vals["move_x"]
+                                      - 42, self.move_vals["move_y"] + 6, 3)
 
         # Draw Move Table Headings
         self.draw_move_title('Move', 'move_x')
@@ -520,6 +568,14 @@ class Poke:
     def get_signature(self):
         return ',' + ','.join([str(x) for x in self.data['team']['poke1']['name']])
 
+    def get_fave_dex(self, fave):
+        if self.gen == 1:
+            try:
+                return self.natDexToGen1Map[fave]
+            except KeyError:
+                return "255"
+        return fave
+
     def _update_data(self):
         self.team_size = self.data["team"]["size"]
 
@@ -539,9 +595,12 @@ class Poke:
         self.poke_1_data = self.data["team"]["poke1"]
 
         if self.settings["showFavorites"] and self.battle_type == "0":
-            self.poke_sprites.update_sprite(self, 1, {"id": self.settings["favorites"][0], "is_shiny": 0})
-            self.poke_sprites.update_sprite(self, 2, {"id": self.settings["favorites"][1], "is_shiny": 0})
-            self.poke_sprites.update_sprite(self, 3, {"id": self.settings["favorites"][2], "is_shiny": 0})
+            self.poke_sprites.update_sprite(self, 1, {"id": self.get_fave_dex(self.settings["favorites"][0]),
+                                                      "is_shiny": 0})
+            self.poke_sprites.update_sprite(self, 2, {"id": self.get_fave_dex(self.settings["favorites"][1]),
+                                                      "is_shiny": 0})
+            self.poke_sprites.update_sprite(self, 3, {"id": self.get_fave_dex(self.settings["favorites"][2]),
+                                                      "is_shiny": 0})
         else:
             self.poke_sprites.blank_sprite(self, 1)
             self.poke_sprites.blank_sprite(self, 2)

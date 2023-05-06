@@ -4985,11 +4985,47 @@
       "Grass"
     ]
   },
+  "252": {
+    "evolves_at": "",
+    "learns_at": [],
+    "dex": 252,
+    "name": "Missingno",
+    "tile_x": 0,
+    "tile_y": 0,
+    "bst": 0,
+    "types": [
+      ""
+    ]
+  },
+  "253": {
+    "evolves_at": "",
+    "learns_at": [],
+    "dex": 253,
+    "name": "Missingno",
+    "tile_x": 0,
+    "tile_y": 0,
+    "bst": 0,
+    "types": [
+      ""
+    ]
+  },
+  "254": {
+    "evolves_at": "",
+    "learns_at": [],
+    "dex": 254,
+    "name": "Missingno",
+    "tile_x": 0,
+    "tile_y": 0,
+    "bst": 0,
+    "types": [
+      ""
+    ]
+  },
   "255": {
     "evolves_at": "",
     "learns_at": [],
-    "dex": 0,
-    "name": "",
+    "dex": 255,
+    "name": "Missingno",
     "tile_x": 0,
     "tile_y": 0,
     "bst": 0,
