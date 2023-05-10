@@ -157,6 +157,13 @@ class Poke:
             icon_id = self.natDexToGen1Map[icon_id]
         self.poke_sprites.set_icon(self, icon_id)
 
+        f = open('json/moveSets.json')
+        move_sets = json.load(f)
+        f.close()
+
+        for move in move_sets["141"]:
+            print('Level ' + str(move['level']) + ' Move: ' + self.get_move(str(move['move']))['name'])
+
     def run_tracker(self):
         self._update_data()
         self._update_screen()

@@ -1,3 +1,5 @@
+local json = require("json")
+
 timeLimit = 30
 diff = 0
 
@@ -22,9 +24,15 @@ POKE_1_NAME_ADDR = tonumber("0x1B8C")
 POKE_1_ID_ADDR = tonumber("0x1A23")
 POKE_1_LEVEL_ADDR = tonumber("0x1A49")
 
+POKES_COUNT = 251
+POKE_MOVES_TABLE_OFFSET = 0x427BD
+
 --GEN 1 Pointers
 POKE_1_START_ADDR = tonumber("0x116B")
 POKE_1_HP_ADDR = tonumber("0x116C")
+POKE_STATS_OFFSET = 0x383DE
+BS_LVL_1_MOVE_OFFSET = 15
+MEW_STAT_OFFSET = 0x425B
 
 BAG_ADDR = tonumber("0x15B8")
 
@@ -50,6 +58,8 @@ CRYSTAL = 65
 RED = 82
 BLUE = 66
 YELLOW = 89
+
+BANK_SIZE = tonumber("0x4000")
 
 TYPES = {
    [0] = 'Normal',
@@ -82,6 +92,8 @@ function loadCrystalAddresses()
     POKE_ENEMY_IV_ADDR = tonumber("0x120C")
     POKE_ENEMY_TYPE_ADDR = tonumber("0x1224")
 
+    POKE_MOVES_TABLE_OFFSET = 0x425B1
+
     BAG_ADDR = tonumber("0x1893")
 
     BATTLE_TYPE = tonumber("0x122D")
@@ -104,8 +116,12 @@ function loadYellowAddresses()
     POKE_ENEMY_LEVEL_ADDR = tonumber("0x0FF2")
     POKE_ENEMY_IV_ADDR = tonumber("0x0FF0")
     POKE_ENEMY_TYPE_ADDR = tonumber("0x0FE9")
+    POKE_MOVES_TABLE_OFFSET = 0x3B1E5
+    POKE_STATS_OFFSET = 0x383DE
+    MEW_STAT_OFFSET = 0
     TEAM_SIZE_ADDR = tonumber("0x1162")
     BAG_ADDR = tonumber("0x131D")
+    POKES_COUNT = 190
     MOVE_OFFSET = 8
     PP_OFFSET = 29
 end
@@ -122,9 +138,11 @@ function loadRedBlueAddresses()
     POKE_ENEMY_LEVEL_ADDR = tonumber("0x0FF3")
     POKE_ENEMY_IV_ADDR = tonumber("0x0FF1")
     POKE_ENEMY_TYPE_ADDR = tonumber("0x0FEA")
+    POKE_MOVES_TABLE_OFFSET = 0x3B05C
     TEAM_SIZE_ADDR = tonumber("0x1163")
     BAG_ADDR = tonumber("0x131E")
     BATTLE_TYPE = tonumber("0x1057")
+    POKES_COUNT = 190
     MOVE_OFFSET = 8
     PP_OFFSET = 29
 end
@@ -278,6 +296,132 @@ function getFrameType()
     return tonumber(memory.readbyte(FRAME_TYPE)) + 1
 end
 
+function swapTable(table)
+    local swappedTable = {}
+  for key, value in pairs(table) do
+    swappedTable[value] = key
+  end
+  return swappedTable
+end
+
+function getJsonData(fileName)
+    file = io.open(fileName, "r")
+
+    contents = file:read "*a"
+
+    io.close(file)
+    return json.decode(contents)
+end
+
+function bankOf(offset)
+  return math.floor(offset / BANK_SIZE)
+end
+
+function calculateOffset(bank, pointer)
+  if pointer < BANK_SIZE then
+    return pointer
+  else
+    return (pointer % BANK_SIZE) + bank * BANK_SIZE
+  end
+end
+
+function readWord(offset)
+    return bit.band(memory.readbyte(offset), 0xFF) + bit.lshift(bit.band(memory.readbyte(offset + 1), 0xFF), 8)
+end
+
+function getMovesLearnedGen2()
+  local movesets = {}
+  local pointersOffset = POKE_MOVES_TABLE_OFFSET
+
+  for i = 1, 251 do
+    local pointer = readWord(pointersOffset + (i - 1) * 2)
+    local realPointer = calculateOffset(bankOf(pointersOffset), pointer)
+
+    -- Skip over evolution data
+    while bit.band(memory.readbyte(realPointer), 0xFF) ~= 0 do
+      if memory.readbyte(realPointer) == 5 then
+        realPointer = realPointer + 4
+      else
+        realPointer = realPointer + 3
+      end
+    end
+
+    local ourMoves = {}
+    realPointer = realPointer + 1
+
+    while bit.band(memory.readbyte(realPointer), 0xFF) ~= 0 do
+      local learned = {}
+      learned.level = bit.band(memory.readbyte(realPointer), 0xFF)
+      learned.move = bit.band(memory.readbyte(realPointer + 1), 0xFF)
+      table.insert(ourMoves, learned)
+      realPointer = realPointer + 2
+    end
+
+    movesets[tostring(i)] = ourMoves
+  end
+
+  return movesets
+end
+
+function getMovesLearnedGen1()
+    local movesets = {}
+    local pointersOffset = POKE_MOVES_TABLE_OFFSET
+    local pokeStatsOffset = POKE_STATS_OFFSET
+    local pkmnCount = POKES_COUNT
+
+    dexToGen1Table = getJsonData("json/natDexToGen1Map.json")
+    gen1ToDexTable = swapTable(dexToGen1Table)
+
+    for i = 1, pkmnCount do
+        local pointer = readWord(pointersOffset + (i - 1) * 2)
+        local realPointer = calculateOffset(bankOf(pointersOffset), pointer)
+        if gen1ToDexTable[tostring(i)] ~= "0" and gen1ToDexTable[tostring(i)] ~= nil then
+          local statsOffset
+
+          if gen1ToDexTable[tostring(i)] == "151" and game ~= 'yellow' then
+            statsOffset = MEW_STAT_OFFSET
+          else
+            statsOffset = (tonumber(gen1ToDexTable[tostring(i)]) - 1) * 0x1C + pokeStatsOffset
+          end
+
+          local ourMoves = {}
+          for delta = BS_LVL_1_MOVE_OFFSET, BS_LVL_1_MOVE_OFFSET + 3 do
+            if bit.band(memory.readbyte(statsOffset + delta), 0xFF) ~= 0x00 then
+              local learned = {}
+              learned.level = 1
+              learned.move = bit.band(memory.readbyte(statsOffset + delta), 0xFF)
+              table.insert(ourMoves, learned)
+            end
+          end
+
+          while memory.readbyte(realPointer) ~= 0 do
+            if memory.readbyte(realPointer) == 1 then
+              realPointer = realPointer + 3
+            elseif memory.readbyte(realPointer) == 2 then
+              realPointer = realPointer + 4
+            elseif memory.readbyte(realPointer) == 3 then
+              realPointer = realPointer + 3
+            end
+          end
+
+          realPointer = realPointer + 1
+
+          while memory.readbyte(realPointer) ~= 0 do
+            local learned = {}
+            learned.level = bit.band(memory.readbyte(realPointer), 0xFF)
+            learned.move = bit.band(memory.readbyte(realPointer + 1), 0xFF)
+            table.insert(ourMoves, learned)
+            realPointer = realPointer + 2
+          end
+            movesets[gen1ToDexTable[tostring(i)]] = ourMoves
+        end
+    end
+
+    return movesets
+end
+
+
+
 
 function buildPoke(number, nameAddr, idAddr, lvlAddr)
  poke = "\"poke" .. number .. "\": {"
@@ -365,6 +509,17 @@ elseif gameCode == YELLOW then
     game = 'yellow'
     loadYellowAddresses()
 end
+
+if gen == 2 then
+    movesets = getMovesLearnedGen2()
+else
+    movesets = getMovesLearnedGen1()
+end
+
+-- Write the movesets data to a JSON file
+local file = io.open("json/moveSets.json", "w")
+file:write(json.encode(movesets))
+file:close()
 
 print('pokemon ' .. game .. ' version tracker')
 

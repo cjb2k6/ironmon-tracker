@@ -55,6 +55,7 @@ venv
 
 mail
 json/mail.json
+json/moveSets.json
 poke.json
 settings.json
 
