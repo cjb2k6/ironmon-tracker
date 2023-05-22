@@ -11,6 +11,7 @@ from src.mail import Mail
 from src.default import Default
 from src.tiles import Tiles
 from src.menu import Menu
+from src.movemenu import MoveMenu
 
 
 class Poke:
@@ -152,17 +153,16 @@ class Poke:
         self.menu_button = pygame.draw.rect(self.screen, self.bg_color, (760, 0, 800, 30))
         self.is_menu_open = False
 
+        self.current_pokemon = "0"
+        self.learned_move_menu = MoveMenu(self.tileset, self.screen, self.bg_color, self.NORMAL_FONT,
+                                          0, 0, 0, 0, 0, [])
+        self.moves_menu_button = pygame.draw.rect(self.screen, self.bg_color, (0, 0, 0, 0))
+        self.is_learned_move_menu_open = False
+
         icon_id = "28"
         if self.gen == 1:
             icon_id = self.natDexToGen1Map[icon_id]
         self.poke_sprites.set_icon(self, icon_id)
-
-        f = open('json/moveSets.json')
-        move_sets = json.load(f)
-        f.close()
-
-        for move in move_sets["141"]:
-            print('Level ' + str(move['level']) + ' Move: ' + self.get_move(str(move['move']))['name'])
 
     def run_tracker(self):
         self._update_data()
@@ -187,6 +187,8 @@ class Poke:
                     self._update_screen()
                 if self.is_menu_open:
                     self.draw_menu()
+                elif self.is_learned_move_menu_open:
+                    self.draw_learned_menu()
                 pygame.display.flip()
             except JSONDecodeError:
                 continue
@@ -251,6 +253,12 @@ class Poke:
                     else:
                         if self.menu_button.collidepoint(pygame.mouse.get_pos()):
                             self.is_menu_open = True
+                        elif self.moves_menu_button.collidepoint(pygame.mouse.get_pos()):
+                            print("click! " + str(pygame.mouse.get_pos()))
+                            self.is_learned_move_menu_open = True
+                else:
+                    if self.is_learned_move_menu_open:
+                        self.learned_move_menu.check_mouse_hover()
         except KeyError:
             print('Invalid Key Press')
 
@@ -305,6 +313,14 @@ class Poke:
         self.menu.draw_border(self.get_frame())
         self.menu.draw_options()
 
+    def draw_learned_menu(self):
+        self._draw_tracker()
+        self.learned_move_menu.draw_border(self.get_frame())
+        self.learned_move_menu.draw_options(self.poke_1_data["level"])
+        for option in self.learned_move_menu.options:
+            if option.is_hovered:
+                option.draw_tooltip(self.get_frame())
+
     def update_on_setting_change(self):
         self.show_color = self.settings['rbColor']
         self.poke_sprites = PokeSprites(self)
@@ -342,8 +358,11 @@ class Poke:
                        (81 * 0))
 
         # Learned Moves
+        learned_y = info_base_y + (info_offset_y * 2)
+        self.moves_menu_button = pygame.draw.rect(
+            self.screen, self.bg_color, (main_x, learned_y, main_x - 10, learned_y - 80))
         self.draw_text(self.get_learned_moves(self.poke_1_data) + " " + self.get_next_move(self.poke_1_data),
-                       self.GAME_FONT, main_x, info_base_y + (info_offset_y * 2))
+                       self.GAME_FONT, main_x, learned_y)
 
         # Heals in Bag
         self.draw_text("Bag Heals: " + self.get_heals(self.poke_1_data), self.GAME_FONT, main_x, info_base_y
@@ -598,6 +617,21 @@ class Poke:
                 return "255"
         return fave
 
+    def load_learned_move_list(self):
+        learned_move_list = []
+
+        f = open('json/moveSets.json')
+        move_sets = json.load(f)
+        f.close()
+
+        for move in move_sets[self.current_pokemon]:
+            learned_move = {"level": move['level'], "number": str(move['move']),
+                            "data": self.get_move(str(move['move']))}
+            learned_move_list.append(learned_move)
+
+        self.learned_move_menu = MoveMenu(self.tileset, self.screen, self.bg_color, self.SM_FONT,
+                                          16, 9, 180, 130, 3, learned_move_list)
+
     def _update_data(self):
         self.team_size = self.data["team"]["size"]
 
@@ -630,6 +664,10 @@ class Poke:
 
         if self.team_size > 0:
             self.poke_sprites.update_sprite(poke, 0, self.poke_1_data, True)
+            if self.current_pokemon != self.poke_1_data["id"]:
+                self.current_pokemon = self.poke_1_data["id"]
+                self.load_learned_move_list()
+
         else:
             self.poke_sprites.blank_sprite(poke, 0)
 

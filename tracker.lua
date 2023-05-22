@@ -13,45 +13,45 @@ attack_ivs_length = 7
 
 NAME_LENGTH = 10
 
-TEAM_SIZE_ADDR = tonumber("0x1A22")
+TEAM_SIZE_ADDR = 0x1A22
 
-POKE_ENEMY_ID_ADDR = tonumber("0x10ED")
-POKE_ENEMY_LEVEL_ADDR = tonumber("0x10FC")
-POKE_ENEMY_IV_ADDR = tonumber("0x10F5")
-POKE_ENEMY_TYPE_ADDR = tonumber("0x110D")
+POKE_ENEMY_ID_ADDR = 0x10ED
+POKE_ENEMY_LEVEL_ADDR = 0x10FC
+POKE_ENEMY_IV_ADDR = 0x10F5
+POKE_ENEMY_TYPE_ADDR = 0x110D
 
-POKE_1_NAME_ADDR = tonumber("0x1B8C")
-POKE_1_ID_ADDR = tonumber("0x1A23")
-POKE_1_LEVEL_ADDR = tonumber("0x1A49")
+POKE_1_NAME_ADDR = 0x1B8C
+POKE_1_ID_ADDR = 0x1A23
+POKE_1_LEVEL_ADDR = 0x1A49
 
 POKES_COUNT = 251
 POKE_MOVES_TABLE_OFFSET = 0x427BD
 
 --GEN 1 Pointers
-POKE_1_START_ADDR = tonumber("0x116B")
-POKE_1_HP_ADDR = tonumber("0x116C")
+POKE_1_START_ADDR = 0x116B
+POKE_1_HP_ADDR = 0x116C
 POKE_STATS_OFFSET = 0x383DE
 BS_LVL_1_MOVE_OFFSET = 15
 MEW_STAT_OFFSET = 0x425B
 
-BAG_ADDR = tonumber("0x15B8")
+BAG_ADDR = 0x15B8
 
-GOT_STARTER_ADDR = tonumber("0x1986")
+GOT_STARTER_ADDR = 0x1986
 
 ITEM_OFFSET = 8
 MOVE_OFFSET = 9
 PP_OFFSET = 30
 
-MAIL_ADDR = tonumber("0x0600")
+MAIL_ADDR = 0x0600
 IGNORE_MAIL = "0"
 WRITE_MAIL = "1"
 READ_MAIL = "2"
 SAVE_MAIL = "3"
 
-BATTLE_TYPE = tonumber("0x1116")
-FRAME_TYPE = tonumber("0x119B")
+BATTLE_TYPE = 0x1116
+FRAME_TYPE = 0x119B
 
-GAME_ADDR = tonumber("0x013C")
+GAME_ADDR = 0x013C
 SILVER = 83
 GOLD = 71
 CRYSTAL = 65
@@ -59,7 +59,7 @@ RED = 82
 BLUE = 66
 YELLOW = 89
 
-BANK_SIZE = tonumber("0x4000")
+BANK_SIZE = 0x4000
 
 TYPES = {
    [0] = 'Normal',
@@ -82,22 +82,22 @@ TYPES = {
 }
 
 function loadCrystalAddresses()
-    TEAM_SIZE_ADDR = tonumber("0x1CD7")
-    POKE_1_NAME_ADDR = tonumber("0x1E41")
-    POKE_1_ID_ADDR = tonumber("0x1CDF")
-    POKE_1_LEVEL_ADDR = tonumber("0x1CFE")
+    TEAM_SIZE_ADDR = 0x1CD7
+    POKE_1_NAME_ADDR = 0x1E41
+    POKE_1_ID_ADDR = 0x1CDF
+    POKE_1_LEVEL_ADDR = 0x1CFE
 
-    POKE_ENEMY_ID_ADDR = tonumber("0x1204")
-    POKE_ENEMY_LEVEL_ADDR = tonumber("0x1213")
-    POKE_ENEMY_IV_ADDR = tonumber("0x120C")
-    POKE_ENEMY_TYPE_ADDR = tonumber("0x1224")
+    POKE_ENEMY_ID_ADDR = 0x1204
+    POKE_ENEMY_LEVEL_ADDR = 0x1213
+    POKE_ENEMY_IV_ADDR = 0x120C
+    POKE_ENEMY_TYPE_ADDR = 0x1224
 
     POKE_MOVES_TABLE_OFFSET = 0x425B1
 
-    BAG_ADDR = tonumber("0x1893")
+    BAG_ADDR = 0x1893
 
-    BATTLE_TYPE = tonumber("0x122D")
-    FRAME_TYPE = tonumber("0x0FCE")
+    BATTLE_TYPE = 0x122D
+    FRAME_TYPE = 0x0FCE
 
     ITEM_OFFSET = 1
     MOVE_OFFSET = 2
@@ -106,21 +106,21 @@ end
 
 function loadYellowAddresses()
     gen = 1
-    POKE_1_START_ADDR = tonumber("0x116A")
-    POKE_1_ID_ADDR = tonumber("0x1163")
-    POKE_1_HP_ADDR = tonumber("0x116B")
-    POKE_1_NAME_ADDR = tonumber("0x12B4")
-    POKE_1_LEVEL_ADDR = tonumber("0x118B")
-    BATTLE_TYPE = tonumber("0x1056")
-    POKE_ENEMY_ID_ADDR = tonumber("0x0FD7")
-    POKE_ENEMY_LEVEL_ADDR = tonumber("0x0FF2")
-    POKE_ENEMY_IV_ADDR = tonumber("0x0FF0")
-    POKE_ENEMY_TYPE_ADDR = tonumber("0x0FE9")
+    POKE_1_START_ADDR = 0x116A
+    POKE_1_ID_ADDR = 0x1163
+    POKE_1_HP_ADDR = 0x116B
+    POKE_1_NAME_ADDR = 0x12B4
+    POKE_1_LEVEL_ADDR = 0x118B
+    BATTLE_TYPE = 0x1056
+    POKE_ENEMY_ID_ADDR = 0x0FD7
+    POKE_ENEMY_LEVEL_ADDR = 0x0FF2
+    POKE_ENEMY_IV_ADDR = 0x0FF0
+    POKE_ENEMY_TYPE_ADDR = 0x0FE9
     POKE_MOVES_TABLE_OFFSET = 0x3B1E5
     POKE_STATS_OFFSET = 0x383DE
     MEW_STAT_OFFSET = 0
-    TEAM_SIZE_ADDR = tonumber("0x1162")
-    BAG_ADDR = tonumber("0x131D")
+    TEAM_SIZE_ADDR = 0x1162
+    BAG_ADDR = 0x131D
     POKES_COUNT = 190
     MOVE_OFFSET = 8
     PP_OFFSET = 29
@@ -128,20 +128,20 @@ end
 
 function loadRedBlueAddresses()
     gen = 1
-    POKE_1_NAME_ADDR = tonumber("0x12B5")
-    POKE_1_ID_ADDR = tonumber("0x1164")
-    POKE_1_HP_ADDR = tonumber("0x116C")
-    POKE_1_LEVEL_ADDR = tonumber("0x118C")
-    POKE_1_START_ADDR = tonumber("0x116B")
-    BATTLE_TYPE = tonumber("0x1057")
-    POKE_ENEMY_ID_ADDR = tonumber("0x0FD8")
-    POKE_ENEMY_LEVEL_ADDR = tonumber("0x0FF3")
-    POKE_ENEMY_IV_ADDR = tonumber("0x0FF1")
-    POKE_ENEMY_TYPE_ADDR = tonumber("0x0FEA")
+    POKE_1_NAME_ADDR = 0x12B5
+    POKE_1_ID_ADDR = 0x1164
+    POKE_1_HP_ADDR = 0x116C
+    POKE_1_LEVEL_ADDR = 0x118C
+    POKE_1_START_ADDR = 0x116B
+    BATTLE_TYPE = 0x1057
+    POKE_ENEMY_ID_ADDR = 0x0FD8
+    POKE_ENEMY_LEVEL_ADDR = 0x0FF3
+    POKE_ENEMY_IV_ADDR = 0x0FF1
+    POKE_ENEMY_TYPE_ADDR = 0x0FEA
     POKE_MOVES_TABLE_OFFSET = 0x3B05C
-    TEAM_SIZE_ADDR = tonumber("0x1163")
-    BAG_ADDR = tonumber("0x131E")
-    BATTLE_TYPE = tonumber("0x1057")
+    TEAM_SIZE_ADDR = 0x1163
+    BAG_ADDR = 0x131E
+    BATTLE_TYPE = 0x1057
     POKES_COUNT = 190
     MOVE_OFFSET = 8
     PP_OFFSET = 29
